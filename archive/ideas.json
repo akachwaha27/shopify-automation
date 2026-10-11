@@ -5,22 +5,22 @@
    {
     "angle": "Product demo with a relatable hook (Ashvara playbook)",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Calming Donut Bed for Dogs & Cats",
     "trend_source": "Ashvara Black Friday Playbook",
-    "video_id": null,
+    "video_id": "2026-10-11-1",
     "virality_score": 8,
     "why": ""
    },
    {
     "angle": "Product demo with a relatable hook (Ashvara playbook)",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 2,
     "title": "Dematting Comb: One Brushing Session",
     "trend_source": "Ashvara Black Friday Playbook",
-    "video_id": null,
+    "video_id": "2026-10-11-2",
     "virality_score": 8,
     "why": ""
    },
@@ -70,6 +70,6 @@
    }
   ],
   "sent_at": "2026-10-11T16:01:33.152948+00:00",
-  "status": "waiting"
+  "status": "closed"
  }
 }

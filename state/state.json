@@ -1,5 +1,5 @@
 {
-  "tg_offset": 0,
+  "tg_offset": 272239675,
   "batches": {
     "2026-10-11": {
       "topics": [
@@ -65,16 +65,54 @@
         }
       ],
       "sent_at": "2026-10-11T16:01:33.152948+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0,
+        1
+      ],
+      "status": "closed"
     }
   },
-  "videos": {},
+  "videos": {
+    "2026-10-11-1": {
+      "topic": {
+        "title": "Calming Donut Bed for Dogs & Cats",
+        "angle": "Product demo with a relatable hook (Ashvara playbook)",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 8,
+        "trend_source": "Ashvara Black Friday Playbook",
+        "plan_id": "P2026-10-10-01",
+        "product": "super-soft-pet-bed-82146"
+      },
+      "status": "failed",
+      "by": "you",
+      "updated": "2026-10-11T20:13:00.822486+00:00",
+      "redos": 0
+    },
+    "2026-10-11-2": {
+      "topic": {
+        "title": "Dematting Comb: One Brushing Session",
+        "angle": "Product demo with a relatable hook (Ashvara playbook)",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 8,
+        "trend_source": "Ashvara Black Friday Playbook",
+        "plan_id": "P2026-10-10-02",
+        "product": "pet-fur-knot-cutter-89653"
+      },
+      "status": "failed",
+      "by": "you",
+      "updated": "2026-10-11T20:13:01.415245+00:00",
+      "redos": 0
+    }
+  },
   "history": [],
   "trend_tries": {
     "2026-10-11": {
       "n": 1,
       "at": "2026-10-11T16:01:32.577965+00:00"
     }
-  }
+  },
+  "cleanup_day": "2026-10-11",
+  "signals_day": "2026-10-11"
 }
