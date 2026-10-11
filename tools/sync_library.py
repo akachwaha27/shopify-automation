@@ -1,12 +1,12 @@
-"""Whyzo Films - PC sync.
+"""Shopify Automation - PC sync.
 
 Keeps a folder on your PC up to date with everything the bot makes:
 
   <your folder>/
-    Videos/                     every published video, named "<date> - <title>.mp4"
+    Videos/                     every published video, named "Ashvara - <date> - <title>.mp4"
     Thumbnails/                 the matching thumbnails
-    Shorts Library.xlsx         sheets: Videos, Idea Lists, Comments, Daily Totals
-    Dashboard.html              open in your browser to monitor everything
+    Ashvara Shorts Library.xlsx  sheets: Content Plan, Videos, Daily Top 5 Ideas, Comments, Daily Totals
+    Ashvara Dashboard.html     open in your browser to monitor everything
     _app/                       this script, its settings and a log
 
 First time (once):   python sync_library.py --setup
@@ -26,8 +26,31 @@ import sys
 import tempfile
 import time
 
-REPO_DEFAULT = "akachwaha27/whyzo-films-autopilot"
-TASK_NAME = "Whyzo Films Sync"
+REPO_DEFAULT = "akachwaha27/shopify-automation"
+TASK_NAME = "Shopify Automation Sync"
+PREFIX = "Ashvara"                         # every file made for the channel starts with this
+XLSX = f"{PREFIX} Shorts Library.xlsx"
+DASH = f"{PREFIX} Dashboard.html"
+# files created earlier without the prefix: renamed on the next sync (paths relative to K:\Youtube Automation)
+ROOT_RENAMES = [
+    ("Guides & Diagrams/Architecture diagram.png", "Guides & Diagrams/ZorblyAI Architecture diagram.png"),
+    ("Guides & Diagrams/User flow diagram.png", "Guides & Diagrams/ZorblyAI User flow diagram.png"),
+    ("Guides & Diagrams/Bot code on GitHub.url", "Guides & Diagrams/ZorblyAI Bot code on GitHub.url"),
+    ("Guides & Diagrams/Cross-posting & Monetization Setup.url", "Guides & Diagrams/ZorblyAI Cross-posting & Monetization Setup.url"),
+    ("Setup Tools/get_youtube_token.py", "Setup Tools/ZorblyAI_get_youtube_token.py"),
+    ("Setup Tools/get_meta_token.py", "Setup Tools/ZorblyAI_get_meta_token.py"),
+    ("Setup Tools/get_tiktok_token.py", "Setup Tools/ZorblyAI_get_tiktok_token.py"),
+    ("YouTube API Audit/Evidence checklist.txt", "YouTube API Audit/ZorblyAI Evidence checklist.txt"),
+    ("YouTube API Audit/Privacy Policy (printed).pdf", "YouTube API Audit/ZorblyAI Privacy Policy (printed).pdf"),
+    ("YouTube API Audit/Privacy page screenshot.png", "YouTube API Audit/ZorblyAI Privacy page screenshot.png"),
+    ("YouTube API Audit/Terms page screenshot.png", "YouTube API Audit/ZorblyAI Terms page screenshot.png"),
+    ("YouTube API Audit/Project 1 - Conditional Evidence.pdf", "YouTube API Audit/ZorblyAI Project 1 - Conditional Evidence.pdf"),
+] + [(f"YouTube API Audit/Evidence pages/evidence-0{i}.png", f"YouTube API Audit/Evidence pages/ZorblyAI evidence-0{i}.png")
+     for i in range(1, 9)]
+# old launchers, removed once their ZorblyAI-named replacements exist
+REPLACED = [("Open Dashboard.bat", "ZorblyAI Open Dashboard.bat"),
+            ("Turn on daily auto-update.bat", "ZorblyAI Turn on daily auto-update.bat"),
+            ("README - Start here.txt", "ZorblyAI README - Start here.txt")]
 HERE = os.path.dirname(os.path.abspath(__file__))
 CONFIG_FILE = os.path.join(HERE, "sync_config.json")
 DEPS = {"requests": "requests", "openpyxl": "openpyxl"}
@@ -55,7 +78,7 @@ def load_config():
 
 
 def setup():
-    default = load_config().get("folder") or os.path.join(os.path.expanduser("~"), "Documents", "Whyzo Films")
+    default = load_config().get("folder") or os.path.join(os.path.expanduser("~"), "Documents", "Shopify Automation")
     folder = input(f"Folder for your videos, Excel and dashboard [{default}]: ").strip().strip('"') or default
     folder = os.path.abspath(os.path.expandvars(os.path.expanduser(folder)))
     repo = input(f"GitHub repo [{REPO_DEFAULT}]: ").strip() or REPO_DEFAULT
@@ -78,7 +101,7 @@ def setup():
         print("Not on Windows: schedule this yourself, e.g. cron:", f"{sys.executable} {target}")
     print("\nRunning the first sync...")
     subprocess.call([sys.executable, target])
-    dash = os.path.join(folder, "Dashboard.html")
+    dash = os.path.join(folder, DASH)
     if os.path.exists(dash) and os.name == "nt":  # a browser, even if .html opens in Notepad
         if subprocess.call(f'start "" chrome "{dash}"', shell=True) and \
                 subprocess.call(f'start "" msedge "{dash}"', shell=True):
@@ -94,7 +117,7 @@ $a = New-ScheduledTaskAction -Execute '{exe}' -Argument '"{script}"' -WorkingDir
 $t1 = New-ScheduledTaskTrigger -Daily -At '{at}'
 $t2 = New-ScheduledTaskTrigger -AtLogOn -User $env:USERNAME
 $s = New-ScheduledTaskSettingsSet -StartWhenAvailable -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -ExecutionTimeLimit (New-TimeSpan -Hours 2)
-Register-ScheduledTask -TaskName '{TASK_NAME}' -Action $a -Trigger $t1,$t2 -Settings $s -Description 'Copies Whyzo Films videos, Excel and dashboard to your folder' -Force | Out-Null
+Register-ScheduledTask -TaskName '{TASK_NAME}' -Action $a -Trigger $t1,$t2 -Settings $s -Description 'Copies Shopify Automation videos, Excel and dashboard to your folder' -Force | Out-Null
 """
     r = subprocess.run(["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", ps],
                        capture_output=True, text=True)
@@ -137,6 +160,23 @@ def fetch_json(session, repo, name):
     return r.json()
 
 
+def fetch_plan(session, repo):
+    """The content plan sheet (content/plan.csv) merged with each row's status (content/status.json)."""
+    import csv
+    import io
+    base = f"https://raw.githubusercontent.com/{repo}/main/content"
+    r = session.get(f"{base}/plan.csv", params={"t": int(time.time())}, timeout=60)
+    if r.status_code != 200:
+        return []
+    rows = [x for x in csv.DictReader(io.StringIO(r.content.decode("utf-8-sig"))) if (x.get("id") or "").strip()]
+    st = session.get(f"{base}/status.json", params={"t": int(time.time())}, timeout=60)
+    status = st.json() if st.status_code == 200 else {}
+    for x in rows:
+        info = status.get(x["id"], {})
+        x["status"], x["youtube"], x["published"] = info.get("status", "Ready"), info.get("youtube", ""), info.get("published", "")
+    return rows
+
+
 def download(session, url, dest):
     tmp = dest + ".part"
     with session.get(url, stream=True, timeout=300) as r:
@@ -172,20 +212,47 @@ def to_local(iso):
         return None
 
 
+def migrate_names(folder):
+    """Give files made before the naming rule the ZorblyAI prefix (rename only; never overwrites)."""
+    moves = [(os.path.join(folder, "Shorts Library.xlsx"), os.path.join(folder, XLSX)),
+             (os.path.join(folder, "Dashboard.html"), os.path.join(folder, DASH))]
+    root = os.path.dirname(folder) if os.path.basename(folder.rstrip("\\/")).lower() == "library" else None
+    if root:
+        moves += [(os.path.join(root, *a.split("/")), os.path.join(root, *b.split("/"))) for a, b in ROOT_RENAMES]
+    for old, new in moves:
+        try:
+            if os.path.exists(old) and not os.path.exists(new):
+                os.replace(old, new)
+                log(folder, f"renamed {os.path.basename(old)} -> {os.path.basename(new)}")
+        except OSError as e:
+            log(folder, f"could not rename {old}: {e}")
+    if root:
+        for old, new in REPLACED:
+            o, n = os.path.join(root, old), os.path.join(root, new)
+            try:
+                if os.path.exists(o) and os.path.exists(n):
+                    os.remove(o)
+                    log(folder, f"removed old {old} (replaced by {new})")
+            except OSError as e:
+                log(folder, f"could not remove {old}: {e}")
+
+
 def run_sync():
     cfg = load_config()
     folder = cfg.get("folder")
     if not folder:
         raise SystemExit("Not set up yet. Run:  python sync_library.py --setup")
     repo = cfg.get("repo", REPO_DEFAULT)
+    migrate_names(folder)
     ensure_deps()
     import requests
     s = requests.Session()
-    s.headers["User-Agent"] = "whyzo-films-sync"
+    s.headers["User-Agent"] = "shopify-automation-sync"
 
     videos = fetch_json(s, repo, "videos")
     ideas = fetch_json(s, repo, "ideas")
     totals = fetch_json(s, repo, "stats_history")
+    content_plan = fetch_plan(s, repo)
     runs = recent_runs(s, repo)
 
     vdir, tdir = os.path.join(folder, "Videos"), os.path.join(folder, "Thumbnails")
@@ -203,19 +270,20 @@ def run_sync():
         index = {}
     got, used = 0, set()
     for vid, v in sorted(videos.items()):
-        base = f"{v.get('date', vid[:10])} - {safe_name(v.get('title'))}"
+        base = f"{PREFIX} - {v.get('date', vid[:10])} - {safe_name(v.get('title'))}"
         n = 2
         while base.lower() in used:  # same title twice on one day
-            base = f"{v.get('date', vid[:10])} - {safe_name(v.get('title'))} ({n})"
+            base = f"{PREFIX} - {v.get('date', vid[:10])} - {safe_name(v.get('title'))} ({n})"
             n += 1
         used.add(base.lower())
         v["_video_file"] = v["_thumb_file"] = ""
         for key, d, ext, field in (("file", vdir, ".mp4", "_video_file"), ("thumb", tdir, ".jpg", "_thumb_file")):
             ref = v.get(key) or {}
             dest = os.path.join(d, base + ext)
-            olds = [index.get(f"{vid}{ext}")]
+            olds = [index.get(f"{vid}{ext}"), os.path.join(d, base[len(PREFIX) + 3:] + ext)]  # + pre-prefix name
             if v.get("original_title"):
                 olds.append(os.path.join(d, f"{v.get('date', vid[:10])} - {safe_name(v['original_title'])}{ext}"))
+                olds.append(os.path.join(d, f"{PREFIX} - {v.get('date', vid[:10])} - {safe_name(v['original_title'])}{ext}"))
             for prev in olds:
                 if prev and prev != dest and os.path.exists(prev) and not os.path.exists(dest):
                     os.replace(prev, dest)  # title changed in Studio: rename your copy to match
@@ -238,7 +306,7 @@ def run_sync():
     os.makedirs(os.path.dirname(index_file), exist_ok=True)
     with open(index_file, "w") as f:
         json.dump(index, f, indent=1, ensure_ascii=False)
-    xlsx = write_excel(folder, videos, ideas, totals)
+    xlsx = write_excel(folder, videos, ideas, totals, content_plan)
     write_dashboard(folder, videos, ideas, totals, runs, repo)
     log(folder, f"sync ok: {len(videos)} videos in library, {got} new downloaded, "
                 f"{sum(len(b.get('ideas', [])) for b in ideas.values())} ideas, Excel -> {os.path.basename(xlsx)}")
@@ -252,7 +320,7 @@ def _file_url(folder, path):
     return "file:///" + path.replace("\\", "/")
 
 
-def write_excel(folder, videos, ideas, totals):
+def write_excel(folder, videos, ideas, totals, content_plan=()):
     from openpyxl import Workbook
     from openpyxl.styles import Alignment, Font, PatternFill
     from openpyxl.utils import get_column_letter
@@ -299,7 +367,7 @@ def write_excel(folder, videos, ideas, totals):
 
     def day(s):
         try:
-            return dt.datetime.strptime(str(s)[:10], "%Y-%m-%d")
+            return dt.datetime.strptime(s, "%Y-%m-%d")
         except (TypeError, ValueError):
             return s
 
@@ -347,7 +415,7 @@ def write_excel(folder, videos, ideas, totals):
                 i.get("virality_score"), "Yes" if i.get("picked") else "No",
                 made.get("status", "") if made else "", i.get("angle", ""), i.get("why", ""), i.get("trend_source", ""),
             ])
-    sheet(wb.create_sheet("Idea Lists"), [
+    sheet(wb.create_sheet("Daily Top 5 Ideas"), [
         ("Date", 11, "day"), ("Sent to Telegram", 16, "date"), ("#", 4, ""), ("Idea", 45, "wrap"),
         ("Format", 11, ""), ("Virality score", 10, ""), ("Picked", 8, ""), ("Video status", 12, ""),
         ("Angle", 60, "wrap"), ("Why it should work", 60, "wrap"), ("Trend source", 24, ""),
@@ -370,7 +438,31 @@ def write_excel(folder, videos, ideas, totals):
         ("Total likes", 12, "int"), ("Total comments", 12, "int"),
     ], trows)
 
-    out = os.path.join(folder, "Shorts Library.xlsx")
+    order = {"Ready": 0, "Sent": 1, "Making": 2, "Preview": 3, "Approved": 4, "Published": 5}
+    prows = [[day(x.get("added")), x.get("status", ""), x.get("format", ""), x.get("title", ""),
+              ("Open on YouTube", x["youtube"]) if x.get("youtube") else "", day(x.get("published")) if x.get("published") else "",
+              x.get("hook", ""), x.get("script", ""), x.get("on_screen", ""), x.get("footage", ""),
+              x.get("thumbnail_text", ""), x.get("description", ""), x.get("hashtags", ""), x.get("tags", ""),
+              x.get("pinned_comment", ""), x.get("hook_score", ""), x.get("title_score", ""), x.get("virality_score", ""),
+              x.get("why_it_works", ""), x.get("inspired_by", ""), x.get("sources", ""),
+              x.get("runtime", ""), x.get("opening_text", ""), x.get("hook_runner_up", ""), x.get("title_options", ""),
+              x.get("thumbnail_brief", ""), x.get("search_queries", ""), x.get("comment_replies", ""),
+              x.get("loop_point", ""), x.get("plan_promise", ""), x.get("id", "")]
+             for x in sorted(content_plan, key=lambda x: (order.get(x.get("status"), 9), x.get("added", "")))]
+    ws = wb.create_sheet("Content Plan", 0)  # first tab
+    sheet(ws, [
+        ("Added", 11, "day"), ("Status", 11, ""), ("Format", 11, ""), ("Title", 40, "wrap"), ("YouTube", 16, ""),
+        ("Published", 11, "day"), ("Hook", 40, "wrap"), ("Script", 70, "wrap"), ("On-screen text", 30, "wrap"),
+        ("Footage", 30, "wrap"), ("Thumbnail text", 18, "wrap"), ("Description", 50, "wrap"), ("Hashtags", 24, "wrap"),
+        ("Tags", 40, "wrap"), ("Pinned comment", 36, "wrap"), ("Hook score", 9, ""), ("Title score", 9, ""),
+        ("Virality", 9, ""), ("Why it works", 40, "wrap"), ("Inspired by", 30, "wrap"), ("Sources", 40, "wrap"),
+        ("Runtime", 12, "wrap"), ("Opening text", 18, "wrap"), ("Runner-up hook", 40, "wrap"), ("Title options", 40, "wrap"),
+        ("Thumbnail brief", 50, "wrap"), ("Search queries", 30, "wrap"), ("Comment replies", 45, "wrap"),
+        ("Loop point", 30, "wrap"), ("Promise", 36, "wrap"), ("ID", 16, ""),
+    ], prows)
+    wb.active = 0
+
+    out = os.path.join(folder, XLSX)
     fd, tmp = tempfile.mkstemp(suffix=".xlsx", dir=folder)
     os.close(fd)
     wb.save(tmp)
@@ -380,7 +472,7 @@ def write_excel(folder, videos, ideas, totals):
             return out
         except PermissionError:  # open in Excel
             time.sleep(5)
-    alt = os.path.join(folder, "Shorts Library (latest - close Excel to update the main file).xlsx")
+    alt = os.path.join(folder, f"{PREFIX} Shorts Library (latest - close Excel to update the main file).xlsx")
     try:
         os.replace(tmp, alt)
     except PermissionError:
@@ -405,15 +497,15 @@ def write_dashboard(folder, videos, ideas, totals, runs, repo):
             "stats_checked": totals.get("_last_run")}
     blob = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     page = DASHBOARD.replace("__DATA__", blob).replace("__REPO__", html.escape(repo))
-    tmp = os.path.join(folder, "Dashboard.html.tmp")
+    tmp = os.path.join(folder, DASH + ".tmp")
     with open(tmp, "w", encoding="utf-8") as f:
         f.write(page)
-    os.replace(tmp, os.path.join(folder, "Dashboard.html"))
+    os.replace(tmp, os.path.join(folder, DASH))
 
 
 DASHBOARD = r"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Whyzo Films Dashboard</title>
+<title>Shopify Automation Dashboard</title>
 <style>
 :root{color-scheme:light;--page:#f9f9f7;--surface:#fcfcfb;--ink:#0b0b0b;--ink2:#52514e;--muted:#898781;--grid:#e1e0d9;
 --axis:#c3c2b7;--border:rgba(11,11,11,.10);--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--s5:#e87ba4;--s6:#008300;
@@ -452,7 +544,7 @@ a{color:var(--link)}.pill{display:inline-flex;align-items:center;gap:4px;font-si
 .runs li{list-style:none;margin:0 0 6px}.runs{padding:0;margin:0}
 .tag{font-size:11px;border:1px solid var(--border);border-radius:999px;padding:1px 7px;color:var(--ink2);margin-left:6px}
 </style></head><body><div class="wrap">
-<header><h1>Whyzo Films</h1><span class="sub" id="synced"></span></header>
+<header><h1>Shopify Automation</h1><span class="sub" id="synced"></span></header>
 <div class="filters" role="group" aria-label="Date range" id="filters"></div>
 <div class="tiles" id="tiles"></div>
 <div class="grid2">
@@ -461,7 +553,7 @@ a{color:var(--link)}.pill{display:inline-flex;align-items:center;gap:4px;font-si
 </div>
 <div class="grid2">
  <div class="card"><h2>Channel views over time</h2><div class="sub">Daily total across all uploaded videos</div><div id="c-total"></div></div>
- <div class="card"><h2>Latest ideas</h2><div class="sub" id="ideas-date"></div><ol class="ideas" id="ideas"></ol></div>
+ <div class="card"><h2>Latest Top 5 ideas</h2><div class="sub" id="ideas-date"></div><ol class="ideas" id="ideas"></ol></div>
 </div>
 <div class="grid2">
  <div class="card" style="grid-column:1/-1"><h2>Videos</h2><div class="sub">Newest first. Click a title to open it on YouTube; "Play" opens your local copy.</div>
@@ -583,7 +675,7 @@ matchMedia('(prefers-color-scheme: dark)').addEventListener('change',render);
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Sync Whyzo Films videos, Excel and dashboard to your PC")
+    ap = argparse.ArgumentParser(description="Sync Shopify Automation videos, Excel and dashboard to your PC")
     ap.add_argument("--setup", action="store_true", help="choose the folder and schedule the daily sync")
     ap.add_argument("--uninstall", action="store_true", help="remove the scheduled task")
     a = ap.parse_args()

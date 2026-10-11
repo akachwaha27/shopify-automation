@@ -1,10 +1,10 @@
-"""Voiceover, visuals and final render for Whyzo Films.
+"""Voiceover, visuals and final render - all free.
 
-Voice:    one consistent narrator (Microsoft Edge neural TTS, free); Google gTTS as backup.
-Visuals:  3D-style AI stills (fal.ai FLUX, or free Cloudflare FLUX), the key shots animated with
-          fal.ai image-to-video (ANIMATE_SHOTS per video), the rest get slow camera moves.
-          Stock footage (Pexels/Pixabay/NASA/Commons) is only a fallback if AI images fail.
-Render:   FFmpeg, 1080x1920, burned-in captions, soft whoosh on scene changes, light music.
+Voices:   rotating Microsoft Edge neural voices (edge-tts); Google gTTS as backup.
+Footage:  Pexels / Pixabay (keys), NASA (no key, public domain), Wikimedia Commons
+          (no key, CC0/PD/CC BY only), optional Cloudflare AI images, and an
+          animated gradient as last resort. Source order is shuffled per video.
+Render:   FFmpeg, 1080x1920, burned-in captions, rank badges for Top-5 videos.
 """
 import asyncio
 import base64
@@ -15,15 +15,13 @@ import os
 import random
 import re
 import subprocess
-import time
-from concurrent.futures import ThreadPoolExecutor
 
 import requests
 
 from . import config
 
 W, H, FPS = config.WIDTH, config.HEIGHT, config.FPS
-UA = {"User-Agent": "WhyzoFilms/1.0 (https://github.com/akachwaha27/whyzo-films-autopilot)"}
+UA = {"User-Agent": "AshvaraAutopilot/1.0 (https://github.com/akachwaha27/shopify-automation)"}
 
 
 def run(cmd):
@@ -39,12 +37,15 @@ def duration(path):
 
 
 # =========================== Voice ===========================
+# Only the newest "Multilingual" neural voices: they have natural breathing, intonation and pacing.
+# The older voices (Jenny, Guy, Aria...) sound noticeably more robotic, so they're no longer in the rotation.
 VOICE_POOL = {
     "en": ["en-US-AndrewMultilingualNeural", "en-US-AvaMultilingualNeural", "en-US-BrianMultilingualNeural",
-           "en-US-EmmaMultilingualNeural", "en-US-ChristopherNeural", "en-US-JennyNeural", "en-US-GuyNeural",
-           "en-US-AriaNeural", "en-GB-RyanNeural", "en-GB-SoniaNeural", "en-AU-WilliamNeural",
-           "en-AU-NatashaNeural", "en-CA-LiamNeural", "en-IE-ConnorNeural"],
+           "en-US-EmmaMultilingualNeural", "en-AU-WilliamMultilingualNeural", "en-GB-AdaMultilingualNeural",
+           "en-GB-OllieMultilingualNeural", "en-US-SerenaMultilingualNeural", "en-US-SteffanMultilingualNeural"],
 }
+FALLBACK_VOICES = ["en-US-AndrewMultilingualNeural", "en-US-AvaMultilingualNeural",
+                   "en-US-BrianMultilingualNeural", "en-US-EmmaMultilingualNeural"]
 
 
 def voice_pool():
@@ -56,7 +57,7 @@ def voice_pool():
         import edge_tts
         live = {v["ShortName"] for v in asyncio.run(edge_tts.list_voices())}
         if pool:
-            pool = [v for v in pool if v in live] or pool
+            pool = [v for v in pool if v in live] or [v for v in FALLBACK_VOICES if v in live] or pool
         else:  # other languages: any neural voice for that language
             pool = sorted(v for v in live if v.lower().startswith(lang + "-"))[:12]
     except Exception as e:  # noqa: BLE001
@@ -95,15 +96,31 @@ def _estimate_words(text, total):
     return out
 
 
+def _speak(text, mp3, voice, rate):
+    words = []
+    asyncio.run(_edge(text, mp3, words, voice, f"{rate:+d}%", "+0Hz"))  # no pitch shift: it sounds robotic
+    if os.path.getsize(mp3) < 1000 or not words:
+        raise RuntimeError("empty audio")
+    return words
+
+
 def voiceover(text, out_dir, voice):
+    """Natural pace (+0..5%). If the read lands far from TARGET_SECONDS, re-read once at an adjusted pace
+    (kept within -8%..+10% so it never sounds slowed down or rushed)."""
     mp3 = os.path.join(out_dir, "voice.mp3")
-    rate, pitch = "+6%", "+0Hz"  # same narrator sound on every video
+    target = config.TARGET_SECONDS
     for v in (voice, config.VOICE):
         try:
-            words = []
-            asyncio.run(_edge(text, mp3, words, v, rate, pitch))
-            if os.path.getsize(mp3) > 1000 and words:
-                return mp3, words, f"AI-generated voice (Microsoft Edge neural TTS, {v})"
+            rate = random.randint(0, 5)
+            words = _speak(text, mp3, v, rate)
+            got = duration(mp3)
+            if abs(got - target) > target * 0.08:
+                new = int(round((1 + rate / 100) * got / target * 100 - 100))
+                new = max(-8, min(10, new))
+                if new != rate:
+                    words = _speak(text, mp3, v, new)
+                    print(f"voice pace {rate:+d}% -> {new:+d}% ({got:.1f}s -> {duration(mp3):.1f}s, target {target}s)")
+            return mp3, words, f"AI-generated voice (Microsoft Edge neural TTS, {v})"
         except Exception as e:  # noqa: BLE001
             print(f"edge-tts voice {v} failed: {str(e)[:120]}")
     from gtts import gTTS  # backup engine
@@ -353,81 +370,15 @@ def commons_photo(q, base, used):
     return _commons(q, base, used, "image")
 
 
-def styled(prompt):
-    return f"{prompt}. {config.ART_STYLE}"
-
-
-def _fal(model, payload, timeout=900):
-    """Run a fal.ai model through its queue API and return the result JSON."""
-    head = {"Authorization": f"Key {config.FAL_KEY}"}
-    r = requests.post(f"https://queue.fal.run/{model}", headers=head, json=payload, timeout=60)
-    r.raise_for_status()
-    job = r.json()
-    deadline = time.time() + timeout
-    while time.time() < deadline:
-        st = requests.get(job["status_url"], headers=head, timeout=30).json()
-        status = st.get("status")
-        if status == "COMPLETED":
-            break
-        if status not in ("IN_QUEUE", "IN_PROGRESS"):
-            raise RuntimeError(f"fal {model}: {str(st)[:200]}")
-        time.sleep(5)
-    else:
-        raise RuntimeError(f"fal {model} timed out")
-    res = requests.get(job["response_url"], headers=head, timeout=60)
-    res.raise_for_status()
-    return res.json()
-
-
-def fal_image(prompt, base):
-    out = _fal(config.FAL_IMAGE_MODEL, {"prompt": styled(prompt), "image_size": {"width": 864, "height": 1536},
-                                        "num_inference_steps": 4, "output_format": "jpeg"})
-    url = out["images"][0]["url"]
-    _download(url, base + ".jpg")
-    return {"kind": "image", "path": base + ".jpg", "url": url, "credit": "AI 3D image (FLUX via fal.ai)"}
-
-
-def cf_image(prompt, base):
+def ai_image(prompt, base):
     url = (f"https://api.cloudflare.com/client/v4/accounts/{config.CF_ACCOUNT_ID}"
            "/ai/run/@cf/black-forest-labs/flux-1-schnell")
     r = requests.post(url, headers={"Authorization": f"Bearer {config.CF_API_TOKEN}"}, timeout=120,
-                      json={"prompt": styled(prompt), "steps": 8})
+                      json={"prompt": prompt + ", vertical composition, cinematic, high detail, no text", "steps": 6})
     r.raise_for_status()
     with open(base + ".png", "wb") as f:
         f.write(base64.b64decode(r.json()["result"]["image"]))
-    return {"kind": "image", "path": base + ".png", "credit": "AI 3D image (FLUX.1-schnell via Cloudflare Workers AI)"}
-
-
-def ai_image(prompt, base):
-    if config.FAL_KEY:
-        try:
-            return fal_image(prompt, base)
-        except Exception as e:  # noqa: BLE001
-            print("fal image failed, trying Cloudflare:", str(e)[:150])
-    if config.CF_ACCOUNT_ID and config.CF_API_TOKEN:
-        return cf_image(prompt, base)
-    return None
-
-
-VIDEO_PRESETS = {
-    "wan": ("fal-ai/wan/v2.2-a14b/image-to-video",
-            {"resolution": "720p", "aspect_ratio": "9:16", "num_frames": 81, "frames_per_second": 16,
-             "negative_prompt": "text, watermark, logo, blurry, distorted face, extra limbs, gore, blood"}),
-    "kling": ("fal-ai/kling-video/v2.1/standard/image-to-video", {"duration": "5"}),
-}
-
-
-def animate(vis, motion, base):
-    """Turn a still into a ~5 second moving shot (fal.ai image-to-video)."""
-    model, extra = VIDEO_PRESETS.get(config.FAL_VIDEO_MODEL, (config.FAL_VIDEO_MODEL, {}))
-    image_url = vis.get("url")
-    if not image_url:
-        mime = "image/png" if vis["path"].endswith(".png") else "image/jpeg"
-        with open(vis["path"], "rb") as f:
-            image_url = f"data:{mime};base64," + base64.b64encode(f.read()).decode()
-    out = _fal(model, {"prompt": f"{motion}. Smooth 3D animation, consistent characters, no text", "image_url": image_url, **extra})
-    _download(out["video"]["url"], base + ".mp4")
-    return {"kind": "video", "path": base + ".mp4", "credit": f"AI animation ({model.split('/')[1]} via fal.ai)"}
+    return {"kind": "image", "path": base + ".png", "credit": "AI image (FLUX.1-schnell via Cloudflare Workers AI)"}
 
 
 def source_plan():
@@ -445,14 +396,11 @@ def source_plan():
 def get_visual(scene, i, out_dir, used, plan):
     base = os.path.join(out_dir, f"s{i}")
     q = scene.get("stock_query") or scene.get("label") or "abstract background"
-    has_ai = bool(config.FAL_KEY or (config.CF_ACCOUNT_ID and config.CF_API_TOKEN))
-    use_ai = has_ai and (config.VISUALS == "ai" or (config.VISUALS == "mixed" and i % 2 == 1))
+    has_ai = bool(config.CF_ACCOUNT_ID and config.CF_API_TOKEN)
+    use_ai = has_ai and config.VISUALS in ("ai", "mixed")  # only called for AI shots (stock goes through visuals.pick)
     attempts = [lambda: ai_image(scene.get("image_prompt", q), base)] if use_ai else []
     for vid, pic in plan:  # video first, then photo, from each provider in this video's order
         attempts += [lambda f=vid: f(q, base, used), lambda f=pic: f(q, base, used)]
-    short = q.split()[0] if q.split() else q
-    for vid, pic in plan[1:]:  # broader one-word search as a second chance
-        attempts.append(lambda f=vid: f(short, base, used))
     if has_ai and not use_ai:
         attempts.append(lambda: ai_image(scene.get("image_prompt", q), base))
     for fn in attempts:
@@ -471,18 +419,61 @@ PALETTES = [("0x0b1d51", "0x6a1b9a", "0x00897b"), ("0x1a237e", "0xc2185b", "0xff
             ("0x004d40", "0x1565c0", "0x7b1fa2"), ("0x3e2723", "0xbf360c", "0xf9a825")]
 
 
+FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+
+
+def render_remix(c, dur, out, teaser=False):
+    """Edited version of a licensed clip: punch-in on the funniest moment, then an instant replay in slow
+    motion with a zoom and a REPLAY tag. The whole clip stays visible on a blurred copy of itself."""
+    full = duration(c["path"])
+    peak = float(c.get("peak") or full / 2)
+    layout = (f"split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=24:2,"
+              f"eq=brightness=-0.08[bg];[b]scale={W}:{H}:force_original_aspect_ratio=decrease[fg];"
+              f"[bg][fg]overlay=(W-w)/2:(H-h)/2,fps={FPS},setsar=1")
+    enc = ["-an", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-pix_fmt", "yuv420p"]
+    if teaser or dur < 4:  # short slot: just the funniest moment, zoomed in a little
+        start = max(0.0, min(peak - dur / 2, full - dur))
+        run(["ffmpeg", "-y", "-ss", f"{start:.2f}", "-stream_loop", "-1", "-i", c["path"], "-t", f"{dur:.3f}",
+             "-vf", f"crop=iw/1.12:ih/1.12,{layout}"] + enc + [out])
+        return out
+    replay = min(3.0, dur * 0.35)          # screen time of the slow-motion replay
+    main = dur - replay
+    start = max(0.0, min(peak - main * 0.6, full - main))  # lead up to the moment, then the moment itself
+    a, b = out + ".a.mp4", out + ".b.mp4"
+    run(["ffmpeg", "-y", "-ss", f"{start:.2f}", "-stream_loop", "-1", "-i", c["path"], "-t", f"{main:.3f}",
+         "-vf", layout] + enc + [a])
+    src = replay / 2                        # half-speed: this much real footage fills the replay slot
+    rs = max(0.0, min(peak - src / 2, full - src))
+    tag = (f"drawtext=fontfile={FONT}:text='REPLAY':fontcolor=white:fontsize=64:box=1:boxcolor=0xE53935@0.9:"
+           f"boxborderw=18:x=(w-text_w)/2:y=h*0.80")
+    run(["ffmpeg", "-y", "-ss", f"{rs:.2f}", "-stream_loop", "-1", "-i", c["path"], "-t", f"{src:.3f}",
+         "-vf", f"setpts=2*PTS,crop=iw/1.35:ih/1.35,{layout},{tag}", "-t", f"{replay:.3f}"] + enc + [b])
+    with open(out + ".txt", "w") as f:
+        f.write(f"file '{os.path.abspath(a)}'\nfile '{os.path.abspath(b)}'\n")
+    run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", out + ".txt", "-c", "copy", out])
+    return out
+
+
 def render_scene(vis, dur, out):
+    if vis["kind"] == "remix":
+        return render_remix(vis["clip"], dur, out, teaser=bool(vis["clip"].get("teaser")))
     common = ["-t", f"{dur:.3f}", "-r", str(FPS), "-an", "-c:v", "libx264", "-preset", "veryfast",
               "-crf", "22", "-pix_fmt", "yuv420p", out]
     if vis["kind"] == "video":
-        vf = f"{FILL},fps={FPS}"
-        try:  # gently slow a short AI clip to fill its scene instead of visibly looping it
-            clip = duration(vis["path"])
-            if clip < dur <= clip * 1.6:
-                vf = f"setpts={dur / clip:.4f}*PTS,{vf}"
-        except Exception:  # noqa: BLE001
-            pass
-        run(["ffmpeg", "-y", "-stream_loop", "-1", "-i", vis["path"], "-vf", vf] + common)
+        start = []
+        if vis.get("offset"):
+            start = ["-ss", f"{min(duration(vis['path']) / 2, 4):.2f}"]
+        elif vis.get("center"):  # show the middle of the clip, where the action usually is
+            start = ["-ss", f"{max(0.0, (duration(vis['path']) - dur) / 2):.2f}"]
+        run(["ffmpeg", "-y", "-stream_loop", "-1"] + start + ["-i", vis["path"], "-vf", f"{FILL},fps={FPS}"] + common)
+    elif vis["kind"] == "product":
+        frames = int(dur * FPS) + 1
+        z = random.choice(["min(1+0.0007*on,1.10)", "max(1.10-0.0007*on,1)"])
+        vf = (f"split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=30:2,"
+              f"eq=brightness=-0.06[bg];[b]scale={int(W * 0.94)}:{int(H * 0.70)}:force_original_aspect_ratio=decrease[fg];"
+              f"[bg][fg]overlay=(W-w)/2:(H-h)/2-{int(H * 0.04)},scale={W * 2}:{H * 2},"
+              f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={frames}:s={W}x{H}:fps={FPS},setsar=1")
+        run(["ffmpeg", "-y", "-loop", "1", "-i", vis["path"], "-vf", vf] + common)
     elif vis["kind"] == "image":
         frames = int(dur * FPS) + 1
         z = random.choice(["min(1+0.0009*on,1.15)", "max(1.15-0.0009*on,1)"])
@@ -502,35 +493,69 @@ def pick_music():
     return os.path.join(folder, random.choice(tracks)) if tracks else None
 
 
-def pick_animated(scenes, bounds):
-    """Which scenes get real motion: always the hook, then the longest of the rest, spread out."""
-    n = min(config.ANIMATE_SHOTS, len(scenes)) if config.FAL_KEY else 0
-    if n <= 0:
-        return set()
-    rest = sorted(range(1, len(scenes)), key=lambda i: bounds[i][1] - bounds[i][0], reverse=True)
-    return {0, *rest[:n - 1]}
-
-
-def whoosh_track(times, total, out_dir):
-    """A quiet whoosh at every scene change (synthesized, so no licensing)."""
-    times = [t for t in times if 0.3 < t < total - 0.3]
-    if not times:
-        return None
-    one = os.path.join(out_dir, "whoosh.wav")
-    run(["ffmpeg", "-y", "-f", "lavfi", "-i", "anoisesrc=d=0.5:c=pink:a=0.6:r=44100",
-         "-af", "highpass=f=400,lowpass=f=2800,afade=t=in:d=0.22,afade=t=out:st=0.22:d=0.28", one])
-    track = os.path.join(out_dir, "sfx.wav")
-    split = f"[0:a]asplit={len(times)}" + "".join(f"[w{i}]" for i in range(len(times))) + ";"
-    delays = "".join(f"[w{i}]adelay={max(int((t - 0.25) * 1000), 0)}:all=1[d{i}];" for i, t in enumerate(times))
-    mixin = "".join(f"[d{i}]" for i in range(len(times)))
-    run(["ffmpeg", "-y", "-i", one, "-filter_complex",
-         f"{split}{delays}{mixin}amix=inputs={len(times)}:normalize=0,apad[out]", "-map", "[out]",
-         "-t", f"{total:.2f}", track])
-    return track
+def make_clip_ranking(pkg, out_dir):
+    """Funny clips that have their own sound: play #5 ... #1 with the original audio and on-screen ranks,
+    no voiceover. Each clip is shown whole on a blurred copy of itself so nothing is cropped away."""
+    os.makedirs(out_dir, exist_ok=True)
+    scenes, parts, bounds, t = pkg["scenes"], [], [], 0.0
+    for i, scene in enumerate(scenes):
+        c = scene["clip"]
+        if not os.path.exists(c.get("path") or ""):
+            c["path"] = os.path.join(out_dir, f"clip{i}.mp4")
+            _download(c["url"], c["path"])
+        full = duration(c["path"])
+        dur = min(full, config.CLIP_MAX_SECONDS)
+        start = max(0.0, (full - dur) / 2)  # the middle, where the action usually is
+        out = os.path.join(out_dir, f"part{i:02d}.mp4")
+        probe = subprocess.run(["ffprobe", "-v", "error", "-select_streams", "a", "-show_entries", "stream=index",
+                                "-of", "csv=p=0", c["path"]], capture_output=True, text=True)
+        audio = ("[0:a]aresample=44100,aformat=channel_layouts=stereo,loudnorm=I=-16:TP=-1.5:LRA=11[a0];"
+                 "[a0][1:a]amix=inputs=2:duration=longest:normalize=0[a]") if probe.stdout.strip() else "[1:a]anull[a]"
+        vf = (f"[0:v]split[a][b];[a]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},boxblur=24:2,"
+              f"eq=brightness=-0.08[bg];[b]scale={W}:{H}:force_original_aspect_ratio=decrease[fg];"
+              f"[bg][fg]overlay=(W-w)/2:(H-h)/2,fps={FPS},setsar=1[v]")
+        run(["ffmpeg", "-y", "-ss", f"{start:.2f}", "-t", f"{dur:.2f}", "-i", c["path"], "-f", "lavfi", "-t", f"{dur:.2f}",
+             "-i", "anullsrc=r=44100:cl=stereo", "-filter_complex",
+             vf + ";" + audio,
+             "-map", "[v]", "-map", "[a]", "-t", f"{dur:.2f}", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21",
+             "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", out])
+        parts.append(out)
+        bounds.append((t, t + dur))
+        t += dur
+    ass = subtitles([], scenes, bounds, "", os.path.join(out_dir, "captions.ass"))
+    extra = []
+    if pkg.get("hook_text"):
+        extra.append(f"Dialogue: 2,{_ts(0)},{_ts(min(2.8, t))},Default,,0,0,0,,{{\\fad(100,150)}}{_clean(pkg['hook_text']).upper()}")
+    if pkg.get("end_text"):
+        extra.append(f"Dialogue: 2,{_ts(max(0, t - 3.2))},{_ts(t)},Default,,0,0,0,,{{\\fad(150,100)}}{_clean(pkg['end_text']).upper()}")
+    with open(ass, "a", encoding="utf-8") as f:
+        f.write("\n".join(extra) + "\n")
+    concat = os.path.join(out_dir, "parts.txt")
+    with open(concat, "w") as f:
+        f.writelines(f"file '{os.path.abspath(p)}'\n" for p in parts)
+    final = os.path.join(out_dir, "final.mp4")
+    run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", concat, "-vf", f"ass={ass}", "-c:v", "libx264",
+         "-preset", "medium", "-crf", "21", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-ar", "44100",
+         "-movflags", "+faststart", final])
+    pkg["voice"] = "none (original clip sound)"
+    pkg["visual_report"] = {"shots": len(parts), "checked": len(parts), "unchecked": 0, "filler": 0}
+    try:
+        from . import thumbnail
+        thumbnail.make(parts[-1], min(1.0, bounds[-1][1] - bounds[-1][0]) / 2, pkg.get("thumbnail_text") or pkg["title"],
+                       os.path.join(out_dir, "thumbnail.jpg"), badge="#1", accent_index=random.randrange(4))
+    except Exception as e:  # noqa: BLE001
+        print("Thumbnail failed:", str(e)[:150])
+    credits = ["Audio: original sound of the clips (no voiceover).",
+               "Stock footage (Pexels/Pixabay Content License): " + "; ".join(s["clip"]["credit"] for s in scenes)]
+    with open(os.path.join(out_dir, "credits.json"), "w") as f:
+        json.dump(credits, f)
+    return final, credits
 
 
 def make_video(pkg, out_dir, recent_voices=()):
     """Builds final.mp4. Sets pkg['voice']. Returns (path, credit_lines)."""
+    if pkg.get("clip_audio"):
+        return make_clip_ranking(pkg, out_dir)
     os.makedirs(out_dir, exist_ok=True)
     voice = pick_voice(list(recent_voices))
     audio, words, voice_credit = voiceover(pkg["script"], out_dir, voice)
@@ -538,44 +563,49 @@ def make_video(pkg, out_dir, recent_voices=()):
     total = duration(audio) + 0.6
     scenes = pkg["scenes"]
     bounds = scene_bounds(scenes, words, total)
-    hook = pkg.get("hook_text") or ""
+    hook = pkg.get("hook_text") or (pkg.get("title", "") if pkg.get("format") == "ranking" else "")
     ass = subtitles(words, scenes, bounds, hook, os.path.join(out_dir, "captions.ass"))
 
-    used, credits, plan = set(), [], source_plan()
-    animate_set = pick_animated(scenes, bounds)
-    angles = ["", ", close-up detail shot", ", wide shot from a different angle"]
-    shots = []  # (scene index, shot index, duration, visual)
+    used, credits, parts, plan = set(), [], [], source_plan()
+    first_shot = {}  # scene index -> its first clean (caption-free) shot, used for the thumbnail
+    report = {"shots": 0, "checked": 0, "unchecked": 0, "filler": 0}
+    last_good = None  # most recent on-topic shot, reused (another part of it) when a scene finds nothing
     for i, (scene, (a, b)) in enumerate(zip(scenes, bounds)):
         dur = b - a
-        n = 1 if i in animate_set or dur < 3.6 else min(3, math.ceil(dur / 3.2))  # a fresh shot roughly every 3s
-        queries = scene.get("stock_queries") or [scene.get("stock_query", "")]
-        for k in range(n):
-            shot = dict(scene, stock_query=queries[k % len(queries)],
-                        image_prompt=scene.get("image_prompt", "") + angles[k % len(angles)])
-            shots.append([i, k, dur / n, get_visual(shot, f"{i}_{k}", out_dir, used, plan)])
-
-    def _anim(item):
-        i, k, _, vis = item
-        try:
-            return animate(vis, scenes[i].get("motion", ""), os.path.join(out_dir, f"anim{i}"))
-        except Exception as e:  # noqa: BLE001
-            print(f"  animation failed for scene {i} (using camera move instead): {str(e)[:150]}")
-            return None
-
-    todo = [it for it in shots if it[0] in animate_set and it[3]["kind"] == "image"]
-    if todo and config.FAL_KEY:
-        with ThreadPoolExecutor(max_workers=4) as pool:
-            for it, res in zip(todo, pool.map(_anim, todo)):
-                if res:
-                    it[3] = res
-    pkg["animated_shots"] = sum(1 for it in shots if it[3].get("credit", "") and "animation" in it[3]["credit"])
-
-    parts, first_shot = [], {}  # scene index -> its first clean (caption-free) shot, used for the thumbnail
-    for i, k, dur, vis in shots:
-        if vis["credit"] and vis["credit"] not in credits:
-            credits.append(vis["credit"])
-        parts.append(render_scene(vis, dur, os.path.join(out_dir, f"part{i:02d}_{k}.mp4")))
-        first_shot.setdefault(i, (parts[-1], vis["kind"]))
+        n = 1 if dur < 3.6 else min(3, math.ceil(dur / 3.2))  # a fresh shot roughly every 3 seconds
+        if scene.get("product_image"):  # store promo: the real product photo, never cropped off
+            shots = [{"kind": "product", "path": scene["product_image"], "credit": None, "checked": True}]
+        elif scene.get("clip"):  # funny-clips format: this scene's clip was chosen (and watched) beforehand
+            c = scene["clip"]
+            if not os.path.exists(c.get("path") or ""):
+                c["path"] = os.path.join(out_dir, f"clip{i}.mp4")
+                _download(c["url"], c["path"])
+            shots = [{"kind": "remix", "clip": c, "path": c["path"], "credit": c["credit"], "checked": True}]
+        elif config.VISUALS == "ai":
+            shots = [get_visual(dict(scene), f"{i}_{k}", out_dir, used, plan) for k in range(n)]
+        else:
+            from . import visuals
+            shots = visuals.pick(pkg, i, n, out_dir, used)
+            if config.VISUALS == "mixed" and len(shots) > 1 and config.CF_ACCOUNT_ID and config.CF_API_TOKEN:
+                shots[1] = get_visual(dict(scene), f"{i}_1ai", out_dir, used, [])  # AI image for variety
+            if not shots:  # nothing on-topic exists: AI image if available, else keep showing the last good shot
+                if config.CF_ACCOUNT_ID and config.CF_API_TOKEN:
+                    shots = [get_visual(dict(scene, stock_query=""), f"{i}_ai", out_dir, set(), [])]
+                elif last_good:
+                    shots = [dict(last_good, offset=True)]
+                else:
+                    shots = [{"kind": "gradient", "path": None, "credit": None}]
+                report["filler"] += 1
+        for k, vis in enumerate(shots):
+            if vis.get("credit") and vis["credit"] not in credits:
+                credits.append(vis["credit"])
+            report["shots"] += 1
+            report["checked" if vis.get("checked") else "unchecked"] += 1 if vis["kind"] != "gradient" else 0
+            parts.append(render_scene(vis, dur / len(shots), os.path.join(out_dir, f"part{i:02d}_{k}.mp4")))
+            first_shot.setdefault(i, (parts[-1], vis["kind"]))
+            if vis["kind"] != "gradient" and not vis.get("offset"):
+                last_good = vis
+    pkg["visual_report"] = report
 
     concat = os.path.join(out_dir, "parts.txt")
     with open(concat, "w") as f:
@@ -583,22 +613,10 @@ def make_video(pkg, out_dir, recent_voices=()):
 
     final = os.path.join(out_dir, "final.mp4")
     music = pick_music()
-    sfx = whoosh_track([a for a, _ in bounds[1:]], total, out_dir) if config.SFX else None
     cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", concat, "-i", audio]
-    mix, n_in = ["[1:a]"], 1
-    pre = ""
     if music:
-        cmd += ["-stream_loop", "-1", "-i", music]
-        n_in += 1
-        pre += f"[{n_in}:a]volume=0.09[m];"
-        mix.append("[m]")
-    if sfx:
-        cmd += ["-i", sfx]
-        n_in += 1
-        pre += f"[{n_in}:a]volume=0.35[x];"
-        mix.append("[x]")
-    if len(mix) > 1:
-        cmd += ["-filter_complex", f"{pre}{''.join(mix)}amix=inputs={len(mix)}:duration=first:dropout_transition=0:normalize=0[a]",
+        cmd += ["-stream_loop", "-1", "-i", music, "-filter_complex",
+                "[2:a]volume=0.10[m];[1:a][m]amix=inputs=2:duration=first:dropout_transition=0[a]",
                 "-map", "0:v", "-map", "[a]"]
     else:
         cmd += ["-map", "0:v", "-map", "1:a"]
@@ -628,8 +646,6 @@ def make_video(pkg, out_dir, recent_voices=()):
     credit_lines += other
     if music:
         credit_lines.append(f"Music: {os.path.basename(music)} (royalty-free, see assets/music/LICENSES.txt)")
-    if sfx:
-        credit_lines.append("Sound effects: generated by the channel.")
     with open(os.path.join(out_dir, "credits.json"), "w") as f:
         json.dump(credit_lines, f)
     return final, credit_lines

@@ -11,7 +11,7 @@ import requests
 from . import config
 
 API = "https://{lang}.wikipedia.org/w/api.php"
-UA = {"User-Agent": "WhyzoFilms/1.0 (https://github.com/akachwaha27/whyzo-films-autopilot)"}
+UA = {"User-Agent": "AshvaraAutopilot/1.0 (https://github.com/akachwaha27/shopify-automation)"}
 MAX_FACTS = 8
 PAGES_PER_FACT = 2
 EXTRACT_CHARS = 1200

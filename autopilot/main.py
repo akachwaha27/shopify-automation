@@ -1,6 +1,6 @@
 """Entry point.
 
-  python -m autopilot.main trends          # every 6 hours: find ideas, send them to Telegram
+  python -m autopilot.main trends          # daily: find trends, send topic ideas to Telegram
   python -m autopilot.main poll            # stay online a while: read replies, generate, publish, confirm
   python -m autopilot.main test [format]   # render one sample video and send it to Telegram (no publishing)
   python -m autopilot.main aicheck         # test every configured AI provider
@@ -14,10 +14,9 @@ import time
 import traceback
 from datetime import timedelta
 
-from . import config, library, llm, media, publish, schedule, state, storage, telegram, trends, writer
+from . import config, library, llm, media, publish, schedule, state, storage, telegram, trends, visuals, writer
 
-FMT_LETTERS = {"h": "howitworks", "w": "why", "i": "whatif", "s": "survival", "t": "truestory", "c": "creature", "k": "hack"}
-RUNS = "abcd"  # four idea runs a day (UTC 00-06, 06-12, 12-18, 18-24)
+FMT_LETTERS = {"r": "ranking", "s": "story", "f": "funny", "q": "quiz", "t": "tips", "e": "explainer", "c": "clips"}
 MAX_REDOS = 5
 
 
@@ -30,47 +29,59 @@ def today():
 
 
 def fmt_label(fmt):
-    f = writer.FORMATS.get(fmt, writer.FORMATS[writer.fmt_of({"format": fmt or "why"})])
+    f = writer.FORMATS.get(fmt, writer.FORMATS["explainer"])
     return f"{f['emoji']} {f['name']}"
 
 
 def num(vid):
-    return vid.rsplit("-", 1)[-1]  # e.g. "b2" = run b, idea 2
-
-
-def run_id():
-    return f"{today()}-{RUNS[state.now().hour // 6]}"
+    return vid.rsplit("-", 1)[-1]
 
 
 # ---------------------------------------------------------------- trends
 def cmd_trends(st):
-    bid = run_id()
     tries = st.setdefault("trend_tries", {})
-    tries[bid] = {"n": tries.get(bid, {}).get("n", 0) + 1, "at": state.iso()}
-    for d in sorted(tries)[:-6]:
+    tries[today()] = {"n": tries.get(today(), {}).get("n", 0) + 1, "at": state.iso()}
+    for d in sorted(tries)[:-3]:
         tries.pop(d)
-    for old, b in st["batches"].items():  # a new run closes the previous idea list
-        if b["status"] == "waiting" and old != bid:
-            auto_select(st, force=old)
-    signals = trends.collect()
-    topics = trends.pick_topics(signals, st.get("history", []))
+    from . import plan
+    sheet = []
+    past = trends.past_ideas(st.get("history", []), include_plan=False)
+    past_keys = [trends._key(t) for t in past]
+    for r in plan.ready(config.TOPICS_PER_DAY * 2):  # rows Claude researched + scripted this morning
+        if trends.is_repeat(r["title"], past_keys + [trends._key(t["title"]) for t in sheet]):
+            print("content plan row repeats an earlier idea, skipping:", r["title"])
+            continue
+        sheet.append(plan.topic_of(r))
+        if len(sheet) >= config.TOPICS_PER_DAY:
+            break
+    topics = list(sheet)
+    if len(topics) < config.TOPICS_PER_DAY and not config.PLAN_ONLY:  # top up with the bot's own ideas
+        signals = trends.collect()
+        topics += trends.pick_topics(signals, st.get("history", []), n=config.TOPICS_PER_DAY - len(topics),
+                                     extra_past=[t["title"] for t in topics])
     if not topics:
-        telegram.send("⚠️ No safe ideas found this time. I'll try again in 6 hours.")
+        telegram.send("⚠️ No Ready rows in the content plan today (content/plan.csv)."
+                      if config.PLAN_ONLY else "⚠️ No safe trending topics found today. I'll try again tomorrow.")
         return
+    bid, k = today(), 2
+    while bid in st["batches"]:  # a second list on the same day gets its own id (never overwrites the first)
+        bid, k = f"{today()}-{k}", k + 1
     st["batches"][bid] = {"topics": topics, "sent_at": state.iso(), "selected": [], "status": "waiting"}
-    lines = [f"🎬 <b>{esc(config.CHANNEL_NAME)}: next {len(topics)} ideas</b> (run {num(bid).upper()})\n"]
+    lines = [f"🔥 <b>Today's {len(topics)} video ideas</b> ({config.REGION})\n"]
     for i, t in enumerate(topics, 1):
-        lines.append(f"<b>{i}. {esc(t['title'])}</b>\n   {fmt_label(t.get('format'))} · ⭐{t.get('virality_score', '?')}/10\n"
+        lines.append(f"<b>{i}. {esc(t['title'])}</b>{' 📋' if t.get('plan_id') else ''}\n   {fmt_label(t.get('format'))}{' · 😂 funny' if t.get('tone') == 'funny' and t.get('format') != 'funny' else ''} · ⭐{t.get('virality_score', '?')}/10\n"
                      f"   {esc(t['angle'])}\n   <i>Inspired by: {esc(t.get('trend_source', ''))}</i>\n")
+    if sheet:
+        lines.append(f"📋 = from your content plan sheet (researched + scripted by Claude this morning).\n")
     lines.append(
         "<b>How to reply</b>\n"
         "• Tap a number below, or type <code>1,3</code>\n"
-        "• Change the format by adding a letter: <code>2h</code> ⚙️ how it works, <code>2w</code> 🤔 why, "
-        "<code>2i</code> 🤯 what if, <code>2s</code> 🛟 survival, <code>2t</code> 📜 true story, "
-        "<code>2c</code> 🦎 creature, <code>2k</code> 🛠️ hack\n"
-        f"• No reply in {config.SELECT_TIMEOUT_HOURS * 60:g} min → I'll make the top {config.AUTO_PICK_COUNT}.")
+        "• Change the format by adding a letter: <code>2s</code> = 📖 story, <code>2f</code> = 😂 funny, "
+        "<code>2q</code> = ❓ quiz, <code>2r</code> = 🏆 Top 5, <code>2t</code> = 💡 tips, <code>2e</code> = 🔬 explainer, "
+        "<code>2c</code> = 🐐 funny animal clips\n"
+        f"• No reply in {config.SELECT_TIMEOUT_HOURS:g}h → I'll make the top {config.AUTO_PICK_COUNT}.")
     buttons = [[(f"🎬 {i}", f"pick:{bid}:{i - 1}") for i in range(1, len(topics) + 1)],
-               [("⏭ Skip this run", f"skip:{bid}")]]
+               [("⏭ Skip today", f"skip:{bid}")]]
     telegram.send("\n".join(lines), buttons)
 
 
@@ -87,13 +98,13 @@ def queue_topic(st, bid, idx, by="you", fmt=None):
         telegram.send(f"Daily limit of {config.MAX_VIDEOS_PER_DAY} videos reached; skipping #{idx + 1}.")
         return False
     batch["selected"].append(idx)
-    vid = f"{bid}{idx + 1}"
+    vid = f"{bid}-{idx + 1}"
     topic = dict(batch["topics"][idx])
     if fmt:
         topic["format"] = fmt
     st["videos"][vid] = {"topic": topic, "status": "queued", "by": by, "updated": state.iso(), "redos": 0}
     telegram.send(f"✅ Queued video #{idx + 1} ({fmt_label(topic.get('format'))}): <b>{esc(topic['title'])}</b>\n"
-                  "I'll send the preview in about 5-10 minutes.")
+                  "I'll send the preview in about 3-6 minutes.")
     return True
 
 
@@ -104,12 +115,12 @@ def latest_waiting(st):
 
 HELP = (
     "<b>Commands</b>\n"
-    "• <code>1,3</code> pick from the latest ideas (add h/w/i/s/t/c/k to change format, e.g. <code>2s</code>)\n"
+    "• <code>1,3</code> pick today's ideas (add s/f/q/r/t/e to change format, e.g. <code>2s</code>)\n"
     "• <code>publish</code> (next peak time) · <code>publish now</code> · <code>skip</code> · <code>redo</code> · <code>voice</code>\n"
     "• <code>change make it funnier</code> rewrite a preview with your notes\n"
     "• <code>title Your New Title</code> change just the title\n"
     "• <code>info</code> see title, description, tags\n"
-    "• Add the video number when several are waiting: <code>publish b2</code>, <code>change c1 shorter</code>\n"
+    "• Add the video number when several are waiting: <code>publish 3</code>, <code>change 2 shorter</code>\n"
     "• /now new ideas · /status recent videos · /help this list")
 
 
@@ -144,7 +155,7 @@ def handle_button(st, cb):
         queue_topic(st, rest[0], int(rest[1]))
     elif kind == "skip" and rest[0] in st["batches"]:
         st["batches"][rest[0]]["status"] = "skipped"
-        telegram.send("👍 Skipping this run.")
+        telegram.send("👍 Skipping today.")
     elif rest and rest[0] in st["videos"]:
         action = {"ok": "publish", "no": "skip", "redo": "redo", "voice": "voice", "info": "info"}.get(kind)
         if action:
@@ -168,7 +179,7 @@ def handle_text(st, msg):
         action = {"post": "publish", "approve": "publish", "yes": "publish", "ok": "publish",
                   "reject": "skip", "no": "skip", "discard": "skip", "regenerate": "redo", "edit": "change",
                   "details": "info"}.get(word.lower(), word.lower())
-        m = re.match(r"^#?([a-d]?\d+|all)\b[\s:,-]*(.*)$", rest.strip(), re.I | re.S)
+        m = re.match(r"^#?(\d+|all)\b[\s:,-]*(.*)$", rest.strip(), re.I | re.S)
         which, arg = (m.group(1).lower(), m.group(2).strip()) if m else (None, rest.strip())
         targets = resolve(st, msg, which, action)
         for vid in targets:
@@ -176,7 +187,7 @@ def handle_text(st, msg):
     elif re.fullmatch(r"[\d,\s" + "".join(FMT_LETTERS) + "]+", text) and re.search(r"\d", text):
         bid = latest_waiting(st)
         if not bid:
-            telegram.send("No open idea list right now (ideas arrive every 6 hours). Send /now to get fresh ideas.")
+            telegram.send("No open idea list right now. Send /now to get fresh ideas.")
             return
         for n, f in re.findall(r"(\d+)\s*([" + "".join(FMT_LETTERS) + "]?)", text):
             queue_topic(st, bid, int(n) - 1, fmt=FMT_LETTERS.get(f))
@@ -274,15 +285,36 @@ def act(st, vid, action, arg):
                       f"<b>Description:</b>\n{esc(desc)[:3000]}")
 
 
-def auto_select(st, force=None):
+def auto_picks(topics, n):
+    """Top-n ideas, but always with a funny short AND a funny Top 5 in the mix when the list has them."""
+    n = min(n, len(topics))
+    picks = list(range(n))
+    is_funny = lambda t: t.get("tone") == "funny" or t.get("format") == "funny"  # noqa: E731
+    groups = [[i for i, t in enumerate(topics) if t.get("format") == "ranking" and is_funny(t)],
+              [i for i, t in enumerate(topics) if t.get("format") == "funny"],
+              [i for i, t in enumerate(topics) if is_funny(t)]]
+    keep = set()
+    for g in groups:
+        hit = next((i for i in picks if i in g), None)
+        if hit is not None:
+            keep.add(hit)
+        elif g:
+            swap = next((p for p in reversed(picks) if p not in keep), None)
+            if swap is not None:
+                picks[picks.index(swap)] = g[0]
+                keep.add(g[0])
+    return sorted(picks)
+
+
+def auto_select(st):
     for bid, b in st["batches"].items():
-        if b["status"] != "waiting" or (force and bid != force):
+        if b["status"] != "waiting":
             continue
         age = state.now() - state.parse(b["sent_at"])
-        if force or age >= timedelta(hours=config.SELECT_TIMEOUT_HOURS):
+        if age >= timedelta(hours=config.SELECT_TIMEOUT_HOURS):
             if not b["selected"]:
                 telegram.send(f"⏰ No reply, so I'm making the top {config.AUTO_PICK_COUNT} ideas.")
-                for i in range(min(config.AUTO_PICK_COUNT, len(b["topics"]))):
+                for i in auto_picks(b["topics"], config.AUTO_PICK_COUNT):
                     queue_topic(st, bid, i, by="auto")
             b["status"] = "closed"
 
@@ -308,7 +340,8 @@ def render_and_preview(st, vid, pkg):
     v["status"] = "awaiting_approval"
     n = num(vid)
     caption = (f"🎥 <b>Video #{n}</b> · {fmt_label(pkg.get('format'))}\n<b>{esc(pkg['title'])}</b>\n"
-               f"{esc(' '.join(pkg['hashtags']))}\n🎙 {esc(pkg.get('voice', ''))}")
+               f"{esc(' '.join(pkg['hashtags']))}\n🎙 {esc(pkg.get('voice', ''))}"
+               + (f"\n{esc(visuals.report(pkg))}" if visuals.report(pkg) else ""))
     sent = telegram.send_video(path, caption, [[("✅ Publish", f"ok:{vid}"), ("🔁 Redo", f"redo:{vid}")],
                                                [("🎙 New voice", f"voice:{vid}"), ("⏭ Skip", f"no:{vid}")]])
     v["tg_msg"] = sent.get("message_id")
@@ -339,8 +372,27 @@ def render_and_preview(st, vid, pkg):
 def generate(st, vid):
     v = st["videos"][vid]
     ok, issues, pkg = False, [], None
+    found, mode = [], "none"
+    if writer.fmt_of(v["topic"]) == "clips":  # footage first: find and watch real funny animal clips
+        from . import clips
+        mode, found = clips.find(v["topic"], os.path.join(config.WORK_DIR, "clips", vid))
+        if mode == "narrate":
+            v["topic"]["clip_notes"] = clips.notes(found)
+        elif mode == "none":  # not enough good clips today: make it a funny Top 5 with normal footage instead
+            v["topic"].update(format="ranking", tone="funny")
+            telegram.send(f"ℹ️ Couldn't find 5 funny enough free clips for <b>{esc(v['topic']['title'])}</b>, "
+                          "so it's being made as a funny Top 5 with regular footage.")
+    row = None
+    if v["topic"].get("plan_id"):  # from the content plan sheet: Claude already wrote the script
+        from . import plan
+        row = next((r for r in plan.rows() if r["id"] == v["topic"]["plan_id"]), None)
     for _ in range(2):
-        pkg = writer.write_package(v["topic"])
+        if mode == "audio":  # clips have their own sound: on-screen ranking, no script to write
+            pkg = clips.package(v["topic"], found)
+        elif row:
+            pkg = writer.from_plan(v["topic"], row)
+        else:
+            pkg = writer.write_package(v["topic"])
         ok, issues = writer.review(pkg)
         if ok:
             break
@@ -354,9 +406,55 @@ def generate(st, vid):
         pkg["tags"] = seo.build_tags(pkg)
     except Exception as e:  # noqa: BLE001
         print("tag optimizer failed:", e)
+    if found and mode == "narrate":  # attach the chosen clip to each scene (intro, #5..#1, outro)
+        pkg["clips"] = found
+        for scene, c in zip(pkg["scenes"], found):
+            scene["clip"] = c
+        pkg["visual_style"] = "free stock clips of animals doing funny things, rated by AI"
+    if pkg.get("format") == "product":  # store promo: real product photos + price + shop link
+        if not attach_product(pkg, v, vid):
+            return
+    try:  # look at the top Shorts on this topic, then plan footage that shows what each line talks about
+        if not found:
+            visuals.plan(pkg, v["topic"], visuals.research(v["topic"], st))
+    except Exception as e:  # noqa: BLE001
+        print("shot planning failed, using the writer's searches:", e)
     if v["topic"]["title"] not in st["history"]:
         st["history"].append(v["topic"]["title"])
     render_and_preview(st, vid, pkg)
+
+
+def attach_product(pkg, v, vid):
+    """Puts the store's own product photos on every Nth scene (and the last), the price on the end card,
+    and the product link in the caption. Returns False (and tells you) if the product isn't live."""
+    from . import products
+    handle = (v["topic"].get("product") or "").strip()
+    p = products.find(handle) if handle else None
+    if not p:
+        v["status"] = "failed"
+        telegram.send(f"🛑 Video #{num(vid)} <b>{esc(v['topic']['title'])}</b>: product "
+                      f"<code>{esc(handle or '(none)')}</code> isn't live in the store, so I skipped it. "
+                      "Fix the 'product' column in content/plan.csv.")
+        return False
+    imgs = products.download_images(p, os.path.join(config.WORK_DIR, vid, "product"))
+    if not imgs:
+        v["status"] = "failed"
+        telegram.send(f"🛑 Video #{num(vid)}: couldn't download photos for <b>{esc(p['title'])}</b>.")
+        return False
+    scenes = pkg["scenes"]
+    every = max(1, config.PRODUCT_SHOT_EVERY)
+    k = 0
+    for i, sc in enumerate(scenes):
+        if i % every == 0 or i == len(scenes) - 1:
+            sc["product_image"] = imgs[k % len(imgs)]
+            k += 1
+    price = products.price_text(p)
+    if price:
+        scenes[-1]["label"] = f"{price} · {config.STORE_URL.split('//')[-1]}"[:60]
+    pkg["product"] = {"handle": p["handle"], "title": p["title"], "url": p["url"], "price": price}
+    if p["url"] not in pkg.get("description", ""):
+        pkg["description"] = pkg.get("description", "").rstrip() + f"\nShop it: {p['url']}"
+    return True
 
 
 def do_publish(st, vid):
@@ -384,8 +482,7 @@ def do_publish(st, vid):
         slot = schedule.next_slot(taken)
     results = publish.publish_all(path, pkg["title"], desc, pkg["hashtags"], pkg.get("tags", []),
                                   pkg.get("category", "24"), thumb, srt_path, pkg.get("pinned_comment"),
-                                  slot.isoformat().replace("+00:00", "Z") if slot else None,
-                                  writer.FORMATS.get(pkg.get("format"), {}).get("playlist"))
+                                  slot.isoformat().replace("+00:00", "Z") if slot else None)
     v["status"], v["results"], v["updated"] = "published", {k: list(r) for k, r in results.items()}, state.iso()
     v["uploaded_at"] = state.iso()
     if slot:
@@ -437,21 +534,20 @@ def daily_housekeeping(st):
 
 
 def catch_up_trends(st):
-    """If this run's idea list never arrived (GitHub skipped the schedule, AI overloaded...), retry."""
-    bid = run_id()
-    if bid in st["batches"] or state.now().hour % 6 < 4:  # idea runs fire at ~3:17, 9:17, 15:17, 21:17 UTC
+    """If today's idea list never arrived (e.g. AI was overloaded), retry later in the day."""
+    if today() in st["batches"] or state.now().hour < 15:  # daily list goes out ~14:17 UTC (after the 9 AM ET sheet)
         return
-    t = st.get("trend_tries", {}).get(bid)
+    t = st.get("trend_tries", {}).get(today())
     if t and (t["n"] >= 3 or state.now() - state.parse(t["at"]) < timedelta(hours=1)):
         return
-    print("This run's idea list is missing; retrying trends")
+    print("Today's idea list is missing; retrying trends")
     try:
         cmd_trends(st)
     except Exception as e:  # noqa: BLE001
         traceback.print_exc()
-        n = st.get("trend_tries", {}).get(bid, {}).get("n", 1)
-        more = "I'll try again in about an hour." if n < 3 else "I'll try at the next run, or send /now."
-        telegram.send(f"⚠️ Couldn't build this run's idea list yet ({esc(str(e)[:150])}). {more}")
+        n = st.get("trend_tries", {}).get(today(), {}).get("n", 1)
+        more = "I'll try again in about an hour." if n < 3 else "I'll try again tomorrow, or send /now."
+        telegram.send(f"⚠️ Couldn't build today's idea list yet ({esc(str(e)[:150])}). {more}")
 
 
 def cmd_poll(st):
@@ -474,6 +570,12 @@ def poll_once(st, wait=0):
         library.refresh_stats()
     except Exception as e:  # noqa: BLE001
         print("stats refresh failed:", e)
+    if state.now().hour >= 11 and st.get("signals_day") != today():  # for the 9 AM ET research task
+        st["signals_day"] = today()
+        try:
+            trends.viral_signals()
+        except Exception as e:  # noqa: BLE001
+            print("viral signals failed:", e)
     catch_up_trends(st)
     auto_select(st)
     state.save(st)  # save choices before long work
@@ -530,29 +632,49 @@ def cmd_aicheck():
 
 
 SAMPLES = {
-    "howitworks": "How revolving doors save energy",
-    "why": "Why pilots dim the cabin lights before landing",
-    "whatif": "What happens if you fall into quicksand",
-    "survival": "What to do if you are caught in a rip current",
-    "truestory": "The Great Molasses Flood of 1919 and the sticky street",
-    "creature": "The axolotl that can regrow its own limbs",
-    "hack": "How to peel a whole head of garlic in 10 seconds",
+    "ranking": "Top 5 fastest animals on Earth",
+    "story": "The lighthouse keeper who found a message in a bottle",
+    "funny": "Things cats do that make absolutely no sense",
+    "quiz": "Only 1 in 10 people know these space facts",
+    "tips": "Phone tricks most people never use",
+    "explainer": "Why octopuses have three hearts",
+    "clips": "Ranking the funniest animal moments",
 }
 
 
 def cmd_test(args):
+    os.environ["FOOTAGE_NOTICES"] = "1"
     fmt = writer.fmt_of({"format": args[0]}) if args else random.choice(list(SAMPLES))
     topic = {"title": " ".join(args[1:]) or SAMPLES[fmt], "angle": "", "format": fmt}
-    pkg = writer.write_package(topic)
+    found, mode = [], "none"
+    if fmt == "clips":
+        from . import clips
+        mode, found = clips.find(topic, os.path.join(config.WORK_DIR, "test_clips"))
+        topic["clip_notes"] = clips.notes(found) if mode == "narrate" else ""
+        print(f"::notice title=clips mode::{mode} ({len(found)} clips)")
+        if mode == "none":
+            topic.update(format="ranking", tone="funny")
+        for c in found:
+            print(f"::notice title=clip {c['funny']:.0f}/10 sound={c.get('has_audio')}::{c['desc']} ({c['credit'][:60]})")
+    pkg = clips.package(topic, found) if mode == "audio" else writer.write_package(topic)
     print("Review:", writer.review(pkg))
     from . import seo
     pkg["tags"] = seo.build_tags(pkg)
+    if mode == "narrate":
+        for scene, c in zip(pkg["scenes"], found):
+            scene["clip"] = c
+    elif mode == "none":
+        visuals.plan(pkg, topic, visuals.research(topic))
     path, credits = media.make_video(pkg, os.path.join(config.WORK_DIR, "test"))
     desc = writer.build_description(pkg, credits)
     print(pkg["title"], "\n", desc, "\n->", path)
+    # footage summary as run annotations (readable on the GitHub run page and via the API)
+    print(f"::notice title=footage::{visuals.report(pkg)} | style: {pkg.get('visual_style', '')}")
+    for i, sp in enumerate(pkg.get("shot_plan") or []):
+        print(f"::notice title=scene {i}::{sp['subject']} <- " + ", ".join(q['q'] for q in sp['queries']))
     if config.TELEGRAM_BOT_TOKEN and config.TELEGRAM_CHAT_ID:
-        telegram.send_video(path, f"🧪 Test ({fmt_label(fmt)}): <b>{esc(pkg['title'])}</b>\n🎙 {esc(pkg.get('voice'))}"
-                                  f" · 🎞 {pkg.get('animated_shots', 0)} animated shots")
+        telegram.send_video(path, f"🧪 Test ({fmt_label(fmt)}): <b>{esc(pkg['title'])}</b>\n🎙 {esc(pkg.get('voice'))}\n"
+                                  f"{esc(visuals.report(pkg))}\n🎬 {esc(pkg.get('visual_style', ''))}")
         thumb = os.path.join(config.WORK_DIR, "test", "thumbnail.jpg")
         if os.path.exists(thumb):
             telegram.send_photo(thumb, "🖼 Thumbnail")
@@ -565,14 +687,24 @@ def cmd_test(args):
 def main():
     parts = " ".join(sys.argv[1:]).split() or ["poll"]
     cmd, args = parts[0], parts[1:]
-    if cmd in ("poll", "trends") and not (config.TELEGRAM_BOT_TOKEN and config.TELEGRAM_CHAT_ID):
-        print("::notice title=Not set up yet::Add the TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID secrets (see README).")
-        return
     try:
         if cmd == "test":
             return cmd_test(args)
         if cmd == "aicheck":
             return cmd_aicheck()
+        if cmd == "ideascheck":  # dry run of today's idea picking: nothing is sent or saved
+            st = state.load()
+            for t in trends.pick_topics(trends.collect(), st.get("history", [])):
+                print(f"::notice title=idea ({t.get('format')})::{t['title']}")
+            return
+        if cmd == "clipsfind":  # quick check of the funny-clip search, no video
+            os.environ["FOOTAGE_NOTICES"] = "1"
+            from . import clips
+            mode, found = clips.find({"title": " ".join(args) or "Ranking the funniest animal moments"},
+                                     os.path.join(config.WORK_DIR, "clipsfind"))
+            for c in found:
+                print(f"::notice title=clip {c['funny']:.0f}/10 sound={c.get('has_audio')}::{c['desc']} ({c['credit'][:60]})")
+            return print(f"::notice title=clips mode::{mode} ({len(found)} clips)")
         if cmd == "stats":
             st = state.load()
             library.refresh_stats(force=True)

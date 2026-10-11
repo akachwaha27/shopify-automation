@@ -1,122 +1,240 @@
-"""Scripts + metadata for Whyzo Films: ~30 second 3D-animated curiosity Shorts.
+"""Scripts + metadata for six Shorts formats, tuned for retention and YouTube policy.
 
-Formats: howitworks, why, whatif, survival, truestory, creature, hack.
-Every video is one short visual story told in 6-8 animated shots with calm, clear narration.
-Each scene carries an image_prompt (the 3D shot) and a motion prompt (how that shot moves when animated).
+Formats: ranking, story, funny, quiz, tips, explainer, clips (funny animal clips ranking).
+Each scene may carry on-screen overlays:
+  badge  - big text at top ("#5", "Q1", "✓", "TIP 2")
+  label  - smaller text under the badge (item name, question, answer)
+and the package carries hook_text (on-screen hook over the first scene).
 """
 from . import config, llm
 
-# YouTube category ids: 1 Film & Animation, 22 People & Blogs, 24 Entertainment, 26 Howto & Style, 27 Education, 28 Science & Technology
+# YouTube category ids: 1 Film & Animation, 22 People & Blogs, 23 Comedy, 24 Entertainment,
+# 26 Howto & Style, 27 Education, 28 Science & Technology
 FORMATS = {
-    "howitworks": {"emoji": "⚙️", "name": "How it works", "category": "27", "tag": "#howitworks",
-                   "playlist": "How Things Work (Animated)"},
-    "why": {"emoji": "🤔", "name": "Why…?", "category": "27", "tag": "#didyouknow", "playlist": "Why Does That Happen?"},
-    "whatif": {"emoji": "🤯", "name": "What happens if", "category": "27", "tag": "#whatif",
-               "playlist": "What Happens If…"},
-    "survival": {"emoji": "🛟", "name": "What to do if", "category": "26", "tag": "#survivaltips",
-                 "playlist": "What To Do If… (Survival Tips)"},
-    "truestory": {"emoji": "📜", "name": "True story", "category": "24", "tag": "#truestory",
-                  "playlist": "Unbelievable True Stories"},
-    "creature": {"emoji": "🦎", "name": "Strange creature", "category": "27", "tag": "#animals",
-                 "playlist": "Weird Animals Explained"},
-    "hack": {"emoji": "🛠️", "name": "Clever hack", "category": "26", "tag": "#lifehacks", "playlist": "Clever Hacks"},
+    "ranking": {"emoji": "🏆", "name": "Top 5 countdown", "category": "27", "tag": "#top5"},
+    "story": {"emoji": "📖", "name": "Short story", "category": "24", "tag": "#storytime"},
+    "funny": {"emoji": "😂", "name": "Funny", "category": "23", "tag": "#funny"},
+    "quiz": {"emoji": "❓", "name": "Quiz", "category": "24", "tag": "#quiz"},
+    "tips": {"emoji": "💡", "name": "Quick tips", "category": "26", "tag": "#lifehacks"},
+    "explainer": {"emoji": "🔬", "name": "Explainer", "category": "27", "tag": "#didyouknow"},
+    "clips": {"emoji": "🐐", "name": "Funny animal clips ranking", "category": "15", "tag": "#funnyanimals"},
+    "product": {"emoji": "🛍", "name": "Product promo", "category": "26", "tag": "#ashvara"},
 }
-TITLE_EMOJIS = "😮 🤔 🤨 😱 🤯 😨 😬 😏 😇 🥲"
 
 
 def fmt_of(topic):
-    f = str(topic.get("format", "why")).lower().replace(" ", "").replace("_", "").replace("-", "")
-    if f in FORMATS:
-        return f
-    aliases = {"how": "howitworks", "explainer": "why", "what": "whatif", "story": "truestory", "true": "truestory",
-               "animal": "creature", "tips": "hack", "tip": "hack", "survive": "survival"}
-    return next((v for k, v in aliases.items() if f.startswith(k)), "why")
+    f = str(topic.get("format", "explainer")).lower()
+    return next((k for k in FORMATS if f.startswith(k[:4])), "explainer")
 
 
-RETENTION_RULES = f"""WHYZO FILMS STYLE (a faceless channel of 3D-animated curiosity Shorts - follow strictly):
-- One clear visual story, told in {{scene_range}} animated shots. Every sentence must be something we can SEE.
-- Sentence 1 is the hook (max 12 words) and states the situation or question directly, e.g.
-  "This is why astronauts trim their nails before a spacewalk." / "If your car ever sinks, do this."
-  Never greet, never say "in this video", never name the channel.
-- Then show the explanation step by step, plainly and calmly, like a friendly narrator walking us through it.
-- End on a satisfying payoff or twist in the final shot. The final line may loop back into the first.
-- Calm, simple, conversational sentences of 6-14 words. No filler, no hype words.
-- Total about {int(config.TARGET_SECONDS * 2.5)} spoken words (~{config.TARGET_SECONDS} seconds).
-- "hook_text": 2-5 words shown on screen during the first shot.
+WORDS_PER_SECOND = 2.6  # natural edge-tts pace at +0..5% speed
+
+
+def target_words():
+    return int(config.TARGET_SECONDS * WORDS_PER_SECOND)
+
+
+FUNNY_TONE = """TONE: FUNNY. This one is played for laughs (still kind and family-friendly).
+Keep the format structure above, but every scene needs a joke: a playful observation, an exaggerated
+comparison, a deadpan aside or a callback to an earlier joke. Use setup -> punchline rhythm and land the
+biggest laugh on the final item / last scene. Facts stay true; the humor comes from how you tell them.
+Never mock real people or any group."""
+
+RETENTION_RULES = f"""SHORTS RETENTION RULES (follow strictly - you are writing for the YouTube Shorts algorithm):
+- The first sentence is the hook: max 12 words, creates curiosity or tension in the first second.
+  Never start with greetings, "In this video", "Hey guys" or the channel name.
+- Promise a payoff early and deliver it near the end, so viewers stay to the last second.
+- Write the way a real person talks to a friend, not like an article being read out:
+  contractions (it's, you'll, didn't), mixed sentence lengths (a few 3-5 word lines between longer ones),
+  natural asides ("honestly", "wait", "here's the thing", "okay, so"), and commas/full stops where a
+  speaker would breathe. Avoid stiff phrasing ("Furthermore", "In conclusion", "It is important to note").
+  Spell numbers the way you'd say them ("about eleven kilometers", "three hundred years"). No emojis,
+  hashtags, symbols or brackets in the narration - it is read aloud.
+- Make the last line flow naturally back into the first line so the Short loops seamlessly.
+- End by asking ONE specific question viewers can answer in the comments (drives comments), not "like and subscribe".
+- LENGTH IS STRICT: the narration (all scene texts together) must be {target_words()} spoken words, give or take 10,
+  so the video runs about {config.TARGET_SECONDS} seconds. Fill time with real content (an extra detail per item,
+  a reaction, a quick comparison), never with padding or repetition.
+- "hook_text": 3-6 words shown on screen during the first scene (bold, curiosity-driven).
 
 CONTENT POLICY (YouTube monetization-safe, advertiser-friendly, general audience 13+):
-- No politics, religion, sexual content, drugs, gambling, profanity, gore or graphic injuries.
-- Mild peril is fine (a car sinking, being lost, an old prison escape) but show NO blood, wounds, bodies or death,
-  and never describe violence in detail. Keep it reassuring and educational.
-- Survival content must match standard official safety advice (e.g. Red Cross, national safety agencies). No medical,
-  legal or financial advice beyond widely published basic safety steps.
-- No claims about real living people. Historical figures and well-documented historical events are fine.
-- No movie, TV, game or cartoon characters, brands or logos. Facts must be accurate and widely verifiable.
-- Not aimed at young children.
+- No politics, religion, violence, crime, tragedy, sexual content, drugs, gambling, profanity or shock content.
+- No medical, legal or financial advice. No claims about real living people. No stereotypes or jokes about any group.
+- Facts must be accurate and widely verifiable. Never present fiction as true.
+- Not aimed at young children (no "for kids" content).
 
 FOR EVERY SCENE ALSO GIVE:
-- "image_prompt": the 3D shot for that moment: subject, action, setting, camera angle (close-up / wide / top-down /
-  cross-section / inside-the-object view). Describe generic people as "a man in a blue hoodie", "a woman in a yellow
-  raincoat" and keep the SAME description for the same character in every scene. No text, signs, logos or real people.
-- "motion": 5-12 words describing how the shot moves when animated (e.g. "water slowly rises over the car window",
-  "camera pushes in as the gear starts turning").
-- "stock_queries": 2 short generic stock searches for that moment (backup only).
+- "stock_queries": 2 different 2-4 word searches for stock footage that LITERALLY shows what this line talks
+  about (the named animal, object, place, food or action - e.g. "red panda tree", "scrabble tiles"), never a mood
+  or metaphor ("confused person", "chaos"). Plain nouns only; no brands, logos, people's or event names.
+- "image_prompt": vivid AI image prompt, vertical 9:16, no text, no logos, no real people.
 
-METADATA:
-- "title": Title Case, max 55 characters, ending with exactly ONE emoji from: {TITLE_EMOJIS}
-  Use proven patterns: "How … Works", "Why … ", "What Happens If …", "What To Do If …", "The … That …", "He/She … ".
-  Honest: the video must deliver what the title promises.
-- "primary_keyword": the 2-4 word phrase people would search (lowercase).
-- "description": line 1 = one-sentence summary containing the primary_keyword (max 150 chars);
-  line 2 = one more sentence with a related search phrase.
-- "thumbnail_text": 2-4 punchy words (different from the title).
+METADATA (SEO for YouTube search and suggested):
+- "primary_keyword": the exact 2-4 word phrase people type into YouTube search for this video (lowercase).
+- "title": max 60 characters, contains the primary_keyword (ideally in the first 3 words), curiosity-driven but honest
+  (the video must deliver what the title promises). No ALL CAPS words. At most one emoji.
+- "description": line 1 = one-sentence summary that contains the primary_keyword (max 150 chars);
+  line 2 = one more sentence using 1-2 related search phrases naturally (no keyword stuffing).
+- "thumbnail_text": 2-4 punchy words for the thumbnail (different from the title, high curiosity, no clickbait lies).
 - "hashtags": exactly 4: "#shorts", one broad topic hashtag, one niche hashtag, and "{{format_tag}}".
-- "tags": 10-15 lowercase search phrases about this exact video (no #, no brand or people names).
-- "pinned_comment": a friendly first comment (max 200 chars): a bonus fact or a question viewers want to answer.
-- "key_facts": every factual claim made."""
+- "tags": 10-15 search keywords/phrases people would type to find this (lowercase, no #), most specific first,
+  each clearly about this video (no unrelated popular tags, no people's or brand names).
+- "pinned_comment": an expert creator's first comment (max 220 chars) that sparks replies: a bonus fact, a
+  "which one would you pick" choice, or a challenge tied to the video. Friendly, no links, no begging for
+  likes/subs, no spoilers for quizzes before people answer, at most 1 emoji.
+- "key_facts": every factual claim made (empty list for pure fiction)."""
 
 STRUCTURES = {
-    "howitworks": """FORMAT: "How X works". Show the object, then reveal what happens inside (cross-section / x-ray /
-inside view shots work great), step by step, ending with the clever bit that makes it work.""",
-    "why": """FORMAT: "Why X". Start with the surprising thing, show the problem it solves or the reason behind it, then the
-payoff explanation. Example: "Why some astronauts remove their fingernails".""",
-    "whatif": """FORMAT: "What happens if X". Show the scenario and the step-by-step consequences, grounded in real
-science. Keep it calm and educational, never graphic.""",
-    "survival": """FORMAT: "What to do if X". Show the danger, then 3-4 clear actions in order, as recommended by official
-safety agencies, ending with the person safe. Never risky or unofficial advice.""",
-    "truestory": """FORMAT: short TRUE story or historical event, well documented in reliable sources (no living private
-people, no crime glorification, nothing graphic). Clear beginning, a turning point, and a surprising or uplifting ending.
-The description MUST start its second line with "Based on a true story." """,
-    "creature": """FORMAT: strange real animal or plant. Show what it looks like, its weird ability or habit, and the
-surprising reason it evolved that way. Not gross for its own sake.""",
-    "hack": """FORMAT: clever, genuinely useful and safe hack or trick (home, kitchen, travel, tech, outdoors). Show the
-problem, the trick step by step, and the satisfying result. Nothing dangerous.""",
+    "ranking": """FORMAT: "Top 5" countdown.
+Exactly 7 scenes: 1 intro (badge "", label ""), then five ranked scenes counting DOWN from 5 to 1,
+then 1 outro. Ranked scenes: start by saying the number naturally ("Number five...", "At number four...");
+badge "#5" ... "#1"; label = item name in 1-4 words. Base the ranking on a clear, checkable measure.
+Save the most impressive item for number one. Title starts with "Top 5".""",
+    "story": """FORMAT: original short story, narrated.
+6-8 scenes. A complete mini story with a vivid opening line, rising tension and a satisfying twist or
+heartwarming ending in the final scene. Original characters only (no real people, no existing franchises).
+Wholesome, mysterious, inspiring or funny - never dark or violent. Badges/labels empty except the last
+scene may use badge "THE END" - optional. The description MUST include the sentence:
+"This is an original fictional story." Do not claim it is true.""",
+    "funny": """FORMAT: funny, family-friendly comedy short.
+6-9 scenes. Observational or absurd humor about everyday life, animals, objects, science or history
+(e.g. "things that make no sense", "relatable situations", funny-but-true facts). Build jokes in a rhythm:
+setup, setup, punchline. Kind humor only: never mock real people or any group. label may hold a short
+on-screen punchline word (optional); badge empty.""",
+    "quiz": """FORMAT: quiz / trivia challenge.
+Exactly 8 scenes: 1 intro ("Only a few people get all three right..."), then for each of 3 questions:
+a question scene (badge "Q1"/"Q2"/"Q3", label = the question in max 8 words, narration reads the question
+and ends with "3, 2, 1...") followed by an answer scene (badge "✓", label = the answer in 1-4 words,
+narration gives the answer plus one surprising detail). Last scene: ask viewers to comment their score.
+Questions get harder each round. Answers must be unambiguous and verifiable.""",
+    "tips": """FORMAT: quick practical tips / life hacks.
+6-8 scenes: intro, then 3-5 tips (badge "TIP 1", "TIP 2", ...; label = tip in 2-5 words), then outro.
+Only safe, legal, genuinely useful everyday tips (home, tech, travel, cooking, productivity, organizing).
+No health, medical, financial or dangerous advice.""",
+    "clips": """FORMAT: "Ranking the funniest animal moments" - funny commentary over real clips.
+The footage is ALREADY CHOSEN (listed below): exactly 7 scenes in this order: intro clip, #5, #4, #3, #2, #1,
+outro clip. Narrate exactly what happens in each clip - never describe anything the clip doesn't show.
+Intro: a hook that promises the funniest moment at number one. Ranked scenes: start with the number
+("Number five...", "At number four..."), then react like a friend watching with you: a playful
+observation, exaggerated comparison or deadpan aside, then a punchline. badge "#5" ... "#1"; label = a funny
+2-4 word name for the moment ("The Belly Flop"). Outro: ask which one made them laugh most.
+Title starts with "Ranking the" or "Top 5". Kind humor: laugh WITH the animals, never at their pain.""",
+    "product": """FORMAT: product promo for the Ashvara store (short-form ad style, 20-35 seconds).
+5-7 scenes: 1 hook scene (a relatable problem or a satisfying moment), 2-4 scenes showing the product
+working (what it does, one concrete detail each: size, material, how it's used), then 1 final scene with the
+price and "Link in bio, ashvara.store". Honest, specific and friendly - like a friend recommending it.
+NEVER make medical, health, therapy or "clinically proven" claims, never promise results (no "cures",
+"heals", "fixes pain", "reverses aging"), never invent reviews, ratings, sales numbers or fake urgency
+("only 3 left", "sale ends tonight") unless the row says so. badge empty; label = a 2-5 word benefit on
+screen (e.g. "Washable cover"). Last scene label = the price.""",
+    "explainer": """FORMAT: curiosity explainer.
+6-9 scenes: a surprising question or fact, then a clear explanation building to an "aha" payoff.
+Badges/labels optional: use label for one key number or term on screen when it helps.""",
 }
 
 
 def write_package(topic):
+    """Writes the package and re-asks (max 2 times) until the narration is close to TARGET_SECONDS."""
+    want = target_words()
+    lo, hi = int(want * 0.88), int(want * 1.2)
+    pkg, note = None, ""
+    for _ in range(3):
+        pkg = _write_once(topic, note)
+        n = len(pkg["script"].split())
+        print(f"script length: {n} words (target {want}, ok {lo}-{hi})")
+        if lo <= n <= hi:
+            break
+        note = (f"LENGTH FIX: your last draft was {n} words but it MUST be about {want} words "
+                f"({config.TARGET_SECONDS} seconds). {'Add' if n < lo else 'Cut'} content to fit, keeping the same structure.")
+    return pkg
+
+
+def _write_once(topic, length_note=""):
     fmt = fmt_of(topic)
     info = FORMATS[fmt]
-    feedback = topic.get("feedback")
+    funny = fmt in ("funny", "clips") or str(topic.get("tone", "")).lower() == "funny"
+    feedback = " ".join(x for x in (topic.get("feedback"), length_note) if x)
     prompt = f"""Write an ORIGINAL vertical YouTube Short package.
 Topic: {topic['title']}
 Angle: {topic.get('angle', '')}
-Language: {config.LANGUAGE}. Channel: {config.CHANNEL_NAME} (AI-animated facts & stories).
+Language: {config.LANGUAGE}.
 {f'CHANNEL OWNER FEEDBACK ON THE PREVIOUS VERSION - apply it: {feedback}' if feedback else ''}
 
 {STRUCTURES[fmt]}
+{('THE CLIPS, in scene order:' + chr(10) + topic['clip_notes']) if topic.get('clip_notes') else ''}
+{FUNNY_TONE if funny else ''}
 
-{RETENTION_RULES.replace('{format_tag}', info['tag']).replace('{scene_range}', '6-8')}
+{RETENTION_RULES.replace('{format_tag}', info['tag'])}
 
 Return JSON:
 {{"primary_keyword": "...", "title": "...", "hook_text": "...", "thumbnail_text": "...", "description": "...", "hashtags": ["#shorts", "...", "...", "{info['tag']}"],
   "tags": ["..."], "pinned_comment": "...", "scenes": [{{"text": "narration", "badge": "", "label": "",
-  "image_prompt": "...", "motion": "...", "stock_queries": ["...", "..."]}}], "key_facts": ["..."]}}"""
-    pkg = llm.ask_json(prompt, temperature=0.75)
+  "stock_queries": ["...", "..."], "image_prompt": "..."}}], "key_facts": ["..."]}}"""
+    pkg = llm.ask_json(prompt, temperature=0.85 if funny or fmt == "story" else 0.7)
     pkg["format"] = fmt
-    pkg["category"] = info["category"]
+    pkg["tone"] = "funny" if funny else "normal"
+    pkg["category"] = info["category"] if fmt == "clips" else "23" if funny else info["category"]  # funny Top 5s go in Comedy
     _normalize(pkg, fmt)
+    if funny and "#funny" not in pkg["hashtags"]:
+        pkg["hashtags"] = (pkg["hashtags"][:4] + ["#funny"])
     pkg["script"] = " ".join(s["text"].strip() for s in pkg["scenes"])
+    return pkg
+
+
+TRUE_STORY = """FORMAT: true story, narrated (researched by Claude, with sources).
+6-8 scenes following the script's beats. Real events only - keep every fact exactly as written. Badges/labels
+empty except the last scene may use badge "THE END" - optional. Do NOT call it fictional."""
+
+
+def from_plan(topic, row):
+    """Package for a row of the content plan: Claude already wrote and scored the script; keep it word for word."""
+    fmt = fmt_of(topic)
+    info = FORMATS[fmt]
+    funny = fmt in ("funny", "clips") or str(topic.get("tone", "")).lower() == "funny"
+    feedback = topic.get("feedback", "")
+    prompt = f"""Turn this approved YouTube Short into the production JSON. The NARRATION MUST STAY WORD FOR WORD
+(only fix obvious typos); split it into scenes at the line breaks / natural beats (6-9 scenes).
+{f'CHANNEL OWNER FEEDBACK - apply it, you may rewrite lines to do so: {feedback}' if feedback else ''}
+
+Title: {row.get('title', '')}
+Thumbnail text: {row.get('thumbnail_text', '')}
+Hook (first line): {row.get('hook', '')}
+Script:
+{row.get('script', '')}
+
+On-screen text per beat: {row.get('on_screen', '')}
+Footage ideas per beat: {row.get('footage', '')}
+Description: {row.get('description', '')}
+Hashtags: {row.get('hashtags', '')}
+Tags: {row.get('tags', '')}
+Pinned comment: {row.get('pinned_comment', '')}
+Opening on-screen text for the first 2 seconds (use it as "hook_text"): {row.get('opening_text', '')}
+Thumbnail brief: {row.get('thumbnail_brief', '')}
+
+{TRUE_STORY if fmt == "story" and row.get('sources') else STRUCTURES[fmt]}
+
+Rules for the JSON: keep the title, thumbnail_text, description, hashtags (exactly 4, first "#shorts"), tags and
+pinned_comment as given unless they break YouTube rules. For EVERY scene give "badge"/"label" (from the
+on-screen text, per the format rules), "stock_queries" (2 searches for footage that LITERALLY shows what the
+line talks about - plain nouns, no brands or names) and "image_prompt". "hook_text": 3-6 words for the first
+scene. "primary_keyword": 2-4 words people search. "key_facts": every factual claim.
+
+Return JSON:
+{{"primary_keyword": "...", "title": "...", "hook_text": "...", "thumbnail_text": "...", "description": "...", "hashtags": ["#shorts", "...", "...", "{info['tag']}"],
+  "tags": ["..."], "pinned_comment": "...", "scenes": [{{"text": "narration", "badge": "", "label": "",
+  "stock_queries": ["...", "..."], "image_prompt": "..."}}], "key_facts": ["..."]}}"""
+    pkg = llm.ask_json(prompt, temperature=0.3)
+    if row.get("opening_text"):
+        pkg["hook_text"] = "".join(c for c in row["opening_text"] if ord(c) < 0x2100).strip()  # no emoji in rendered text
+    pkg["format"] = fmt
+    pkg["tone"] = "funny" if funny else "normal"
+    pkg["category"] = info["category"] if fmt == "clips" else "23" if funny else info["category"]
+    _normalize(pkg, fmt)
+    if fmt == "story" and row.get("sources"):  # researched true story: never label it fiction
+        pkg["description"] = pkg.get("description", "").replace("\nThis is an original fictional story.", "").replace(
+            "This is an original fictional story.", "").rstrip()
+    pkg["script"] = " ".join(s["text"].strip() for s in pkg["scenes"])
+    pkg["plan_id"] = row.get("id")
     return pkg
 
 
@@ -128,8 +246,14 @@ def _normalize(pkg, fmt):
         s["stock_query"] = s["stock_queries"][0]
         s["badge"] = str(s.get("badge") or "").strip()[:8]
         s["label"] = str(s.get("label") or "").strip()[:60]
-        s["image_prompt"] = str(s.get("image_prompt") or s["stock_query"]).strip()[:600]
-        s["motion"] = str(s.get("motion") or "slow cinematic camera push-in").strip()[:200]
+    if fmt in ("ranking", "clips"):  # make sure the countdown badges exist even if the model slipped
+        ranked = [s for s in scenes if s["badge"].startswith("#")]
+        if len(ranked) < 3 and len(scenes) >= 7:
+            for n, s in zip(range(5, 0, -1), scenes[1:6]):
+                s["badge"] = f"#{n}"
+        for s in scenes:
+            if s["badge"].startswith("#") and not s["label"]:
+                s["label"] = " ".join(s["stock_query"].split()[:3]).title()
     pkg["scenes"] = scenes
     tags = [t if t.startswith("#") else "#" + t for t in pkg.get("hashtags", []) if t]
     tags = [t.replace(" ", "") for t in tags]
@@ -144,8 +268,8 @@ def _normalize(pkg, fmt):
     pkg["pinned_comment"] = str(pkg.get("pinned_comment") or "").strip()[:500]
     pkg["thumbnail_text"] = str(pkg.get("thumbnail_text") or pkg["hook_text"]).strip()[:40]
     pkg["title"] = str(pkg.get("title", "")).strip()[:95]
-    if fmt == "truestory" and "true story" not in pkg.get("description", "").lower():
-        pkg["description"] = pkg.get("description", "").rstrip() + "\nBased on a true story."
+    if fmt == "story" and "fictional" not in pkg.get("description", "").lower():
+        pkg["description"] = pkg.get("description", "").rstrip() + "\nThis is an original fictional story."
 
 
 def review(pkg):
@@ -172,12 +296,13 @@ reject surprising specific numbers that nothing supports. Small rounding ("about
 Review this Short and return JSON {{"approved": true/false, "issues": ["..."],
 "fixed_title": "", "fixed_script_needed": true/false}}.
 
-Reject (approved=false) if ANY of: political, religious or divisive content; graphic violence, gore, injuries,
-blood or death described in detail; glorifying crime; medical/legal/financial advice (basic official safety steps
-are fine); survival advice that contradicts official safety guidance; statements about real living people;
-movie/TV/game characters or brands; misleading title the video doesn't deliver; likely false facts; fiction
-presented as true; sexual content; mocking any group; content unsuitable for a general 13+ audience.
-Mild peril, well-documented history and educational "what happens if" science are FINE.
+Reject (approved=false) if ANY of: political, religious or divisive content; violence, tragedy, crime;
+health/medical/financial advice; statements about real living people; misleading or clickbait title that
+the video doesn't deliver; likely false facts; fiction presented as true; sexual content; mocking any group;
+content unsuitable for a general 13+ audience; copyrighted lyrics, quotes or characters.
+For rankings and quizzes, also reject clearly wrong orders or answers.
+Product promos for the store are allowed (selling is fine), but reject them if they make medical/health/therapy
+claims, promise results, invent reviews or sales numbers, or use fake urgency or fake discounts.
 Minor title issues only: approve and provide fixed_title (max 60 chars).
 
 FORMAT: {pkg.get('format')}
@@ -193,12 +318,11 @@ FACTS: {pkg.get('key_facts')}{evidence_rules}"""
 
 def build_description(pkg, credits, human_reviewed=False):
     tags = " ".join(pkg["hashtags"][:5])
-    review_line = ("Original script written with AI assistance, fact-checked and safety-reviewed"
-                   + (", and approved by the channel owner." if human_reviewed else "."))
-    lines = [pkg["description"].strip(), "", f"🔔 Subscribe for a new \"wait, really?\" every day: {config.CHANNEL_HANDLE}",
-             "", tags, "", f"{config.CHANNEL_NAME} - AI-animated facts & stories.",
-             "", "— Credits & disclosure —", review_line,
-             "Visuals are AI-generated 3D animation; narration is an AI voice."]
+    review_line = ("Original script written with AI assistance, checked by an automated safety review"
+                   + (" and approved by the channel owner." if human_reviewed else "."))
+    lines = [pkg["description"].strip(), "", tags, "", "— Credits & disclosure —", review_line,
+             "This video contains AI-generated or AI-assisted content."]
     lines += credits
-    lines.append("No other creators' videos were reused.")
+    lines.append("No other creators' videos were reused; stock footage and images are used under the "
+                 "licenses credited above.")
     return "\n".join(lines)

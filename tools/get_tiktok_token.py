@@ -2,7 +2,7 @@
 
 Prereqs: TikTok for Developers app with Login Kit + Content Posting API,
 scopes user.info.basic + video.upload (draft mode; add video.publish for direct mode),
-Redirect URI: https://akachwaha27.github.io/whyzo-films-autopilot/callback.html
+Redirect URI: https://akachwaha27.github.io/shopify-automation/callback.html
 
   python tools/get_tiktok_token.py
 Open the printed URL, approve, then paste the FULL URL you were redirected to.
@@ -14,8 +14,8 @@ import requests
 
 key = input("TikTok client key: ").strip()
 secret = input("TikTok client secret: ").strip()
-redirect = input("Redirect URI [https://akachwaha27.github.io/whyzo-films-autopilot/callback.html]: ").strip() \
-    or "https://akachwaha27.github.io/whyzo-films-autopilot/callback.html"
+redirect = input("Redirect URI [https://akachwaha27.github.io/shopify-automation/callback.html]: ").strip() \
+    or "https://akachwaha27.github.io/shopify-automation/callback.html"
 scope = "user.info.basic,video.upload" + (",video.publish" if input("Also allow direct posting? (y/N): ").strip().lower() == "y" else "")
 state = secrets.token_urlsafe(8)
 url = "https://www.tiktok.com/v2/auth/authorize/?" + urllib.parse.urlencode({

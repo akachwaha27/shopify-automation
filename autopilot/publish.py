@@ -1,5 +1,6 @@
 """Upload to YouTube, Instagram and TikTok via their official free APIs."""
 import os
+import re
 import time
 
 import requests
@@ -31,29 +32,7 @@ def yt_service():
     return build("youtube", "v3", credentials=creds, cache_discovery=False)
 
 
-def add_to_playlist(yt, vid, name):
-    """Series playlists ("What To Do If...") keep Shorts viewers binging the next video. ~51-101 quota units."""
-    if not name:
-        return "playlist skipped"
-    found, page = None, None
-    while not found:
-        r = yt.playlists().list(part="snippet", mine=True, maxResults=50, pageToken=page).execute()
-        found = next((p["id"] for p in r.get("items", []) if p["snippet"]["title"] == name), None)
-        page = r.get("nextPageToken")
-        if not page:
-            break
-    if not found:
-        found = yt.playlists().insert(part="snippet,status", body={
-            "snippet": {"title": name, "description": f"{config.CHANNEL_NAME}: {name} - animated in under a minute.",
-                        "defaultLanguage": config.LANGUAGE},
-            "status": {"privacyStatus": "public"}}).execute()["id"]
-    yt.playlistItems().insert(part="snippet", body={"snippet": {
-        "playlistId": found, "resourceId": {"kind": "youtube#video", "videoId": vid}}}).execute()
-    return "playlist ✅"
-
-
-def youtube(path, title, description, tags, category="24", thumb=None, srt=None, comment=None, publish_at=None,
-            playlist=None):
+def youtube(path, title, description, tags, category="24", thumb=None, srt=None, comment=None, publish_at=None):
     if not (config.YT_CLIENT_ID and config.YT_CLIENT_SECRET and config.YT_REFRESH_TOKEN):
         return None, "skipped (not configured)"
     from googleapiclient.errors import HttpError
@@ -108,11 +87,6 @@ def youtube(path, title, description, tags, category="24", thumb=None, srt=None,
             notes.append("comment ✅")
         except HttpError as e:
             notes.append(f"comment ⚠️ {why(e)}")
-    if playlist:
-        try:
-            notes.append(add_to_playlist(yt, vid, playlist))
-        except HttpError as e:
-            notes.append(f"playlist ⚠️ {why(e)}")
     return f"https://youtube.com/shorts/{vid}", " · ".join(notes)
 
 
@@ -185,11 +159,33 @@ def facebook(path, caption, title=""):
 
 
 # ---------------- Captions per platform ----------------
+SHOP_RE = re.compile(r"Shop it: (https?://\S+)")
+
+
+def tagged_url(url, platform):
+    """Store link with UTM tags so Shopify reports which platform each visit and sale came from."""
+    if not url or config.STORE_URL.split("//")[-1] not in url:
+        return url
+    medium = "video" if platform == "youtube" else "social"
+    sep = "&" if "?" in url else "?"
+    return f"{url}{sep}utm_source={platform}&utm_medium={medium}&utm_campaign=ashvara-videos"
+
+
+def tag_links(text, platform):
+    return SHOP_RE.sub(lambda m: f"Shop it: {tagged_url(m.group(1), platform)}", text or "")
+
+
 def social_caption(title, description, hashtags, platform):
-    """Short caption: title, the hook paragraph, credits/disclosure (required by the footage licenses), hashtags."""
+    """Short caption: title, the hook paragraph, shop link, credits/disclosure (required by the footage licenses), hashtags."""
+    m = SHOP_RE.search(description or "")
+    shop = f"\n\nShop it: {tagged_url(m.group(1), platform)}" if m else ""
+    if m and platform == "instagram":
+        shop += "\n(Link in bio)"
+    description = SHOP_RE.sub("", description or "")
     body, _, credits = description.partition("— Credits & disclosure —")
     first = next((p.strip() for p in body.split("\n\n") if p.strip() and not p.strip().startswith("#")), "")
     tags = [h if h.startswith("#") else f"#{h}" for h in hashtags]
+    tags = [t for t in tags if t.lower() != "#shorts"] or tags  # #shorts only means something on YouTube
     if platform == "instagram":
         tags = tags[:config.INSTAGRAM_HASHTAGS]
     elif platform == "tiktok":
@@ -200,10 +196,10 @@ def social_caption(title, description, hashtags, platform):
     limit = 2150
     tail = "\n\nCredits & AI disclosure:\n" + "\n".join(credit_lines) if credit_lines else ""
     tag_line = "\n\n" + " ".join(tags)
-    room = limit - len(title) - len(tail) - len(tag_line) - 4
+    room = limit - len(title) - len(shop) - len(tail) - len(tag_line) - 4
     if len(first) > room:
         first = first[:max(room - 1, 0)].rstrip() + "…"
-    return f"{title}\n\n{first}{tail}{tag_line}"[:limit]
+    return f"{title}\n\n{first}{shop}{tail}{tag_line}"[:limit]
 
 
 # ---------------- TikTok ----------------
@@ -267,13 +263,16 @@ def tiktok(path, caption):
 
 
 def publish_all(path, title, description, hashtags, tags=(), category="24", thumb=None, srt=None, comment=None,
-                publish_at=None, playlist=None):
+                publish_at=None):
     cap = {p: social_caption(title, description, hashtags, p) for p in ("instagram", "facebook", "tiktok")}
     results = {}
-    for name, fn in (("YouTube", lambda: youtube(path, title, description, list(tags) or [h.lstrip("#") for h in hashtags], category, thumb, srt, comment, publish_at, playlist)),
+    for name, fn in (("YouTube", lambda: youtube(path, title, tag_links(description, "youtube"), list(tags) or [h.lstrip("#") for h in hashtags], category, thumb, srt, comment, publish_at)),
                      ("Instagram", lambda: instagram(path, cap["instagram"])),
                      ("Facebook", lambda: facebook(path, cap["facebook"], title)),
                      ("TikTok", lambda: tiktok(path, cap["tiktok"]))):
+        if name.lower() not in config.PUBLISH_TO:
+            results[name] = (None, "skipped (off: add to PUBLISH_TO variable)")
+            continue
         try:
             results[name] = fn()
         except Exception as e:  # noqa: BLE001

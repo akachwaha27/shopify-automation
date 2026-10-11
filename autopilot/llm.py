@@ -60,13 +60,8 @@ def _ok_name(n):
 
 
 # ---------------- providers ----------------
-def _gkey():
-    """Header auth works for both classic (AIza...) and newer (AQ....) Gemini keys, and keeps keys out of URLs/logs."""
-    return {"x-goog-api-key": config.GEMINI_API_KEY}
-
-
 def _gemini_models():
-    r = requests.get(f"{GEMINI}/models", params={"pageSize": 200}, headers=_gkey(), timeout=30)
+    r = requests.get(f"{GEMINI}/models", params={"key": config.GEMINI_API_KEY, "pageSize": 200}, timeout=30)
     r.raise_for_status()
     names = [m["name"].split("/", 1)[1] for m in r.json().get("models", [])
              if "generateContent" in m.get("supportedGenerationMethods", []) and _ok_name(m["name"])]
@@ -82,7 +77,7 @@ def _gemini_call(model, prompt, temperature):
     gen = {"temperature": temperature}
     if model.startswith("gemini"):
         gen["responseMimeType"] = "application/json"
-    r = requests.post(f"{GEMINI}/models/{model}:generateContent", headers=_gkey(),
+    r = requests.post(f"{GEMINI}/models/{model}:generateContent", params={"key": config.GEMINI_API_KEY},
                       json={"contents": [{"role": "user", "parts": [{"text": prompt}]}], "generationConfig": gen},
                       timeout=180)
     if r.status_code >= 400:
@@ -183,7 +178,7 @@ def _build_plan():
     if os.getenv("OPENROUTER_API_KEY"):
         add("OpenRouter", _openrouter_models, lambda m, p, t: _openai_call(
             "https://openrouter.ai/api/v1/chat/completions", os.getenv("OPENROUTER_API_KEY"), m, p, t,
-            {"X-Title": "Whyzo Films"}))
+            {"X-Title": "Shopify Automation"}))
     if config.CF_ACCOUNT_ID and config.CF_API_TOKEN:
         add("Cloudflare", _cloudflare_models, lambda m, p, t: _openai_call(
             f"https://api.cloudflare.com/client/v4/accounts/{config.CF_ACCOUNT_ID}/ai/v1/chat/completions",
@@ -229,3 +224,61 @@ def ask_json(prompt, temperature=0.7, passes=2):
             print("All AI providers busy; waiting 60s before another pass")
             time.sleep(60)
     raise RuntimeError(f"All free AI providers are busy right now. Last error: {last}")
+
+
+# ---------------- vision (looking at pictures) ----------------
+_vision_models = None
+_last_vision = 0.0
+
+
+def _vision_list():
+    """Gemini models that accept images: Flash-Lite first (higher free daily limit), then Flash."""
+    global _vision_models
+    if _vision_models is None:
+        _vision_models = []
+        if config.GEMINI_API_KEY:
+            try:
+                found = [m for m in _gemini_models() if m.startswith("gemini")]
+            except Exception:  # noqa: BLE001
+                found = ["gemini-2.5-flash-lite", "gemini-2.5-flash"]
+            _vision_models = sorted(found, key=lambda m: "lite" not in m)
+    return _vision_models
+
+
+def vision_available():
+    return bool(_vision_list())
+
+
+def ask_vision_json(prompt, images, temperature=0.2):
+    """Ask a Gemini model about a few pictures (list of JPEG/PNG bytes). Returns parsed JSON.
+    Raises if no vision model is configured or all are busy (callers fall back to text-only)."""
+    import base64
+    global _last_vision
+    models = _vision_list()
+    if not models:
+        raise RuntimeError("no vision model (needs GEMINI_API_KEY)")
+    parts = [{"text": prompt + JSON_HINT}]
+    for i, img in enumerate(images):
+        mime = "image/png" if img[:4] == b"\x89PNG" else "image/webp" if img[8:12] == b"WEBP" else "image/jpeg"
+        parts += [{"text": f"Image {i}:"}, {"inline_data": {"mime_type": mime, "data": base64.b64encode(img).decode()}}]
+    last = None
+    for model in list(models):
+        wait = 4.5 - (time.time() - _last_vision)  # stay under the free per-minute limit
+        if wait > 0:
+            time.sleep(wait)
+        _last_vision = time.time()
+        try:
+            r = requests.post(f"{GEMINI}/models/{model}:generateContent", params={"key": config.GEMINI_API_KEY},
+                              timeout=120, json={"contents": [{"role": "user", "parts": parts}],
+                                                 "generationConfig": {"temperature": temperature,
+                                                                      "responseMimeType": "application/json"}})
+            if r.status_code >= 400:
+                raise RuntimeError(f"HTTP {r.status_code}: {r.text[:120]}")
+            out = _parse(r.json()["candidates"][0]["content"]["parts"][0]["text"])
+            if model != models[0]:  # keep using the one that answered
+                models.insert(0, models.pop(models.index(model)))
+            return out
+        except Exception as e:  # noqa: BLE001
+            last = f"{model}: {str(e)[:120]}"
+            print("vision attempt failed:", last)
+    raise RuntimeError(f"vision models busy: {last}")

@@ -115,7 +115,7 @@ def record(st):
                 "virality_score": t.get("virality_score"), "picked": i in sel,
                 "video_id": by_title.get(t.get("title")),
             })
-        entry = {"date": day[:10], "run": day, "sent_at": b.get("sent_at", ""), "status": b.get("status", ""), "ideas": rows}
+        entry = {"date": day, "sent_at": b.get("sent_at", ""), "status": b.get("status", ""), "ideas": rows}
         if ideas.get(day) != entry:
             ideas[day] = entry
             changed = True
