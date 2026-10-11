@@ -1,0 +1,80 @@
+{
+  "tg_offset": 0,
+  "batches": {
+    "2026-10-11": {
+      "topics": [
+        {
+          "title": "Calming Donut Bed for Dogs & Cats",
+          "angle": "Product demo with a relatable hook (Ashvara playbook)",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 8,
+          "trend_source": "Ashvara Black Friday Playbook",
+          "plan_id": "P2026-10-10-01",
+          "product": "super-soft-pet-bed-82146"
+        },
+        {
+          "title": "Dematting Comb: One Brushing Session",
+          "angle": "Product demo with a relatable hook (Ashvara playbook)",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 8,
+          "trend_source": "Ashvara Black Friday Playbook",
+          "plan_id": "P2026-10-10-02",
+          "product": "pet-fur-knot-cutter-89653"
+        },
+        {
+          "title": "LED Makeup Mirror for Your Bag",
+          "angle": "Product demo with a relatable hook (Ashvara playbook)",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 8,
+          "trend_source": "Ashvara Black Friday Playbook",
+          "plan_id": "P2026-10-10-03",
+          "product": "portable-led-makeup-mirror"
+        },
+        {
+          "title": "Muddy Paws, Clean Floors",
+          "angle": "Product demo with a relatable hook (Ashvara playbook)",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 8,
+          "trend_source": "Ashvara Black Friday Playbook",
+          "plan_id": "P2026-10-10-04",
+          "product": "pet-paw-cleaner-63144"
+        },
+        {
+          "title": "Pet Grooming Kit Unboxing",
+          "angle": "Product demo with a relatable hook (Ashvara playbook)",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 8,
+          "trend_source": "Ashvara Black Friday Playbook",
+          "plan_id": "P2026-10-10-05",
+          "product": "pet-grooming-kit"
+        },
+        {
+          "title": "Treat Ball for Bored Dogs",
+          "angle": "Product demo with a relatable hook (Ashvara playbook)",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 8,
+          "trend_source": "Ashvara Black Friday Playbook",
+          "plan_id": "P2026-10-10-06",
+          "product": "interactive-pet-food-dispenser-toy-99709"
+        }
+      ],
+      "sent_at": "2026-10-11T16:01:33.152948+00:00",
+      "selected": [],
+      "status": "waiting"
+    }
+  },
+  "videos": {},
+  "history": [],
+  "trend_tries": {
+    "2026-10-11": {
+      "n": 1,
+      "at": "2026-10-11T16:01:32.577965+00:00"
+    }
+  }
+}
