@@ -1,5 +1,5 @@
 {
-  "tg_offset": 272239675,
+  "tg_offset": 272239676,
   "batches": {
     "2026-10-11": {
       "topics": [
@@ -70,6 +70,56 @@
         1
       ],
       "status": "closed"
+    },
+    "2026-10-12": {
+      "topics": [
+        {
+          "title": "A Full Gym That Fits in a Drawer",
+          "angle": "Product demo with a relatable hook (Ashvara playbook)",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 8,
+          "trend_source": "Ashvara Black Friday Playbook",
+          "plan_id": "P2026-10-10-07",
+          "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
+        },
+        {
+          "title": "My Sunday Reset, Part One",
+          "angle": "Product demo with a relatable hook (Ashvara playbook)",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 8,
+          "trend_source": "Ashvara Black Friday Playbook",
+          "plan_id": "P2026-10-10-08",
+          "product": "electric-small-bubble-blackhead-remover-65778"
+        },
+        {
+          "title": "Nail Trims Without the Drama",
+          "angle": "Product demo with a relatable hook (Ashvara playbook)",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 8,
+          "trend_source": "Ashvara Black Friday Playbook",
+          "plan_id": "P2026-10-10-09",
+          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
+        },
+        {
+          "title": "Road Trip with a Muddy Dog",
+          "angle": "Product demo with a relatable hook (Ashvara playbook)",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 8,
+          "trend_source": "Ashvara Black Friday Playbook",
+          "plan_id": "P2026-10-10-10",
+          "product": "travel-dog-car-seat-cover-58970"
+        }
+      ],
+      "sent_at": "2026-10-12T15:13:22.652196+00:00",
+      "selected": [
+        0,
+        3
+      ],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -104,6 +154,38 @@
       "by": "you",
       "updated": "2026-10-11T20:13:01.415245+00:00",
       "redos": 0
+    },
+    "2026-10-12-1": {
+      "topic": {
+        "title": "A Full Gym That Fits in a Drawer",
+        "angle": "Product demo with a relatable hook (Ashvara playbook)",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 8,
+        "trend_source": "Ashvara Black Friday Playbook",
+        "plan_id": "P2026-10-10-07",
+        "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
+      },
+      "status": "failed",
+      "by": "you",
+      "updated": "2026-10-12T15:13:47.968681+00:00",
+      "redos": 0
+    },
+    "2026-10-12-4": {
+      "topic": {
+        "title": "Road Trip with a Muddy Dog",
+        "angle": "Product demo with a relatable hook (Ashvara playbook)",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 8,
+        "trend_source": "Ashvara Black Friday Playbook",
+        "plan_id": "P2026-10-10-10",
+        "product": "travel-dog-car-seat-cover-58970"
+      },
+      "status": "failed",
+      "by": "you",
+      "updated": "2026-10-12T15:13:48.443697+00:00",
+      "redos": 0
     }
   },
   "history": [],
@@ -111,8 +193,12 @@
     "2026-10-11": {
       "n": 1,
       "at": "2026-10-11T16:01:32.577965+00:00"
+    },
+    "2026-10-12": {
+      "n": 1,
+      "at": "2026-10-12T15:13:22.006038+00:00"
     }
   },
   "cleanup_day": "2026-10-12",
-  "signals_day": "2026-10-11"
+  "signals_day": "2026-10-12"
 }

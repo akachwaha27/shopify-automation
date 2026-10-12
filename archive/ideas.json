@@ -71,5 +71,56 @@
   ],
   "sent_at": "2026-10-11T16:01:33.152948+00:00",
   "status": "closed"
+ },
+ "2026-10-12": {
+  "date": "2026-10-12",
+  "ideas": [
+   {
+    "angle": "Product demo with a relatable hook (Ashvara playbook)",
+    "format": "product",
+    "picked": true,
+    "rank": 1,
+    "title": "A Full Gym That Fits in a Drawer",
+    "trend_source": "Ashvara Black Friday Playbook",
+    "video_id": "2026-10-12-1",
+    "virality_score": 8,
+    "why": ""
+   },
+   {
+    "angle": "Product demo with a relatable hook (Ashvara playbook)",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "My Sunday Reset, Part One",
+    "trend_source": "Ashvara Black Friday Playbook",
+    "video_id": null,
+    "virality_score": 8,
+    "why": ""
+   },
+   {
+    "angle": "Product demo with a relatable hook (Ashvara playbook)",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Nail Trims Without the Drama",
+    "trend_source": "Ashvara Black Friday Playbook",
+    "video_id": null,
+    "virality_score": 8,
+    "why": ""
+   },
+   {
+    "angle": "Product demo with a relatable hook (Ashvara playbook)",
+    "format": "product",
+    "picked": true,
+    "rank": 4,
+    "title": "Road Trip with a Muddy Dog",
+    "trend_source": "Ashvara Black Friday Playbook",
+    "video_id": "2026-10-12-4",
+    "virality_score": 8,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-12T15:13:22.652196+00:00",
+  "status": "waiting"
  }
 }
