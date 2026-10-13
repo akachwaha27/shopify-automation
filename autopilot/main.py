@@ -38,7 +38,30 @@ def num(vid):
 
 
 # ---------------------------------------------------------------- trends
+def token_warning():
+    """Telegram reminder when the saved Facebook token is about to expire (checked with the daily list)."""
+    if not config.FB_PAGE_TOKEN:
+        return
+    try:
+        import requests
+        info = requests.get("https://graph.facebook.com/oauth/access_token_info", timeout=30,
+                            params={"access_token": config.FB_PAGE_TOKEN}).json()
+        if "error" in info:
+            telegram.send("⚠️ The Facebook/Instagram token in GitHub (FB_PAGE_TOKEN) no longer works, so videos "
+                          "can't post. Make a new one: Graph API Explorer → Generate Access Token → Access Token "
+                          "Debugger → Extend Access Token, then update the FB_PAGE_TOKEN secret.")
+            return
+        days = int(info.get("expires_in") or 0) / 86400
+        if 0 < days <= 7:
+            telegram.send(f"⏰ The Facebook/Instagram token expires in {days:.0f} day(s). Refresh it: Graph API "
+                          "Explorer → Generate Access Token → Access Token Debugger → Extend Access Token, then "
+                          "update the FB_PAGE_TOKEN secret in GitHub.")
+    except Exception as e:  # noqa: BLE001
+        print("token check failed:", e)
+
+
 def cmd_trends(st):
+    token_warning()
     tries = st.setdefault("trend_tries", {})
     tries[today()] = {"n": tries.get(today(), {}).get("n", 0) + 1, "at": state.iso()}
     for d in sorted(tries)[:-3]:
