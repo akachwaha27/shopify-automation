@@ -776,7 +776,7 @@ def main():
         try:
             if cmd in ("photo", "photopreview"):  # daily product photo post on Facebook + Instagram
                 from . import photopost
-                return photopost.run(st, dry=(cmd == "photopreview"))
+                return photopost.run(st, dry=(cmd == "photopreview"), only=args)
             {"trends": cmd_trends, "poll": cmd_poll}[cmd](st)
         finally:
             state.save(st)

@@ -119,7 +119,7 @@ def _instagram_photo(image_url, caption):
     return link.get("permalink", f"media id {pub['id']}")
 
 
-def run(st, dry=False):
+def run(st, dry=False, only=None):
     if not config.FB_PAGE_TOKEN:
         return print("Photo post skipped: FB_PAGE_TOKEN not set")
     p = _pick(st)
@@ -140,7 +140,8 @@ def run(st, dry=False):
         return
 
     results = []
-    want_fb, want_ig = "facebook" in config.PUBLISH_TO, "instagram" in config.PUBLISH_TO
+    targets = {o.lower() for o in (only or [])} or config.PUBLISH_TO  # e.g. "photo facebook" posts to Facebook only
+    want_fb, want_ig = "facebook" in targets, "instagram" in targets
     fb_url, hosted = _facebook_photo(path, fb_msg, published=want_fb)
     if want_fb:
         results.append(f"Facebook: {fb_url}")
