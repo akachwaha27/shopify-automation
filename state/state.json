@@ -1,5 +1,5 @@
 {
-  "tg_offset": 272239676,
+  "tg_offset": 272239683,
   "batches": {
     "2026-10-11": {
       "topics": [
@@ -179,7 +179,10 @@
         }
       ],
       "sent_at": "2026-10-13T21:21:00.597531+00:00",
-      "selected": [],
+      "selected": [
+        0,
+        1
+      ],
       "status": "waiting"
     }
   },
@@ -247,9 +250,675 @@
       "by": "you",
       "updated": "2026-10-12T15:13:48.443697+00:00",
       "redos": 0
+    },
+    "2026-10-13-1": {
+      "topic": {
+        "title": "Shedding nightmare to salon-fresh fluff!",
+        "angle": "When your pet leaves a furry jacket on every piece of furniture you own.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "pet-grooming-kit"
+      },
+      "status": "awaiting_approval",
+      "by": "you",
+      "updated": "2026-10-13T23:00:13.774740+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "pet shedding brush",
+        "title": "Pet Shedding Brush for Cleaner Furniture \ud83d\udc3e",
+        "hook_text": "Stop Couch Fur Forever",
+        "thumbnail_text": "Zero Couch Fur",
+        "description": "Tired of finding pet hair everywhere? Discover how this pet shedding brush keeps your home fur-free.\nLearn how an easy undercoat grooming tool traps loose dog and cat hair before it hits your couch.\nShop it: https://ashvara.store/products/pet-grooming-kit",
+        "hashtags": [
+          "#shorts",
+          "#petcare",
+          "#deshedding",
+          "#ashvara"
+        ],
+        "tags": [
+          "pet shedding brush",
+          "self cleaning slicker brush for dogs",
+          "dog hair brush remover",
+          "pet hair remover brush",
+          "best dog hair brush for shedding",
+          "dog hair brush",
+          "pet hair remover",
+          "dog grooming brush",
+          "cat grooming tools",
+          "cat shedding brush",
+          "dog shedding brush",
+          "cat deshedding tool",
+          "pet deshedding brush",
+          "slicker brush for dogs",
+          "best slicker brush for dogs",
+          "self cleaning pet brush",
+          "pet brush",
+          "cat shedding tool",
+          "dog shedding solutions",
+          "fur cleanup",
+          "undercoat rake"
+        ],
+        "pinned_comment": "Is your pet's shedding season officially all year round? Tell us what breed keeps your vacuum working overtime! \ud83d\udc36",
+        "scenes": [
+          {
+            "text": "Your couch does not need to wear another fur coat.",
+            "badge": "",
+            "label": "Endless pet fur",
+            "stock_queries": [
+              "cat fur sofa",
+              "dog hair couch"
+            ],
+            "image_prompt": "Close-up vertical shot of a modern dark fabric sofa heavily covered in white and tan pet fur, natural living room lighting, 9:16 aspect ratio.",
+            "stock_query": "cat fur sofa",
+            "product_image": "work/2026-10-13-1/product/product_0.jpg"
+          },
+          {
+            "text": "This pet grooming brush uses angled stainless steel bristles to trap shed hair fast.",
+            "badge": "",
+            "label": "Stainless steel bristles",
+            "stock_queries": [
+              "slicker brush dog",
+              "pet grooming tool"
+            ],
+            "image_prompt": "Macro vertical close up of a modern grooming slicker brush showcasing fine angled stainless steel bristles with smooth coated tips, bright studio background, 9:16 aspect ratio.",
+            "stock_query": "slicker brush dog"
+          },
+          {
+            "text": "It pulls loose undercoat without scratching sensitive skin.",
+            "badge": "",
+            "label": "Gentle undercoat care",
+            "stock_queries": [
+              "brushing golden retriever",
+              "grooming fluffy cat"
+            ],
+            "image_prompt": "Vertical shot of dense golden dog fur being groomed gently with a slicker brush, capturing fine undercoat fibers collecting along the brush pins, 9:16 aspect ratio.",
+            "stock_query": "brushing golden retriever",
+            "product_image": "work/2026-10-13-1/product/product_1.jpg"
+          },
+          {
+            "text": "Then, press the release button, and the fur disc pops cleanly into the trash.",
+            "badge": "",
+            "label": "One-click cleaning",
+            "stock_queries": [
+              "push button brush",
+              "pet hair disposal"
+            ],
+            "image_prompt": "Vertical close up of a hand pressing the push-button on top of a grooming brush, smoothly sliding a round disc of pet fur off the bristles into a bin, 9:16 aspect ratio.",
+            "stock_query": "push button brush"
+          },
+          {
+            "text": "It rinses clean under running water and works on dogs and cats alike.",
+            "badge": "",
+            "label": "Washable design",
+            "stock_queries": [
+              "washing brush sink",
+              "pet grooming water"
+            ],
+            "image_prompt": "Vertical view of the grooming brush being rinsed under clean running tap water over a bathroom sink, water splashing across the waterproof plastic head, 9:16 aspect ratio.",
+            "stock_query": "washing brush sink",
+            "product_image": "work/2026-10-13-1/product/product_2.jpg"
+          },
+          {
+            "text": "It is nineteen dollars on ashvara dot store, link in bio. What color fur covers your furniture the most? Because...",
+            "badge": "",
+            "label": "$4900.00 \u00b7 ashvara.store",
+            "stock_queries": [
+              "happy fluffy dog",
+              "clean living room couch"
+            ],
+            "image_prompt": "Vertical shot of an immaculate, completely fur-free fabric couch with a smiling fluffy dog sitting on the floor beside it, bright aesthetic apartment, 9:16 aspect ratio.",
+            "stock_query": "happy fluffy dog",
+            "product_image": "work/2026-10-13-1/product/product_0.jpg"
+          }
+        ],
+        "key_facts": [
+          "Angled stainless steel bristles collect loose pet undercoat.",
+          "A push-button mechanism releases trapped fur in a single pad.",
+          "The grooming tool can be rinsed clean under running water."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Your couch does not need to wear another fur coat. This pet grooming brush uses angled stainless steel bristles to trap shed hair fast. It pulls loose undercoat without scratching sensitive skin. Then, press the release button, and the fur disc pops cleanly into the trash. It rinses clean under running water and works on dogs and cats alike. It is nineteen dollars on ashvara dot store, link in bio. What color fur covers your furniture the most? Because...",
+        "product": {
+          "handle": "pet-grooming-kit",
+          "title": "Pet Grooming Kit",
+          "url": "https://ashvara.store/products/pet-grooming-kit",
+          "price": "$4900.00"
+        },
+        "shot_plan": [
+          {
+            "subject": "couch covered in pet fur",
+            "queries": [
+              {
+                "q": "couch fur",
+                "must": [
+                  "couch"
+                ]
+              },
+              {
+                "q": "sofa hair",
+                "must": [
+                  "sofa"
+                ]
+              },
+              {
+                "q": "living room furniture",
+                "must": [
+                  "furniture"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "pet grooming brush with metal bristles",
+            "queries": [
+              {
+                "q": "grooming brush",
+                "must": [
+                  "brush"
+                ]
+              },
+              {
+                "q": "pet comb",
+                "must": [
+                  "comb"
+                ]
+              },
+              {
+                "q": "metal bristles",
+                "must": [
+                  "metal"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "brushing dog undercoat gently",
+            "queries": [
+              {
+                "q": "dog brushing",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "pet fur removal",
+                "must": [
+                  "fur"
+                ]
+              },
+              {
+                "q": "animal grooming",
+                "must": [
+                  "animal"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "pressing button on brush to release fur into trash",
+            "queries": [
+              {
+                "q": "trash can",
+                "must": [
+                  "trash"
+                ]
+              },
+              {
+                "q": "cleaning brush",
+                "must": [
+                  "cleaning"
+                ]
+              },
+              {
+                "q": "garbage bin",
+                "must": [
+                  "bin"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "washing brush under running sink faucet water",
+            "queries": [
+              {
+                "q": "running water",
+                "must": [
+                  "water"
+                ]
+              },
+              {
+                "q": "sink faucet",
+                "must": [
+                  "sink"
+                ]
+              },
+              {
+                "q": "washing tool",
+                "must": [
+                  "washing"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "cat and dog sitting together on living room floor",
+            "queries": [
+              {
+                "q": "cat and dog",
+                "must": [
+                  "cat"
+                ]
+              },
+              {
+                "q": "dog sitting",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "pet portrait",
+                "must": [
+                  "pet"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "furry couch",
+          "dog grooming",
+          "cat hair"
+        ],
+        "visual_style": "Clean and relatable pet care and grooming videos featuring real dogs and cats indoors with close-up product demonstrations.",
+        "visual_refs": [
+          "Extremely Matted Dog Gets A Trim",
+          "Today I groomed a new species | Weirdest cat ever",
+          "Lunatic Husky swears at me her whole groom"
+        ],
+        "voice": "en-AU-WilliamMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-13",
+        "name": "2026-10-13-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-13",
+        "name": "2026-10-13-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,050 --> 00:00:01,770\nYour couch does not need to wear\n\n2\n00:00:01,770 --> 00:00:04,332\nanother fur coat This pet grooming brush\n\n3\n00:00:04,332 --> 00:00:06,585\nuses angled stainless steel bristles to trap\n\n4\n00:00:06,585 --> 00:00:09,258\nshed hair fast It pulls loose undercoat\n\n5\n00:00:09,258 --> 00:00:12,203\nwithout scratching sensitive skin Then press\n\n6\n00:00:12,203 --> 00:00:13,973\nthe release button and the fur disc\n\n7\n00:00:13,973 --> 00:00:16,436\npops cleanly into the trash It rinses\n\n8\n00:00:16,436 --> 00:00:18,305\nclean under running water and works on\n\n9\n00:00:18,305 --> 00:00:20,632\ndogs and cats alike It is nineteen\n\n10\n00:00:20,632 --> 00:00:22,921\ndollars on ashvara dot store link in\n\n11\n00:00:22,921 --> 00:00:25,731\nbio What color fur covers your furniture\n\n12\n00:00:25,731 --> 00:00:27,702\nthe most Because\n",
+      "tg_msg": 45,
+      "opts_msg": 47
+    },
+    "2026-10-13-2": {
+      "topic": {
+        "title": "Perfect brows in just five seconds!",
+        "angle": "When you only have two minutes to look put-together for that sudden video call.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "natural-4d-eyebrow-tattoo-sticker"
+      },
+      "status": "awaiting_approval",
+      "by": "you",
+      "updated": "2026-10-13T23:02:05.212297+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "quick eyebrow stamp",
+        "title": "Quick eyebrow stamp for sudden video calls \u2728",
+        "hook_text": "Urgent Call In 2 Minutes?",
+        "thumbnail_text": "5-Second Brows",
+        "description": "Get ready fast with a quick eyebrow stamp designed for busy mornings.\nPerfect your shape in seconds with easy stencils before your next meeting.\nShop it: https://ashvara.store/products/natural-4d-eyebrow-tattoo-sticker",
+        "hashtags": [
+          "#shorts",
+          "#beautytips",
+          "#eyebrowstamp",
+          "#ashvara"
+        ],
+        "tags": [
+          "quick eyebrow stamp",
+          "eyebrow stamp",
+          "eyebrow stamp kit",
+          "quick eyebrow makeup",
+          "makeup for video call",
+          "best eyebrow stamp kit",
+          "eyebrow stencils",
+          "eyebrow stamp tutorial",
+          "how to use eyebrow stamp",
+          "easy brow shape",
+          "fast brow routine",
+          "five second brows",
+          "brow stencil tool",
+          "natural brow powder",
+          "eyebrow styling kit",
+          "quick morning makeup"
+        ],
+        "pinned_comment": "How long does your brow routine usually take in the morning? Tell us below! \ud83d\udc47",
+        "scenes": [
+          {
+            "text": "Your boss just pinged you for an unexpected video call.",
+            "badge": "",
+            "label": "Two-minute drill",
+            "stock_queries": [
+              "laptop video call",
+              "smartphone notification alert"
+            ],
+            "image_prompt": "Close up of an open modern laptop screen showing an incoming video call alert on an office desk, vertical 9:16 format, bright clean lighting, no people.",
+            "stock_query": "laptop video call",
+            "product_image": "work/2026-10-13-2/product/product_0.jpg"
+          },
+          {
+            "text": "Do not panic over undone brows; grab this stamp kit.",
+            "badge": "",
+            "label": "Eyebrow stamp kit",
+            "stock_queries": [
+              "eyebrow stamp",
+              "compact makeup powder"
+            ],
+            "image_prompt": "A sleek matte cosmetic stamp bottle and brow powder jar resting on a marble vanity surface, vertical 9:16 composition, soft natural lighting.",
+            "stock_query": "eyebrow stamp"
+          },
+          {
+            "text": "Line up the bendable stencil along your natural brow arch.",
+            "badge": "",
+            "label": "Flexible stencil guide",
+            "stock_queries": [
+              "eyebrow stencil",
+              "clear plastic template"
+            ],
+            "image_prompt": "Clear flexible eyebrow shaping stencils laid out neatly on a clean white countertop, vertical 9:16 layout, sharp studio focus, no text.",
+            "stock_query": "eyebrow stencil",
+            "product_image": "work/2026-10-13-2/product/product_1.jpg"
+          },
+          {
+            "text": "Press the soft cushion applicator down once, and you're done.",
+            "badge": "",
+            "label": "Soft sponge cushion",
+            "stock_queries": [
+              "sponge applicator",
+              "cushion stamp makeup"
+            ],
+            "image_prompt": "Macro detail shot of a rounded black cosmetic sponge applicator with smooth powder pigment coating, vertical 9:16 view, minimalist background.",
+            "stock_query": "sponge applicator"
+          },
+          {
+            "text": "The matte powder blends seamlessly without any messy cleanup.",
+            "badge": "",
+            "label": "Matte powder blend",
+            "stock_queries": [
+              "matte powder texture",
+              "cosmetic swatch"
+            ],
+            "image_prompt": "Velvety brow pigment powder swatched cleanly across a neutral stone makeup tray, soft shadows, vertical 9:16 presentation, luxury aesthetic.",
+            "stock_query": "matte powder texture",
+            "product_image": "work/2026-10-13-2/product/product_2.jpg"
+          },
+          {
+            "text": "Grab yours for fourteen ninety-nine on ashvara dot store, link in bio.",
+            "badge": "",
+            "label": "$14.99",
+            "stock_queries": [
+              "makeup bag pouch",
+              "cosmetics flatlay"
+            ],
+            "image_prompt": "Complete brow stamp and stencil accessory set arranged inside an open travel pouch on a pastel dressing table, vertical 9:16 aspect ratio.",
+            "stock_query": "makeup bag pouch"
+          },
+          {
+            "text": "How long does your morning brow routine usually take when...",
+            "badge": "",
+            "label": "$1500.00 \u00b7 ashvara.store",
+            "stock_queries": [
+              "vanity mirror",
+              "alarm clock desk"
+            ],
+            "image_prompt": "A minimalist digital desk clock set to two minutes next to a neat vanity mirror setup, warm indoor lighting, vertical 9:16 composition.",
+            "stock_query": "vanity mirror",
+            "product_image": "work/2026-10-13-2/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "The kit includes reusable shaping stencils and a sponge stamp applicator.",
+          "The product is available for $14.99 at ashvara.store."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Your boss just pinged you for an unexpected video call. Do not panic over undone brows; grab this stamp kit. Line up the bendable stencil along your natural brow arch. Press the soft cushion applicator down once, and you're done. The matte powder blends seamlessly without any messy cleanup. Grab yours for fourteen ninety-nine on ashvara dot store, link in bio. How long does your morning brow routine usually take when...",
+        "product": {
+          "handle": "natural-4d-eyebrow-tattoo-sticker",
+          "title": "4D Waterproof Eyebrow Tattoo Stickers",
+          "url": "https://ashvara.store/products/natural-4d-eyebrow-tattoo-sticker",
+          "price": "$1500.00"
+        },
+        "shot_plan": [
+          {
+            "subject": "laptop video call notification on screen",
+            "queries": [
+              {
+                "q": "laptop video call",
+                "must": [
+                  "laptop",
+                  "call"
+                ]
+              },
+              {
+                "q": "computer screen notification",
+                "must": [
+                  "screen",
+                  "notification"
+                ]
+              },
+              {
+                "q": "desk workspace laptop",
+                "must": [
+                  "laptop"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "eyebrow stamp kit opened on a vanity",
+            "queries": [
+              {
+                "q": "eyebrow stamp kit",
+                "must": [
+                  "stamp",
+                  "kit"
+                ]
+              },
+              {
+                "q": "makeup palette open",
+                "must": [
+                  "palette"
+                ]
+              },
+              {
+                "q": "cosmetic product flatlay",
+                "must": [
+                  "cosmetic"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "flexible stencil held against eyebrow arch",
+            "queries": [
+              {
+                "q": "eyebrow stencil guide",
+                "must": [
+                  "stencil"
+                ]
+              },
+              {
+                "q": "makeup stencil face",
+                "must": [
+                  "face"
+                ]
+              },
+              {
+                "q": "beauty tool close up",
+                "must": [
+                  "tool"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "sponge cushion pressing powder onto eyebrow",
+            "queries": [
+              {
+                "q": "sponge applicator makeup",
+                "must": [
+                  "sponge",
+                  "makeup"
+                ]
+              },
+              {
+                "q": "brow stamp application",
+                "must": [
+                  "stamp"
+                ]
+              },
+              {
+                "q": "cosmetic sponge press",
+                "must": [
+                  "sponge"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "matte eyebrow powder blending smoothly",
+            "queries": [
+              {
+                "q": "matte powder makeup",
+                "must": [
+                  "powder",
+                  "makeup"
+                ]
+              },
+              {
+                "q": "eyebrow makeup blend",
+                "must": [
+                  "eyebrow"
+                ]
+              },
+              {
+                "q": "cosmetic powder compact",
+                "must": [
+                  "powder"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "eyebrow stamp kit packaging displayed",
+            "queries": [
+              {
+                "q": "makeup product box",
+                "must": [
+                  "product"
+                ]
+              },
+              {
+                "q": "beauty set packaging",
+                "must": [
+                  "set"
+                ]
+              },
+              {
+                "q": "cosmetic kit display",
+                "must": [
+                  "kit"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person drawing eyebrows with makeup pencil",
+            "queries": [
+              {
+                "q": "drawing eyebrow pencil",
+                "must": [
+                  "pencil",
+                  "eyebrow"
+                ]
+              },
+              {
+                "q": "makeup routine mirror",
+                "must": [
+                  "mirror"
+                ]
+              },
+              {
+                "q": "applying eyebrow makeup",
+                "must": [
+                  "makeup"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "makeup brush",
+          "eyebrow stencil",
+          "cosmetic kit"
+        ],
+        "visual_style": "Fast-paced beauty hack demonstration featuring close-ups of eyebrow shaping tools and makeup application.",
+        "visual_refs": [
+          "Perfect brows. Zero skill. \u2728 Get waterproof, smudge-proof brows in just 5 seconds. #browstamp",
+          "Easy eyebrow hack that saves you time and money \ud83d\udc9e",
+          "Uneven Eyebrow Hack l Christen Dominique",
+          "Want a quick brow, in under 10 seconds? \ud83e\udd29",
+          "Get your eyebrows on point using this handy eyebrow stamp #shorts",
+          "Crazy eyebrow hack that actually works \ud83d\ude33"
+        ],
+        "voice": "en-US-BrianMultilingualNeural",
+        "visual_report": {
+          "shots": 7,
+          "checked": 7,
+          "unchecked": 0,
+          "filler": 3
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-BrianMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-13",
+        "name": "2026-10-13-2-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-13",
+        "name": "2026-10-13-2-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,068 --> 00:00:01,889\nYour boss just pinged you for an\n\n2\n00:00:01,889 --> 00:00:04,986\nunexpected video call Do not panic over\n\n3\n00:00:04,986 --> 00:00:08,750\nundone brows grab this stamp kit Line\n\n4\n00:00:08,750 --> 00:00:11,005\nup the bendable stencil along your natural\n\n5\n00:00:11,005 --> 00:00:11,753\nbrow arch.\n\n6\n00:00:11,753 --> 00:00:14,878\nPress the soft cushion applicator down once\n\n7\n00:00:14,878 --> 00:00:17,255\nand you're done The matte powder blends\n\n8\n00:00:17,255 --> 00:00:20,910\nseamlessly without any messy cleanup Grab yours\n\n9\n00:00:20,910 --> 00:00:24,538\nfor fourteen ninety-nine on ashvara dot store\n\n10\n00:00:24,538 --> 00:00:26,861\nlink in bio How long does your\n\n11\n00:00:26,861 --> 00:00:29,884\nmorning brow routine usually take when\n",
+      "tg_msg": 48,
+      "opts_msg": 50
     }
   },
-  "history": [],
+  "history": [
+    "Shedding nightmare to salon-fresh fluff!",
+    "Perfect brows in just five seconds!"
+  ],
   "trend_tries": {
     "2026-10-11": {
       "n": 1,
@@ -269,5 +938,12 @@
   "photo_posts": {
     "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620": "2026-10-13T21:05:44.818972+00:00"
   },
-  "photo_angle": 1
+  "photo_angle": 1,
+  "visual_searches": {
+    "2026-10-13": 2
+  },
+  "recent_voices": [
+    "en-AU-WilliamMultilingualNeural",
+    "en-US-BrianMultilingualNeural"
+  ]
 }

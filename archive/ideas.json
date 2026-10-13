@@ -129,22 +129,22 @@
    {
     "angle": "When your pet leaves a furry jacket on every piece of furniture you own.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Shedding nightmare to salon-fresh fluff!",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-13-1",
     "virality_score": 7,
     "why": ""
    },
    {
     "angle": "When you only have two minutes to look put-together for that sudden video call.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 2,
     "title": "Perfect brows in just five seconds!",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-13-2",
     "virality_score": 7,
     "why": ""
    },
