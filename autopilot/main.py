@@ -620,6 +620,34 @@ def poll_once(st, wait=0):
 
 
 # ---------------------------------------------------------------- utilities
+def cmd_metacheck():
+    """Read-only check of the Facebook Page token and linked Instagram account. Nothing is posted."""
+    import requests
+    g = f"https://graph.facebook.com/{config.IG_API_VERSION}"
+    lines = ["🔎 <b>Facebook / Instagram check</b> (nothing posted)"]
+    if not (config.FB_PAGE_ID and config.FB_PAGE_TOKEN):
+        lines.append("❌ FB_PAGE_ID or FB_PAGE_TOKEN secret is missing.")
+    else:
+        r = requests.get(f"{g}/{config.FB_PAGE_ID}", timeout=30, params={
+            "fields": "name,instagram_business_account{id,username}", "access_token": config.FB_PAGE_TOKEN}).json()
+        if "error" in r:
+            lines.append(f"❌ Facebook: {esc(str(r['error'].get('message', r['error']))[:200])}")
+        else:
+            lines.append(f"✅ Facebook Page: <b>{esc(r.get('name', '?'))}</b>")
+            ig = r.get("instagram_business_account") or {}
+            lines.append(f"✅ Instagram: @{esc(ig.get('username', '?'))}" if ig.get("id")
+                         else "❌ Instagram: no Instagram professional account linked to this Page")
+        dbg = requests.get(f"{g}/me/permissions", timeout=30, params={"access_token": config.FB_PAGE_TOKEN}).json()
+        if isinstance(dbg.get("data"), list):
+            granted = sorted(p["permission"] for p in dbg["data"] if p.get("status") == "granted")
+            need = {"pages_manage_posts", "pages_read_engagement", "instagram_basic", "instagram_content_publish"}
+            miss = sorted(need - set(granted))
+            lines.append("✅ Permissions OK" if not miss else f"⚠️ Missing permissions: {', '.join(miss)}")
+    lines.append(f"Posting to: {', '.join(sorted(config.PUBLISH_TO)) or 'nothing (Telegram only)'}")
+    print("\n".join(lines))
+    telegram.send("\n".join(lines))
+
+
 def cmd_aicheck():
     results = llm.health_check()
     lines = ["🩺 <b>AI services check</b>"]
@@ -690,6 +718,8 @@ def main():
     try:
         if cmd == "test":
             return cmd_test(args)
+        if cmd == "metacheck":  # read-only: can the bot see the Facebook Page and Instagram account? posts nothing
+            return cmd_metacheck()
         if cmd == "aicheck":
             return cmd_aicheck()
         if cmd == "ideascheck":  # dry run of today's idea picking: nothing is sent or saved
