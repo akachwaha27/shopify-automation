@@ -48,7 +48,12 @@ def _save_status(s):
 
 def ready(limit):
     s = statuses()
-    return [r for r in rows() if s.get(r["id"], {}).get("status", "Ready") == "Ready"][:limit]
+    today = state.now().date().isoformat()
+
+    def usable(st):  # Ready, or an earlier day's idea that failed / wasn't picked (offered again)
+        status = st.get("status", "Ready")
+        return status == "Ready" or (status in ("Failed", "Not picked") and (st.get("sent") or "")[:10] < today)
+    return [r for r in rows() if usable(s.get(r["id"], {}))][:limit]
 
 
 def topic_of(r):

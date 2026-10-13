@@ -60,6 +60,34 @@ def token_warning():
         print("token check failed:", e)
 
 
+def product_topics(st, n, skip=()):
+    """Product-promo ideas straight from the store catalog, least recently featured first."""
+    from . import products
+    last = {}
+    for v in st.get("videos", {}).values():
+        h = (v.get("topic") or {}).get("product")
+        if h:
+            last[h] = max(last.get(h, ""), v.get("updated") or "")
+    cat = [p for p in products.catalog() if p.get("images") and p["handle"] not in skip]
+    cat.sort(key=lambda p: (last.get(p["handle"], ""), random.random()))
+    cat = cat[:n]
+    if not cat:
+        return []
+    hooks = {}
+    try:
+        out = llm.ask_json("For each product below, write a short, catchy 3-7 word video title for a 30-second "
+                           "social media product Reel, and a one-line angle (relatable everyday hook). No health "
+                           "or medical claims.\n" + "\n".join(f"- {p['handle']}: {p['title']}" for p in cat) +
+                           '\nReturn JSON: {"ideas": [{"handle": "...", "title": "...", "angle": "..."}]}')
+        hooks = {i.get("handle"): i for i in out.get("ideas", [])}
+    except Exception as e:  # noqa: BLE001
+        print("product idea titles failed:", e)
+    return [{"title": (hooks.get(p["handle"]) or {}).get("title") or p["title"],
+             "angle": (hooks.get(p["handle"]) or {}).get("angle") or "Product demo with a relatable hook",
+             "format": "product", "tone": "normal", "virality_score": 7,
+             "trend_source": "Ashvara store catalog", "product": p["handle"]} for p in cat]
+
+
 def cmd_trends(st):
     token_warning()
     tries = st.setdefault("trend_tries", {})
@@ -78,6 +106,8 @@ def cmd_trends(st):
         if len(sheet) >= config.TOPICS_PER_DAY:
             break
     topics = list(sheet)
+    if len(topics) < config.TOPICS_PER_DAY:  # plan ran short: promo ideas for products not featured lately
+        topics += product_topics(st, config.TOPICS_PER_DAY - len(topics), [t.get("product") for t in topics])
     if len(topics) < config.TOPICS_PER_DAY and not config.PLAN_ONLY:  # top up with the bot's own ideas
         signals = trends.collect()
         topics += trends.pick_topics(signals, st.get("history", []), n=config.TOPICS_PER_DAY - len(topics),
