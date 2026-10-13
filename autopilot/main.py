@@ -625,6 +625,15 @@ def cmd_metacheck():
     import requests
     g = f"https://graph.facebook.com/{config.IG_API_VERSION}"
     lines = ["🔎 <b>Facebook / Instagram check</b> (nothing posted)"]
+    if config.FB_PAGE_TOKEN:
+        try:
+            info = requests.get(f"https://graph.facebook.com/oauth/access_token_info", timeout=30,
+                                params={"access_token": config.FB_PAGE_TOKEN}).json()
+            exp = info.get("expires_in")
+            lines.append("🔑 Saved token: never expires" if not exp else
+                         f"🔑 Saved token expires in about {round(int(exp) / 86400, 1)} days")
+        except Exception as e:  # noqa: BLE001
+            print("token info failed:", e)
     publish.resolve_page()
     if not (config.FB_PAGE_ID and config.FB_PAGE_TOKEN):
         lines.append("❌ FB_PAGE_ID or FB_PAGE_TOKEN secret is missing.")

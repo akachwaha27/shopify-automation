@@ -107,6 +107,17 @@ def resolve_page():
             if me["id"] != config.FB_PAGE_ID:
                 print(f"Using the Page from the token: {me.get('name')} (FB_PAGE_ID secret differs)")
             config.FB_PAGE_ID = me["id"]
+        else:  # a User token: swap it for the Page's own token
+            pages = requests.get(f"https://graph.facebook.com/{config.IG_API_VERSION}/me/accounts", timeout=30, params={
+                "fields": "id,name,access_token", "access_token": config.FB_PAGE_TOKEN}).json().get("data", [])
+            pick = next((p for p in pages if p.get("id") == config.FB_PAGE_ID), None) or \
+                next((p for p in pages if "ashvara" in (p.get("name") or "").lower()), None) or (pages[0] if pages else None)
+            if pick:
+                print(f"User token given; using Page token for {pick.get('name')}")
+                config.FB_PAGE_ID = pick["id"]
+                config.FB_PAGE_TOKEN = pick["access_token"]
+                if not os.getenv("IG_ACCESS_TOKEN"):
+                    config.IG_ACCESS_TOKEN = pick["access_token"]
     except Exception as e:  # noqa: BLE001
         print("Page lookup from token failed:", str(e)[:200])
     return config.FB_PAGE_ID
