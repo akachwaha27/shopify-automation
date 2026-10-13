@@ -774,6 +774,9 @@ def main():
             return state.save(st)
         st = state.load()
         try:
+            if cmd in ("photo", "photopreview"):  # daily product photo post on Facebook + Instagram
+                from . import photopost
+                return photopost.run(st, dry=(cmd == "photopreview"))
             {"trends": cmd_trends, "poll": cmd_poll}[cmd](st)
         finally:
             state.save(st)
