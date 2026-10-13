@@ -91,8 +91,30 @@ def youtube(path, title, description, tags, category="24", thumb=None, srt=None,
 
 
 # ---------------- Instagram Reels ----------------
+_PAGE_CHECKED = False
+
+
+def resolve_page():
+    """A Page token knows which Page it belongs to: use that id (FB_PAGE_ID may hold a profile id by mistake)."""
+    global _PAGE_CHECKED
+    if _PAGE_CHECKED or not config.FB_PAGE_TOKEN:
+        return config.FB_PAGE_ID
+    _PAGE_CHECKED = True
+    try:
+        me = requests.get(f"https://graph.facebook.com/{config.IG_API_VERSION}/me", timeout=30,
+                          params={"fields": "id,name,category", "access_token": config.FB_PAGE_TOKEN}).json()
+        if me.get("id") and me.get("category"):  # only Pages have a category, so this is a Page token
+            if me["id"] != config.FB_PAGE_ID:
+                print(f"Using the Page from the token: {me.get('name')} (FB_PAGE_ID secret differs)")
+            config.FB_PAGE_ID = me["id"]
+    except Exception as e:  # noqa: BLE001
+        print("Page lookup from token failed:", str(e)[:200])
+    return config.FB_PAGE_ID
+
+
 def _ig_user_id():
     """IG_USER_ID secret, or looked up from the Facebook Page it is linked to (so only FB_PAGE_TOKEN is needed)."""
+    resolve_page()
     if config.IG_USER_ID or not (config.FB_PAGE_ID and config.FB_PAGE_TOKEN):
         return config.IG_USER_ID
     try:
@@ -138,6 +160,7 @@ def instagram(path, caption):
 
 # ---------------- Facebook Page Reels ----------------
 def facebook(path, caption, title=""):
+    resolve_page()
     if not (config.FB_PAGE_ID and config.FB_PAGE_TOKEN):
         return None, "skipped (not configured)"
     g = f"https://graph.facebook.com/{config.IG_API_VERSION}"

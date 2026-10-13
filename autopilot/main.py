@@ -625,6 +625,7 @@ def cmd_metacheck():
     import requests
     g = f"https://graph.facebook.com/{config.IG_API_VERSION}"
     lines = ["🔎 <b>Facebook / Instagram check</b> (nothing posted)"]
+    publish.resolve_page()
     if not (config.FB_PAGE_ID and config.FB_PAGE_TOKEN):
         lines.append("❌ FB_PAGE_ID or FB_PAGE_TOKEN secret is missing.")
     else:
