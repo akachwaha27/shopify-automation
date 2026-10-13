@@ -122,5 +122,78 @@
   ],
   "sent_at": "2026-10-12T15:13:22.652196+00:00",
   "status": "closed"
+ },
+ "2026-10-13": {
+  "date": "2026-10-13",
+  "ideas": [
+   {
+    "angle": "When your pet leaves a furry jacket on every piece of furniture you own.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Shedding nightmare to salon-fresh fluff!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When you only have two minutes to look put-together for that sudden video call.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Perfect brows in just five seconds!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When you woke up feeling exhausted but need to look like you slept eight hours.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Instant morning de-puff and glow up!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When zooming in too close in the bathroom mirror ruins your whole morning.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Say goodbye to stubborn clogged pores!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When you want a full-body workout without actually leaving the house.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Transform your living room into a gym!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When bad lighting ruins your makeup before you even step out the door.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Never miss a makeup detail again!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-13T21:21:00.597531+00:00",
+  "status": "waiting"
  }
 }

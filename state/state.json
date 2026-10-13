@@ -120,6 +120,67 @@
         3
       ],
       "status": "closed"
+    },
+    "2026-10-13": {
+      "topics": [
+        {
+          "title": "Shedding nightmare to salon-fresh fluff!",
+          "angle": "When your pet leaves a furry jacket on every piece of furniture you own.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-grooming-kit"
+        },
+        {
+          "title": "Perfect brows in just five seconds!",
+          "angle": "When you only have two minutes to look put-together for that sudden video call.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "natural-4d-eyebrow-tattoo-sticker"
+        },
+        {
+          "title": "Instant morning de-puff and glow up!",
+          "angle": "When you woke up feeling exhausted but need to look like you slept eight hours.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "double-head-jade-facial-roller-57419"
+        },
+        {
+          "title": "Say goodbye to stubborn clogged pores!",
+          "angle": "When zooming in too close in the bathroom mirror ruins your whole morning.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "electric-small-bubble-blackhead-remover-65778"
+        },
+        {
+          "title": "Transform your living room into a gym!",
+          "angle": "When you want a full-body workout without actually leaving the house.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620"
+        },
+        {
+          "title": "Never miss a makeup detail again!",
+          "angle": "When bad lighting ruins your makeup before you even step out the door.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "portable-led-makeup-mirror"
+        }
+      ],
+      "sent_at": "2026-10-13T21:21:00.597531+00:00",
+      "selected": [],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -199,8 +260,8 @@
       "at": "2026-10-12T22:10:28.758134+00:00"
     },
     "2026-10-13": {
-      "n": 3,
-      "at": "2026-10-13T21:06:30.564787+00:00"
+      "n": 4,
+      "at": "2026-10-13T21:17:13.568412+00:00"
     }
   },
   "cleanup_day": "2026-10-13",
