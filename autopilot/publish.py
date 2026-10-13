@@ -91,8 +91,21 @@ def youtube(path, title, description, tags, category="24", thumb=None, srt=None,
 
 
 # ---------------- Instagram Reels ----------------
+def _ig_user_id():
+    """IG_USER_ID secret, or looked up from the Facebook Page it is linked to (so only FB_PAGE_TOKEN is needed)."""
+    if config.IG_USER_ID or not (config.FB_PAGE_ID and config.FB_PAGE_TOKEN):
+        return config.IG_USER_ID
+    try:
+        r = requests.get(f"https://graph.facebook.com/{config.IG_API_VERSION}/{config.FB_PAGE_ID}", timeout=30,
+                         params={"fields": "instagram_business_account", "access_token": config.FB_PAGE_TOKEN}).json()
+        config.IG_USER_ID = (r.get("instagram_business_account") or {}).get("id")
+    except Exception as e:  # noqa: BLE001
+        print("Instagram account lookup failed:", str(e)[:200])
+    return config.IG_USER_ID
+
+
 def instagram(path, caption):
-    if not (config.IG_USER_ID and config.IG_ACCESS_TOKEN):
+    if not (_ig_user_id() and config.IG_ACCESS_TOKEN):
         return None, "skipped (not configured)"
     g = f"https://{config.IG_GRAPH_HOST}/{config.IG_API_VERSION}"
     tok = config.IG_ACCESS_TOKEN
