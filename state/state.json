@@ -248,6 +248,67 @@
         1
       ],
       "status": "waiting"
+    },
+    "2026-10-14-2": {
+      "topics": [
+        {
+          "title": "Stop guessing your pet's portions!",
+          "angle": "Never wonder if you are overfeeding your furry best friend again.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "800g-1g-pet-food-scale-cup-for-dog-cat-feeding-bowl-kitchen-scale-spoon-measuring-scoop-cup-portable-with-led-display-79241"
+        },
+        {
+          "title": "Painless nail trims at home!",
+          "angle": "Say goodbye to the stressful wrestling matches during paw-dicures.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
+        },
+        {
+          "title": "The ultimate satisfying skin cleanout!",
+          "angle": "Watch all that daily pore buildup vanish in seconds.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "electric-small-bubble-blackhead-remover-65778"
+        },
+        {
+          "title": "Upgrade your daily face wash routine!",
+          "angle": "Turn your basic bathroom sink into a mini spa every morning.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "skin-cleaner-5-in-1-new"
+        },
+        {
+          "title": "Say goodbye to gym calluses!",
+          "angle": "Get a rock-solid grip without tearing up your hands on the barbell.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
+        },
+        {
+          "title": "Fix your slouch in seconds!",
+          "angle": "Stop letting that afternoon desk slump ruin your vibe.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "adjustable-brace-support-belt-back-posture-corrector-30592"
+        }
+      ],
+      "sent_at": "2026-10-14T18:43:35.721071+00:00",
+      "selected": [],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -1670,8 +1731,8 @@
       "at": "2026-10-13T21:17:13.568412+00:00"
     },
     "2026-10-14": {
-      "n": 1,
-      "at": "2026-10-14T18:05:25.621654+00:00"
+      "n": 2,
+      "at": "2026-10-14T18:43:18.151708+00:00"
     }
   },
   "cleanup_day": "2026-10-14",
