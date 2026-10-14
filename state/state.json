@@ -1,5 +1,5 @@
 {
-  "tg_offset": 272239688,
+  "tg_offset": 272239690,
   "batches": {
     "2026-10-11": {
       "topics": [
@@ -184,6 +184,70 @@
         1
       ],
       "status": "closed"
+    },
+    "2026-10-14": {
+      "topics": [
+        {
+          "title": "Stop Muddy Paws At The Door!",
+          "angle": "Relatable everyday struggle of cleaning muddy dog paws before they jump on clean furniture.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-paw-cleaner-63144"
+        },
+        {
+          "title": "Get That Spa Glow At Home",
+          "angle": "Achieving a fresh, clean face effortlessly during a busy morning routine.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "externa-skin-cleansing-tool"
+        },
+        {
+          "title": "Stress-Free Pedi Time For Pets",
+          "angle": "Overcoming the anxiety of clipping your dog's nails with a quiet, painless tool.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
+        },
+        {
+          "title": "Skip The Gym Commute Today",
+          "angle": "Fitting a quick, effective workout into a hectic schedule right in your living room.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "home-gym-kit"
+        },
+        {
+          "title": "Your Sunday Self-Care Night Upgrade",
+          "angle": "Transforming a boring evening into a relaxing at-home spa retreat.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "facial-spa-kit"
+        },
+        {
+          "title": "Say Hello To Cleaner Pores!",
+          "angle": "The satisfying feeling of leveling up your daily skincare routine with one simple gadget.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "electric-small-bubble-blackhead-remover-65778"
+        }
+      ],
+      "sent_at": "2026-10-14T18:05:46.824533+00:00",
+      "selected": [
+        0,
+        1
+      ],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -957,17 +1021,646 @@
       },
       "uploaded_at": "2026-10-14T01:50:54.740492+00:00",
       "slot": "2026-10-14T19:15:00+00:00"
+    },
+    "2026-10-14-1": {
+      "topic": {
+        "title": "Stop Muddy Paws At The Door!",
+        "angle": "Relatable everyday struggle of cleaning muddy dog paws before they jump on clean furniture.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "pet-paw-cleaner-63144"
+      },
+      "status": "published",
+      "by": "you",
+      "updated": "2026-10-14T18:09:19.231378+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "stop muddy paws",
+        "title": "Stop muddy paws on your clean couch \ud83d\udc3e",
+        "hook_text": "Muddy paws everywhere?",
+        "thumbnail_text": "Clean Paws Fast",
+        "description": "Stop muddy paws from ruining your clean furniture with this simple trick. Learn how to clean your dog's paws easily right at the door.\nShop it: https://ashvara.store/products/pet-paw-cleaner-63144",
+        "hashtags": [
+          "#shorts",
+          "#dogcare",
+          "#petgadgets",
+          "#ashvara"
+        ],
+        "tags": [
+          "stop muddy paws",
+          "muddy paws",
+          "how to clean dog paws after walk",
+          "muddy dog paws solution",
+          "dog muddy paws",
+          "dog paw cleaner",
+          "dog paw cleaner cup",
+          "dog paw cleaner diy",
+          "how to clean dog paws",
+          "dog paw cleaner brush",
+          "how to clean dog paws at home",
+          "best way to clean dog paws",
+          "how to clean dog paws before coming inside",
+          "pet products",
+          "dog cleaning hacks",
+          "dog owner struggles",
+          "pet accessories",
+          "ashvara"
+        ],
+        "pinned_comment": "How many times a day do you have to wipe your dog's paws? Let me know below!",
+        "key_facts": [],
+        "scenes": [
+          {
+            "text": "Muddy paws ruining your clean couch again?",
+            "badge": "",
+            "label": "Stop Muddy Paws",
+            "stock_queries": [
+              "dog muddy paws",
+              "dirty dog indoor"
+            ],
+            "image_prompt": "Vertical 9:16, muddy dog paw prints on a clean living room floor, cinematic lighting, no text, no people.",
+            "stock_query": "dog muddy paws",
+            "product_image": "work/2026-10-14-1/product/product_0.jpg"
+          },
+          {
+            "text": "Okay, so here is the easiest way to stop the mess right at the door.",
+            "badge": "",
+            "label": "Quick Doorstep Cleanup",
+            "stock_queries": [
+              "dog at door",
+              "pet entryway"
+            ],
+            "image_prompt": "Vertical 9:16, a golden retriever dog waiting patiently by a front door, cozy entryway, no text, no people.",
+            "stock_query": "dog at door"
+          },
+          {
+            "text": "You just add a little water to this gentle silicone washer.",
+            "badge": "",
+            "label": "Soft Silicone Bristles",
+            "stock_queries": [
+              "silicone brush",
+              "adding water to cup"
+            ],
+            "image_prompt": "Vertical 9:16, clean portable pet paw cleaner cup being filled with water, macro shot, no text, no people.",
+            "stock_query": "silicone brush",
+            "product_image": "work/2026-10-14-1/product/product_1.jpg"
+          },
+          {
+            "text": "The soft bristles scrub off all the dirt without hurting their paws.",
+            "badge": "",
+            "label": "Gentle On Paws",
+            "stock_queries": [
+              "dog paw cleaning",
+              "cleaning dog paws"
+            ],
+            "image_prompt": "Vertical 9:16, close up of soft silicone bristles inside a cleaning cup, clean and bright lighting, no text, no people.",
+            "stock_query": "dog paw cleaning"
+          },
+          {
+            "text": "At about fifteen centimeters tall, it easily fits in your bag or by the shoe rack.",
+            "badge": "",
+            "label": "Compact Size",
+            "stock_queries": [
+              "shoe rack entryway",
+              "compact travel gadget"
+            ],
+            "image_prompt": "Vertical 9:16, neat entryway shoe rack with a small green pet accessory resting on it, no text, no people.",
+            "stock_query": "shoe rack entryway",
+            "product_image": "work/2026-10-14-1/product/product_2.jpg"
+          },
+          {
+            "text": "It is only twenty four dollars at ashvara point store, so grab yours today.",
+            "badge": "",
+            "label": "From $1800.00 \u00b7 ashvara.store",
+            "stock_queries": [
+              "online shopping store",
+              "modern web store"
+            ],
+            "image_prompt": "Vertical 9:16, minimalist clean product display shelf with warm soft lighting, no text, no people.",
+            "stock_query": "online shopping store",
+            "product_image": "work/2026-10-14-1/product/product_3.jpg"
+          }
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Muddy paws ruining your clean couch again? Okay, so here is the easiest way to stop the mess right at the door. You just add a little water to this gentle silicone washer. The soft bristles scrub off all the dirt without hurting their paws. At about fifteen centimeters tall, it easily fits in your bag or by the shoe rack. It is only twenty four dollars at ashvara point store, so grab yours today.",
+        "product": {
+          "handle": "pet-paw-cleaner-63144",
+          "title": "Portable Dog Paw Cleaner",
+          "url": "https://ashvara.store/products/pet-paw-cleaner-63144",
+          "price": "From $1800.00"
+        },
+        "shot_plan": [
+          {
+            "subject": "dirty dog paws on a clean sofa",
+            "queries": [
+              {
+                "q": "muddy dog paws couch",
+                "must": [
+                  "dog",
+                  "couch"
+                ]
+              },
+              {
+                "q": "dirty dog sofa",
+                "must": [
+                  "dog",
+                  "sofa"
+                ]
+              },
+              {
+                "q": "dog footprints furniture",
+                "must": [
+                  "dog",
+                  "furniture"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "cleaning dog paws at the front door",
+            "queries": [
+              {
+                "q": "cleaning dog paws doorway",
+                "must": [
+                  "dog",
+                  "doorway"
+                ]
+              },
+              {
+                "q": "dog paw cleaner door",
+                "must": [
+                  "dog",
+                  "door"
+                ]
+              },
+              {
+                "q": "cleaning pet paws entrance",
+                "must": [
+                  "pet",
+                  "entrance"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "water being added to a silicone paw washer",
+            "queries": [
+              {
+                "q": "silicone paw washer water",
+                "must": [
+                  "washer",
+                  "water"
+                ]
+              },
+              {
+                "q": "dog paw cleaner cup",
+                "must": [
+                  "cup",
+                  "water"
+                ]
+              },
+              {
+                "q": "pet foot washer device",
+                "must": [
+                  "washer",
+                  "device"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "soft silicone bristles cleaning a dog paw gently",
+            "queries": [
+              {
+                "q": "silicone bristles dog paw",
+                "must": [
+                  "bristles",
+                  "paw"
+                ]
+              },
+              {
+                "q": "cleaning dog foot brush",
+                "must": [
+                  "brush",
+                  "paw"
+                ]
+              },
+              {
+                "q": "pet paw scrubber tool",
+                "must": [
+                  "scrubber",
+                  "tool"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "compact paw cleaner sitting by a shoe rack",
+            "queries": [
+              {
+                "q": "paw cleaner shoe rack",
+                "must": [
+                  "cleaner",
+                  "rack"
+                ]
+              },
+              {
+                "q": "small pet tool hallway",
+                "must": [
+                  "tool",
+                  "hallway"
+                ]
+              },
+              {
+                "q": "compact dog accessory bag",
+                "must": [
+                  "accessory",
+                  "bag"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "dog paw cleaning product displayed on a store shelf or table",
+            "queries": [
+              {
+                "q": "pet product display store",
+                "must": [
+                  "product",
+                  "store"
+                ]
+              },
+              {
+                "q": "dog accessory on table",
+                "must": [
+                  "accessory",
+                  "table"
+                ]
+              },
+              {
+                "q": "pet grooming tool retail",
+                "must": [
+                  "tool",
+                  "retail"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "dog paws",
+          "clean couch",
+          "pet supplies"
+        ],
+        "visual_style": "Bright, relatable pet care video featuring close-up demonstrations of cleaning products in a cozy home setting.",
+        "visual_refs": [
+          "Can this mat really stop muddy paw prints? Testing the Muddy Mat super absorbent dog door rug!",
+          "Muddy Mat Washable Microfiber Rug",
+          "I Tested This XL Dog Door Mat\u2026 Does It Actually Stop Muddy Paws?",
+          "Stop muddy paw prints at the door. \ud83d\udc3e",
+          "\ud83d\udc3e This Doormat Stops Muddy Paw Prints! IM HOME Washable Dog Mat",
+          "door mat This Doormat Stops Muddy Paw Prints! IM HOME Washable Dog Mat"
+        ],
+        "voice": "en-US-EmmaMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-EmmaMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-14",
+        "name": "2026-10-14-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-14",
+        "name": "2026-10-14-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,095 --> 00:00:03,003\nMuddy paws ruining your clean couch again\n\n2\n00:00:03,003 --> 00:00:04,959\nOkay so here is the easiest way\n\n3\n00:00:04,959 --> 00:00:06,359\nto stop the mess right at the\n\n4\n00:00:06,359 --> 00:00:08,709\ndoor You just add a little water\n\n5\n00:00:08,709 --> 00:00:11,766\nto this gentle silicone washer The soft\n\n6\n00:00:11,766 --> 00:00:13,927\nbristles scrub off all the dirt without\n\n7\n00:00:13,927 --> 00:00:17,283\nhurting their paws At about fifteen centimeters\n\n8\n00:00:17,283 --> 00:00:19,932\ntall it easily fits in your bag\n\n9\n00:00:19,932 --> 00:00:21,861\nor by the shoe rack It is\n\n10\n00:00:21,861 --> 00:00:24,253\nonly twenty four dollars at ashvara point\n\n11\n00:00:24,253 --> 00:00:26,813\nstore so grab yours today\n",
+      "tg_msg": 65,
+      "opts_msg": 67,
+      "approved_by": "you",
+      "publish_now": false,
+      "description_full": "Stop muddy paws from ruining your clean furniture with this simple trick. Learn how to clean your dog's paws easily right at the door.\nShop it: https://ashvara.store/products/pet-paw-cleaner-63144\n\n#shorts #dogcare #petgadgets #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review and approved by the channel owner.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-EmmaMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          null,
+          "FAILED: IG container failed: {'error': {'message': 'User access is restricted', 'type': 'OAuthException', 'code': 25, 'error_subcode': 2207050, 'is_transient': False, 'error_user_title': 'User is restricted', 'error_user_msg': 'The Instagram account is restricted.', 'fbtrace_id': 'A8_MR5lit7s35DBKmGl81GY'}}"
+        ],
+        "Facebook": [
+          "https://www.facebook.com/reel/1638490808064435",
+          "published"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-14T18:09:19.231397+00:00",
+      "slot": "2026-10-14T23:15:00+00:00"
+    },
+    "2026-10-14-2": {
+      "topic": {
+        "title": "Get That Spa Glow At Home",
+        "angle": "Achieving a fresh, clean face effortlessly during a busy morning routine.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "externa-skin-cleansing-tool"
+      },
+      "status": "awaiting_approval",
+      "by": "you",
+      "updated": "2026-10-14T18:08:39.097363+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "spa glow at home",
+        "title": "Get That Spa Glow At Home in Seconds \ud83c\udf3f",
+        "hook_text": "Zero time for a spa?",
+        "thumbnail_text": "Instant Spa Glow",
+        "description": "Get that spa glow at home with this simple morning routine. Discover how to refresh your face effortlessly before a busy day.\nShop it: https://ashvara.store/products/externa-skin-cleansing-tool",
+        "hashtags": [
+          "#shorts",
+          "#skincare",
+          "#ashvarastore",
+          "#ashvara"
+        ],
+        "tags": [
+          "spa glow at home",
+          "spa glow",
+          "spa at home face",
+          "home glow face pack",
+          "easy morning skincare",
+          "quick morning skincare",
+          "how to get spa at home",
+          "quick morning face yoga",
+          "quick morning face massage",
+          "spa glow up",
+          "get instant glow",
+          "early morning skincare",
+          "daily face care",
+          "home spa routine",
+          "easy face refresh",
+          "fresh face routine",
+          "morning routine glow",
+          "simple beauty habits",
+          "ashvara store",
+          "effortless glow"
+        ],
+        "pinned_comment": "What is your absolute go to step when you need to wake up your face in the morning?",
+        "scenes": [
+          {
+            "text": "Zero time for a spa? Honestly, you can fake it in under two minutes. Watch this.",
+            "badge": "",
+            "label": "Quick Morning Reset",
+            "stock_queries": [
+              "stressed woman morning",
+              "looking in mirror"
+            ],
+            "image_prompt": "Vertical 9:16 aesthetic mirror setup with soft morning light, no people, minimalist style, photorealistic",
+            "stock_query": "stressed woman morning",
+            "product_image": "work/2026-10-14-2/product/product_0.jpg"
+          },
+          {
+            "text": "Start with the Ashvara facial sponge. It is four inches wide and super fluffy.",
+            "badge": "",
+            "label": "Soft texture",
+            "stock_queries": [
+              "soft facial sponge",
+              "holding sponge water"
+            ],
+            "image_prompt": "Vertical 9:16 soft textured white cleansing sponge on a clean marble surface, close up, no people, photorealistic",
+            "stock_query": "soft facial sponge"
+          },
+          {
+            "text": "It is made from natural konjac root, so it gently sweeps away morning dullness.",
+            "badge": "",
+            "label": "Natural material",
+            "stock_queries": [
+              "natural konjac sponge",
+              "sponge in water"
+            ],
+            "image_prompt": "Vertical 9:16 natural konjac sponge resting on green leaves, spa aesthetic, no people, photorealistic",
+            "stock_query": "natural konjac sponge",
+            "product_image": "work/2026-10-14-2/product/product_1.jpg"
+          },
+          {
+            "text": "Just run it under warm water, add your cleanser, and buff in small circles.",
+            "badge": "",
+            "label": "Easy daily use",
+            "stock_queries": [
+              "running water tap",
+              "washing face sponge"
+            ],
+            "image_prompt": "Vertical 9:16 clean bathroom sink with running water from a modern faucet, no people, photorealistic",
+            "stock_query": "running water tap"
+          },
+          {
+            "text": "Look at that fresh finish. Grab yours for twelve dollars right now at ashvara.store.",
+            "badge": "",
+            "label": "$2500.00 \u00b7 ashvara.store",
+            "stock_queries": [
+              "glow skin face",
+              "clean bathroom counter"
+            ],
+            "image_prompt": "Vertical 9:16 glowing clean skin closeup aesthetic, minimalist modern bathroom background, no people, photorealistic",
+            "stock_query": "glow skin face",
+            "product_image": "work/2026-10-14-2/product/product_2.jpg"
+          }
+        ],
+        "key_facts": [
+          "The Ashvara facial sponge is four inches wide.",
+          "It is made from natural konjac root.",
+          "The price is twelve dollars on ashvara.store."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Zero time for a spa? Honestly, you can fake it in under two minutes. Watch this. Start with the Ashvara facial sponge. It is four inches wide and super fluffy. It is made from natural konjac root, so it gently sweeps away morning dullness. Just run it under warm water, add your cleanser, and buff in small circles. Look at that fresh finish. Grab yours for twelve dollars right now at ashvara.store.",
+        "product": {
+          "handle": "externa-skin-cleansing-tool",
+          "title": "Ultrasonic Facial Scrubber",
+          "url": "https://ashvara.store/products/externa-skin-cleansing-tool",
+          "price": "$2500.00"
+        },
+        "shot_plan": [
+          {
+            "subject": "woman looking at watch or getting ready in morning",
+            "queries": [
+              {
+                "q": "morning routine",
+                "must": [
+                  "routine"
+                ]
+              },
+              {
+                "q": "woman bathroom",
+                "must": [
+                  "bathroom"
+                ]
+              },
+              {
+                "q": "getting ready",
+                "must": [
+                  "woman"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "facial sponge texture close up",
+            "queries": [
+              {
+                "q": "facial sponge",
+                "must": [
+                  "sponge"
+                ]
+              },
+              {
+                "q": "konjac sponge",
+                "must": [
+                  "sponge"
+                ]
+              },
+              {
+                "q": "soft sponge",
+                "must": [
+                  "sponge"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "natural plant root or konjac root ingredient",
+            "queries": [
+              {
+                "q": "konjac root",
+                "must": [
+                  "root"
+                ]
+              },
+              {
+                "q": "plant root",
+                "must": [
+                  "root"
+                ]
+              },
+              {
+                "q": "natural skincare",
+                "must": [
+                  "skincare"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "running water on facial sponge with cleanser",
+            "queries": [
+              {
+                "q": "running water",
+                "must": [
+                  "water"
+                ]
+              },
+              {
+                "q": "cleansing face",
+                "must": [
+                  "cleanser"
+                ]
+              },
+              {
+                "q": "washing face",
+                "must": [
+                  "face"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "glowing fresh skin face close up",
+            "queries": [
+              {
+                "q": "glowing skin",
+                "must": [
+                  "skin"
+                ]
+              },
+              {
+                "q": "fresh face",
+                "must": [
+                  "face"
+                ]
+              },
+              {
+                "q": "skincare result",
+                "must": [
+                  "woman"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "spa care",
+          "skincare routine",
+          "beauty products"
+        ],
+        "visual_style": "Clean, bright, aesthetic close-up shots of skincare routines with soft pastel tones and natural ingredients.",
+        "visual_refs": [
+          "\ud83d\udc8e The Secret Spa Mask You Can Make at Home \u2728 No More Facials!",
+          "\ud83d\udec1 At Home Pedicure That Feels Like a Spa \ud83d\udec1",
+          "Get GLOWING SKIN with this amazing FACIAL ROUTINE \ud83d\ude0d  | At home SPA FACIAL",
+          "This lil\u2019 duo from and just gave me spa-day skin without even leaving the house",
+          "Spa Day Ideas!",
+          "HOW TO HAVE AN AT HOME SPA DAY \u2022 self care bath, topicals face masks, soaking tub aesthetic day in\ud83d\udc97"
+        ],
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 5,
+          "checked": 5,
+          "unchecked": 0,
+          "filler": 1
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).",
+        "Robert Fotograf / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:Sponge-for-washing-1212612.jpg"
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-14",
+        "name": "2026-10-14-2-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-14",
+        "name": "2026-10-14-2-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,050 --> 00:00:02,450\nZero time for a spa Honestly you\n\n2\n00:00:02,450 --> 00:00:04,592\ncan fake it in under two minutes\n\n3\n00:00:04,592 --> 00:00:07,500\nWatch this Start with the Ashvara facial\n\n4\n00:00:07,500 --> 00:00:10,161\nsponge It is four inches wide and\n\n5\n00:00:10,161 --> 00:00:12,574\nsuper fluffy It is made from natural\n\n6\n00:00:12,574 --> 00:00:15,718\nkonjac root so it gently sweeps away\n\n7\n00:00:15,718 --> 00:00:18,366\nmorning dullness Just run it under warm\n\n8\n00:00:18,366 --> 00:00:21,089\nwater add your cleanser and buff in\n\n9\n00:00:21,089 --> 00:00:24,282\nsmall circles Look at that fresh finish\n\n10\n00:00:24,282 --> 00:00:26,287\nGrab yours for twelve dollars right now\n\n11\n00:00:26,287 --> 00:00:26,993\nat ashvara .\n\n12\n00:00:26,993 --> 00:00:27,850\nstore\n",
+      "tg_msg": 68,
+      "opts_msg": 70
     }
   },
   "history": [
     "Shedding nightmare to salon-fresh fluff!",
-    "Perfect brows in just five seconds!"
+    "Perfect brows in just five seconds!",
+    "Stop Muddy Paws At The Door!",
+    "Get That Spa Glow At Home"
   ],
   "trend_tries": {
-    "2026-10-11": {
-      "n": 1,
-      "at": "2026-10-11T16:01:32.577965+00:00"
-    },
     "2026-10-12": {
       "n": 2,
       "at": "2026-10-12T22:10:28.758134+00:00"
@@ -975,6 +1668,10 @@
     "2026-10-13": {
       "n": 4,
       "at": "2026-10-13T21:17:13.568412+00:00"
+    },
+    "2026-10-14": {
+      "n": 1,
+      "at": "2026-10-14T18:05:25.621654+00:00"
     }
   },
   "cleanup_day": "2026-10-14",
@@ -985,10 +1682,12 @@
   },
   "photo_angle": 2,
   "visual_searches": {
-    "2026-10-13": 2
+    "2026-10-14": 2
   },
   "recent_voices": [
     "en-AU-WilliamMultilingualNeural",
-    "en-US-BrianMultilingualNeural"
+    "en-US-BrianMultilingualNeural",
+    "en-US-EmmaMultilingualNeural",
+    "en-US-AvaMultilingualNeural"
   ]
 }

@@ -195,5 +195,78 @@
   ],
   "sent_at": "2026-10-13T21:21:00.597531+00:00",
   "status": "closed"
+ },
+ "2026-10-14": {
+  "date": "2026-10-14",
+  "ideas": [
+   {
+    "angle": "Relatable everyday struggle of cleaning muddy dog paws before they jump on clean furniture.",
+    "format": "product",
+    "picked": true,
+    "rank": 1,
+    "title": "Stop Muddy Paws At The Door!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": "2026-10-14-1",
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Achieving a fresh, clean face effortlessly during a busy morning routine.",
+    "format": "product",
+    "picked": true,
+    "rank": 2,
+    "title": "Get That Spa Glow At Home",
+    "trend_source": "Ashvara store catalog",
+    "video_id": "2026-10-14-2",
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Overcoming the anxiety of clipping your dog's nails with a quiet, painless tool.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Stress-Free Pedi Time For Pets",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Fitting a quick, effective workout into a hectic schedule right in your living room.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Skip The Gym Commute Today",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Transforming a boring evening into a relaxing at-home spa retreat.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Your Sunday Self-Care Night Upgrade",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "The satisfying feeling of leveling up your daily skincare routine with one simple gadget.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Say Hello To Cleaner Pores!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-14T18:05:46.824533+00:00",
+  "status": "waiting"
  }
 }
