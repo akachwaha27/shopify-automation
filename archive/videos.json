@@ -129,7 +129,7 @@
  },
  "2026-10-13-1": {
   "angle": "When your pet leaves a furry jacket on every piece of furniture you own.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
@@ -157,12 +157,29 @@
    "The grooming tool can be rinsed clean under running water."
   ],
   "pinned_comment": "Is your pet's shedding season officially all year round? Tell us what breed keeps your vacuum working overtime! 🐶",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": "https://www.facebook.com/reel/1702335444944192",
+    "status": "published"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "FAILED: IG container failed: {'error': {'message': 'User access is restricted', 'type': 'OAuthException', 'code': 25, 'error_subcode': 2207050, 'is_transient': False, 'error_user_title': 'User is restricted', 'error_user_msg': 'The Instagram account is restricted.', 'fbtrace_id': 'A5hRmeZWzO5QL6rO-WfJSdK'}}"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "pet shedding brush",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-14T16:15:00+00:00",
   "script": "Your couch does not need to wear another fur coat. This pet grooming brush uses angled stainless steel bristles to trap shed hair fast. It pulls loose undercoat without scratching sensitive skin. Then, press the release button, and the fur disc pops cleanly into the trash. It rinses clean under running water and works on dogs and cats alike. It is nineteen dollars on ashvara dot store, link in bio. What color fur covers your furniture the most? Because...",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,050 --> 00:00:01,770\nYour couch does not need to wear\n\n2\n00:00:01,770 --> 00:00:04,332\nanother fur coat This pet grooming brush\n\n3\n00:00:04,332 --> 00:00:06,585\nuses angled stainless steel bristles to trap\n\n4\n00:00:06,585 --> 00:00:09,258\nshed hair fast It pulls loose undercoat\n\n5\n00:00:09,258 --> 00:00:12,203\nwithout scratching sensitive skin Then press\n\n6\n00:00:12,203 --> 00:00:13,973\nthe release button and the fur disc\n\n7\n00:00:13,973 --> 00:00:16,436\npops cleanly into the trash It rinses\n\n8\n00:00:16,436 --> 00:00:18,305\nclean under running water and works on\n\n9\n00:00:18,305 --> 00:00:20,632\ndogs and cats alike It is nineteen\n\n10\n00:00:20,632 --> 00:00:22,921\ndollars on ashvara dot store link in\n\n11\n00:00:22,921 --> 00:00:25,731\nbio What color fur covers your furniture\n\n12\n00:00:25,731 --> 00:00:27,702\nthe most Because\n",
   "tags": [
    "pet shedding brush",
@@ -195,14 +212,14 @@
   "thumbnail_text": "Zero Couch Fur",
   "title": "Pet Shedding Brush for Cleaner Furniture 🐾",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-13T23:00:13.774740+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-14T01:50:23.200915+00:00",
+  "uploaded_at": "2026-10-14T01:50:23.200930+00:00",
   "virality_score": 7,
   "voice": "en-AU-WilliamMultilingualNeural"
  },
  "2026-10-13-2": {
   "angle": "When you only have two minutes to look put-together for that sudden video call.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-BrianMultilingualNeural)."
@@ -229,12 +246,29 @@
    "The product is available for $14.99 at ashvara.store."
   ],
   "pinned_comment": "How long does your brow routine usually take in the morning? Tell us below! 👇",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": "https://www.facebook.com/reel/2146629049396196",
+    "status": "published"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "FAILED: IG container failed: {'error': {'message': 'User access is restricted', 'type': 'OAuthException', 'code': 25, 'error_subcode': 2207050, 'is_transient': False, 'error_user_title': 'User is restricted', 'error_user_msg': 'The Instagram account is restricted.', 'fbtrace_id': 'Arb5HA3BHp-h93C-vPjOgCx'}}"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "quick eyebrow stamp",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-14T19:15:00+00:00",
   "script": "Your boss just pinged you for an unexpected video call. Do not panic over undone brows; grab this stamp kit. Line up the bendable stencil along your natural brow arch. Press the soft cushion applicator down once, and you're done. The matte powder blends seamlessly without any messy cleanup. Grab yours for fourteen ninety-nine on ashvara dot store, link in bio. How long does your morning brow routine usually take when...",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,068 --> 00:00:01,889\nYour boss just pinged you for an\n\n2\n00:00:01,889 --> 00:00:04,986\nunexpected video call Do not panic over\n\n3\n00:00:04,986 --> 00:00:08,750\nundone brows grab this stamp kit Line\n\n4\n00:00:08,750 --> 00:00:11,005\nup the bendable stencil along your natural\n\n5\n00:00:11,005 --> 00:00:11,753\nbrow arch.\n\n6\n00:00:11,753 --> 00:00:14,878\nPress the soft cushion applicator down once\n\n7\n00:00:14,878 --> 00:00:17,255\nand you're done The matte powder blends\n\n8\n00:00:17,255 --> 00:00:20,910\nseamlessly without any messy cleanup Grab yours\n\n9\n00:00:20,910 --> 00:00:24,538\nfor fourteen ninety-nine on ashvara dot store\n\n10\n00:00:24,538 --> 00:00:26,861\nlink in bio How long does your\n\n11\n00:00:26,861 --> 00:00:29,884\nmorning brow routine usually take when\n",
   "tags": [
    "quick eyebrow stamp",
@@ -262,8 +296,8 @@
   "thumbnail_text": "5-Second Brows",
   "title": "Quick eyebrow stamp for sudden video calls ✨",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-13T23:02:05.212297+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-14T01:50:54.740476+00:00",
+  "uploaded_at": "2026-10-14T01:50:54.740492+00:00",
   "virality_score": 7,
   "voice": "en-US-BrianMultilingualNeural"
  }
