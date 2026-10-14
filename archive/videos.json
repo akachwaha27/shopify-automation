@@ -386,7 +386,7 @@
  },
  "2026-10-14-2": {
   "angle": "Achieving a fresh, clean face effortlessly during a busy morning routine.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).",
@@ -415,12 +415,29 @@
    "The price is twelve dollars on ashvara.store."
   ],
   "pinned_comment": "What is your absolute go to step when you need to wake up your face in the morning?",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": "https://www.facebook.com/reel/1085027137480446",
+    "status": "published"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "FAILED: IG container failed: {'error': {'message': 'User access is restricted', 'type': 'OAuthException', 'code': 25, 'error_subcode': 2207050, 'is_transient': False, 'error_user_title': 'User is restricted', 'error_user_msg': 'The Instagram account is restricted.', 'fbtrace_id': 'AvfPERhUQGM-h0Qi_ls92oI'}}"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "spa glow at home",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-15T01:15:00+00:00",
   "script": "Zero time for a spa? Honestly, you can fake it in under two minutes. Watch this. Start with the Ashvara facial sponge. It is four inches wide and super fluffy. It is made from natural konjac root, so it gently sweeps away morning dullness. Just run it under warm water, add your cleanser, and buff in small circles. Look at that fresh finish. Grab yours for twelve dollars right now at ashvara.store.",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,050 --> 00:00:02,450\nZero time for a spa Honestly you\n\n2\n00:00:02,450 --> 00:00:04,592\ncan fake it in under two minutes\n\n3\n00:00:04,592 --> 00:00:07,500\nWatch this Start with the Ashvara facial\n\n4\n00:00:07,500 --> 00:00:10,161\nsponge It is four inches wide and\n\n5\n00:00:10,161 --> 00:00:12,574\nsuper fluffy It is made from natural\n\n6\n00:00:12,574 --> 00:00:15,718\nkonjac root so it gently sweeps away\n\n7\n00:00:15,718 --> 00:00:18,366\nmorning dullness Just run it under warm\n\n8\n00:00:18,366 --> 00:00:21,089\nwater add your cleanser and buff in\n\n9\n00:00:21,089 --> 00:00:24,282\nsmall circles Look at that fresh finish\n\n10\n00:00:24,282 --> 00:00:26,287\nGrab yours for twelve dollars right now\n\n11\n00:00:26,287 --> 00:00:26,993\nat ashvara .\n\n12\n00:00:26,993 --> 00:00:27,850\nstore\n",
   "tags": [
    "spa glow at home",
@@ -452,8 +469,8 @@
   "thumbnail_text": "Instant Spa Glow",
   "title": "Get That Spa Glow At Home in Seconds 🌿",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-14T18:08:39.097363+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-14T21:51:32.915615+00:00",
+  "uploaded_at": "2026-10-14T21:51:32.915630+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
  }
