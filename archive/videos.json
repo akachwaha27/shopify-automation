@@ -541,5 +541,81 @@
   "uploaded_at": "",
   "virality_score": 7,
   "voice": "en-US-AndrewMultilingualNeural"
+ },
+ "2026-10-15-s1": {
+  "angle": "Sample UGC-style ad presented by Joan Miller & Coco",
+  "approved_by": "",
+  "category": "26",
+  "credits": [
+   "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-JennyNeural).",
+   "Presenter: AI-generated character (Kling AI Avatar via fal.ai), not a real customer.",
+   "Judgefloro / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:2526Men_bathing_and_grooming_Shih_Tzu_19.jpg",
+   "Judgefloro / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:2526Men_bathing_and_grooming_Shih_Tzu_21.jpg",
+   "U.S. Army photo by Sgt. 1st Class Tanisha Karn / Wikimedia Commons (Public domain) https://commons.wikimedia.org/wiki/File:MWD_Spa_Day_(9568409).jpg"
+  ],
+  "date": "2026-10-15",
+  "description": "Discover the easiest way to remove tangles and loose hair from your dog's coat using a specialized grooming comb. Find this handy tool at ashvara.store today.\nShop it: https://ashvara.store/products/pet-fur-knot-cutter-89653\n\n#shorts #doggrrooming #petcare #ashvara\n\n— Credits & disclosure —\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-JennyNeural).\nPresenter: AI-generated character (Kling AI Avatar via fal.ai), not a real customer.\nJudgefloro / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:2526Men_bathing_and_grooming_Shih_Tzu_19.jpg\nJudgefloro / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:2526Men_bathing_and_grooming_Shih_Tzu_21.jpg\nU.S. Army photo by Sgt. 1st Class Tanisha Karn / Wikimedia Commons (Public domain) https://commons.wikimedia.org/wiki/File:MWD_Spa_Day_(9568409).jpg\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+  "file": {
+   "name": "2026-10-15-s1-v0.mp4",
+   "tag": "videos-2026-10-15",
+   "type": "release"
+  },
+  "format": "product",
+  "hashtags": [
+   "#shorts",
+   "#doggrrooming",
+   "#petcare",
+   "#ashvara"
+  ],
+  "hook_text": "Matted fur driving you crazy?",
+  "id": "2026-10-15-s1",
+  "idea_title": "Pet Fur Knot Remover Comb – Dog Grooming Tool",
+  "key_facts": [
+   "The comb features stainless steel teeth.",
+   "The comb measures about seven inches long.",
+   "The price is fourteen dollars and ninety-nine cents."
+  ],
+  "pinned_comment": "How often do you brush your dog's coat each week? Let's compare notes below!",
+  "platforms": {},
+  "primary_keyword": "pet fur knot remover",
+  "redos": 0,
+  "scheduled_for": "",
+  "script": "This is the easiest way to handle stubborn mats in your dog's coat without any pulling. Wait, look at this stainless steel design with rounded teeth that glide right through thick undercoats. Here's the thing, it measures about seven inches long so it fits comfortably in your hand while you work. Okay, so you just gently stroke the curved edges through the fur to catch loose hairs effortlessly. Grab yours today for fourteen dollars and ninety-nine cents at ashvara.store.",
+  "status": "awaiting_approval",
+  "subtitles_srt": "1\n00:00:00,099 --> 00:00:01,643\nThis is the easiest way to handle\n\n2\n00:00:01,643 --> 00:00:03,567\nstubborn mats in your dog's coat without\n\n3\n00:00:03,567 --> 00:00:06,581\nany pulling Wait look at this stainless\n\n4\n00:00:06,581 --> 00:00:08,652\nsteel design with rounded teeth that glide\n\n5\n00:00:08,652 --> 00:00:11,949\nright through thick undercoats Here's the thing\n\n6\n00:00:11,949 --> 00:00:13,909\nit measures about seven inches long so\n\n7\n00:00:13,909 --> 00:00:15,588\nit fits comfortably in your hand while\n\n8\n00:00:15,588 --> 00:00:18,542\nyou work Okay so you just gently\n\n9\n00:00:18,542 --> 00:00:20,086\nstroke the curved edges through the fur\n\n10\n00:00:20,086 --> 00:00:23,199\nto catch loose hairs effortlessly Grab yours\n\n11\n00:00:23,199 --> 00:00:25,306\ntoday for fourteen dollars and ninety-nine\n\n12\n00:00:25,306 --> 00:00:26,569\ncents at ashvara .\n\n13\n00:00:26,569 --> 00:00:27,422\nstore\n",
+  "tags": [
+   "pet fur knot remover",
+   "pet fur remover brush",
+   "remove dog hair knots",
+   "remove dog matted fur",
+   "remove knots from dog fur",
+   "best dog brush for matted hair",
+   "how to brush out matted dog hair",
+   "pet knot remover",
+   "dog dematting comb",
+   "dog dematting brush",
+   "pet fur knot cutter",
+   "how to remove dog knot",
+   "grooming thick dog fur",
+   "pet brush for matted hair",
+   "dog dematting",
+   "pet care tools",
+   "dog grooming tool",
+   "dog undercoat rake",
+   "dog fur maintenance",
+   "ashvara store"
+  ],
+  "thumb": {
+   "name": "2026-10-15-s1-v0-thumb.jpg",
+   "tag": "videos-2026-10-15",
+   "type": "release"
+  },
+  "thumbnail_text": "Fix matted pet fur",
+  "title": "Stop struggling with tangled pet fur",
+  "trend_source": "sample ad",
+  "updated": "2026-10-15T18:16:53.414952+00:00",
+  "uploaded_at": "",
+  "virality_score": 8,
+  "voice": "en-US-JennyNeural"
  }
 }
