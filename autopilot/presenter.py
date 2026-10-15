@@ -320,6 +320,7 @@ def _gemini_edit(images, prompt, out, aspect):
 
 def edit(images, prompt, out, aspect="9:16"):
     """Try Google's Gemini (free tier) first; fall back to fal.ai (~$0.04) if Gemini says no."""
+    os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
     try:
         path = _gemini_edit(images, prompt, out, aspect)
         print(f"  image via Gemini (free): {os.path.basename(out)}")
