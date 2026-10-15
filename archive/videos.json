@@ -708,7 +708,7 @@
  },
  "2026-10-15-s3": {
   "angle": "Sample UGC-style ad presented by Joan Miller & Coco",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-JennyNeural).",
@@ -737,12 +737,29 @@
    "The price of the item is fifteen dollars."
   ],
   "pinned_comment": "How often do you find yourself brushing your dog's coat to keep it smooth? Let me know your routine below.",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": "https://www.facebook.com/reel/1456966796310631",
+    "status": "published"
+   },
+   "Instagram": {
+    "link": "https://www.instagram.com/reel/DeiCiMMgNuL/",
+    "status": "published"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "pet fur knot remover",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-16T01:15:00+00:00",
   "script": "Stop fighting those stubborn dog knots every single day with this simple tool. This pet fur knot remover features a dual sided stainless steel head design. It is built with a non slip rubber grip for total control while brushing. Just gently work through the coat to keep things smooth and comfortable for them. Find this for fifteen dollars at ashvara.store. What is the hardest part about grooming your pet?",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,104 --> 00:00:02,455\nStop fighting those stubborn dog knots every\n\n2\n00:00:02,455 --> 00:00:05,476\nsingle day with this simple tool This\n\n3\n00:00:05,476 --> 00:00:07,378\npet fur knot remover features a dual\n\n4\n00:00:07,378 --> 00:00:10,639\nsided stainless steel head design It is\n\n5\n00:00:10,639 --> 00:00:12,432\nbuilt with a non slip rubber grip\n\n6\n00:00:12,432 --> 00:00:15,965\nfor total control while brushing Just gently\n\n7\n00:00:15,965 --> 00:00:17,554\nwork through the coat to keep things\n\n8\n00:00:17,554 --> 00:00:20,734\nsmooth and comfortable for them Find this\n\n9\n00:00:20,734 --> 00:00:22,745\nfor fifteen dollars at ashvara .\n\n10\n00:00:22,745 --> 00:00:25,707\nstore What is the hardest part about\n\n11\n00:00:25,707 --> 00:00:27,112\ngrooming your pet\n",
   "tags": [
    "pet fur knot remover",
@@ -775,8 +792,8 @@
   "thumbnail_text": "Tangle free fur",
   "title": "Easily Remove Dog Fur Knots at Home",
   "trend_source": "sample ad",
-  "updated": "2026-10-15T18:44:05.603358+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-15T22:33:46.167291+00:00",
+  "uploaded_at": "2026-10-15T22:33:46.167306+00:00",
   "virality_score": 8,
   "voice": "en-US-JennyNeural"
  }

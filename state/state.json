@@ -432,7 +432,7 @@
       ],
       "sent_at": "2026-10-15T18:27:44.244788+00:00",
       "selected": [],
-      "status": "waiting"
+      "status": "closed"
     }
   },
   "videos": {
@@ -2787,9 +2787,9 @@
         "cast": "joan",
         "costar": "coco"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "you",
-      "updated": "2026-10-15T18:44:05.603358+00:00",
+      "updated": "2026-10-15T22:33:46.167291+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "pet fur knot remover",
@@ -3068,7 +3068,29 @@
       },
       "srt": "1\n00:00:00,104 --> 00:00:02,455\nStop fighting those stubborn dog knots every\n\n2\n00:00:02,455 --> 00:00:05,476\nsingle day with this simple tool This\n\n3\n00:00:05,476 --> 00:00:07,378\npet fur knot remover features a dual\n\n4\n00:00:07,378 --> 00:00:10,639\nsided stainless steel head design It is\n\n5\n00:00:10,639 --> 00:00:12,432\nbuilt with a non slip rubber grip\n\n6\n00:00:12,432 --> 00:00:15,965\nfor total control while brushing Just gently\n\n7\n00:00:15,965 --> 00:00:17,554\nwork through the coat to keep things\n\n8\n00:00:17,554 --> 00:00:20,734\nsmooth and comfortable for them Find this\n\n9\n00:00:20,734 --> 00:00:22,745\nfor fifteen dollars at ashvara .\n\n10\n00:00:22,745 --> 00:00:25,707\nstore What is the hardest part about\n\n11\n00:00:25,707 --> 00:00:27,112\ngrooming your pet\n",
       "tg_msg": 143,
-      "opts_msg": 145
+      "opts_msg": 145,
+      "approved_by": "auto",
+      "description_full": "Easily manage your dog's coat with this pet fur knot remover tool. Keep grooming sessions simple and stress-free for your furry friend at home.\nShop it: https://ashvara.store/products/pet-fur-knot-cutter-89653\n\n#shorts #dogcare #petgrooming #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-JennyNeural).\nPresenter: AI-generated character (Kling AI Avatar via fal.ai), not a real customer.\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          "https://www.instagram.com/reel/DeiCiMMgNuL/",
+          "published"
+        ],
+        "Facebook": [
+          "https://www.facebook.com/reel/1456966796310631",
+          "published"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-15T22:33:46.167306+00:00",
+      "slot": "2026-10-16T01:15:00+00:00"
     }
   },
   "history": [
