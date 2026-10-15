@@ -46,6 +46,11 @@ INSTAGRAM_HASHTAGS = env("INSTAGRAM_HASHTAGS", 5, int)  # Instagram allows at mo
 
 # --- Optional AI images (free tier) instead of stock footage ---
 CF_ACCOUNT_ID = env("CF_ACCOUNT_ID")
+FAL_KEY = env("FAL_KEY")
+PRESENTER = env("PRESENTER", True, bool)            # AI presenter on product videos (needs FAL_KEY + a chosen look)
+PRESENTER_PER_DAY = env("PRESENTER_PER_DAY", 1, int)
+PRESENTER_MODEL = env("PRESENTER_MODEL", "fal-ai/kling-video/ai-avatar/v2/standard")  # ~$0.056 per second
+PRESENTER_IMAGE_MODEL = env("PRESENTER_IMAGE_MODEL", "fal-ai/flux/dev")
 CF_API_TOKEN = env("CF_API_TOKEN")
 
 # --- Store (Ashvara product promos) ---

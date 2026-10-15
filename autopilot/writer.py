@@ -125,7 +125,9 @@ working (what it does, one concrete detail each: size, material, how it's used),
 price and "Link in bio, ashvara.store". Honest, specific and friendly - like a friend recommending it.
 NEVER make medical, health, therapy or "clinically proven" claims, never promise results (no "cures",
 "heals", "fixes pain", "reverses aging"), never invent reviews, ratings, sales numbers or fake urgency
-("only 3 left", "sale ends tonight") unless the row says so. badge empty; label = a 2-5 word benefit on
+("only 3 left", "sale ends tonight") unless the row says so. The first and last lines may be spoken on camera
+by an AI presenter: write them as natural lines spoken TO the viewer ("This is the easiest way to..."), and
+never in the voice of a customer - no "I've been using", "I bought", "changed my life", "my dog loves it". badge empty; label = a 2-5 word benefit on
 screen (e.g. "Washable cover"). Last scene label = the price.""",
     "explainer": """FORMAT: curiosity explainer.
 6-9 scenes: a surprising question or fact, then a clear explanation building to an "aha" payoff.

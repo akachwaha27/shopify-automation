@@ -206,6 +206,9 @@ def handle_button(st, cb):
     telegram.answer_callback(cb["id"], "Got it")
     if kind == "pick":
         queue_topic(st, rest[0], int(rest[1]))
+    elif kind == "presenter":
+        from . import presenter
+        presenter.choose(st, int(rest[0]))
     elif kind == "skip" and rest[0] in st["batches"]:
         st["batches"][rest[0]]["status"] = "skipped"
         telegram.send("👍 Skipping today.")
@@ -225,6 +228,10 @@ def handle_text(st, msg):
     elif text in ("/now", "/trends", "now"):
         telegram.send("🔎 Looking for fresh ideas...")
         cmd_trends(st)
+    elif text in ("/presenters", "presenters"):
+        from . import presenter
+        telegram.send("🧑 Making 3 presenter options (about a minute)...")
+        presenter.candidates(st)
     elif text in ("/help", "help", "/start", "?"):
         telegram.send(HELP)
     elif CMD_RE.match(raw):
@@ -377,7 +384,19 @@ def render_and_preview(st, vid, pkg):
     v = st["videos"][vid]
     out = os.path.join(config.WORK_DIR, f"{vid}-{v.get('redos', 0)}")
     avoid = st.get("recent_voices", []) + ([pkg["voice"]] if pkg.get("voice") else [])
+    pkg.pop("presenter_image", None)
+    pkg.pop("presenter_used", None)
+    if pkg.get("format") == "product":
+        from . import presenter
+        if presenter.due(st):
+            try:
+                pkg["presenter_image"] = presenter.image_path(st, os.path.join(out, "presenter"))
+            except Exception as e:  # noqa: BLE001
+                print("presenter image fetch failed:", e)
     path, credits = media.make_video(pkg, out, avoid)
+    if pkg.get("presenter_used"):
+        from . import presenter
+        presenter.mark_used(st)
     st["recent_voices"] = (st.get("recent_voices", []) + [pkg.get("voice")])[-5:]
     v["package"], v["credits"] = pkg, credits
     tag, ver = f"videos-{vid[:10]}", f"{vid}-v{v.get('redos', 0)}"
@@ -826,6 +845,9 @@ def main():
             return state.save(st)
         st = state.load()
         try:
+            if cmd == "presenters":  # make 3 AI presenter looks and send them to Telegram to pick from
+                from . import presenter
+                return presenter.candidates(st)
             if cmd == "igrepost":  # post already-published videos to Instagram only: igrepost <video ids>
                 return cmd_igrepost(st, args)
             if cmd in ("photo", "photopreview"):  # daily product photo post on Facebook + Instagram

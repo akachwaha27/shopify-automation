@@ -573,7 +573,19 @@ def make_video(pkg, out_dir, recent_voices=()):
     for i, (scene, (a, b)) in enumerate(zip(scenes, bounds)):
         dur = b - a
         n = 1 if dur < 3.6 else min(3, math.ceil(dur / 3.2))  # a fresh shot roughly every 3 seconds
-        if scene.get("product_image"):  # store promo: the real product photo, never cropped off
+        talk = None
+        if pkg.get("presenter_image") and i in (0, len(scenes) - 1) and dur <= 12:
+            try:  # AI presenter says this line on camera (lip-synced to the same voiceover)
+                from . import presenter
+                p = presenter.clip(audio, a, min(b, duration(audio)), pkg["presenter_image"],
+                                   os.path.join(out_dir, f"presenter{i}.mp4"))
+                talk = [{"kind": "video", "path": p, "credit": presenter.CREDIT, "checked": True}]
+                pkg["presenter_used"] = True
+            except Exception as e:  # noqa: BLE001
+                print(f"  presenter clip failed for scene {i}: {str(e)[:200]}")
+        if talk:
+            shots = talk
+        elif scene.get("product_image"):  # store promo: the real product photo, never cropped off
             shots = [{"kind": "product", "path": scene["product_image"], "credit": None, "checked": True}]
         elif scene.get("clip"):  # funny-clips format: this scene's clip was chosen (and watched) beforehand
             c = scene["clip"]
