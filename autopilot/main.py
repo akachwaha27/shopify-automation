@@ -850,9 +850,9 @@ def main():
             return state.save(st)
         st = state.load()
         try:
-            if cmd == "presenters":  # make 3 AI presenter looks and send them to Telegram to pick from
+            if cmd == "presenters":  # make the AI presenter cast ("presenters new" = only members not made yet)
                 from . import presenter
-                return presenter.candidates(st)
+                return presenter.candidates(st, missing_only="new" in args)
             if cmd == "igrepost":  # post already-published videos to Instagram only: igrepost <video ids>
                 return cmd_igrepost(st, args)
             if cmd in ("photo", "photopreview"):  # daily product photo post on Facebook + Instagram

@@ -33,13 +33,32 @@ CAST = [
      "look": "an upbeat Black man in his early 30s with a short fade haircut and a trimmed beard, wearing a grey hoodie"},
     {"id": "leo", "name": "Leo", "kind": "human", "voice": "en-US-SteffanMultilingualNeural",
      "look": "a relaxed East Asian man in his late 20s with short black hair, wearing an olive overshirt"},
-    {"id": "biscuit", "name": "Biscuit", "kind": "pet", "voice": "en-AU-WilliamMultilingualNeural",
+    # Dogs (different breeds and sizes)
+    {"id": "biscuit", "name": "Biscuit", "kind": "pet", "species": "dog", "voice": "en-AU-WilliamMultilingualNeural",
      "look": "a happy golden retriever dog"},
-    {"id": "luna", "name": "Luna", "kind": "pet", "voice": "en-GB-AdaMultilingualNeural",
+    {"id": "pepper", "name": "Pepper", "kind": "pet", "species": "dog", "voice": "en-GB-OllieMultilingualNeural",
+     "look": "a cute fawn French bulldog with big bat ears"},
+    {"id": "milo", "name": "Milo", "kind": "pet", "species": "dog", "voice": "en-AU-WilliamMultilingualNeural",
+     "look": "a playful tricolor beagle dog"},
+    {"id": "coco", "name": "Coco", "kind": "pet", "species": "dog", "voice": "en-GB-AdaMultilingualNeural",
+     "look": "a fluffy cream-colored Pomeranian dog"},
+    {"id": "bear", "name": "Bear", "kind": "pet", "species": "dog", "voice": "en-GB-OllieMultilingualNeural",
+     "look": "a big friendly black Labrador retriever dog"},
+    # Cats (different breeds and colours)
+    {"id": "luna", "name": "Luna", "kind": "pet", "species": "cat", "voice": "en-GB-AdaMultilingualNeural",
      "look": "a fluffy grey tabby cat with green eyes"},
+    {"id": "oliver", "name": "Oliver", "kind": "pet", "species": "cat", "voice": "en-AU-WilliamMultilingualNeural",
+     "look": "a chubby orange tabby cat"},
+    {"id": "mochi", "name": "Mochi", "kind": "pet", "species": "cat", "voice": "en-US-SerenaMultilingualNeural",
+     "look": "a fluffy white ragdoll cat with blue eyes"},
+    {"id": "shadow", "name": "Shadow", "kind": "pet", "species": "cat", "voice": "en-GB-OllieMultilingualNeural",
+     "look": "a sleek black cat with yellow eyes"},
 ]
 BY_ID = {c["id"]: c for c in CAST}
-PET_WORDS = ("pet", "dog", "cat", "paw", "puppy", "kitten", "groom", "leash", "collar", "litter", "treat")
+DOG_WORDS = {"dog", "dogs", "puppy", "puppies", "leash", "harness", "collar", "chew", "fetch"}
+CAT_WORDS = {"cat", "cats", "kitten", "kittens", "kitty", "litter", "scratching", "scratcher", "catnip"}
+PET_WORDS = DOG_WORDS | CAT_WORDS | {"pet", "pets", "paw", "paws", "groom", "grooming", "fur", "shedding", "treat",
+                                     "treats", "deshedding", "dematting"}
 
 
 def available():
@@ -110,9 +129,11 @@ def make_member(st, cid):
     return path
 
 
-def candidates(st, only=None):
+def candidates(st, only=None, missing_only=False):
     """Creates (or re-creates) the cast and shows each member in Telegram with a 'new look' button."""
     ids = [i for i in (only or [c["id"] for c in CAST]) if i in BY_ID]
+    if missing_only:
+        ids = [i for i in ids if i not in (st.get("presenters") or {})]
     made = []
     for cid in ids:
         try:
@@ -132,7 +153,7 @@ def candidates(st, only=None):
         rows.append(row)
     telegram.send("🎬 <b>The Ashvara cast</b> (" + ", ".join(BY_ID[c]["name"] for c in made) + ")\n"
                   "Each keeps this exact face and their own voice in every video. People present self-care and "
-                  "fitness products; Biscuit and Luna present pet products. Don't like one? Tap their name below "
+                  "fitness products; the dogs present dog products and the cats present cat products. Don't like one? Tap their name below "
                   "for a new look.", rows)
 
 
@@ -142,16 +163,30 @@ def redo(st, cid):
         candidates(st, [cid])
 
 
-def is_pet_product(product):
+def _words(product):
+    import re
     text = " ".join(str(product.get(k) or "") for k in ("title", "type", "handle")).lower()
-    return any(w in text for w in PET_WORDS)
+    return set(re.findall(r"[a-z]+", text))
+
+
+def is_pet_product(product):
+    return bool(_words(product) & PET_WORDS)
 
 
 def pick(st, product):
-    """Next cast member for this product: a pet for pet products, otherwise the person used least recently."""
+    """Next cast member for this product: a dog for dog products, a cat for cat products, any pet for other pet
+    products, otherwise the person used least recently."""
     have = st.get("presenters") or {}
-    kind = "pet" if is_pet_product(product or {}) else "human"
-    pool = [c for c in CAST if c["kind"] == kind and c["id"] in have] or [c for c in CAST if c["id"] in have]
+    w = _words(product or {})
+    if w & DOG_WORDS and not w & CAT_WORDS:
+        want = lambda c: c.get("species") == "dog"  # noqa: E731
+    elif w & CAT_WORDS and not w & DOG_WORDS:
+        want = lambda c: c.get("species") == "cat"  # noqa: E731
+    elif w & PET_WORDS:
+        want = lambda c: c["kind"] == "pet"  # noqa: E731
+    else:
+        want = lambda c: c["kind"] == "human"  # noqa: E731
+    pool = [c for c in CAST if want(c) and c["id"] in have] or [c for c in CAST if c["id"] in have]
     if not pool:
         return None
     last = st.get("presenter_last", {})
