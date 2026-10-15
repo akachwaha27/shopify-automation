@@ -51,6 +51,8 @@ PRESENTER = env("PRESENTER", True, bool)            # AI presenter on product vi
 PRESENTER_PER_DAY = env("PRESENTER_PER_DAY", 1, int)
 PRESENTER_MODEL = env("PRESENTER_MODEL", "fal-ai/kling-video/ai-avatar/v2/standard")  # ~$0.056 per second
 PRESENTER_IMAGE_MODEL = env("PRESENTER_IMAGE_MODEL", "fal-ai/flux/dev")
+PRESENTER_I2V_MODEL = env("PRESENTER_I2V_MODEL", "")                      # blank = Kling 2.5 Turbo (~$0.21 / 5s)
+PRESENTER_ACTION_CLIPS = env("PRESENTER_ACTION_CLIPS", 3, int)           # "using the product" clips per video
 CF_API_TOKEN = env("CF_API_TOKEN")
 
 # --- Store (Ashvara product promos) ---

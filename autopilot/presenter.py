@@ -382,7 +382,14 @@ def make_sheets(st, only=None):
                       "bot draws them using a product.")
 
 
-def product_scene(st, member, product_image, product_title, out, costar=None):
+BEATS = [
+    "close-up on the hands using it, the product in action",
+    "medium shot actually using it, natural smile",
+    "the happy result right after using it, product still in hand",
+]
+
+
+def product_scene(st, member, product_image, product_title, out, costar=None, beat=""):
     """A new photo of this cast member using the product (same face via the base photo + character sheet)."""
     refs = [image_path(st, member["id"], os.path.dirname(out))] + sheet_views(member["id"])[:2]
     partner = BY_ID.get(costar or member.get("partner") or "")
@@ -403,7 +410,24 @@ def product_scene(st, member, product_image, product_title, out, costar=None):
     else:
         action = (f"holding and using the product from the last reference image ({product_title}) in a bright cozy "
                   "home, looking at the product with a natural smile")
-    prompt = (f"Vertical smartphone UGC-style photo of {_who(member)} (the first reference images), {action}. "
+    prompt = (f"Vertical smartphone UGC-style photo of {_who(member)} (the first reference images), {action}"
+              + (f" - {beat}" if beat else "") + ". "
               "The product must look exactly like the last reference image (same shape, colours and details) and be "
               "clearly visible. Photorealistic, natural window light, no text, no logos added, no watermark.")
     return edit(refs, prompt, out)
+
+
+I2V_MODEL = "fal-ai/kling-video/v2.5-turbo/standard/image-to-video"   # ~$0.21 per 5-second clip
+
+
+def animate(still, motion, out):
+    """Turns a 'using the product' photo into a 5-second clip with real motion."""
+    res = run(config.PRESENTER_I2V_MODEL or I2V_MODEL, {
+        "image_url": _data_uri(still, "image/jpeg"), "duration": "5",
+        "prompt": f"{motion}. Natural, smooth, realistic motion, steady handheld phone camera, the product keeps its "
+                  "exact shape and colours, faces stay the same.",
+        "negative_prompt": "blur, distorted hands, extra fingers, morphing face, text, watermark, flicker"})
+    url = (res.get("video") or {}).get("url")
+    if not url:
+        raise RuntimeError(f"no video in fal result: {str(res)[:200]}")
+    return _download(url, out)

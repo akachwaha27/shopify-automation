@@ -10,6 +10,8 @@ import requests
 from . import config
 
 UA = {"User-Agent": "shopify-automation/1.0"}
+# Shopify shows prices in the visitor's local currency (GitHub's servers aren't always in the US): force USD.
+USD = {"cart_currency": "USD", "localization": "US"}
 _cache = {}
 
 
@@ -19,8 +21,8 @@ def catalog():
         return _cache["all"]
     out, page = [], 1
     while page <= 10:
-        r = requests.get(f"{config.STORE_URL}/products.json", params={"limit": 250, "page": page},
-                         headers=UA, timeout=30)
+        r = requests.get(f"{config.STORE_URL}/products.json", params={"limit": 250, "page": page, "currency": "USD"},
+                         headers=UA, cookies=USD, timeout=30)
         r.raise_for_status()
         items = r.json().get("products", [])
         if not items:

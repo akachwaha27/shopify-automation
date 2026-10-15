@@ -388,6 +388,7 @@ def render_and_preview(st, vid, pkg):
         pkg.pop(k, None)
     for sc in pkg.get("scenes", []):
         sc.pop("inhand_image", None)
+        sc.pop("inhand_video", None)
     member = None
     if pkg.get("format") == "product":
         from . import presenter, products
@@ -400,15 +401,22 @@ def render_and_preview(st, vid, pkg):
                     pkg["presenter_image"] = presenter.image_path(st, member["id"], os.path.join(out, "presenter"))
                     pkg["presenter_voice"], pkg["presenter_name"] = member["voice"], member["name"]
                     shot = next((sc["product_image"] for sc in pkg["scenes"] if sc.get("product_image")), None)
-                    mids = [i for i in range(1, len(pkg["scenes"]) - 1)]
-                    if shot and mids:  # one scene of the cast member actually using the product
-                        target = pkg["scenes"][mids[len(mids) // 2]]
+                    mids = [i for i in range(1, len(pkg["scenes"]) - 1)][:config.PRESENTER_ACTION_CLIPS]
+                    # the middle scenes become short clips of the cast member actually using the product
+                    for k, i in enumerate(mids if shot else []):
+                        target = pkg["scenes"][i]
+                        beat = presenter.BEATS[k % len(presenter.BEATS)]
                         try:
-                            target["inhand_image"] = presenter.product_scene(
+                            still = presenter.product_scene(
                                 st, member, shot, prod.get("title") or pkg["title"],
-                                os.path.join(out, "presenter", "inhand.jpg"), costar=v["topic"].get("costar"))
+                                os.path.join(out, "presenter", f"inhand{k}.jpg"), costar=v["topic"].get("costar"),
+                                beat=beat)
+                            target["inhand_image"] = still
+                            target["inhand_video"] = presenter.animate(
+                                still, f"{member['name']} {beat}, using the {prod.get('title') or 'product'}",
+                                os.path.join(out, "presenter", f"inhand{k}.mp4"))
                         except Exception as e:  # noqa: BLE001
-                            print("product-in-hand scene failed:", str(e)[:200])
+                            print(f"product-in-use clip {k} failed:", str(e)[:200])
                 except Exception as e:  # noqa: BLE001
                     print("presenter image fetch failed:", e)
     path, credits = media.make_video(pkg, out, avoid)
