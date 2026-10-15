@@ -54,6 +54,20 @@ CAST = [
     {"id": "shadow", "name": "Shadow", "kind": "pet", "species": "cat", "voice": "en-GB-OllieMultilingualNeural",
      "look": "a sleek black cat with yellow eyes"},
 ]
+# The saved cast (names, voices, personalities) lives in the repo: assets/cast/cast.json + assets/cast/<id>.jpg,
+# so every video reuses exactly the same faces. The descriptions above are only used to (re)draw a face.
+CAST_DIR = os.path.join("assets", "cast")
+_DRAW = {c["id"]: c["look"] for c in CAST}
+_DRAW["nina"] = _DRAW.pop("priya").replace("South Asian", "East Asian")
+try:
+    import json as _json
+    with open(os.path.join(CAST_DIR, "cast.json"), encoding="utf-8") as _f:
+        CAST = _json.load(_f)
+    for _c in CAST:
+        _c["draw"] = _DRAW.get(_c["id"], _c["look"])
+except FileNotFoundError:
+    for _c in CAST:
+        _c["draw"] = _c["look"]
 BY_ID = {c["id"]: c for c in CAST}
 DOG_WORDS = {"dog", "dogs", "puppy", "puppies", "leash", "harness", "collar", "chew", "fetch"}
 CAT_WORDS = {"cat", "cats", "kitten", "kittens", "kitty", "litter", "scratching", "scratcher", "catnip"}
@@ -106,10 +120,10 @@ def _download(url, path):
 # ---------------- the cast ----------------
 def _prompt(c):
     if c["kind"] == "pet":
-        return (f"Vertical smartphone photo of {c['look']} sitting and looking straight into the camera, face and "
+        return (f"Vertical smartphone photo of {c['draw']} sitting and looking straight into the camera, face and "
                 "chest centered in the upper middle of the frame, mouth closed, bright cozy modern living room "
                 "softly out of focus, natural window light, realistic fur detail, no text, no people")
-    return (f"Vertical smartphone selfie-video still of {c['look']}, looking straight at the camera with a natural "
+    return (f"Vertical smartphone selfie-video still of {c['draw']}, looking straight at the camera with a natural "
             "friendly smile, mouth closed, head and shoulders centered in the upper middle of the frame, bright "
             "cozy modern living room background softly out of focus, natural window light, realistic skin, "
             "authentic social media creator style, no text, no logos, nothing in hands")
@@ -176,7 +190,7 @@ def is_pet_product(product):
 def pick(st, product):
     """Next cast member for this product: a dog for dog products, a cat for cat products, any pet for other pet
     products, otherwise the person used least recently."""
-    have = st.get("presenters") or {}
+    have_ids = have(st)
     w = _words(product or {})
     if w & DOG_WORDS and not w & CAT_WORDS:
         want = lambda c: c.get("species") == "dog"  # noqa: E731
@@ -186,7 +200,7 @@ def pick(st, product):
         want = lambda c: c["kind"] == "pet"  # noqa: E731
     else:
         want = lambda c: c["kind"] == "human"  # noqa: E731
-    pool = [c for c in CAST if want(c) and c["id"] in have] or [c for c in CAST if c["id"] in have]
+    pool = [c for c in CAST if want(c) and c["id"] in have_ids] or [c for c in CAST if c["id"] in have_ids]
     if not pool:
         return None
     last = st.get("presenter_last", {})
@@ -195,7 +209,7 @@ def pick(st, product):
 
 def due(st):
     """True if today's product video may use a presenter."""
-    if not (config.PRESENTER and available() and st.get("presenters")):
+    if not (config.PRESENTER and available() and have(st)):
         return False
     return st.get("presenter_days", {}).get(state.now().strftime("%Y-%m-%d"), 0) < config.PRESENTER_PER_DAY
 
@@ -209,8 +223,20 @@ def mark_used(st, cid):
     st.setdefault("presenter_last", {})[cid] = state.iso()
 
 
+def _repo_image(st, cid):
+    """The saved face in the repo, unless a newer look was made later with the 'new look' button."""
+    path = os.path.join(CAST_DIR, f"{cid}.jpg")
+    redone = (st.get("presenter_versions") or {}).get(cid, 0) > 1
+    return path if os.path.exists(path) and not redone else None
+
+
+def have(st):
+    refs = st.get("presenters") or {}
+    return {c["id"] for c in CAST if _repo_image(st, c["id"]) or c["id"] in refs}
+
+
 def image_path(st, cid, out_dir):
-    return storage.fetch(st["presenters"][cid], out_dir)
+    return _repo_image(st, cid) or storage.fetch(st["presenters"][cid], out_dir)
 
 
 # ---------------- making a talking clip ----------------
