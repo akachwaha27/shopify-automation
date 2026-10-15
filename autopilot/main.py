@@ -206,9 +206,9 @@ def handle_button(st, cb):
     telegram.answer_callback(cb["id"], "Got it")
     if kind == "pick":
         queue_topic(st, rest[0], int(rest[1]))
-    elif kind == "presenter":
+    elif kind == "prs":
         from . import presenter
-        presenter.choose(st, int(rest[0]))
+        presenter.redo(st, rest[0])
     elif kind == "skip" and rest[0] in st["batches"]:
         st["batches"][rest[0]]["status"] = "skipped"
         telegram.send("👍 Skipping today.")
@@ -230,7 +230,7 @@ def handle_text(st, msg):
         cmd_trends(st)
     elif text in ("/presenters", "presenters"):
         from . import presenter
-        telegram.send("🧑 Making 3 presenter options (about a minute)...")
+        telegram.send("🎬 Making the Ashvara cast: 6 people + 2 pets (a few minutes)...")
         presenter.candidates(st)
     elif text in ("/help", "help", "/start", "?"):
         telegram.send(HELP)
@@ -384,19 +384,24 @@ def render_and_preview(st, vid, pkg):
     v = st["videos"][vid]
     out = os.path.join(config.WORK_DIR, f"{vid}-{v.get('redos', 0)}")
     avoid = st.get("recent_voices", []) + ([pkg["voice"]] if pkg.get("voice") else [])
-    pkg.pop("presenter_image", None)
-    pkg.pop("presenter_used", None)
+    for k in ("presenter_image", "presenter_used", "presenter_voice", "presenter_name"):
+        pkg.pop(k, None)
+    member = None
     if pkg.get("format") == "product":
-        from . import presenter
+        from . import presenter, products
         if presenter.due(st):
-            try:
-                pkg["presenter_image"] = presenter.image_path(st, os.path.join(out, "presenter"))
-            except Exception as e:  # noqa: BLE001
-                print("presenter image fetch failed:", e)
+            prod = products.find((pkg.get("product") or {}).get("handle") or v["topic"].get("product")) or {}
+            member = presenter.pick(st, prod)
+            if member:
+                try:
+                    pkg["presenter_image"] = presenter.image_path(st, member["id"], os.path.join(out, "presenter"))
+                    pkg["presenter_voice"], pkg["presenter_name"] = member["voice"], member["name"]
+                except Exception as e:  # noqa: BLE001
+                    print("presenter image fetch failed:", e)
     path, credits = media.make_video(pkg, out, avoid)
-    if pkg.get("presenter_used"):
+    if pkg.get("presenter_used") and member:
         from . import presenter
-        presenter.mark_used(st)
+        presenter.mark_used(st, member["id"])
     st["recent_voices"] = (st.get("recent_voices", []) + [pkg.get("voice")])[-5:]
     v["package"], v["credits"] = pkg, credits
     tag, ver = f"videos-{vid[:10]}", f"{vid}-v{v.get('redos', 0)}"

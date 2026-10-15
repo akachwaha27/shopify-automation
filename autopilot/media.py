@@ -557,7 +557,8 @@ def make_video(pkg, out_dir, recent_voices=()):
     if pkg.get("clip_audio"):
         return make_clip_ranking(pkg, out_dir)
     os.makedirs(out_dir, exist_ok=True)
-    voice = pick_voice(list(recent_voices))
+    voice = pkg.get("presenter_voice") if pkg.get("presenter_image") else None
+    voice = voice or pick_voice(list(recent_voices))
     audio, words, voice_credit = voiceover(pkg["script"], out_dir, voice)
     pkg["voice"] = voice if "Edge" in voice_credit else "gTTS"
     total = duration(audio) + 0.6

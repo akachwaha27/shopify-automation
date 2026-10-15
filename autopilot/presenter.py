@@ -1,6 +1,6 @@
 """AI presenter ("face of Ashvara") for product videos, made with fal.ai (paid per second of video).
 
-- `candidates(st)` makes 3 presenter looks and sends them to Telegram; tapping one saves it.
+- `candidates(st)` creates the cast (6 people + 2 pets) and shows them in Telegram; each can be re-made.
 - `clip(audio, start, end, image, out)` makes the presenter say one part of the voiceover (lip-synced),
   so it drops straight into the timeline over the same audio.
 
@@ -17,13 +17,29 @@ import requests
 from . import config, state, storage, telegram
 
 QUEUE = "https://queue.fal.run"
-CREDIT = "Presenter: AI-generated person (Kling AI Avatar via fal.ai), not a real customer."
+CREDIT = "Presenter: AI-generated character (Kling AI Avatar via fal.ai), not a real customer."
 
-LOOKS = [
-    "a friendly woman in her late 20s with shoulder-length brown hair, casual knit sweater",
-    "a cheerful man in his early 30s with short dark hair and a neat beard, plain t-shirt",
-    "a warm woman in her mid 30s with curly black hair, light denim shirt",
+# The Ashvara cast. Each one keeps the same face (one saved picture, reused in every video) and the same voice.
+CAST = [
+    {"id": "maya", "name": "Maya", "kind": "human", "voice": "en-US-AvaMultilingualNeural",
+     "look": "a friendly woman in her late 20s with shoulder-length brown hair, wearing a cream knit sweater"},
+    {"id": "priya", "name": "Priya", "kind": "human", "voice": "en-US-EmmaMultilingualNeural",
+     "look": "a warm South Asian woman in her early 30s with long dark hair in a low ponytail, wearing a sage green top"},
+    {"id": "sofia", "name": "Sofia", "kind": "human", "voice": "en-US-SerenaMultilingualNeural",
+     "look": "a cheerful Latina woman in her mid 30s with curly black hair, wearing a light denim shirt"},
+    {"id": "ethan", "name": "Ethan", "kind": "human", "voice": "en-US-AndrewMultilingualNeural",
+     "look": "a friendly man in his early 30s with short light brown hair, wearing a navy crew-neck t-shirt"},
+    {"id": "marcus", "name": "Marcus", "kind": "human", "voice": "en-US-BrianMultilingualNeural",
+     "look": "an upbeat Black man in his early 30s with a short fade haircut and a trimmed beard, wearing a grey hoodie"},
+    {"id": "leo", "name": "Leo", "kind": "human", "voice": "en-US-SteffanMultilingualNeural",
+     "look": "a relaxed East Asian man in his late 20s with short black hair, wearing an olive overshirt"},
+    {"id": "biscuit", "name": "Biscuit", "kind": "pet", "voice": "en-AU-WilliamMultilingualNeural",
+     "look": "a happy golden retriever dog"},
+    {"id": "luna", "name": "Luna", "kind": "pet", "voice": "en-GB-AdaMultilingualNeural",
+     "look": "a fluffy grey tabby cat with green eyes"},
 ]
+BY_ID = {c["id"]: c for c in CAST}
+PET_WORDS = ("pet", "dog", "cat", "paw", "puppy", "kitten", "groom", "leash", "collar", "litter", "treat")
 
 
 def available():
@@ -68,54 +84,98 @@ def _download(url, path):
     return path
 
 
-# ---------------- choosing the presenter ----------------
-def candidates(st):
+# ---------------- the cast ----------------
+def _prompt(c):
+    if c["kind"] == "pet":
+        return (f"Vertical smartphone photo of {c['look']} sitting and looking straight into the camera, face and "
+                "chest centered in the upper middle of the frame, mouth closed, bright cozy modern living room "
+                "softly out of focus, natural window light, realistic fur detail, no text, no people")
+    return (f"Vertical smartphone selfie-video still of {c['look']}, looking straight at the camera with a natural "
+            "friendly smile, mouth closed, head and shoulders centered in the upper middle of the frame, bright "
+            "cozy modern living room background softly out of focus, natural window light, realistic skin, "
+            "authentic social media creator style, no text, no logos, nothing in hands")
+
+
+def make_member(st, cid):
+    c = BY_ID[cid]
     out_dir = os.path.join(config.WORK_DIR, "presenter")
     os.makedirs(out_dir, exist_ok=True)
-    refs = []
-    for i, look in enumerate(LOOKS):
-        prompt = (f"Vertical smartphone selfie-video still of {look}, looking straight at the camera with a natural "
-                  "friendly smile, mouth closed, head and shoulders centered in the upper middle of the frame, bright "
-                  "cozy modern living room background softly out of focus, natural window light, realistic skin, "
-                  "authentic social media creator style, no text, no logos, nothing in hands")
-        res = run(config.PRESENTER_IMAGE_MODEL, {"prompt": prompt, "image_size": "portrait_16_9", "num_images": 1,
-                                                 "enable_safety_checker": True}, wait_s=300)
-        path = _download(res["images"][0]["url"], os.path.join(out_dir, f"look{i + 1}.jpg"))
-        refs.append(storage.store(path, "presenter", f"look{i + 1}.jpg"))
-        telegram.send_photo(path, f"Presenter option {i + 1}")
-    st["presenter_candidates"] = refs
-    telegram.send("🧑 <b>Pick the face of Ashvara</b>\nThis AI presenter will open and close one product video a "
-                  "day (you still approve every video). Tap the one you like, or reply <code>/presenters</code> "
-                  "for 3 new options.",
-                  [[(f"✅ Option {i + 1}", f"presenter:{i}") for i in range(len(refs))]])
+    res = run(config.PRESENTER_IMAGE_MODEL, {"prompt": _prompt(c), "image_size": "portrait_16_9", "num_images": 1,
+                                             "enable_safety_checker": True}, wait_s=300)
+    n = st.setdefault("presenter_versions", {}).get(cid, 0) + 1
+    st["presenter_versions"][cid] = n
+    path = _download(res["images"][0]["url"], os.path.join(out_dir, f"{cid}-{n}.jpg"))
+    st.setdefault("presenters", {})[cid] = storage.store(path, "presenter", f"{cid}-{n}.jpg")
+    telegram.send_photo(path, f"{'🐾' if c['kind'] == 'pet' else '🧑'} {c['name']}")
+    return path
 
 
-def choose(st, idx):
-    refs = st.get("presenter_candidates") or []
-    if idx >= len(refs):
-        return telegram.send("That option has expired. Reply /presenters for new ones.")
-    st["presenter"] = refs[idx]
-    telegram.send(f"👍 Presenter option {idx + 1} saved. Product videos will start using them "
-                  f"(up to {config.PRESENTER_PER_DAY} a day).")
+def candidates(st, only=None):
+    """Creates (or re-creates) the cast and shows each member in Telegram with a 'new look' button."""
+    ids = [i for i in (only or [c["id"] for c in CAST]) if i in BY_ID]
+    made = []
+    for cid in ids:
+        try:
+            make_member(st, cid)
+            made.append(cid)
+        except Exception as e:  # noqa: BLE001
+            telegram.send(f"⚠️ Couldn't make {BY_ID[cid]['name']}: {str(e)[:200]}")
+    if not made:
+        return
+    rows, row = [], []
+    for cid in made:
+        row.append((f"🔁 {BY_ID[cid]['name']}", f"prs:{cid}"))
+        if len(row) == 3:
+            rows.append(row)
+            row = []
+    if row:
+        rows.append(row)
+    telegram.send("🎬 <b>The Ashvara cast</b> (" + ", ".join(BY_ID[c]["name"] for c in made) + ")\n"
+                  "Each keeps this exact face and their own voice in every video. People present self-care and "
+                  "fitness products; Biscuit and Luna present pet products. Don't like one? Tap their name below "
+                  "for a new look.", rows)
+
+
+def redo(st, cid):
+    if cid in BY_ID:
+        telegram.send(f"🔁 Making a new look for {BY_ID[cid]['name']}...")
+        candidates(st, [cid])
+
+
+def is_pet_product(product):
+    text = " ".join(str(product.get(k) or "") for k in ("title", "type", "handle")).lower()
+    return any(w in text for w in PET_WORDS)
+
+
+def pick(st, product):
+    """Next cast member for this product: a pet for pet products, otherwise the person used least recently."""
+    have = st.get("presenters") or {}
+    kind = "pet" if is_pet_product(product or {}) else "human"
+    pool = [c for c in CAST if c["kind"] == kind and c["id"] in have] or [c for c in CAST if c["id"] in have]
+    if not pool:
+        return None
+    last = st.get("presenter_last", {})
+    return min(pool, key=lambda c: last.get(c["id"], ""))
 
 
 def due(st):
-    """True if today's product video may use the presenter."""
-    if not (config.PRESENTER and available() and st.get("presenter")):
+    """True if today's product video may use a presenter."""
+    if not (config.PRESENTER and available() and st.get("presenters")):
         return False
     return st.get("presenter_days", {}).get(state.now().strftime("%Y-%m-%d"), 0) < config.PRESENTER_PER_DAY
 
 
-def mark_used(st):
+def mark_used(st, cid):
     day = state.now().strftime("%Y-%m-%d")
     days = st.setdefault("presenter_days", {})
     days[day] = days.get(day, 0) + 1
     for d in sorted(days)[:-7]:
         days.pop(d)
+    st.setdefault("presenter_last", {})[cid] = state.iso()
 
 
-def image_path(st, out_dir):
-    return storage.fetch(st["presenter"], out_dir)
+def image_path(st, cid, out_dir):
+    return storage.fetch(st["presenters"][cid], out_dir)
 
 
 # ---------------- making a talking clip ----------------
