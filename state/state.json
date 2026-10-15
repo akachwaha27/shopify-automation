@@ -2151,5 +2151,22 @@
     "en-US-EmmaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-US-AndrewMultilingualNeural"
+  ],
+  "presenter_candidates": [
+    {
+      "type": "release",
+      "tag": "presenter",
+      "name": "look1.jpg"
+    },
+    {
+      "type": "release",
+      "tag": "presenter",
+      "name": "look2.jpg"
+    },
+    {
+      "type": "release",
+      "tag": "presenter",
+      "name": "look3.jpg"
+    }
   ]
 }
