@@ -510,6 +510,28 @@ def attach_product(pkg, v, vid):
     return True
 
 
+def cmd_igrepost(st, vids):
+    """Publish existing videos to Instagram only (e.g. after Instagram was down or the account changed)."""
+    lines = ["📸 <b>Instagram catch-up</b>"]
+    for vid in vids:
+        v = st["videos"].get(vid)
+        if not v or not v.get("file"):
+            lines.append(f"⚠️ {esc(vid)}: no stored video")
+            continue
+        pkg = v["package"]
+        try:
+            path = storage.fetch(v["file"], os.path.join(config.WORK_DIR, "dl"))
+            desc = v.get("description_full") or writer.build_description(pkg, v.get("credits", []))
+            cap = publish.social_caption(pkg["title"], desc, pkg["hashtags"], "instagram")
+            link, status = publish.instagram(path, cap)
+            v.setdefault("results", {})["Instagram"] = [link, status]
+            lines.append(f"✅ {esc(pkg['title'])}: {esc(link or status)}")
+        except Exception as e:  # noqa: BLE001
+            lines.append(f"⚠️ {esc(pkg['title'])}: {esc(str(e)[:300])}")
+        print(lines[-1])
+    telegram.send("\n".join(lines))
+
+
 def do_publish(st, vid):
     v = st["videos"][vid]
     pkg = v["package"]
@@ -804,6 +826,8 @@ def main():
             return state.save(st)
         st = state.load()
         try:
+            if cmd == "igrepost":  # post already-published videos to Instagram only: igrepost <video ids>
+                return cmd_igrepost(st, args)
             if cmd in ("photo", "photopreview"):  # daily product photo post on Facebook + Instagram
                 from . import photopost
                 return photopost.run(st, dry=(cmd == "photopreview"), only=args)
