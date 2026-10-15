@@ -1,32 +1,171 @@
 [
-  {"id": "maya",    "name": "Maya Brooks",   "kind": "human", "voice": "en-US-AvaMultilingualNeural",
-   "vibe": "cozy self-care and home routines", "look": "late 20s, wavy brown hair, cream knit sweater"},
-  {"id": "nina",    "name": "Nina Park",     "kind": "human", "voice": "en-US-EmmaMultilingualNeural",
-   "vibe": "skincare and wellness", "look": "early 30s, long dark hair in a low ponytail, sage green top"},
-  {"id": "sofia",   "name": "Sofia Reyes",   "kind": "human", "voice": "en-US-SerenaMultilingualNeural",
-   "vibe": "beauty and glow-ups", "look": "mid 30s, curly black hair, light denim shirt"},
-  {"id": "ethan",   "name": "Ethan Cole",    "kind": "human", "voice": "en-US-AndrewMultilingualNeural",
-   "vibe": "home workouts and gear", "look": "early 30s, light brown hair, navy t-shirt"},
-  {"id": "marcus",  "name": "Marcus Hayes",  "kind": "human", "voice": "en-US-BrianMultilingualNeural",
-   "vibe": "fitness and recovery", "look": "early 30s, short fade and trimmed beard, grey hoodie"},
-  {"id": "leo",     "name": "Leo Tanaka",    "kind": "human", "voice": "en-US-SteffanMultilingualNeural",
-   "vibe": "smart everyday gadgets", "look": "late 20s, short black hair, olive t-shirt"},
-  {"id": "biscuit", "name": "Biscuit", "kind": "pet", "species": "dog", "voice": "en-AU-WilliamMultilingualNeural",
-   "vibe": "the golden retriever who loves every walk", "look": "golden retriever"},
-  {"id": "pepper",  "name": "Pepper",  "kind": "pet", "species": "dog", "voice": "en-GB-OllieMultilingualNeural",
-   "vibe": "the French bulldog with big opinions", "look": "fawn French bulldog"},
-  {"id": "milo",    "name": "Milo",    "kind": "pet", "species": "dog", "voice": "en-AU-WilliamMultilingualNeural",
-   "vibe": "the beagle who sniffs out treats", "look": "tricolor beagle"},
-  {"id": "coco",    "name": "Coco",    "kind": "pet", "species": "dog", "voice": "en-GB-AdaMultilingualNeural",
-   "vibe": "the fluffy Pomeranian diva", "look": "cream Pomeranian"},
-  {"id": "bear",    "name": "Bear",    "kind": "pet", "species": "dog", "voice": "en-GB-OllieMultilingualNeural",
-   "vibe": "the gentle black Lab", "look": "black Labrador"},
-  {"id": "luna",    "name": "Luna",    "kind": "pet", "species": "cat", "voice": "en-GB-AdaMultilingualNeural",
-   "vibe": "the curious grey tabby", "look": "grey tabby, green eyes"},
-  {"id": "oliver",  "name": "Ginger",  "kind": "pet", "species": "cat", "voice": "en-AU-WilliamMultilingualNeural",
-   "vibe": "the chubby orange cat who naps everywhere", "look": "orange tabby"},
-  {"id": "mochi",   "name": "Mochi",   "kind": "pet", "species": "cat", "voice": "en-US-SerenaMultilingualNeural",
-   "vibe": "the fluffy white ragdoll princess", "look": "white ragdoll, blue eyes"},
-  {"id": "shadow",  "name": "Midnight","kind": "pet", "species": "cat", "voice": "en-GB-OllieMultilingualNeural",
-   "vibe": "the sleek black cat with golden eyes", "look": "black cat, yellow eyes"}
+ {
+  "id": "maya",
+  "name": "Maya Brooks",
+  "kind": "human",
+  "voice": "en-US-AvaMultilingualNeural",
+  "vibe": "cozy self-care and home routines",
+  "look": "late 20s, wavy brown hair, cream knit sweater"
+ },
+ {
+  "id": "nina",
+  "name": "Nina Park",
+  "kind": "human",
+  "voice": "en-US-EmmaMultilingualNeural",
+  "vibe": "skincare and wellness",
+  "look": "early 30s, long dark hair in a low ponytail, sage green top"
+ },
+ {
+  "id": "sofia",
+  "name": "Sofia Reyes",
+  "kind": "human",
+  "voice": "en-US-SerenaMultilingualNeural",
+  "vibe": "beauty and glow-ups",
+  "look": "mid 30s, curly black hair, light denim shirt"
+ },
+ {
+  "id": "ethan",
+  "name": "Ethan Cole",
+  "kind": "human",
+  "voice": "en-US-AndrewMultilingualNeural",
+  "vibe": "home workouts and gear",
+  "look": "early 30s, light brown hair, navy t-shirt"
+ },
+ {
+  "id": "marcus",
+  "name": "Marcus Hayes",
+  "kind": "human",
+  "voice": "en-US-BrianMultilingualNeural",
+  "vibe": "fitness and recovery",
+  "look": "early 30s, short fade and trimmed beard, grey hoodie"
+ },
+ {
+  "id": "leo",
+  "name": "Leo Tanaka",
+  "kind": "human",
+  "voice": "en-US-SteffanMultilingualNeural",
+  "vibe": "smart everyday gadgets",
+  "look": "late 20s, short black hair, olive t-shirt"
+ },
+ {
+  "id": "biscuit",
+  "name": "Biscuit",
+  "kind": "pet",
+  "species": "dog",
+  "voice": "en-AU-WilliamMultilingualNeural",
+  "vibe": "the golden retriever who loves every walk",
+  "look": "golden retriever"
+ },
+ {
+  "id": "pepper",
+  "name": "Pepper",
+  "kind": "pet",
+  "species": "dog",
+  "voice": "en-GB-OllieMultilingualNeural",
+  "vibe": "the French bulldog with big opinions",
+  "look": "fawn French bulldog"
+ },
+ {
+  "id": "milo",
+  "name": "Milo",
+  "kind": "pet",
+  "species": "dog",
+  "voice": "en-AU-WilliamMultilingualNeural",
+  "vibe": "the beagle who sniffs out treats",
+  "look": "tricolor beagle"
+ },
+ {
+  "id": "coco",
+  "name": "Coco",
+  "kind": "pet",
+  "species": "dog",
+  "voice": "en-GB-AdaMultilingualNeural",
+  "vibe": "the fluffy Pomeranian diva",
+  "look": "cream Pomeranian"
+ },
+ {
+  "id": "bear",
+  "name": "Bear",
+  "kind": "pet",
+  "species": "dog",
+  "voice": "en-GB-OllieMultilingualNeural",
+  "vibe": "the gentle black Lab",
+  "look": "black Labrador"
+ },
+ {
+  "id": "luna",
+  "name": "Luna",
+  "kind": "pet",
+  "species": "cat",
+  "voice": "en-GB-AdaMultilingualNeural",
+  "vibe": "the curious grey tabby",
+  "look": "grey tabby, green eyes"
+ },
+ {
+  "id": "oliver",
+  "name": "Ginger",
+  "kind": "pet",
+  "species": "cat",
+  "voice": "en-AU-WilliamMultilingualNeural",
+  "vibe": "the chubby orange cat who naps everywhere",
+  "look": "orange tabby"
+ },
+ {
+  "id": "mochi",
+  "name": "Mochi",
+  "kind": "pet",
+  "species": "cat",
+  "voice": "en-US-SerenaMultilingualNeural",
+  "vibe": "the fluffy white ragdoll princess",
+  "look": "white ragdoll, blue eyes"
+ },
+ {
+  "id": "shadow",
+  "name": "Midnight",
+  "kind": "pet",
+  "species": "cat",
+  "voice": "en-GB-OllieMultilingualNeural",
+  "vibe": "the sleek black cat with golden eyes",
+  "look": "black cat, yellow eyes"
+ },
+ {
+  "id": "walter",
+  "name": "Walter Miller",
+  "kind": "human",
+  "voice": "en-US-ChristopherNeural",
+  "partner": "joan",
+  "vibe": "retired handyman who loves practical gadgets",
+  "look": "late 60s, short white hair, plaid flannel shirt",
+  "draw": "a kind white man in his late 60s with short white hair and a neat white mustache, wearing a red plaid flannel shirt"
+ },
+ {
+  "id": "joan",
+  "name": "Joan Miller",
+  "kind": "human",
+  "voice": "en-US-JennyNeural",
+  "partner": "walter",
+  "vibe": "Walter's wife, garden and comfort lover",
+  "look": "late 60s, silver bob, lavender cardigan",
+  "draw": "a warm white woman in her late 60s with a silver bob haircut and glasses on a chain, wearing a lavender cardigan"
+ },
+ {
+  "id": "raymond",
+  "name": "Raymond Jackson",
+  "kind": "human",
+  "voice": "en-US-GuyNeural",
+  "partner": "gloria",
+  "vibe": "active grandpa who still walks every morning",
+  "look": "early 70s, short grey hair, navy polo",
+  "draw": "a cheerful Black man in his early 70s with short grey hair and a grey beard, wearing a navy polo shirt"
+ },
+ {
+  "id": "gloria",
+  "name": "Gloria Jackson",
+  "kind": "human",
+  "voice": "en-US-AriaNeural",
+  "partner": "raymond",
+  "vibe": "Raymond's wife, self-care and family time",
+  "look": "late 60s, grey natural curls, coral blouse",
+  "draw": "an elegant Black woman in her late 60s with short grey natural curls and pearl earrings, wearing a coral blouse"
+ }
 ]

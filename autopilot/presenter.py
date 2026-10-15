@@ -64,7 +64,7 @@ try:
     with open(os.path.join(CAST_DIR, "cast.json"), encoding="utf-8") as _f:
         CAST = _json.load(_f)
     for _c in CAST:
-        _c["draw"] = _DRAW.get(_c["id"], _c["look"])
+        _c["draw"] = _c.get("draw") or _DRAW.get(_c["id"], _c["look"])
 except FileNotFoundError:
     for _c in CAST:
         _c["draw"] = _c["look"]
@@ -139,6 +139,9 @@ def make_member(st, cid):
     st["presenter_versions"][cid] = n
     path = _download(res["images"][0]["url"], os.path.join(out_dir, f"{cid}-{n}.jpg"))
     st.setdefault("presenters", {})[cid] = storage.store(path, "presenter", f"{cid}-{n}.jpg")
+    os.makedirs(CAST_DIR, exist_ok=True)
+    import shutil
+    shutil.copy(path, os.path.join(CAST_DIR, f"{cid}.jpg"))  # saved in GitHub with the cast
     telegram.send_photo(path, f"{'🐾' if c['kind'] == 'pet' else '🧑'} {c['name']}")
     return path
 
@@ -224,10 +227,9 @@ def mark_used(st, cid):
 
 
 def _repo_image(st, cid):
-    """The saved face in the repo, unless a newer look was made later with the 'new look' button."""
+    """The cast member's saved face in the repo (assets/cast/<id>.jpg)."""
     path = os.path.join(CAST_DIR, f"{cid}.jpg")
-    redone = (st.get("presenter_versions") or {}).get(cid, 0) > 1
-    return path if os.path.exists(path) and not redone else None
+    return path if os.path.exists(path) else None
 
 
 def have(st):
@@ -381,10 +383,18 @@ def make_sheets(st, only=None):
 
 def product_scene(st, member, product_image, product_title, out):
     """A new photo of this cast member using the product (same face via the base photo + character sheet)."""
-    refs = [image_path(st, member["id"], os.path.dirname(out))] + sheet_views(member["id"])[:2] + [product_image]
+    refs = [image_path(st, member["id"], os.path.dirname(out))] + sheet_views(member["id"])[:2]
+    partner = BY_ID.get(member.get("partner") or "")
+    if partner and partner["id"] in have(st):  # older couples appear together
+        refs += [image_path(st, partner["id"], os.path.dirname(out))]
+    refs += [product_image]
     if member["kind"] == "pet":
         action = (f"enjoying or being cared for with the product from the last reference image ({product_title}), "
                   "in a bright cozy home, a human hand may appear but no human face")
+    elif partner:
+        action = (f"together with their spouse (the person in the second-to-last reference image, identical face and "
+                  f"outfit), using the product from the last reference image ({product_title}) at home, both smiling, "
+                  "a warm natural moment")
     else:
         action = (f"holding and using the product from the last reference image ({product_title}) in a bright cozy "
                   "home, looking at the product with a natural smile")
