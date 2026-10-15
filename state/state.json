@@ -2184,7 +2184,12 @@
     "bear": 1,
     "oliver": 1,
     "mochi": 1,
-    "shadow": 1
+    "shadow": 1,
+    "nina": 1,
+    "walter": 1,
+    "joan": 1,
+    "raymond": 1,
+    "gloria": 1
   },
   "presenters": {
     "maya": {
@@ -2261,6 +2266,31 @@
       "type": "release",
       "tag": "presenter",
       "name": "shadow-1.jpg"
+    },
+    "nina": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "nina-1.jpg"
+    },
+    "walter": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "walter-1.jpg"
+    },
+    "joan": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "joan-1.jpg"
+    },
+    "raymond": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "raymond-1.jpg"
+    },
+    "gloria": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "gloria-1.jpg"
     }
   }
 }
