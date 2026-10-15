@@ -2403,6 +2403,292 @@
       "srt": "1\n00:00:00,099 --> 00:00:01,643\nThis is the easiest way to handle\n\n2\n00:00:01,643 --> 00:00:03,567\nstubborn mats in your dog's coat without\n\n3\n00:00:03,567 --> 00:00:06,581\nany pulling Wait look at this stainless\n\n4\n00:00:06,581 --> 00:00:08,652\nsteel design with rounded teeth that glide\n\n5\n00:00:08,652 --> 00:00:11,949\nright through thick undercoats Here's the thing\n\n6\n00:00:11,949 --> 00:00:13,909\nit measures about seven inches long so\n\n7\n00:00:13,909 --> 00:00:15,588\nit fits comfortably in your hand while\n\n8\n00:00:15,588 --> 00:00:18,542\nyou work Okay so you just gently\n\n9\n00:00:18,542 --> 00:00:20,086\nstroke the curved edges through the fur\n\n10\n00:00:20,086 --> 00:00:23,199\nto catch loose hairs effortlessly Grab yours\n\n11\n00:00:23,199 --> 00:00:25,306\ntoday for fourteen dollars and ninety-nine\n\n12\n00:00:25,306 --> 00:00:26,569\ncents at ashvara .\n\n13\n00:00:26,569 --> 00:00:27,422\nstore\n",
       "tg_msg": 134,
       "opts_msg": 136
+    },
+    "2026-10-15-s2": {
+      "topic": {
+        "title": "Pet Fur Knot Remover Comb \u2013 Dog Grooming Tool",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 8,
+        "angle": "Sample UGC-style ad presented by Joan Miller & Coco",
+        "trend_source": "sample ad",
+        "product": "pet-fur-knot-cutter-89653",
+        "cast": "joan",
+        "costar": "coco"
+      },
+      "status": "awaiting_approval",
+      "by": "you",
+      "updated": "2026-10-15T18:26:31.651777+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "dog fur knot remover",
+        "title": "Stop struggling with tangled dog fur \ud83d\udc36",
+        "hook_text": "Tangled dog fur again?",
+        "thumbnail_text": "Easy Knot Remover",
+        "description": "Say goodbye to stubborn mats using this gentle dog fur knot remover. Keep your pet's coat smooth without the usual grooming struggle.\nShop it: https://ashvara.store/products/pet-fur-knot-cutter-89653",
+        "hashtags": [
+          "#shorts",
+          "#dogcare",
+          "#petgrooming",
+          "#ashvara"
+        ],
+        "tags": [
+          "dog fur knot remover",
+          "dog knot remover",
+          "dog fur detangler",
+          "dog hair detangler",
+          "remove knots from dog fur",
+          "how to remove knots in dog hair",
+          "how to take knots out of dog hair",
+          "dog mat removal",
+          "pet care tips",
+          "dog mat remover",
+          "pet grooming tool",
+          "pet hair detangler",
+          "coat care for dogs",
+          "dog comb for knots",
+          "dog grooming at home",
+          "dog brush for tangles",
+          "dog grooming supplies"
+        ],
+        "pinned_comment": "Does your dog hate getting brushed or are they totally fine with it? Let us know below!",
+        "scenes": [
+          {
+            "text": "This is the easiest way to handle matted pet hair without the usual fuss.",
+            "badge": "",
+            "label": "Gentle Untangling",
+            "stock_queries": [
+              "dog tangled fur",
+              "golden retriever grooming"
+            ],
+            "image_prompt": "Vertical 9:16 cinematic close-up of a golden retriever with slightly tangled fur, soft indoor lighting, no text.",
+            "stock_query": "dog tangled fur",
+            "product_image": "work/2026-10-15-s2/product/product_0.jpg"
+          },
+          {
+            "text": "Meet the Ashvara comb, built with a comfortable grip and rounded teeth that glide right through.",
+            "badge": "",
+            "label": "Ergonomic Handle",
+            "stock_queries": [
+              "metal grooming comb",
+              "pet brush close up"
+            ],
+            "image_prompt": "Vertical 9:16 product shot of a metal pet grooming comb resting on a wooden table, soft natural light, no text.",
+            "stock_query": "metal grooming comb"
+          },
+          {
+            "text": "It measures about seventeen centimeters long, making it easy to hold while you work through thick coats.",
+            "badge": "",
+            "label": "Compact Size",
+            "stock_queries": [
+              "measuring pet tool",
+              "dog comb in hand"
+            ],
+            "image_prompt": "Vertical 9:16 photo of a person holding a stainless steel pet comb, neutral background, no text.",
+            "stock_query": "measuring pet tool",
+            "product_image": "work/2026-10-15-s2/product/product_1.jpg",
+            "inhand_image": "work/2026-10-15-s2-0/presenter/inhand.jpg"
+          },
+          {
+            "text": "Just use short, gentle strokes starting near the ends of the fur and work your way up.",
+            "badge": "",
+            "label": "Easy Technique",
+            "stock_queries": [
+              "brushing dog fur",
+              "grooming golden retriever"
+            ],
+            "image_prompt": "Vertical 9:16 macro shot of a metal comb gently gliding through golden dog fur, warm lighting, no text.",
+            "stock_query": "brushing dog fur"
+          },
+          {
+            "text": "Grab yours today for fourteen dollars at ashvara.store, and tell us, what is your pet's favorite treat?",
+            "badge": "",
+            "label": "$1400.00 \u00b7 ashvara.store",
+            "stock_queries": [
+              "dog waiting treat",
+              "happy golden retriever"
+            ],
+            "image_prompt": "Vertical 9:16 portrait of a happy golden retriever looking up attentively, clean background, no text.",
+            "stock_query": "dog waiting treat",
+            "product_image": "work/2026-10-15-s2/product/product_2.jpg"
+          }
+        ],
+        "key_facts": [
+          "The comb features rounded teeth designed to glide through pet fur.",
+          "The tool measures approximately seventeen centimeters in length.",
+          "It is priced at fourteen dollars and available at ashvara.store."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "This is the easiest way to handle matted pet hair without the usual fuss. Meet the Ashvara comb, built with a comfortable grip and rounded teeth that glide right through. It measures about seventeen centimeters long, making it easy to hold while you work through thick coats. Just use short, gentle strokes starting near the ends of the fur and work your way up. Grab yours today for fourteen dollars at ashvara.store, and tell us, what is your pet's favorite treat?",
+        "product": {
+          "handle": "pet-fur-knot-cutter-89653",
+          "title": "Pet Fur Knot Remover Comb \u2013 Dog Grooming Tool",
+          "url": "https://ashvara.store/products/pet-fur-knot-cutter-89653",
+          "price": "$1400.00"
+        },
+        "shot_plan": [
+          {
+            "subject": "dog with matted fur being brushed",
+            "queries": [
+              {
+                "q": "matted dog fur",
+                "must": [
+                  "fur"
+                ]
+              },
+              {
+                "q": "dog grooming brush",
+                "must": [
+                  "brush"
+                ]
+              },
+              {
+                "q": "dog shedding",
+                "must": [
+                  "dog"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "close-up of grooming comb in hand",
+            "queries": [
+              {
+                "q": "pet comb handle",
+                "must": [
+                  "comb"
+                ]
+              },
+              {
+                "q": "grooming tool",
+                "must": [
+                  "tool"
+                ]
+              },
+              {
+                "q": "dog brush",
+                "must": [
+                  "brush"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "ruler measuring a grooming comb",
+            "queries": [
+              {
+                "q": "measuring ruler",
+                "must": [
+                  "ruler"
+                ]
+              },
+              {
+                "q": "ruler object",
+                "must": [
+                  "object"
+                ]
+              },
+              {
+                "q": "measuring tool",
+                "must": [
+                  "tool"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person brushing dog fur gently",
+            "queries": [
+              {
+                "q": "brushing dog fur",
+                "must": [
+                  "fur"
+                ]
+              },
+              {
+                "q": "grooming dog coat",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "pet care",
+                "must": [
+                  "pet"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "happy dog eating a treat",
+            "queries": [
+              {
+                "q": "dog treat",
+                "must": [
+                  "treat"
+                ]
+              },
+              {
+                "q": "happy dog",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "dog snack",
+                "must": [
+                  "dog"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "dog grooming",
+          "pet brush",
+          "fluffy dog"
+        ],
+        "visual_style": "Bright, clean UGC-style pet grooming demonstrations featuring close-ups of dogs being brushed with de-matting tools.",
+        "visual_refs": [
+          "Pets Fur Knot Cutter Dog Grooming Shedding Tools",
+          "How to use our de-matting comb #doggrooming #doggroomer #dogshorts #doodlegrooming #dematting",
+          "Honest review of the JASWELL Pet Grooming Tool- 2 Sided Undercoat Rake for Dogs",
+          "Removing Knots with the Knot Out Comb",
+          "Understanding the Knot Out Comb",
+          "HOLY GRAIL OF MAT REMOVERS - Four Paws Instant Mat &amp; Tangle Remover"
+        ],
+        "presenter_image": "assets/cast/joan.jpg",
+        "presenter_voice": "en-US-JennyNeural",
+        "presenter_name": "Joan Miller",
+        "voice": "en-US-JennyNeural",
+        "presenter_used": true,
+        "visual_report": {
+          "shots": 5,
+          "checked": 5,
+          "unchecked": 0,
+          "filler": 1
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-JennyNeural).",
+        "Presenter: AI-generated character (Kling AI Avatar via fal.ai), not a real customer.",
+        "U.S. Army photo by Sgt. 1st Class Tanisha Karn / Wikimedia Commons (Public domain) https://commons.wikimedia.org/wiki/File:MWD_Spa_Day_(9568409).jpg"
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-15",
+        "name": "2026-10-15-s2-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-15",
+        "name": "2026-10-15-s2-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,103 --> 00:00:01,765\nThis is the easiest way to handle\n\n2\n00:00:01,765 --> 00:00:05,066\nmatted pet hair without the usual fuss\n\n3\n00:00:05,066 --> 00:00:07,128\nMeet the Ashvara comb built with a\n\n4\n00:00:07,128 --> 00:00:09,481\ncomfortable grip and rounded teeth that glide\n\n5\n00:00:09,481 --> 00:00:13,338\nright through It measures about seventeen centimeters\n\n6\n00:00:13,338 --> 00:00:15,319\nlong making it easy to hold while\n\n7\n00:00:15,319 --> 00:00:18,152\nyou work through thick coats Just use\n\n8\n00:00:18,152 --> 00:00:20,519\nshort gentle strokes starting near the ends\n\n9\n00:00:20,519 --> 00:00:21,875\nof the fur and work your way\n\n10\n00:00:21,875 --> 00:00:25,160\nup Grab yours today for fourteen dollars\n\n11\n00:00:25,160 --> 00:00:26,064\nat ashvara .\n\n12\n00:00:26,064 --> 00:00:28,058\nstore and tell us what is your\n\n13\n00:00:28,058 --> 00:00:29,615\npet's favorite treat\n",
+      "tg_msg": 138,
+      "opts_msg": 140
     }
   },
   "history": [
@@ -2436,13 +2722,13 @@
   },
   "photo_angle": 3,
   "visual_searches": {
-    "2026-10-15": 2
+    "2026-10-15": 3
   },
   "recent_voices": [
-    "en-US-BrianMultilingualNeural",
     "en-US-EmmaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-US-AndrewMultilingualNeural",
+    "en-US-JennyNeural",
     "en-US-JennyNeural"
   ],
   "presenter_candidates": [
@@ -2587,9 +2873,9 @@
     }
   },
   "presenter_days": {
-    "2026-10-15": 1
+    "2026-10-15": 2
   },
   "presenter_last": {
-    "joan": "2026-10-15T18:16:49.162233+00:00"
+    "joan": "2026-10-15T18:26:28.048405+00:00"
   }
 }

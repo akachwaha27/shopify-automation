@@ -617,5 +617,76 @@
   "uploaded_at": "",
   "virality_score": 8,
   "voice": "en-US-JennyNeural"
+ },
+ "2026-10-15-s2": {
+  "angle": "Sample UGC-style ad presented by Joan Miller & Coco",
+  "approved_by": "",
+  "category": "26",
+  "credits": [
+   "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-JennyNeural).",
+   "Presenter: AI-generated character (Kling AI Avatar via fal.ai), not a real customer.",
+   "U.S. Army photo by Sgt. 1st Class Tanisha Karn / Wikimedia Commons (Public domain) https://commons.wikimedia.org/wiki/File:MWD_Spa_Day_(9568409).jpg"
+  ],
+  "date": "2026-10-15",
+  "description": "Say goodbye to stubborn mats using this gentle dog fur knot remover. Keep your pet's coat smooth without the usual grooming struggle.\nShop it: https://ashvara.store/products/pet-fur-knot-cutter-89653\n\n#shorts #dogcare #petgrooming #ashvara\n\n— Credits & disclosure —\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-JennyNeural).\nPresenter: AI-generated character (Kling AI Avatar via fal.ai), not a real customer.\nU.S. Army photo by Sgt. 1st Class Tanisha Karn / Wikimedia Commons (Public domain) https://commons.wikimedia.org/wiki/File:MWD_Spa_Day_(9568409).jpg\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+  "file": {
+   "name": "2026-10-15-s2-v0.mp4",
+   "tag": "videos-2026-10-15",
+   "type": "release"
+  },
+  "format": "product",
+  "hashtags": [
+   "#shorts",
+   "#dogcare",
+   "#petgrooming",
+   "#ashvara"
+  ],
+  "hook_text": "Tangled dog fur again?",
+  "id": "2026-10-15-s2",
+  "idea_title": "Pet Fur Knot Remover Comb – Dog Grooming Tool",
+  "key_facts": [
+   "The comb features rounded teeth designed to glide through pet fur.",
+   "The tool measures approximately seventeen centimeters in length.",
+   "It is priced at fourteen dollars and available at ashvara.store."
+  ],
+  "pinned_comment": "Does your dog hate getting brushed or are they totally fine with it? Let us know below!",
+  "platforms": {},
+  "primary_keyword": "dog fur knot remover",
+  "redos": 0,
+  "scheduled_for": "",
+  "script": "This is the easiest way to handle matted pet hair without the usual fuss. Meet the Ashvara comb, built with a comfortable grip and rounded teeth that glide right through. It measures about seventeen centimeters long, making it easy to hold while you work through thick coats. Just use short, gentle strokes starting near the ends of the fur and work your way up. Grab yours today for fourteen dollars at ashvara.store, and tell us, what is your pet's favorite treat?",
+  "status": "awaiting_approval",
+  "subtitles_srt": "1\n00:00:00,103 --> 00:00:01,765\nThis is the easiest way to handle\n\n2\n00:00:01,765 --> 00:00:05,066\nmatted pet hair without the usual fuss\n\n3\n00:00:05,066 --> 00:00:07,128\nMeet the Ashvara comb built with a\n\n4\n00:00:07,128 --> 00:00:09,481\ncomfortable grip and rounded teeth that glide\n\n5\n00:00:09,481 --> 00:00:13,338\nright through It measures about seventeen centimeters\n\n6\n00:00:13,338 --> 00:00:15,319\nlong making it easy to hold while\n\n7\n00:00:15,319 --> 00:00:18,152\nyou work through thick coats Just use\n\n8\n00:00:18,152 --> 00:00:20,519\nshort gentle strokes starting near the ends\n\n9\n00:00:20,519 --> 00:00:21,875\nof the fur and work your way\n\n10\n00:00:21,875 --> 00:00:25,160\nup Grab yours today for fourteen dollars\n\n11\n00:00:25,160 --> 00:00:26,064\nat ashvara .\n\n12\n00:00:26,064 --> 00:00:28,058\nstore and tell us what is your\n\n13\n00:00:28,058 --> 00:00:29,615\npet's favorite treat\n",
+  "tags": [
+   "dog fur knot remover",
+   "dog knot remover",
+   "dog fur detangler",
+   "dog hair detangler",
+   "remove knots from dog fur",
+   "how to remove knots in dog hair",
+   "how to take knots out of dog hair",
+   "dog mat removal",
+   "pet care tips",
+   "dog mat remover",
+   "pet grooming tool",
+   "pet hair detangler",
+   "coat care for dogs",
+   "dog comb for knots",
+   "dog grooming at home",
+   "dog brush for tangles",
+   "dog grooming supplies"
+  ],
+  "thumb": {
+   "name": "2026-10-15-s2-v0-thumb.jpg",
+   "tag": "videos-2026-10-15",
+   "type": "release"
+  },
+  "thumbnail_text": "Easy Knot Remover",
+  "title": "Stop struggling with tangled dog fur 🐶",
+  "trend_source": "sample ad",
+  "updated": "2026-10-15T18:26:31.651777+00:00",
+  "uploaded_at": "",
+  "virality_score": 8,
+  "voice": "en-US-JennyNeural"
  }
 }
