@@ -280,7 +280,50 @@ def _who(c):
             "and outfit")
 
 
+GEMINI_IMAGE_MODELS = ["gemini-2.5-flash-image", "gemini-2.5-flash-image-preview"]
+_gemini_off = False  # set after Gemini refuses (no free image quota): use fal for the rest of the run
+
+
+def _gemini_edit(images, prompt, out, aspect):
+    """Same 'Nano Banana' model straight from Google with the bot's own Gemini key (free if the key's tier allows)."""
+    global _gemini_off
+    if _gemini_off or not config.GEMINI_API_KEY:
+        raise RuntimeError("Gemini image editing not available")
+    parts = [{"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(open(p, "rb").read()).decode()}}
+             for p in images] + [{"text": prompt}]
+    last = ""
+    for model in GEMINI_IMAGE_MODELS:
+        r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                          params={"key": config.GEMINI_API_KEY}, timeout=180, json={
+                              "contents": [{"parts": parts}],
+                              "generationConfig": {"responseModalities": ["IMAGE"],
+                                                   "imageConfig": {"aspectRatio": aspect}}})
+        if r.status_code == 404:
+            continue
+        if r.status_code >= 300:
+            last = f"{r.status_code}: {r.text[:200]}"
+            if r.status_code in (429, 403, 400):
+                _gemini_off = True
+            break
+        for cand in r.json().get("candidates", []):
+            for part in (cand.get("content") or {}).get("parts", []):
+                data = (part.get("inline_data") or part.get("inlineData") or {}).get("data")
+                if data:
+                    with open(out, "wb") as f:
+                        f.write(base64.b64decode(data))
+                    return out
+        last = "no image in Gemini reply"
+    raise RuntimeError(f"Gemini image edit failed ({last})")
+
+
 def edit(images, prompt, out, aspect="9:16"):
+    """Try Google's Gemini (free tier) first; fall back to fal.ai (~$0.04) if Gemini says no."""
+    try:
+        path = _gemini_edit(images, prompt, out, aspect)
+        print(f"  image via Gemini (free): {os.path.basename(out)}")
+        return path
+    except Exception as e:  # noqa: BLE001
+        print(f"  Gemini image edit unavailable, using fal: {str(e)[:160]}")
     res = run(EDIT_MODEL, {"prompt": prompt, "num_images": 1, "aspect_ratio": aspect, "output_format": "jpeg",
                            "image_urls": [_data_uri(p, "image/jpeg") for p in images]}, wait_s=300)
     return _download(res["images"][0]["url"], out)
