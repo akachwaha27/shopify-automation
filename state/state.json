@@ -2168,5 +2168,57 @@
       "tag": "presenter",
       "name": "look3.jpg"
     }
-  ]
+  ],
+  "presenter_versions": {
+    "maya": 1,
+    "priya": 1,
+    "sofia": 1,
+    "ethan": 1,
+    "marcus": 1,
+    "leo": 1,
+    "biscuit": 1,
+    "luna": 1
+  },
+  "presenters": {
+    "maya": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "maya-1.jpg"
+    },
+    "priya": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "priya-1.jpg"
+    },
+    "sofia": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "sofia-1.jpg"
+    },
+    "ethan": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "ethan-1.jpg"
+    },
+    "marcus": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "marcus-1.jpg"
+    },
+    "leo": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "leo-1.jpg"
+    },
+    "biscuit": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "biscuit-1.jpg"
+    },
+    "luna": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "luna-1.jpg"
+    }
+  }
 }
