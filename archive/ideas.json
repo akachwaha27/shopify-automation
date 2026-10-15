@@ -414,5 +414,78 @@
   ],
   "sent_at": "2026-10-15T15:11:43.674583+00:00",
   "status": "waiting"
+ },
+ "2026-10-15-2": {
+  "date": "2026-10-15-2",
+  "ideas": [
+   {
+    "angle": "When you want a full workout setup without cluttering your living room.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Level Up Your Home Yoga Studio",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Skip the crowded gym commute and smash your fitness goals at home.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "No Gym Membership? No Problem At All",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Because washing your face with just hands isn't cutting it anymore.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Upgrade Your Daily Nighttime Skincare Routine",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Give your skin a cooling, soothing reset after a long workday.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "The Ultimate At-Home Spa Day Essential",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Never overfeed or underfeed your furry friend ever again.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Stop Guessing Your Dog's Meal Portions",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Say goodbye to expensive groomer visits and noisy clippers.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Stress-Free Nail Trimming For Your Dog",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-15T18:27:44.244788+00:00",
+  "status": "waiting"
  }
 }

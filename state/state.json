@@ -372,6 +372,67 @@
         1
       ],
       "status": "waiting"
+    },
+    "2026-10-15-2": {
+      "topics": [
+        {
+          "title": "Level Up Your Home Yoga Studio",
+          "angle": "When you want a full workout setup without cluttering your living room.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620"
+        },
+        {
+          "title": "No Gym Membership? No Problem At All",
+          "angle": "Skip the crowded gym commute and smash your fitness goals at home.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "home-gym-kit"
+        },
+        {
+          "title": "Upgrade Your Daily Nighttime Skincare Routine",
+          "angle": "Because washing your face with just hands isn't cutting it anymore.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "skin-cleaner-5-in-1-new"
+        },
+        {
+          "title": "The Ultimate At-Home Spa Day Essential",
+          "angle": "Give your skin a cooling, soothing reset after a long workday.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "double-head-jade-facial-roller-57419"
+        },
+        {
+          "title": "Stop Guessing Your Dog's Meal Portions",
+          "angle": "Never overfeed or underfeed your furry friend ever again.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "800g-1g-pet-food-scale-cup-for-dog-cat-feeding-bowl-kitchen-scale-spoon-measuring-scoop-cup-portable-with-led-display-79241"
+        },
+        {
+          "title": "Stress-Free Nail Trimming For Your Dog",
+          "angle": "Say goodbye to expensive groomer visits and noisy clippers.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
+        }
+      ],
+      "sent_at": "2026-10-15T18:27:44.244788+00:00",
+      "selected": [],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -2709,8 +2770,8 @@
       "at": "2026-10-14T18:43:18.151708+00:00"
     },
     "2026-10-15": {
-      "n": 1,
-      "at": "2026-10-15T15:11:22.493748+00:00"
+      "n": 2,
+      "at": "2026-10-15T18:27:26.138397+00:00"
     }
   },
   "cleanup_day": "2026-10-15",
