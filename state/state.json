@@ -2177,7 +2177,14 @@
     "marcus": 1,
     "leo": 1,
     "biscuit": 1,
-    "luna": 1
+    "luna": 1,
+    "pepper": 1,
+    "milo": 1,
+    "coco": 1,
+    "bear": 1,
+    "oliver": 1,
+    "mochi": 1,
+    "shadow": 1
   },
   "presenters": {
     "maya": {
@@ -2219,6 +2226,41 @@
       "type": "release",
       "tag": "presenter",
       "name": "luna-1.jpg"
+    },
+    "pepper": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "pepper-1.jpg"
+    },
+    "milo": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "milo-1.jpg"
+    },
+    "coco": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "coco-1.jpg"
+    },
+    "bear": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "bear-1.jpg"
+    },
+    "oliver": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "oliver-1.jpg"
+    },
+    "mochi": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "mochi-1.jpg"
+    },
+    "shadow": {
+      "type": "release",
+      "tag": "presenter",
+      "name": "shadow-1.jpg"
     }
   }
 }
