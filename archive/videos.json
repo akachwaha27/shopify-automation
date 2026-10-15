@@ -473,5 +473,73 @@
   "uploaded_at": "2026-10-14T21:51:32.915630+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
+ },
+ "2026-10-15-2": {
+  "angle": "Stop struggling with bad lighting in the car or dark rooms while getting ready.",
+  "approved_by": "",
+  "category": "26",
+  "credits": [
+   "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AndrewMultilingualNeural).",
+   "Shixart1985 / Wikimedia Commons (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Makeup_accessories_on_the_table_with_woman_holding_a_mirror_in_a_blurry_background.jpg",
+   "Shixart1985 / Wikimedia Commons (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Close-up_of_a_woman_applying_makeup_in_front_of_a_mirror.jpg"
+  ],
+  "date": "2026-10-15",
+  "description": "Stop struggling with terrible car or room lighting when putting on your face. Discover how to get flawless makeup anywhere you go.\nShop it: https://ashvara.store/products/portable-led-makeup-mirror\n\n#shorts #makeup #beautytips #ashvara\n\n— Credits & disclosure —\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AndrewMultilingualNeural).\nShixart1985 / Wikimedia Commons (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Makeup_accessories_on_the_table_with_woman_holding_a_mirror_in_a_blurry_background.jpg\nShixart1985 / Wikimedia Commons (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Close-up_of_a_woman_applying_makeup_in_front_of_a_mirror.jpg\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+  "file": {
+   "name": "2026-10-15-2-v0.mp4",
+   "tag": "videos-2026-10-15",
+   "type": "release"
+  },
+  "format": "product",
+  "hashtags": [
+   "#shorts",
+   "#makeup",
+   "#beautytips",
+   "#ashvara"
+  ],
+  "hook_text": "Bad lighting ruins makeup.",
+  "id": "2026-10-15-2",
+  "idea_title": "Flawless Makeup In Any Light",
+  "key_facts": [],
+  "pinned_comment": "Be honest, what is the worst place you have ever tried to put on your mascara?",
+  "platforms": {},
+  "primary_keyword": "makeup mirror lighting",
+  "redos": 0,
+  "scheduled_for": "",
+  "script": "Ever tried doing your makeup in a dim room and looked totally orange outside? Honestly, it is the worst. But wait, here is a simple fix from Ashvara. It features a slim design that fits right in your bag for trips. The sturdy ABS plastic frame holds up great when you are on the go. Just tap the touch sensor to switch between three natural light tones. It is twenty four dollars at ashvara.store. Link in bio.",
+  "status": "awaiting_approval",
+  "subtitles_srt": "1\n00:00:00,109 --> 00:00:01,576\nEver tried doing your makeup in a\n\n2\n00:00:01,576 --> 00:00:04,891\ndim room and looked totally orange outside\n\n3\n00:00:04,891 --> 00:00:08,234\nHonestly it is the worst But wait\n\n4\n00:00:08,234 --> 00:00:10,611\nhere is a simple fix from Ashvara\n\n5\n00:00:10,611 --> 00:00:13,030\nIt features a slim design that fits\n\n6\n00:00:13,030 --> 00:00:14,959\nright in your bag for trips The\n\n7\n00:00:14,959 --> 00:00:18,179\nsturdy ABS plastic frame holds up great\n\n8\n00:00:18,179 --> 00:00:19,688\nwhen you are on the go Just\n\n9\n00:00:19,688 --> 00:00:21,929\ntap the touch sensor to switch between\n\n10\n00:00:21,929 --> 00:00:24,769\nthree natural light tones It is twenty\n\n11\n00:00:24,769 --> 00:00:26,535\nfour dollars at ashvara .\n\n12\n00:00:26,535 --> 00:00:28,647\nstore Link in bio\n",
+  "tags": [
+   "makeup mirror lighting",
+   "portable makeup mirror with lights",
+   "car makeup mirror",
+   "makeup mirror with lights",
+   "portable led makeup mirror",
+   "makeup mirror with led lights",
+   "best makeup mirror with lights",
+   "makeup mirror led",
+   "lighting for makeup",
+   "travel makeup mirror",
+   "best lighting for makeup application",
+   "flawless makeup",
+   "getting ready tips",
+   "portable makeup mirror",
+   "vanity mirror with lights",
+   "ashvara store",
+   "makeup routine",
+   "beauty accessories"
+  ],
+  "thumb": {
+   "name": "2026-10-15-2-v0-thumb.jpg",
+   "tag": "videos-2026-10-15",
+   "type": "release"
+  },
+  "thumbnail_text": "Fix bad lighting",
+  "title": "Stop doing your makeup in terrible car lighting",
+  "trend_source": "Ashvara store catalog",
+  "updated": "2026-10-15T15:15:27.231398+00:00",
+  "uploaded_at": "",
+  "virality_score": 7,
+  "voice": "en-US-AndrewMultilingualNeural"
  }
 }

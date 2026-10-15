@@ -341,5 +341,78 @@
   ],
   "sent_at": "2026-10-14T18:43:35.721071+00:00",
   "status": "closed"
+ },
+ "2026-10-15": {
+  "date": "2026-10-15",
+  "ideas": [
+   {
+    "angle": "Transform your bathroom into a luxury retreat for the ultimate self-care night.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Bring The Spa Home Today",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Stop struggling with bad lighting in the car or dark rooms while getting ready.",
+    "format": "product",
+    "picked": true,
+    "rank": 2,
+    "title": "Flawless Makeup In Any Light",
+    "trend_source": "Ashvara store catalog",
+    "video_id": "2026-10-15-2",
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Get a full-body workout right in your living room without bulky equipment.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Skip The Gym Traffic Daily",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Reveal fresh, glowing skin with the most satisfying skincare routine ever.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Satisfying Pores Cleared Just Like That",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Fix slouching effortlessly while working at your desk all day long.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Stand Tall And Feel Confident",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Lift heavier and more comfortably without letting sweat ruin your grip.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Say Goodbye To Gym Calluses",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-15T15:11:43.674583+00:00",
+  "status": "waiting"
  }
 }
