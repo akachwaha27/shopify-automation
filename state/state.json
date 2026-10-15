@@ -2750,6 +2750,301 @@
       "srt": "1\n00:00:00,103 --> 00:00:01,765\nThis is the easiest way to handle\n\n2\n00:00:01,765 --> 00:00:05,066\nmatted pet hair without the usual fuss\n\n3\n00:00:05,066 --> 00:00:07,128\nMeet the Ashvara comb built with a\n\n4\n00:00:07,128 --> 00:00:09,481\ncomfortable grip and rounded teeth that glide\n\n5\n00:00:09,481 --> 00:00:13,338\nright through It measures about seventeen centimeters\n\n6\n00:00:13,338 --> 00:00:15,319\nlong making it easy to hold while\n\n7\n00:00:15,319 --> 00:00:18,152\nyou work through thick coats Just use\n\n8\n00:00:18,152 --> 00:00:20,519\nshort gentle strokes starting near the ends\n\n9\n00:00:20,519 --> 00:00:21,875\nof the fur and work your way\n\n10\n00:00:21,875 --> 00:00:25,160\nup Grab yours today for fourteen dollars\n\n11\n00:00:25,160 --> 00:00:26,064\nat ashvara .\n\n12\n00:00:26,064 --> 00:00:28,058\nstore and tell us what is your\n\n13\n00:00:28,058 --> 00:00:29,615\npet's favorite treat\n",
       "tg_msg": 138,
       "opts_msg": 140
+    },
+    "2026-10-15-s3": {
+      "topic": {
+        "title": "Pet Fur Knot Remover Comb \u2013 Dog Grooming Tool",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 8,
+        "angle": "Sample UGC-style ad presented by Joan Miller & Coco",
+        "trend_source": "sample ad",
+        "product": "pet-fur-knot-cutter-89653",
+        "cast": "joan",
+        "costar": "coco"
+      },
+      "status": "awaiting_approval",
+      "by": "you",
+      "updated": "2026-10-15T18:44:05.603358+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "pet fur knot remover",
+        "title": "Easily Remove Dog Fur Knots at Home",
+        "hook_text": "Stop fighting those dog knots",
+        "thumbnail_text": "Tangle free fur",
+        "description": "Easily manage your dog's coat with this pet fur knot remover tool. Keep grooming sessions simple and stress-free for your furry friend at home.\nShop it: https://ashvara.store/products/pet-fur-knot-cutter-89653",
+        "hashtags": [
+          "#shorts",
+          "#dogcare",
+          "#petgrooming",
+          "#ashvara"
+        ],
+        "tags": [
+          "pet fur knot remover",
+          "pet fur remover brush",
+          "remove knots from dog fur",
+          "pet grooming tools for dogs",
+          "how to remove knots from dog hair",
+          "dog coat care",
+          "dog hair care",
+          "pet knot remover",
+          "dog grooming tools",
+          "pet grooming tools",
+          "pet grooming supplies",
+          "how to groom dog at home",
+          "dog grooming tools for beginners",
+          "how to groom dogs",
+          "pet grooming products",
+          "pet care tips",
+          "dog knot remover",
+          "pet hair detangler",
+          "dog grooming brush",
+          "at home dog grooming",
+          "pet supplies"
+        ],
+        "pinned_comment": "How often do you find yourself brushing your dog's coat to keep it smooth? Let me know your routine below.",
+        "scenes": [
+          {
+            "text": "Stop fighting those stubborn dog knots every single day with this simple tool.",
+            "badge": "",
+            "label": "Easy detangling",
+            "stock_queries": [
+              "dog tangled fur",
+              "dog grooming close up"
+            ],
+            "image_prompt": "Close up of a golden retriever with slightly messy fur, soft natural lighting, high quality, 9:16 vertical.",
+            "stock_query": "dog tangled fur",
+            "product_image": "work/2026-10-15-s3/product/product_0.jpg"
+          },
+          {
+            "text": "This pet fur knot remover features a dual sided stainless steel head design.",
+            "badge": "",
+            "label": "Stainless steel blades",
+            "stock_queries": [
+              "metal grooming comb",
+              "dog brush bristles"
+            ],
+            "image_prompt": "Macro shot of a professional pet grooming comb with stainless steel teeth, clean background, 9:16 vertical.",
+            "stock_query": "metal grooming comb",
+            "inhand_image": "work/2026-10-15-s3-0/presenter/inhand0.jpg",
+            "inhand_video": "work/2026-10-15-s3-0/presenter/inhand0.mp4"
+          },
+          {
+            "text": "It is built with a non slip rubber grip for total control while brushing.",
+            "badge": "",
+            "label": "Non slip handle",
+            "stock_queries": [
+              "rubber handle brush",
+              "hand holding dog brush"
+            ],
+            "image_prompt": "Close up of a ergonomic rubberized dog brush handle, neutral background, 9:16 vertical.",
+            "stock_query": "rubber handle brush",
+            "product_image": "work/2026-10-15-s3/product/product_1.jpg",
+            "inhand_image": "work/2026-10-15-s3-0/presenter/inhand1.jpg",
+            "inhand_video": "work/2026-10-15-s3-0/presenter/inhand1.mp4"
+          },
+          {
+            "text": "Just gently work through the coat to keep things smooth and comfortable for them.",
+            "badge": "",
+            "label": "Comfortable grooming",
+            "stock_queries": [
+              "brushing dog hair",
+              "happy dog grooming"
+            ],
+            "image_prompt": "Gentle motion of a brush moving through thick dog fur, soft lighting, 9:16 vertical.",
+            "stock_query": "brushing dog hair",
+            "inhand_image": "work/2026-10-15-s3-0/presenter/inhand2.jpg",
+            "inhand_video": "work/2026-10-15-s3-0/presenter/inhand2.mp4"
+          },
+          {
+            "text": "Find this for fifteen dollars at ashvara.store. What is the hardest part about grooming your pet?",
+            "badge": "",
+            "label": "$13.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "dog grooming kit",
+              "pet supplies store"
+            ],
+            "image_prompt": "A clean, modern professional grooming tool resting on a wooden surface, minimalist style, 9:16 vertical.",
+            "stock_query": "dog grooming kit",
+            "product_image": "work/2026-10-15-s3/product/product_2.jpg"
+          }
+        ],
+        "key_facts": [
+          "The tool features a dual-sided stainless steel head.",
+          "The handle is constructed with a non-slip rubber grip.",
+          "The price of the item is fifteen dollars."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Stop fighting those stubborn dog knots every single day with this simple tool. This pet fur knot remover features a dual sided stainless steel head design. It is built with a non slip rubber grip for total control while brushing. Just gently work through the coat to keep things smooth and comfortable for them. Find this for fifteen dollars at ashvara.store. What is the hardest part about grooming your pet?",
+        "product": {
+          "handle": "pet-fur-knot-cutter-89653",
+          "title": "Pet Fur Knot Remover Comb \u2013 Dog Grooming Tool",
+          "url": "https://ashvara.store/products/pet-fur-knot-cutter-89653",
+          "price": "$13.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "dog with matted fur",
+            "queries": [
+              {
+                "q": "dog tangled fur",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "matted dog coat",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "dog grooming",
+                "must": [
+                  "dog"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "dual sided pet grooming rake",
+            "queries": [
+              {
+                "q": "pet grooming rake",
+                "must": [
+                  "brush"
+                ]
+              },
+              {
+                "q": "metal comb",
+                "must": [
+                  "comb"
+                ]
+              },
+              {
+                "q": "grooming tool",
+                "must": [
+                  "tool"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "rubber grip brush handle",
+            "queries": [
+              {
+                "q": "rubber grip handle",
+                "must": [
+                  "handle"
+                ]
+              },
+              {
+                "q": "dog brush close up",
+                "must": [
+                  "brush"
+                ]
+              },
+              {
+                "q": "grooming handle",
+                "must": [
+                  "grip"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "brushing dog fur gently",
+            "queries": [
+              {
+                "q": "brushing dog coat",
+                "must": [
+                  "dog",
+                  "brush"
+                ]
+              },
+              {
+                "q": "combing puppy fur",
+                "must": [
+                  "puppy"
+                ]
+              },
+              {
+                "q": "pet care brushing",
+                "must": [
+                  "pet"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "happy dog sitting",
+            "queries": [
+              {
+                "q": "happy dog",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "cute puppy",
+                "must": [
+                  "puppy"
+                ]
+              },
+              {
+                "q": "dog looking at camera",
+                "must": [
+                  "dog"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "dog grooming",
+          "pet brush",
+          "puppy fur"
+        ],
+        "visual_style": "Clean UGC style pet grooming tutorial with close-ups of dogs being brushed with a de-matting tool.",
+        "visual_refs": [
+          "Pets Fur Knot Cutter Dog Grooming Shedding Tools",
+          "Honest review of the JASWELL Pet Grooming Tool- 2 Sided Undercoat Rake for Dogs",
+          "How to use our de-matting comb #doggrooming #doggroomer #dogshorts #doodlegrooming #dematting",
+          "Removing Knots with the Knot Out Comb",
+          "HOLY GRAIL OF MAT REMOVERS - Four Paws Instant Mat &amp; Tangle Remover",
+          "How to Detangle Matted Dog Fur at Home | PetSmart Grooming Tips"
+        ],
+        "presenter_image": "assets/cast/joan.jpg",
+        "presenter_voice": "en-US-JennyNeural",
+        "presenter_name": "Joan Miller",
+        "voice": "en-US-JennyNeural",
+        "presenter_used": true,
+        "visual_report": {
+          "shots": 5,
+          "checked": 5,
+          "unchecked": 0,
+          "filler": 0
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-JennyNeural).",
+        "Presenter: AI-generated character (Kling AI Avatar via fal.ai), not a real customer."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-15",
+        "name": "2026-10-15-s3-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-15",
+        "name": "2026-10-15-s3-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,104 --> 00:00:02,455\nStop fighting those stubborn dog knots every\n\n2\n00:00:02,455 --> 00:00:05,476\nsingle day with this simple tool This\n\n3\n00:00:05,476 --> 00:00:07,378\npet fur knot remover features a dual\n\n4\n00:00:07,378 --> 00:00:10,639\nsided stainless steel head design It is\n\n5\n00:00:10,639 --> 00:00:12,432\nbuilt with a non slip rubber grip\n\n6\n00:00:12,432 --> 00:00:15,965\nfor total control while brushing Just gently\n\n7\n00:00:15,965 --> 00:00:17,554\nwork through the coat to keep things\n\n8\n00:00:17,554 --> 00:00:20,734\nsmooth and comfortable for them Find this\n\n9\n00:00:20,734 --> 00:00:22,745\nfor fifteen dollars at ashvara .\n\n10\n00:00:22,745 --> 00:00:25,707\nstore What is the hardest part about\n\n11\n00:00:25,707 --> 00:00:27,112\ngrooming your pet\n",
+      "tg_msg": 143,
+      "opts_msg": 145
     }
   },
   "history": [
@@ -2783,12 +3078,12 @@
   },
   "photo_angle": 3,
   "visual_searches": {
-    "2026-10-15": 3
+    "2026-10-15": 4
   },
   "recent_voices": [
-    "en-US-EmmaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-US-AndrewMultilingualNeural",
+    "en-US-JennyNeural",
     "en-US-JennyNeural",
     "en-US-JennyNeural"
   ],
@@ -2934,9 +3229,9 @@
     }
   },
   "presenter_days": {
-    "2026-10-15": 2
+    "2026-10-15": 3
   },
   "presenter_last": {
-    "joan": "2026-10-15T18:26:28.048405+00:00"
+    "joan": "2026-10-15T18:44:02.451927+00:00"
   }
 }
