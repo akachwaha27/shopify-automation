@@ -586,6 +586,8 @@ def make_video(pkg, out_dir, recent_voices=()):
                 print(f"  presenter clip failed for scene {i}: {str(e)[:200]}")
         if talk:
             shots = talk
+        elif scene.get("inhand_image") and os.path.exists(scene["inhand_image"]):  # cast member using the product
+            shots = [{"kind": "image", "path": scene["inhand_image"], "credit": None, "checked": True}]
         elif scene.get("product_image"):  # store promo: the real product photo, never cropped off
             shots = [{"kind": "product", "path": scene["product_image"], "credit": None, "checked": True}]
         elif scene.get("clip"):  # funny-clips format: this scene's clip was chosen (and watched) beforehand

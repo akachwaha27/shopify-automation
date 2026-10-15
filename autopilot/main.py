@@ -386,6 +386,8 @@ def render_and_preview(st, vid, pkg):
     avoid = st.get("recent_voices", []) + ([pkg["voice"]] if pkg.get("voice") else [])
     for k in ("presenter_image", "presenter_used", "presenter_voice", "presenter_name"):
         pkg.pop(k, None)
+    for sc in pkg.get("scenes", []):
+        sc.pop("inhand_image", None)
     member = None
     if pkg.get("format") == "product":
         from . import presenter, products
@@ -396,6 +398,16 @@ def render_and_preview(st, vid, pkg):
                 try:
                     pkg["presenter_image"] = presenter.image_path(st, member["id"], os.path.join(out, "presenter"))
                     pkg["presenter_voice"], pkg["presenter_name"] = member["voice"], member["name"]
+                    shot = next((sc["product_image"] for sc in pkg["scenes"] if sc.get("product_image")), None)
+                    mids = [i for i in range(1, len(pkg["scenes"]) - 1)]
+                    if shot and mids:  # one scene of the cast member actually using the product
+                        target = pkg["scenes"][mids[len(mids) // 2]]
+                        try:
+                            target["inhand_image"] = presenter.product_scene(
+                                st, member, shot, prod.get("title") or pkg["title"],
+                                os.path.join(out, "presenter", "inhand.jpg"))
+                        except Exception as e:  # noqa: BLE001
+                            print("product-in-hand scene failed:", str(e)[:200])
                 except Exception as e:  # noqa: BLE001
                     print("presenter image fetch failed:", e)
     path, credits = media.make_video(pkg, out, avoid)
@@ -850,6 +862,9 @@ def main():
             return state.save(st)
         st = state.load()
         try:
+            if cmd == "castsheets":  # character sheets (4-5 angles, same face) for the cast: castsheets [ids]
+                from . import presenter
+                return presenter.make_sheets(st, args or None)
             if cmd == "presenters":  # make the AI presenter cast ("presenters new" = only members not made yet)
                 from . import presenter
                 return presenter.candidates(st, missing_only="new" in args)

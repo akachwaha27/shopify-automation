@@ -255,3 +255,97 @@ def clip(audio, start, end, image, out):
     if not url:
         raise RuntimeError(f"no video in fal result: {str(res)[:200]}")
     return _download(url, out)
+
+
+# ---------------- character sheets + "product in hand" scenes ----------------
+EDIT_MODEL = "fal-ai/nano-banana/edit"   # keeps the same face/markings in new poses (~$0.04 per image)
+VIEWS = {
+    "human": [("full", "full body, standing, front view, relaxed natural pose"),
+              ("three_quarter", "three-quarter view from the left, waist up"),
+              ("profile", "right side profile, head and shoulders"),
+              ("smile", "close-up portrait with a big genuine smile"),
+              ("gesture", "waist up, mid-sentence, explaining something with one hand raised")],
+    "pet": [("full", "full body, side view, standing"),
+            ("three_quarter", "three-quarter view, sitting"),
+            ("lying", "lying down, relaxed"),
+            ("closeup", "close-up of the face, head tilted curiously")],
+}
+
+
+def _who(c):
+    if c["kind"] == "pet":
+        return (f"the exact same {c.get('species', 'pet')} as in the reference photo - identical breed, size, fur "
+                "colour, markings and eye colour")
+    return ("the exact same person as in the reference photo - identical face, hairstyle, skin tone, body type "
+            "and outfit")
+
+
+def edit(images, prompt, out, aspect="9:16"):
+    res = run(EDIT_MODEL, {"prompt": prompt, "num_images": 1, "aspect_ratio": aspect, "output_format": "jpeg",
+                           "image_urls": [_data_uri(p, "image/jpeg") for p in images]}, wait_s=300)
+    return _download(res["images"][0]["url"], out)
+
+
+def sheet_views(cid):
+    """Saved character-sheet pictures for this cast member (repo files), best first."""
+    folder = os.path.join(CAST_DIR, cid)
+    kind = BY_ID[cid]["kind"]
+    return [os.path.join(folder, f"{v}.jpg") for v, _ in VIEWS[kind] if os.path.exists(os.path.join(folder, f"{v}.jpg"))]
+
+
+def make_sheet(st, cid):
+    """Draws the character from 4-5 angles (same face) into assets/cast/<id>/ and sends the sheet to Telegram."""
+    from PIL import Image, ImageDraw, ImageFont
+    c = BY_ID[cid]
+    base = image_path(st, cid, os.path.join(config.WORK_DIR, "presenter"))
+    folder = os.path.join(CAST_DIR, cid)
+    os.makedirs(folder, exist_ok=True)
+    paths = [base]
+    for view, desc in VIEWS[c["kind"]]:
+        prompt = (f"Character reference photo of {_who(c)}: {desc}. Same lighting style as the reference, plain soft "
+                  "light-grey studio background, photorealistic, sharp focus, no text, no watermark.")
+        try:
+            paths.append(edit([base], prompt, os.path.join(folder, f"{view}.jpg"), aspect="3:4"))
+        except Exception as e:  # noqa: BLE001
+            print(f"sheet view {cid}/{view} failed: {str(e)[:200]}")
+    tile_w, tile_h = 300, 400
+    font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 28)
+    img = Image.new("RGB", (tile_w * len(paths), tile_h + 50), "white")
+    for i, p in enumerate(paths):
+        tile = Image.open(p).convert("RGB")
+        tile.thumbnail((tile_w, tile_h))
+        img.paste(tile, (i * tile_w + (tile_w - tile.width) // 2, 50 + (tile_h - tile.height) // 2))
+    ImageDraw.Draw(img).text((12, 10), f"{c['name']} - {c.get('vibe', '')}", fill="black", font=font)
+    sheet = os.path.join(folder, "sheet.jpg")
+    img.save(sheet, quality=85)
+    telegram.send_photo(sheet, f"📋 {c['name']} character sheet")
+    return sheet
+
+
+def make_sheets(st, only=None):
+    ids = [i for i in (only or [c["id"] for c in CAST]) if i in BY_ID]
+    done = []
+    for cid in ids:
+        try:
+            make_sheet(st, cid)
+            done.append(BY_ID[cid]["name"])
+        except Exception as e:  # noqa: BLE001
+            telegram.send(f"⚠️ Character sheet for {BY_ID[cid]['name']} failed: {str(e)[:200]}")
+    if done:
+        telegram.send(f"✅ Character sheets saved for: {', '.join(done)}. These keep each face the same when the "
+                      "bot draws them using a product.")
+
+
+def product_scene(st, member, product_image, product_title, out):
+    """A new photo of this cast member using the product (same face via the base photo + character sheet)."""
+    refs = [image_path(st, member["id"], os.path.dirname(out))] + sheet_views(member["id"])[:2] + [product_image]
+    if member["kind"] == "pet":
+        action = (f"enjoying or being cared for with the product from the last reference image ({product_title}), "
+                  "in a bright cozy home, a human hand may appear but no human face")
+    else:
+        action = (f"holding and using the product from the last reference image ({product_title}) in a bright cozy "
+                  "home, looking at the product with a natural smile")
+    prompt = (f"Vertical smartphone UGC-style photo of {_who(member)} (the first reference images), {action}. "
+              "The product must look exactly like the last reference image (same shape, colours and details) and be "
+              "clearly visible. Photorealistic, natural window light, no text, no logos added, no watermark.")
+    return edit(refs, prompt, out)
