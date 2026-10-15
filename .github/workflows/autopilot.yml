@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: "trends | poll | photo | photopreview | presenters | castsheets | metacheck | stats | aicheck | test [ranking|story|funny|quiz|tips|explainer]"
+        description: "trends | poll | photo | photopreview | presenters | castsheets | sample | metacheck | stats | aicheck | test [ranking|story|funny|quiz|tips|explainer]"
         default: "poll"
 
 permissions:

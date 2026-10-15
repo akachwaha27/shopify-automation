@@ -381,16 +381,20 @@ def make_sheets(st, only=None):
                       "bot draws them using a product.")
 
 
-def product_scene(st, member, product_image, product_title, out):
+def product_scene(st, member, product_image, product_title, out, costar=None):
     """A new photo of this cast member using the product (same face via the base photo + character sheet)."""
     refs = [image_path(st, member["id"], os.path.dirname(out))] + sheet_views(member["id"])[:2]
-    partner = BY_ID.get(member.get("partner") or "")
-    if partner and partner["id"] in have(st):  # older couples appear together
+    partner = BY_ID.get(costar or member.get("partner") or "")
+    if partner and partner["id"] in have(st):  # a chosen co-star, or an older couple, appear together
         refs += [image_path(st, partner["id"], os.path.dirname(out))]
     refs += [product_image]
     if member["kind"] == "pet":
         action = (f"enjoying or being cared for with the product from the last reference image ({product_title}), "
                   "in a bright cozy home, a human hand may appear but no human face")
+    elif partner and partner["kind"] == "pet":
+        action = (f"at home with their {partner.get('species', 'pet')} (the animal in the second-to-last reference "
+                  "image - identical breed, fur colour and size), gently using the product from the last reference "
+                  f"image ({product_title}) on or with the pet, both looking happy, a warm natural moment")
     elif partner:
         action = (f"together with their spouse (the person in the second-to-last reference image, identical face and "
                   f"outfit), using the product from the last reference image ({product_title}) at home, both smiling, "

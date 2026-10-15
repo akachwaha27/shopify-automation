@@ -391,9 +391,10 @@ def render_and_preview(st, vid, pkg):
     member = None
     if pkg.get("format") == "product":
         from . import presenter, products
-        if presenter.due(st):
+        forced = v["topic"].get("cast")  # a sample ad with a chosen cast member
+        if (forced and presenter.available()) or presenter.due(st):
             prod = products.find((pkg.get("product") or {}).get("handle") or v["topic"].get("product")) or {}
-            member = presenter.pick(st, prod)
+            member = presenter.BY_ID.get(forced) if forced else presenter.pick(st, prod)
             if member:
                 try:
                     pkg["presenter_image"] = presenter.image_path(st, member["id"], os.path.join(out, "presenter"))
@@ -405,7 +406,7 @@ def render_and_preview(st, vid, pkg):
                         try:
                             target["inhand_image"] = presenter.product_scene(
                                 st, member, shot, prod.get("title") or pkg["title"],
-                                os.path.join(out, "presenter", "inhand.jpg"))
+                                os.path.join(out, "presenter", "inhand.jpg"), costar=v["topic"].get("costar"))
                         except Exception as e:  # noqa: BLE001
                             print("product-in-hand scene failed:", str(e)[:200])
                 except Exception as e:  # noqa: BLE001
@@ -544,6 +545,29 @@ def attach_product(pkg, v, vid):
     if p["url"] not in pkg.get("description", ""):
         pkg["description"] = pkg.get("description", "").rstrip() + f"\nShop it: {p['url']}"
     return True
+
+
+def cmd_sample(st, args):
+    """Makes one product ad with a chosen cast member (and optional co-star) and sends it for approval."""
+    from . import presenter, products
+    if len(args) < 2:
+        return telegram.send("Usage: sample &lt;product-handle&gt; &lt;presenter&gt; [co-star]")
+    handle, cid = args[0], args[1]
+    costar = args[2] if len(args) > 2 else None
+    p = products.find(handle)
+    if not p or cid not in presenter.BY_ID:
+        return telegram.send(f"⚠️ Sample ad: unknown product or cast member ({esc(handle)}, {esc(cid)}).")
+    who = presenter.BY_ID[cid]["name"] + (f" & {presenter.BY_ID[costar]['name']}" if costar in presenter.BY_ID else "")
+    k = 1
+    while f"{today()}-s{k}" in st["videos"]:
+        k += 1
+    vid = f"{today()}-s{k}"
+    st["videos"][vid] = {"topic": {"title": p["title"], "format": "product", "tone": "normal", "virality_score": 8,
+                                   "angle": f"Sample UGC-style ad presented by {who}", "trend_source": "sample ad",
+                                   "product": p["handle"], "cast": cid, "costar": costar},
+                         "status": "queued", "by": "you", "updated": state.iso(), "redos": 0}
+    telegram.send(f"🎬 Making a sample ad for <b>{esc(p['title'])}</b> with {esc(who)} (about 5-10 minutes)...")
+    generate(st, vid)
 
 
 def cmd_igrepost(st, vids):
@@ -862,6 +886,8 @@ def main():
             return state.save(st)
         st = state.load()
         try:
+            if cmd == "sample":  # sample ad: sample <product-handle> <presenter-id> [co-star-id]
+                return cmd_sample(st, args)
             if cmd == "castsheets":  # character sheets (4-5 angles, same face) for the cast: castsheets [ids]
                 from . import presenter
                 return presenter.make_sheets(st, args or None)
