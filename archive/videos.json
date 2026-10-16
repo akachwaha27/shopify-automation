@@ -796,5 +796,75 @@
   "uploaded_at": "2026-10-15T22:33:46.167306+00:00",
   "virality_score": 8,
   "voice": "en-US-JennyNeural"
+ },
+ "2026-10-16-1": {
+  "angle": "Product demo with a relatable hook",
+  "approved_by": "",
+  "category": "26",
+  "credits": [
+   "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+  ],
+  "date": "2026-10-16",
+  "description": "See how an adjustable posture support strap helps you stay upright while sitting at your computer. Check out this lightweight and breathable daily desk accessory.\nShop it: https://ashvara.store/products/adjustable-brace-support-belt-back-posture-corrector-30592\n\n#shorts #workfromhome #desksetup #ashvara\n\n— Credits & disclosure —\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+  "file": {
+   "name": "2026-10-16-1-v0.mp4",
+   "tag": "videos-2026-10-16",
+   "type": "release"
+  },
+  "format": "product",
+  "hashtags": [
+   "#shorts",
+   "#workfromhome",
+   "#desksetup",
+   "#ashvara"
+  ],
+  "hook_text": "Slouching at your desk?",
+  "id": "2026-10-16-1",
+  "idea_title": "Adjustable Posture Support Strap",
+  "key_facts": [
+   "The posture support strap features adjustable velcro straps for customizable tension.",
+   "The strap is constructed using breathable mesh fabric designed for discreet wear beneath clothing."
+  ],
+  "pinned_comment": "Be honest: how many hours do you spend sitting at a screen each day? Drop your estimate below! 👇",
+  "platforms": {},
+  "primary_keyword": "posture support strap",
+  "redos": 0,
+  "scheduled_for": "",
+  "script": "Notice yourself slouching over your desk right now? It happens without even realizing. This adjustable posture strap gives your shoulders a gentle reminder to stay upright. It is built with breathable mesh fabric, with adjustable velcro straps that customize your fit. You can slip it on like a backpack and wear it discreetly under a shirt or hoodie. Find it for twenty-four ninety-nine. Link in bio at ashvara dot store. How many hours a day do you sit at a desk?",
+  "status": "awaiting_approval",
+  "subtitles_srt": "1\n00:00:00,087 --> 00:00:02,203\nNotice yourself slouching over your desk right\n\n2\n00:00:02,203 --> 00:00:05,656\nnow It happens without even realizing This\n\n3\n00:00:05,656 --> 00:00:08,292\nadjustable posture strap gives your shoulders\n\n4\n00:00:08,292 --> 00:00:10,644\na gentle reminder to stay upright It\n\n5\n00:00:10,644 --> 00:00:13,106\nis built with breathable mesh fabric with\n\n6\n00:00:13,106 --> 00:00:15,446\nadjustable velcro straps that customize your\n\n7\n00:00:15,446 --> 00:00:17,030\nfit You can slip it on like\n\n8\n00:00:17,030 --> 00:00:19,245\na backpack and wear it discreetly under\n\n9\n00:00:19,245 --> 00:00:21,460\na shirt or hoodie Find it for\n\n10\n00:00:21,460 --> 00:00:24,691\ntwenty-four ninety-nine Link in bio at ashvara\n\n11\n00:00:24,691 --> 00:00:26,609\ndot store How many hours a day\n\n12\n00:00:26,609 --> 00:00:27,974\ndo you sit at a desk\n",
+  "tags": [
+   "posture support strap",
+   "back posture strap",
+   "back posture brace",
+   "back support strap",
+   "adjustable back brace",
+   "posture support brace",
+   "posture back support belt",
+   "posture corrector back brace",
+   "posture corrector back support",
+   "upper back support strap",
+   "back support posture corrector belt",
+   "posture strap",
+   "back posture belt",
+   "posture support belt",
+   "back posture corrector",
+   "adjustable posture belt",
+   "posture corrector strap",
+   "posture correction strap",
+   "adjustable posture corrector"
+  ],
+  "thumb": {
+   "name": "2026-10-16-1-v0-thumb.jpg",
+   "tag": "videos-2026-10-16",
+   "type": "release"
+  },
+  "thumbnail_text": "Stop Slouching Today",
+  "title": "Posture Support Strap Demo in 30 Seconds ⏱️",
+  "trend_source": "Ashvara store catalog",
+  "updated": "2026-10-16T19:10:17.500937+00:00",
+  "uploaded_at": "",
+  "virality_score": 7,
+  "voice": "en-US-AvaMultilingualNeural"
  }
 }

@@ -372,8 +372,10 @@
         }
       ],
       "sent_at": "2026-10-16T15:28:26.888650+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     },
     "2026-10-16-2": {
       "topics": [
@@ -3093,6 +3095,293 @@
       },
       "uploaded_at": "2026-10-15T22:33:46.167306+00:00",
       "slot": "2026-10-16T01:15:00+00:00"
+    },
+    "2026-10-16-1": {
+      "topic": {
+        "title": "Adjustable Posture Support Strap",
+        "angle": "Product demo with a relatable hook",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "adjustable-brace-support-belt-back-posture-corrector-30592"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-16T19:10:17.500937+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "posture support strap",
+        "title": "Posture Support Strap Demo in 30 Seconds \u23f1\ufe0f",
+        "hook_text": "Slouching at your desk?",
+        "thumbnail_text": "Stop Slouching Today",
+        "description": "See how an adjustable posture support strap helps you stay upright while sitting at your computer. Check out this lightweight and breathable daily desk accessory.\nShop it: https://ashvara.store/products/adjustable-brace-support-belt-back-posture-corrector-30592",
+        "hashtags": [
+          "#shorts",
+          "#workfromhome",
+          "#desksetup",
+          "#ashvara"
+        ],
+        "tags": [
+          "posture support strap",
+          "back posture strap",
+          "back posture brace",
+          "back support strap",
+          "adjustable back brace",
+          "posture support brace",
+          "posture back support belt",
+          "posture corrector back brace",
+          "posture corrector back support",
+          "upper back support strap",
+          "back support posture corrector belt",
+          "posture strap",
+          "back posture belt",
+          "posture support belt",
+          "back posture corrector",
+          "adjustable posture belt",
+          "posture corrector strap",
+          "posture correction strap",
+          "adjustable posture corrector"
+        ],
+        "pinned_comment": "Be honest: how many hours do you spend sitting at a screen each day? Drop your estimate below! \ud83d\udc47",
+        "scenes": [
+          {
+            "text": "Notice yourself slouching over your desk right now? It happens without even realizing.",
+            "badge": "",
+            "label": "Daily Desk Habit",
+            "stock_queries": [
+              "slouching desk",
+              "person typing laptop"
+            ],
+            "image_prompt": "Vertical 9:16 shot of a modern office desk with a laptop, paper notebook, and ceramic coffee mug in soft cinematic morning light, ergonomic workstation background.",
+            "stock_query": "slouching desk",
+            "product_image": "work/2026-10-16-1/product/product_0.jpg"
+          },
+          {
+            "text": "This adjustable posture strap gives your shoulders a gentle reminder to stay upright.",
+            "badge": "",
+            "label": "Gentle Shoulder Support",
+            "stock_queries": [
+              "posture corrector",
+              "back brace strap"
+            ],
+            "image_prompt": "Vertical 9:16 close-up of a sleek black adjustable posture strap laid out neatly on a clean wooden table with studio product lighting.",
+            "stock_query": "posture corrector",
+            "inhand_image": "work/2026-10-16-1-0/presenter/inhand0.jpg",
+            "inhand_video": "work/2026-10-16-1-0/presenter/inhand0.mp4"
+          },
+          {
+            "text": "It is built with breathable mesh fabric, with adjustable velcro straps that customize your fit.",
+            "badge": "",
+            "label": "Breathable Mesh Design",
+            "stock_queries": [
+              "breathable mesh fabric",
+              "velcro strap macro"
+            ],
+            "image_prompt": "Vertical 9:16 macro detailed shot of breathable perforated neoprene mesh fabric and sturdy nylon adjustment straps with soft ambient highlights.",
+            "stock_query": "breathable mesh fabric",
+            "product_image": "work/2026-10-16-1/product/product_1.jpg",
+            "inhand_image": "work/2026-10-16-1-0/presenter/inhand1.jpg",
+            "inhand_video": "work/2026-10-16-1-0/presenter/inhand1.mp4"
+          },
+          {
+            "text": "You can slip it on like a backpack and wear it discreetly under a shirt or hoodie.",
+            "badge": "",
+            "label": "Wear Under Clothes",
+            "stock_queries": [
+              "putting on backpack",
+              "person wearing jacket"
+            ],
+            "image_prompt": "Vertical 9:16 minimalist shot of a casual grey cotton t-shirt neatly displayed on a tailor mannequin showing invisible sleek under-layer support contours.",
+            "stock_query": "putting on backpack",
+            "inhand_image": "work/2026-10-16-1-0/presenter/inhand2.jpg",
+            "inhand_video": "work/2026-10-16-1-0/presenter/inhand2.mp4"
+          },
+          {
+            "text": "Find it for twenty-four ninety-nine. Link in bio at ashvara dot store. How many hours a day do you sit at a desk?",
+            "badge": "",
+            "label": "$14.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "office chair empty",
+              "desk setup workspace"
+            ],
+            "image_prompt": "Vertical 9:16 aesthetic modern home office workspace with an ergonomic swivel chair and clean wooden desk bathed in natural sunlight.",
+            "stock_query": "office chair empty",
+            "product_image": "work/2026-10-16-1/product/product_2.jpg"
+          }
+        ],
+        "key_facts": [
+          "The posture support strap features adjustable velcro straps for customizable tension.",
+          "The strap is constructed using breathable mesh fabric designed for discreet wear beneath clothing."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Notice yourself slouching over your desk right now? It happens without even realizing. This adjustable posture strap gives your shoulders a gentle reminder to stay upright. It is built with breathable mesh fabric, with adjustable velcro straps that customize your fit. You can slip it on like a backpack and wear it discreetly under a shirt or hoodie. Find it for twenty-four ninety-nine. Link in bio at ashvara dot store. How many hours a day do you sit at a desk?",
+        "product": {
+          "handle": "adjustable-brace-support-belt-back-posture-corrector-30592",
+          "title": "Adjustable Posture Support Strap",
+          "url": "https://ashvara.store/products/adjustable-brace-support-belt-back-posture-corrector-30592",
+          "price": "$14.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "person slouching at a computer desk",
+            "queries": [
+              {
+                "q": "person slouching desk",
+                "must": [
+                  "slouching"
+                ]
+              },
+              {
+                "q": "typing computer",
+                "must": [
+                  "computer"
+                ]
+              },
+              {
+                "q": "office desk",
+                "must": [
+                  "desk"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "posture strap on a person's back",
+            "queries": [
+              {
+                "q": "posture corrector back",
+                "must": [
+                  "corrector"
+                ]
+              },
+              {
+                "q": "back brace strap",
+                "must": [
+                  "brace"
+                ]
+              },
+              {
+                "q": "shoulder support strap",
+                "must": [
+                  "strap"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "close up of mesh fabric and velcro straps",
+            "queries": [
+              {
+                "q": "velcro strap close up",
+                "must": [
+                  "velcro"
+                ]
+              },
+              {
+                "q": "mesh fabric texture",
+                "must": [
+                  "mesh"
+                ]
+              },
+              {
+                "q": "fabric strap",
+                "must": [
+                  "fabric"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person putting on posture brace like a backpack",
+            "queries": [
+              {
+                "q": "person wearing brace",
+                "must": [
+                  "wearing"
+                ]
+              },
+              {
+                "q": "putting on backpack",
+                "must": [
+                  "backpack"
+                ]
+              },
+              {
+                "q": "person shirt",
+                "must": [
+                  "shirt"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person sitting at a desk working on a laptop",
+            "queries": [
+              {
+                "q": "person sitting laptop",
+                "must": [
+                  "laptop"
+                ]
+              },
+              {
+                "q": "working desk",
+                "must": [
+                  "desk"
+                ]
+              },
+              {
+                "q": "office workspace",
+                "must": [
+                  "workspace"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "posture brace",
+          "back support",
+          "office desk"
+        ],
+        "visual_style": "Clean product demos featuring real people demonstrating back posture correctors and braces in everyday settings with bright lighting.",
+        "visual_refs": [
+          "Do Posture Correctors Work? PHYSIO EXPLAINS #posture #corrector #brace #back",
+          "BEST Posture Correctors on Amazon 2024 - How to Use It Correctly!",
+          "How Do I Put On My Posture Corrector? - Adjust Straps For Comfortable Fit",
+          "Posture Corrector Review | Can This Back Brace Actually Fix Your Posture?",
+          "Posture Corrector: Legit or Scam? PHYSIO EXPLAINS #posture #neckpain #backpain",
+          "You need a Posture Corrector!"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 5,
+          "checked": 5,
+          "unchecked": 0,
+          "filler": 0
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-16",
+        "name": "2026-10-16-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-16",
+        "name": "2026-10-16-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,087 --> 00:00:02,203\nNotice yourself slouching over your desk right\n\n2\n00:00:02,203 --> 00:00:05,656\nnow It happens without even realizing This\n\n3\n00:00:05,656 --> 00:00:08,292\nadjustable posture strap gives your shoulders\n\n4\n00:00:08,292 --> 00:00:10,644\na gentle reminder to stay upright It\n\n5\n00:00:10,644 --> 00:00:13,106\nis built with breathable mesh fabric with\n\n6\n00:00:13,106 --> 00:00:15,446\nadjustable velcro straps that customize your\n\n7\n00:00:15,446 --> 00:00:17,030\nfit You can slip it on like\n\n8\n00:00:17,030 --> 00:00:19,245\na backpack and wear it discreetly under\n\n9\n00:00:19,245 --> 00:00:21,460\na shirt or hoodie Find it for\n\n10\n00:00:21,460 --> 00:00:24,691\ntwenty-four ninety-nine Link in bio at ashvara\n\n11\n00:00:24,691 --> 00:00:26,609\ndot store How many hours a day\n\n12\n00:00:26,609 --> 00:00:27,974\ndo you sit at a desk\n",
+      "tg_msg": 155,
+      "opts_msg": 157
     }
   },
   "history": [
@@ -3101,7 +3390,8 @@
     "Stop Muddy Paws At The Door!",
     "Get That Spa Glow At Home",
     "Flawless Makeup In Any Light",
-    "Pet Fur Knot Remover Comb \u2013 Dog Grooming Tool"
+    "Pet Fur Knot Remover Comb \u2013 Dog Grooming Tool",
+    "Adjustable Posture Support Strap"
   ],
   "trend_tries": {
     "2026-10-14": {
@@ -3127,14 +3417,14 @@
   },
   "photo_angle": 4,
   "visual_searches": {
-    "2026-10-15": 4
+    "2026-10-16": 1
   },
   "recent_voices": [
-    "en-US-AvaMultilingualNeural",
     "en-US-AndrewMultilingualNeural",
     "en-US-JennyNeural",
     "en-US-JennyNeural",
-    "en-US-JennyNeural"
+    "en-US-JennyNeural",
+    "en-US-AvaMultilingualNeural"
   ],
   "presenter_candidates": [
     {

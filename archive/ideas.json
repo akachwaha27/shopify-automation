@@ -494,11 +494,11 @@
    {
     "angle": "Product demo with a relatable hook",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Adjustable Posture Support Strap",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-16-1",
     "virality_score": 7,
     "why": ""
    },
@@ -559,7 +559,7 @@
    }
   ],
   "sent_at": "2026-10-16T15:28:26.888650+00:00",
-  "status": "waiting"
+  "status": "closed"
  },
  "2026-10-16-2": {
   "date": "2026-10-16-2",
