@@ -435,8 +435,10 @@
         }
       ],
       "sent_at": "2026-10-16T18:09:51.987051+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     }
   },
   "videos": {
@@ -3106,9 +3108,9 @@
         "trend_source": "Ashvara store catalog",
         "product": "adjustable-brace-support-belt-back-posture-corrector-30592"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "auto",
-      "updated": "2026-10-16T19:10:17.500937+00:00",
+      "updated": "2026-10-16T22:09:03.695370+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "posture support strap",
@@ -3381,7 +3383,350 @@
       },
       "srt": "1\n00:00:00,087 --> 00:00:02,203\nNotice yourself slouching over your desk right\n\n2\n00:00:02,203 --> 00:00:05,656\nnow It happens without even realizing This\n\n3\n00:00:05,656 --> 00:00:08,292\nadjustable posture strap gives your shoulders\n\n4\n00:00:08,292 --> 00:00:10,644\na gentle reminder to stay upright It\n\n5\n00:00:10,644 --> 00:00:13,106\nis built with breathable mesh fabric with\n\n6\n00:00:13,106 --> 00:00:15,446\nadjustable velcro straps that customize your\n\n7\n00:00:15,446 --> 00:00:17,030\nfit You can slip it on like\n\n8\n00:00:17,030 --> 00:00:19,245\na backpack and wear it discreetly under\n\n9\n00:00:19,245 --> 00:00:21,460\na shirt or hoodie Find it for\n\n10\n00:00:21,460 --> 00:00:24,691\ntwenty-four ninety-nine Link in bio at ashvara\n\n11\n00:00:24,691 --> 00:00:26,609\ndot store How many hours a day\n\n12\n00:00:26,609 --> 00:00:27,974\ndo you sit at a desk\n",
       "tg_msg": 155,
-      "opts_msg": 157
+      "opts_msg": 157,
+      "approved_by": "auto",
+      "description_full": "See how an adjustable posture support strap helps you stay upright while sitting at your computer. Check out this lightweight and breathable daily desk accessory.\nShop it: https://ashvara.store/products/adjustable-brace-support-belt-back-posture-corrector-30592\n\n#shorts #workfromhome #desksetup #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          "https://www.instagram.com/reel/DekkfSHCk07/",
+          "published"
+        ],
+        "Facebook": [
+          "https://www.facebook.com/reel/2368208640381611",
+          "published"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-16T22:09:03.695385+00:00",
+      "slot": "2026-10-16T23:15:00+00:00"
+    },
+    "2026-10-16-2-1": {
+      "topic": {
+        "title": "Upgrade Your Home Workout Instantly!",
+        "angle": "Transform your living room into a cozy yoga studio in seconds.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-16T22:07:51.100214+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "home workout setup",
+        "title": "Home workout setup upgrade in seconds \ud83e\uddd8",
+        "hook_text": "Upgrade Your Workout Space",
+        "thumbnail_text": "Instant Studio Upgrade",
+        "description": "Upgrade your home workout setup with a non-slip cork mat that transforms any living room.\nDiscover minimalist fitness essentials and premium yoga gear for everyday practice.\nShop it: https://ashvara.store/products/5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620",
+        "hashtags": [
+          "#shorts",
+          "#homeworkout",
+          "#yogamat",
+          "#ashvara"
+        ],
+        "tags": [
+          "home workout setup",
+          "home gym workout setup",
+          "home gym setup essentials",
+          "cork yoga mat",
+          "home gym setup",
+          "home yoga room",
+          "home yoga studio",
+          "best cork yoga mat",
+          "living room workout",
+          "home gym setup basic",
+          "home gym setup ideas",
+          "living room exercise",
+          "home gym setup beginner",
+          "home gym setup aesthetic",
+          "home gym setup apartment",
+          "non slip yoga mat",
+          "eco friendly yoga mat",
+          "living room workout no equipment",
+          "home gym minimal equipment",
+          "cork fitness mat",
+          "yoga mat alignment"
+        ],
+        "pinned_comment": "Do you get your stretching done first thing in the morning or to unwind at night? Let us know below! \ud83e\uddd8",
+        "scenes": [
+          {
+            "text": "Your living room floor is secretly ruining your home workout.",
+            "badge": "",
+            "label": "Living room setup",
+            "stock_queries": [
+              "living room rug",
+              "hardwood floor"
+            ],
+            "image_prompt": "Vertical 9:16 shot of a cozy living room with morning sunlight streaming across polished oak hardwood floor next to an indoor potted plant, warm cinematic lighting, photorealistic.",
+            "stock_query": "living room rug",
+            "product_image": "work/2026-10-16-2-1/product/product_0.jpg"
+          },
+          {
+            "text": "This natural cork mat turns any space into a peaceful studio in seconds.",
+            "badge": "",
+            "label": "Natural cork surface",
+            "stock_queries": [
+              "cork yoga mat",
+              "rolled yoga mat"
+            ],
+            "image_prompt": "Vertical 9:16 shot of an unrolled premium natural cork yoga mat laid neatly on clean light wooden parquet flooring, minimal aesthetic, soft natural window light, high detail.",
+            "stock_query": "cork yoga mat"
+          },
+          {
+            "text": "At five millimeters thick, it gives your knees solid support without sinking.",
+            "badge": "",
+            "label": "Five millimeter cushion",
+            "stock_queries": [
+              "yoga mat texture",
+              "exercise mat edge"
+            ],
+            "image_prompt": "Vertical 9:16 macro close up showing the five millimeter layered edge of a natural cork and dense dark rubber mat resting on wooden flooring, shallow depth of field.",
+            "stock_query": "yoga mat texture",
+            "product_image": "work/2026-10-16-2-1/product/product_1.jpg"
+          },
+          {
+            "text": "Laser-etched lines show you exactly where your hands and feet belong.",
+            "badge": "",
+            "label": "Etched alignment guides",
+            "stock_queries": [
+              "geometric pattern engraving",
+              "mat alignment line"
+            ],
+            "image_prompt": "Vertical 9:16 top-down view of clean laser-etched symmetrical guide lines and minimalist geometry on a golden organic cork surface, soft ambient lighting.",
+            "stock_query": "geometric pattern engraving"
+          },
+          {
+            "text": "The textured rubber base stays glued to hardwood without sliding.",
+            "badge": "",
+            "label": "Non-slip rubber base",
+            "stock_queries": [
+              "rubber texture background",
+              "tread pattern"
+            ],
+            "image_prompt": "Vertical 9:16 close up of the underside textured natural rubber grip pattern of a fitness mat curled slightly upward over a wooden floor, detailed texture.",
+            "stock_query": "rubber texture background",
+            "product_image": "work/2026-10-16-2-1/product/product_2.jpg"
+          },
+          {
+            "text": "It is forty-two dollars. Link in bio, ashvara.store. Do you prefer stretching morning or evening, especially when...",
+            "badge": "",
+            "label": "$19.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "meditation corner",
+              "indoor plant sunlight"
+            ],
+            "image_prompt": "Vertical 9:16 serene home yoga corner with a rolled cork mat held by a canvas carrying strap standing next to a monstera plant in a sunlit modern interior.",
+            "stock_query": "meditation corner",
+            "product_image": "work/2026-10-16-2-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "The mat features a natural cork top surface and a textured rubber non-slip base.",
+          "The mat has a thickness of five millimeters.",
+          "Laser-etched alignment markings provide visual placement guides on the surface."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Your living room floor is secretly ruining your home workout. This natural cork mat turns any space into a peaceful studio in seconds. At five millimeters thick, it gives your knees solid support without sinking. Laser-etched lines show you exactly where your hands and feet belong. The textured rubber base stays glued to hardwood without sliding. It is forty-two dollars. Link in bio, ashvara.store. Do you prefer stretching morning or evening, especially when...",
+        "product": {
+          "handle": "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620",
+          "title": "5-Piece Yoga Ball & Block Set",
+          "url": "https://ashvara.store/products/5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620",
+          "price": "$19.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "living room floor",
+            "queries": [
+              {
+                "q": "living room floor",
+                "must": [
+                  "floor"
+                ]
+              },
+              {
+                "q": "room interior",
+                "must": [
+                  "room"
+                ]
+              },
+              {
+                "q": "empty floor",
+                "must": [
+                  "floor"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "natural cork mat",
+            "queries": [
+              {
+                "q": "cork yoga mat",
+                "must": [
+                  "cork",
+                  "mat"
+                ]
+              },
+              {
+                "q": "yoga mat",
+                "must": [
+                  "mat"
+                ]
+              },
+              {
+                "q": "cork surface",
+                "must": [
+                  "cork"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "five millimeter cushion",
+            "queries": [
+              {
+                "q": "yoga mat thickness",
+                "must": [
+                  "mat"
+                ]
+              },
+              {
+                "q": "knee support",
+                "must": [
+                  "knee"
+                ]
+              },
+              {
+                "q": "cushion padding",
+                "must": [
+                  "cushion"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "etched alignment guides",
+            "queries": [
+              {
+                "q": "yoga mat lines",
+                "must": [
+                  "mat"
+                ]
+              },
+              {
+                "q": "alignment guide",
+                "must": [
+                  "guide"
+                ]
+              },
+              {
+                "q": "etched pattern",
+                "must": [
+                  "pattern"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "non-slip rubber base",
+            "queries": [
+              {
+                "q": "rubber mat base",
+                "must": [
+                  "rubber",
+                  "mat"
+                ]
+              },
+              {
+                "q": "non slip grip",
+                "must": [
+                  "grip"
+                ]
+              },
+              {
+                "q": "hardwood floor",
+                "must": [
+                  "floor"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "morning stretching",
+            "queries": [
+              {
+                "q": "morning stretch",
+                "must": [
+                  "stretch"
+                ]
+              },
+              {
+                "q": "yoga practice",
+                "must": [
+                  "yoga"
+                ]
+              },
+              {
+                "q": "fitness routine",
+                "must": [
+                  "fitness"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "yoga mat",
+          "fitness room",
+          "stretching routine"
+        ],
+        "visual_style": "clean aesthetic fitness videos featuring home workout gear close-ups and minimalist room settings",
+        "visual_refs": [
+          "Full Body Workout at Home   Equipment | Burn Fat &amp; Build Muscle Fast #FullBodyWorkout #HomeWorkout",
+          "Instant hourglass shape Smooths back fat, flattens your tummy... #Shorts #rosymilanzi",
+          "Getting results at home. Epic legs &amp; glutes workout. #fitness #workout #legday  #homeworkout #viral",
+          "\ud83d\udd25 Lose Belly Fat FAST! \ud83d\udd25 10-Min Home Workout (No Equipment)",
+          "This Core Fat Burning Workout Helps Women Lose Belly Fat Fast at Home",
+          "Snatched Waist &amp; Curved Hips! Fix Rounded Shoulders Fast \u23f3\u2728"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-16",
+        "name": "2026-10-16-2-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-16",
+        "name": "2026-10-16-2-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,062 --> 00:00:02,215\nYour living room floor is secretly ruining\n\n2\n00:00:02,215 --> 00:00:04,926\nyour home workout This natural cork mat\n\n3\n00:00:04,926 --> 00:00:07,426\nturns any space into a peaceful studio\n\n4\n00:00:07,426 --> 00:00:10,631\nin seconds At five millimeters thick it\n\n5\n00:00:10,631 --> 00:00:13,403\ngives your knees solid support without sinking\n\n6\n00:00:13,403 --> 00:00:16,064\nLaser-etched lines show you exactly where your\n\n7\n00:00:16,064 --> 00:00:18,849\nhands and feet belong The textured rubber\n\n8\n00:00:18,849 --> 00:00:21,918\nbase stays glued to hardwood without sliding\n\n9\n00:00:21,918 --> 00:00:24,728\nIt is forty-two dollars Link in bio\n\n10\n00:00:24,728 --> 00:00:25,347\nashvara .\n\n11\n00:00:25,347 --> 00:00:27,723\nstore Do you prefer stretching morning or\n\n12\n00:00:27,723 --> 00:00:29,695\nevening especially when\n",
+      "tg_msg": 160,
+      "opts_msg": 162
     }
   },
   "history": [
@@ -3391,7 +3736,8 @@
     "Get That Spa Glow At Home",
     "Flawless Makeup In Any Light",
     "Pet Fur Knot Remover Comb \u2013 Dog Grooming Tool",
-    "Adjustable Posture Support Strap"
+    "Adjustable Posture Support Strap",
+    "Upgrade Your Home Workout Instantly!"
   ],
   "trend_tries": {
     "2026-10-14": {
@@ -3417,13 +3763,13 @@
   },
   "photo_angle": 4,
   "visual_searches": {
-    "2026-10-16": 1
+    "2026-10-16": 2
   },
   "recent_voices": [
-    "en-US-AndrewMultilingualNeural",
     "en-US-JennyNeural",
     "en-US-JennyNeural",
     "en-US-JennyNeural",
+    "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural"
   ],
   "presenter_candidates": [

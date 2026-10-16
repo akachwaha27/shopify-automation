@@ -799,7 +799,7 @@
  },
  "2026-10-16-1": {
   "angle": "Product demo with a relatable hook",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
@@ -826,12 +826,29 @@
    "The strap is constructed using breathable mesh fabric designed for discreet wear beneath clothing."
   ],
   "pinned_comment": "Be honest: how many hours do you spend sitting at a screen each day? Drop your estimate below! 👇",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": "https://www.facebook.com/reel/2368208640381611",
+    "status": "published"
+   },
+   "Instagram": {
+    "link": "https://www.instagram.com/reel/DekkfSHCk07/",
+    "status": "published"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "posture support strap",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-16T23:15:00+00:00",
   "script": "Notice yourself slouching over your desk right now? It happens without even realizing. This adjustable posture strap gives your shoulders a gentle reminder to stay upright. It is built with breathable mesh fabric, with adjustable velcro straps that customize your fit. You can slip it on like a backpack and wear it discreetly under a shirt or hoodie. Find it for twenty-four ninety-nine. Link in bio at ashvara dot store. How many hours a day do you sit at a desk?",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,087 --> 00:00:02,203\nNotice yourself slouching over your desk right\n\n2\n00:00:02,203 --> 00:00:05,656\nnow It happens without even realizing This\n\n3\n00:00:05,656 --> 00:00:08,292\nadjustable posture strap gives your shoulders\n\n4\n00:00:08,292 --> 00:00:10,644\na gentle reminder to stay upright It\n\n5\n00:00:10,644 --> 00:00:13,106\nis built with breathable mesh fabric with\n\n6\n00:00:13,106 --> 00:00:15,446\nadjustable velcro straps that customize your\n\n7\n00:00:15,446 --> 00:00:17,030\nfit You can slip it on like\n\n8\n00:00:17,030 --> 00:00:19,245\na backpack and wear it discreetly under\n\n9\n00:00:19,245 --> 00:00:21,460\na shirt or hoodie Find it for\n\n10\n00:00:21,460 --> 00:00:24,691\ntwenty-four ninety-nine Link in bio at ashvara\n\n11\n00:00:24,691 --> 00:00:26,609\ndot store How many hours a day\n\n12\n00:00:26,609 --> 00:00:27,974\ndo you sit at a desk\n",
   "tags": [
    "posture support strap",
@@ -862,7 +879,80 @@
   "thumbnail_text": "Stop Slouching Today",
   "title": "Posture Support Strap Demo in 30 Seconds ⏱️",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-16T19:10:17.500937+00:00",
+  "updated": "2026-10-16T22:09:03.695370+00:00",
+  "uploaded_at": "2026-10-16T22:09:03.695385+00:00",
+  "virality_score": 7,
+  "voice": "en-US-AvaMultilingualNeural"
+ },
+ "2026-10-16-2-1": {
+  "angle": "Transform your living room into a cozy yoga studio in seconds.",
+  "approved_by": "",
+  "category": "26",
+  "credits": [
+   "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+  ],
+  "date": "2026-10-16",
+  "description": "Upgrade your home workout setup with a non-slip cork mat that transforms any living room.\nDiscover minimalist fitness essentials and premium yoga gear for everyday practice.\nShop it: https://ashvara.store/products/5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620\n\n#shorts #homeworkout #yogamat #ashvara\n\n— Credits & disclosure —\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+  "file": {
+   "name": "2026-10-16-2-1-v0.mp4",
+   "tag": "videos-2026-10-16",
+   "type": "release"
+  },
+  "format": "product",
+  "hashtags": [
+   "#shorts",
+   "#homeworkout",
+   "#yogamat",
+   "#ashvara"
+  ],
+  "hook_text": "Upgrade Your Workout Space",
+  "id": "2026-10-16-2-1",
+  "idea_title": "Upgrade Your Home Workout Instantly!",
+  "key_facts": [
+   "The mat features a natural cork top surface and a textured rubber non-slip base.",
+   "The mat has a thickness of five millimeters.",
+   "Laser-etched alignment markings provide visual placement guides on the surface."
+  ],
+  "pinned_comment": "Do you get your stretching done first thing in the morning or to unwind at night? Let us know below! 🧘",
+  "platforms": {},
+  "primary_keyword": "home workout setup",
+  "redos": 0,
+  "scheduled_for": "",
+  "script": "Your living room floor is secretly ruining your home workout. This natural cork mat turns any space into a peaceful studio in seconds. At five millimeters thick, it gives your knees solid support without sinking. Laser-etched lines show you exactly where your hands and feet belong. The textured rubber base stays glued to hardwood without sliding. It is forty-two dollars. Link in bio, ashvara.store. Do you prefer stretching morning or evening, especially when...",
+  "status": "awaiting_approval",
+  "subtitles_srt": "1\n00:00:00,062 --> 00:00:02,215\nYour living room floor is secretly ruining\n\n2\n00:00:02,215 --> 00:00:04,926\nyour home workout This natural cork mat\n\n3\n00:00:04,926 --> 00:00:07,426\nturns any space into a peaceful studio\n\n4\n00:00:07,426 --> 00:00:10,631\nin seconds At five millimeters thick it\n\n5\n00:00:10,631 --> 00:00:13,403\ngives your knees solid support without sinking\n\n6\n00:00:13,403 --> 00:00:16,064\nLaser-etched lines show you exactly where your\n\n7\n00:00:16,064 --> 00:00:18,849\nhands and feet belong The textured rubber\n\n8\n00:00:18,849 --> 00:00:21,918\nbase stays glued to hardwood without sliding\n\n9\n00:00:21,918 --> 00:00:24,728\nIt is forty-two dollars Link in bio\n\n10\n00:00:24,728 --> 00:00:25,347\nashvara .\n\n11\n00:00:25,347 --> 00:00:27,723\nstore Do you prefer stretching morning or\n\n12\n00:00:27,723 --> 00:00:29,695\nevening especially when\n",
+  "tags": [
+   "home workout setup",
+   "home gym workout setup",
+   "home gym setup essentials",
+   "cork yoga mat",
+   "home gym setup",
+   "home yoga room",
+   "home yoga studio",
+   "best cork yoga mat",
+   "living room workout",
+   "home gym setup basic",
+   "home gym setup ideas",
+   "living room exercise",
+   "home gym setup beginner",
+   "home gym setup aesthetic",
+   "home gym setup apartment",
+   "non slip yoga mat",
+   "eco friendly yoga mat",
+   "living room workout no equipment",
+   "home gym minimal equipment",
+   "cork fitness mat",
+   "yoga mat alignment"
+  ],
+  "thumb": {
+   "name": "2026-10-16-2-1-v0-thumb.jpg",
+   "tag": "videos-2026-10-16",
+   "type": "release"
+  },
+  "thumbnail_text": "Instant Studio Upgrade",
+  "title": "Home workout setup upgrade in seconds 🧘",
+  "trend_source": "Ashvara store catalog",
+  "updated": "2026-10-16T22:07:51.100214+00:00",
   "uploaded_at": "",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"

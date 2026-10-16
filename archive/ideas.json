@@ -567,11 +567,11 @@
    {
     "angle": "Transform your living room into a cozy yoga studio in seconds.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Upgrade Your Home Workout Instantly!",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-16-2-1",
     "virality_score": 7,
     "why": ""
    },
@@ -632,6 +632,6 @@
    }
   ],
   "sent_at": "2026-10-16T18:09:51.987051+00:00",
-  "status": "waiting"
+  "status": "closed"
  }
 }
