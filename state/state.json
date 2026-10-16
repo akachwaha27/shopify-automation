@@ -1,56 +1,6 @@
 {
   "tg_offset": 272239691,
   "batches": {
-    "2026-10-12": {
-      "topics": [
-        {
-          "title": "A Full Gym That Fits in a Drawer",
-          "angle": "Product demo with a relatable hook (Ashvara playbook)",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 8,
-          "trend_source": "Ashvara Black Friday Playbook",
-          "plan_id": "P2026-10-10-07",
-          "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
-        },
-        {
-          "title": "My Sunday Reset, Part One",
-          "angle": "Product demo with a relatable hook (Ashvara playbook)",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 8,
-          "trend_source": "Ashvara Black Friday Playbook",
-          "plan_id": "P2026-10-10-08",
-          "product": "electric-small-bubble-blackhead-remover-65778"
-        },
-        {
-          "title": "Nail Trims Without the Drama",
-          "angle": "Product demo with a relatable hook (Ashvara playbook)",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 8,
-          "trend_source": "Ashvara Black Friday Playbook",
-          "plan_id": "P2026-10-10-09",
-          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
-        },
-        {
-          "title": "Road Trip with a Muddy Dog",
-          "angle": "Product demo with a relatable hook (Ashvara playbook)",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 8,
-          "trend_source": "Ashvara Black Friday Playbook",
-          "plan_id": "P2026-10-10-10",
-          "product": "travel-dog-car-seat-cover-58970"
-        }
-      ],
-      "sent_at": "2026-10-12T15:13:22.652196+00:00",
-      "selected": [
-        0,
-        3
-      ],
-      "status": "closed"
-    },
     "2026-10-13": {
       "topics": [
         {
@@ -422,6 +372,67 @@
         }
       ],
       "sent_at": "2026-10-16T15:28:26.888650+00:00",
+      "selected": [],
+      "status": "waiting"
+    },
+    "2026-10-16-2": {
+      "topics": [
+        {
+          "title": "Upgrade Your Home Workout Instantly!",
+          "angle": "Transform your living room into a cozy yoga studio in seconds.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620"
+        },
+        {
+          "title": "Keep Your Pet Entertained All Day!",
+          "angle": "Stop your furry friend from getting bored while you're busy.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "interactive-pet-food-dispenser-toy-99709"
+        },
+        {
+          "title": "Never Guess Pet Portions Again!",
+          "angle": "Make sure your pet gets the exact right meal size every time.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "800g-1g-pet-food-scale-cup-for-dog-cat-feeding-bowl-kitchen-scale-spoon-measuring-scoop-cup-portable-with-led-display-79241"
+        },
+        {
+          "title": "Say Goodbye To Calluses Forever!",
+          "angle": "Protect your hands and get a better grip during every lift.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
+        },
+        {
+          "title": "Make Every Bike Ride Pain-Free!",
+          "angle": "Enjoy long cycling trips without the usual seat soreness.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
+        },
+        {
+          "title": "Your Ultimate DIY Spa Night!",
+          "angle": "Pamper yourself with a relaxing self-care session right at home.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "facial-spa-kit"
+        }
+      ],
+      "sent_at": "2026-10-16T18:09:51.987051+00:00",
       "selected": [],
       "status": "waiting"
     }
@@ -3102,8 +3113,8 @@
       "at": "2026-10-15T18:27:26.138397+00:00"
     },
     "2026-10-16": {
-      "n": 1,
-      "at": "2026-10-16T15:26:01.120437+00:00"
+      "n": 2,
+      "at": "2026-10-16T18:09:28.438684+00:00"
     }
   },
   "cleanup_day": "2026-10-16",

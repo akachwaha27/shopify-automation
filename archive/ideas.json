@@ -560,5 +560,78 @@
   ],
   "sent_at": "2026-10-16T15:28:26.888650+00:00",
   "status": "waiting"
+ },
+ "2026-10-16-2": {
+  "date": "2026-10-16-2",
+  "ideas": [
+   {
+    "angle": "Transform your living room into a cozy yoga studio in seconds.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Upgrade Your Home Workout Instantly!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Stop your furry friend from getting bored while you're busy.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Keep Your Pet Entertained All Day!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Make sure your pet gets the exact right meal size every time.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Never Guess Pet Portions Again!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Protect your hands and get a better grip during every lift.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Say Goodbye To Calluses Forever!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Enjoy long cycling trips without the usual seat soreness.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Make Every Bike Ride Pain-Free!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Pamper yourself with a relaxing self-care session right at home.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Your Ultimate DIY Spa Night!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-16T18:09:51.987051+00:00",
+  "status": "waiting"
  }
 }
