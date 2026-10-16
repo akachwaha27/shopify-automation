@@ -487,5 +487,78 @@
   ],
   "sent_at": "2026-10-15T18:27:44.244788+00:00",
   "status": "closed"
+ },
+ "2026-10-16": {
+  "date": "2026-10-16",
+  "ideas": [
+   {
+    "angle": "Product demo with a relatable hook",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Adjustable Posture Support Strap",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Product demo with a relatable hook",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Electric Blackhead Vacuum Remover",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Product demo with a relatable hook",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Facial Spa Kit",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Product demo with a relatable hook",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Rechargeable Pet Nail Clipper",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Product demo with a relatable hook",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Home Gym Kit",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Product demo with a relatable hook",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Interactive Pet Treat Ball Food Dispenser",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-16T15:28:26.888650+00:00",
+  "status": "waiting"
  }
 }

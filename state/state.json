@@ -1,76 +1,6 @@
 {
   "tg_offset": 272239691,
   "batches": {
-    "2026-10-11": {
-      "topics": [
-        {
-          "title": "Calming Donut Bed for Dogs & Cats",
-          "angle": "Product demo with a relatable hook (Ashvara playbook)",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 8,
-          "trend_source": "Ashvara Black Friday Playbook",
-          "plan_id": "P2026-10-10-01",
-          "product": "super-soft-pet-bed-82146"
-        },
-        {
-          "title": "Dematting Comb: One Brushing Session",
-          "angle": "Product demo with a relatable hook (Ashvara playbook)",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 8,
-          "trend_source": "Ashvara Black Friday Playbook",
-          "plan_id": "P2026-10-10-02",
-          "product": "pet-fur-knot-cutter-89653"
-        },
-        {
-          "title": "LED Makeup Mirror for Your Bag",
-          "angle": "Product demo with a relatable hook (Ashvara playbook)",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 8,
-          "trend_source": "Ashvara Black Friday Playbook",
-          "plan_id": "P2026-10-10-03",
-          "product": "portable-led-makeup-mirror"
-        },
-        {
-          "title": "Muddy Paws, Clean Floors",
-          "angle": "Product demo with a relatable hook (Ashvara playbook)",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 8,
-          "trend_source": "Ashvara Black Friday Playbook",
-          "plan_id": "P2026-10-10-04",
-          "product": "pet-paw-cleaner-63144"
-        },
-        {
-          "title": "Pet Grooming Kit Unboxing",
-          "angle": "Product demo with a relatable hook (Ashvara playbook)",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 8,
-          "trend_source": "Ashvara Black Friday Playbook",
-          "plan_id": "P2026-10-10-05",
-          "product": "pet-grooming-kit"
-        },
-        {
-          "title": "Treat Ball for Bored Dogs",
-          "angle": "Product demo with a relatable hook (Ashvara playbook)",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 8,
-          "trend_source": "Ashvara Black Friday Playbook",
-          "plan_id": "P2026-10-10-06",
-          "product": "interactive-pet-food-dispenser-toy-99709"
-        }
-      ],
-      "sent_at": "2026-10-11T16:01:33.152948+00:00",
-      "selected": [
-        0,
-        1
-      ],
-      "status": "closed"
-    },
     "2026-10-12": {
       "topics": [
         {
@@ -433,6 +363,67 @@
       "sent_at": "2026-10-15T18:27:44.244788+00:00",
       "selected": [],
       "status": "closed"
+    },
+    "2026-10-16": {
+      "topics": [
+        {
+          "title": "Adjustable Posture Support Strap",
+          "angle": "Product demo with a relatable hook",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "adjustable-brace-support-belt-back-posture-corrector-30592"
+        },
+        {
+          "title": "Electric Blackhead Vacuum Remover",
+          "angle": "Product demo with a relatable hook",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "electric-small-bubble-blackhead-remover-65778"
+        },
+        {
+          "title": "Facial Spa Kit",
+          "angle": "Product demo with a relatable hook",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "facial-spa-kit"
+        },
+        {
+          "title": "Rechargeable Pet Nail Clipper",
+          "angle": "Product demo with a relatable hook",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
+        },
+        {
+          "title": "Home Gym Kit",
+          "angle": "Product demo with a relatable hook",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "home-gym-kit"
+        },
+        {
+          "title": "Interactive Pet Treat Ball Food Dispenser",
+          "angle": "Product demo with a relatable hook",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "interactive-pet-food-dispenser-toy-99709"
+        }
+      ],
+      "sent_at": "2026-10-16T15:28:26.888650+00:00",
+      "selected": [],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -3102,10 +3093,6 @@
     "Pet Fur Knot Remover Comb \u2013 Dog Grooming Tool"
   ],
   "trend_tries": {
-    "2026-10-13": {
-      "n": 4,
-      "at": "2026-10-13T21:17:13.568412+00:00"
-    },
     "2026-10-14": {
       "n": 2,
       "at": "2026-10-14T18:43:18.151708+00:00"
@@ -3113,6 +3100,10 @@
     "2026-10-15": {
       "n": 2,
       "at": "2026-10-15T18:27:26.138397+00:00"
+    },
+    "2026-10-16": {
+      "n": 1,
+      "at": "2026-10-16T15:26:01.120437+00:00"
     }
   },
   "cleanup_day": "2026-10-16",
