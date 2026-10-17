@@ -633,5 +633,78 @@
   ],
   "sent_at": "2026-10-16T18:09:51.987051+00:00",
   "status": "closed"
+ },
+ "2026-10-17": {
+  "date": "2026-10-17",
+  "ideas": [
+   {
+    "angle": "Ever wonder if you are scooping way too much food into your pet's bowl every night?",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Stop Guessing Your Pet's Dinner Portions",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When you wake up feeling sluggish and need a quick, refreshing cool-down before work.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "The 2-Minute Morning Reset Secret",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Skip the crowded gym commute and get a complete, quick workout right in your living room.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Your Entire Gym In One Bag",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Washing your face with just your hands leaves behind makeup you didn't even know was there.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Upgrade Your Nightly Face Wash Routine",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Nothing ruins a good workout faster than sweaty palms losing grip on heavy barbells.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Say Goodbye To Slippery Gym Hands",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "The easiest way to keep your energetic pet busy and happy while you are trying to work.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Keep Bored Pets Entertained For Hours",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-17T16:33:26.197208+00:00",
+  "status": "waiting"
  }
 }

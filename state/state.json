@@ -1,70 +1,6 @@
 {
   "tg_offset": 272239691,
   "batches": {
-    "2026-10-13": {
-      "topics": [
-        {
-          "title": "Shedding nightmare to salon-fresh fluff!",
-          "angle": "When your pet leaves a furry jacket on every piece of furniture you own.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "pet-grooming-kit"
-        },
-        {
-          "title": "Perfect brows in just five seconds!",
-          "angle": "When you only have two minutes to look put-together for that sudden video call.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "natural-4d-eyebrow-tattoo-sticker"
-        },
-        {
-          "title": "Instant morning de-puff and glow up!",
-          "angle": "When you woke up feeling exhausted but need to look like you slept eight hours.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "double-head-jade-facial-roller-57419"
-        },
-        {
-          "title": "Say goodbye to stubborn clogged pores!",
-          "angle": "When zooming in too close in the bathroom mirror ruins your whole morning.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "electric-small-bubble-blackhead-remover-65778"
-        },
-        {
-          "title": "Transform your living room into a gym!",
-          "angle": "When you want a full-body workout without actually leaving the house.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620"
-        },
-        {
-          "title": "Never miss a makeup detail again!",
-          "angle": "When bad lighting ruins your makeup before you even step out the door.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "portable-led-makeup-mirror"
-        }
-      ],
-      "sent_at": "2026-10-13T21:21:00.597531+00:00",
-      "selected": [
-        0,
-        1
-      ],
-      "status": "closed"
-    },
     "2026-10-14": {
       "topics": [
         {
@@ -439,6 +375,67 @@
         0
       ],
       "status": "closed"
+    },
+    "2026-10-17": {
+      "topics": [
+        {
+          "title": "Stop Guessing Your Pet's Dinner Portions",
+          "angle": "Ever wonder if you are scooping way too much food into your pet's bowl every night?",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "800g-1g-pet-food-scale-cup-for-dog-cat-feeding-bowl-kitchen-scale-spoon-measuring-scoop-cup-portable-with-led-display-79241"
+        },
+        {
+          "title": "The 2-Minute Morning Reset Secret",
+          "angle": "When you wake up feeling sluggish and need a quick, refreshing cool-down before work.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "double-head-jade-facial-roller-57419"
+        },
+        {
+          "title": "Your Entire Gym In One Bag",
+          "angle": "Skip the crowded gym commute and get a complete, quick workout right in your living room.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "home-gym-kit"
+        },
+        {
+          "title": "Upgrade Your Nightly Face Wash Routine",
+          "angle": "Washing your face with just your hands leaves behind makeup you didn't even know was there.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "skin-cleaner-5-in-1-new"
+        },
+        {
+          "title": "Say Goodbye To Slippery Gym Hands",
+          "angle": "Nothing ruins a good workout faster than sweaty palms losing grip on heavy barbells.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
+        },
+        {
+          "title": "Keep Bored Pets Entertained For Hours",
+          "angle": "The easiest way to keep your energetic pet busy and happy while you are trying to work.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "interactive-pet-food-dispenser-toy-99709"
+        }
+      ],
+      "sent_at": "2026-10-17T16:33:26.197208+00:00",
+      "selected": [],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -3762,10 +3759,6 @@
     "Upgrade Your Home Workout Instantly!"
   ],
   "trend_tries": {
-    "2026-10-14": {
-      "n": 2,
-      "at": "2026-10-14T18:43:18.151708+00:00"
-    },
     "2026-10-15": {
       "n": 2,
       "at": "2026-10-15T18:27:26.138397+00:00"
@@ -3773,6 +3766,10 @@
     "2026-10-16": {
       "n": 2,
       "at": "2026-10-16T18:09:28.438684+00:00"
+    },
+    "2026-10-17": {
+      "n": 1,
+      "at": "2026-10-17T16:33:16.241488+00:00"
     }
   },
   "cleanup_day": "2026-10-17",
