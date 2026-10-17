@@ -640,11 +640,11 @@
    {
     "angle": "Ever wonder if you are scooping way too much food into your pet's bowl every night?",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Stop Guessing Your Pet's Dinner Portions",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-17-1",
     "virality_score": 7,
     "why": ""
    },
@@ -705,7 +705,7 @@
    }
   ],
   "sent_at": "2026-10-17T16:33:26.197208+00:00",
-  "status": "waiting"
+  "status": "closed"
  },
  "2026-10-17-2": {
   "date": "2026-10-17-2",
@@ -713,11 +713,11 @@
    {
     "angle": "Turn your bathroom counter into a luxury retreat without leaving the house.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Sunday Reset Just Got Way Easier",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-17-2-1",
     "virality_score": 7,
     "why": ""
    },
@@ -778,6 +778,6 @@
    }
   ],
   "sent_at": "2026-10-17T17:18:50.121205+00:00",
-  "status": "waiting"
+  "status": "closed"
  }
 }
