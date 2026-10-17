@@ -1,70 +1,6 @@
 {
   "tg_offset": 272239691,
   "batches": {
-    "2026-10-14": {
-      "topics": [
-        {
-          "title": "Stop Muddy Paws At The Door!",
-          "angle": "Relatable everyday struggle of cleaning muddy dog paws before they jump on clean furniture.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "pet-paw-cleaner-63144"
-        },
-        {
-          "title": "Get That Spa Glow At Home",
-          "angle": "Achieving a fresh, clean face effortlessly during a busy morning routine.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "externa-skin-cleansing-tool"
-        },
-        {
-          "title": "Stress-Free Pedi Time For Pets",
-          "angle": "Overcoming the anxiety of clipping your dog's nails with a quiet, painless tool.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
-        },
-        {
-          "title": "Skip The Gym Commute Today",
-          "angle": "Fitting a quick, effective workout into a hectic schedule right in your living room.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "home-gym-kit"
-        },
-        {
-          "title": "Your Sunday Self-Care Night Upgrade",
-          "angle": "Transforming a boring evening into a relaxing at-home spa retreat.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "facial-spa-kit"
-        },
-        {
-          "title": "Say Hello To Cleaner Pores!",
-          "angle": "The satisfying feeling of leveling up your daily skincare routine with one simple gadget.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "electric-small-bubble-blackhead-remover-65778"
-        }
-      ],
-      "sent_at": "2026-10-14T18:05:46.824533+00:00",
-      "selected": [
-        0,
-        1
-      ],
-      "status": "closed"
-    },
     "2026-10-14-2": {
       "topics": [
         {
@@ -434,6 +370,67 @@
         }
       ],
       "sent_at": "2026-10-17T16:33:26.197208+00:00",
+      "selected": [],
+      "status": "waiting"
+    },
+    "2026-10-17-2": {
+      "topics": [
+        {
+          "title": "Sunday Reset Just Got Way Easier",
+          "angle": "Turn your bathroom counter into a luxury retreat without leaving the house.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "facial-spa-kit"
+        },
+        {
+          "title": "Skip The Gym Commute For Good",
+          "angle": "Stop wasting time driving to the gym when you can get a full workout right at home.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "home-gym-kit"
+        },
+        {
+          "title": "Wash Your Face The Right Way",
+          "angle": "If you are still washing your face with just your hands, your nighttime routine needs an upgrade.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "skin-cleaner-5-in-1-new"
+        },
+        {
+          "title": "Stop Guessing Your Pet's Meal Portions",
+          "angle": "No more eyeballing the kibble and wondering if you gave your pet too much dinner.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "800g-1g-pet-food-scale-cup-for-dog-cat-feeding-bowl-kitchen-scale-spoon-measuring-scoop-cup-portable-with-led-display-79241"
+        },
+        {
+          "title": "Make Any Bike Seat Actually Comfortable",
+          "angle": "Fix that rock-hard bicycle seat in seconds so you can enjoy riding again without soreness.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
+        },
+        {
+          "title": "Keep Your Bored Pup Busy Indoors",
+          "angle": "The easiest way to keep high-energy pets entertained and mentally stimulated while you work.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "interactive-pet-food-dispenser-toy-99709"
+        }
+      ],
+      "sent_at": "2026-10-17T17:18:50.121205+00:00",
       "selected": [],
       "status": "waiting"
     }
@@ -3768,8 +3765,8 @@
       "at": "2026-10-16T18:09:28.438684+00:00"
     },
     "2026-10-17": {
-      "n": 1,
-      "at": "2026-10-17T16:33:16.241488+00:00"
+      "n": 2,
+      "at": "2026-10-17T17:17:51.932797+00:00"
     }
   },
   "cleanup_day": "2026-10-17",

@@ -706,5 +706,78 @@
   ],
   "sent_at": "2026-10-17T16:33:26.197208+00:00",
   "status": "waiting"
+ },
+ "2026-10-17-2": {
+  "date": "2026-10-17-2",
+  "ideas": [
+   {
+    "angle": "Turn your bathroom counter into a luxury retreat without leaving the house.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Sunday Reset Just Got Way Easier",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Stop wasting time driving to the gym when you can get a full workout right at home.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Skip The Gym Commute For Good",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "If you are still washing your face with just your hands, your nighttime routine needs an upgrade.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Wash Your Face The Right Way",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "No more eyeballing the kibble and wondering if you gave your pet too much dinner.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Stop Guessing Your Pet's Meal Portions",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Fix that rock-hard bicycle seat in seconds so you can enjoy riding again without soreness.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Make Any Bike Seat Actually Comfortable",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "The easiest way to keep high-energy pets entertained and mentally stimulated while you work.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Keep Your Bored Pup Busy Indoors",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-17T17:18:50.121205+00:00",
+  "status": "waiting"
  }
 }
