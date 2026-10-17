@@ -3417,9 +3417,9 @@
         "trend_source": "Ashvara store catalog",
         "product": "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "auto",
-      "updated": "2026-10-16T22:07:51.100214+00:00",
+      "updated": "2026-10-17T00:27:17.220051+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "home workout setup",
@@ -3726,7 +3726,29 @@
       },
       "srt": "1\n00:00:00,062 --> 00:00:02,215\nYour living room floor is secretly ruining\n\n2\n00:00:02,215 --> 00:00:04,926\nyour home workout This natural cork mat\n\n3\n00:00:04,926 --> 00:00:07,426\nturns any space into a peaceful studio\n\n4\n00:00:07,426 --> 00:00:10,631\nin seconds At five millimeters thick it\n\n5\n00:00:10,631 --> 00:00:13,403\ngives your knees solid support without sinking\n\n6\n00:00:13,403 --> 00:00:16,064\nLaser-etched lines show you exactly where your\n\n7\n00:00:16,064 --> 00:00:18,849\nhands and feet belong The textured rubber\n\n8\n00:00:18,849 --> 00:00:21,918\nbase stays glued to hardwood without sliding\n\n9\n00:00:21,918 --> 00:00:24,728\nIt is forty-two dollars Link in bio\n\n10\n00:00:24,728 --> 00:00:25,347\nashvara .\n\n11\n00:00:25,347 --> 00:00:27,723\nstore Do you prefer stretching morning or\n\n12\n00:00:27,723 --> 00:00:29,695\nevening especially when\n",
       "tg_msg": 160,
-      "opts_msg": 162
+      "opts_msg": 162,
+      "approved_by": "auto",
+      "description_full": "Upgrade your home workout setup with a non-slip cork mat that transforms any living room.\nDiscover minimalist fitness essentials and premium yoga gear for everyday practice.\nShop it: https://ashvara.store/products/5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620\n\n#shorts #homeworkout #yogamat #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          "https://www.instagram.com/reel/Dek0ToOCJw2/",
+          "published"
+        ],
+        "Facebook": [
+          "https://www.facebook.com/reel/1105092195588722",
+          "published"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-17T00:27:17.220067+00:00",
+      "slot": "2026-10-17T01:15:00+00:00"
     }
   },
   "history": [
@@ -3753,7 +3775,7 @@
       "at": "2026-10-16T18:09:28.438684+00:00"
     }
   },
-  "cleanup_day": "2026-10-16",
+  "cleanup_day": "2026-10-17",
   "signals_day": "2026-10-16",
   "photo_posts": {
     "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620": "2026-10-13T21:05:44.818972+00:00",

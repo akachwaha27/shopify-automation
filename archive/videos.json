@@ -886,7 +886,7 @@
  },
  "2026-10-16-2-1": {
   "angle": "Transform your living room into a cozy yoga studio in seconds.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
@@ -914,12 +914,29 @@
    "Laser-etched alignment markings provide visual placement guides on the surface."
   ],
   "pinned_comment": "Do you get your stretching done first thing in the morning or to unwind at night? Let us know below! 🧘",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": "https://www.facebook.com/reel/1105092195588722",
+    "status": "published"
+   },
+   "Instagram": {
+    "link": "https://www.instagram.com/reel/Dek0ToOCJw2/",
+    "status": "published"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "home workout setup",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-17T01:15:00+00:00",
   "script": "Your living room floor is secretly ruining your home workout. This natural cork mat turns any space into a peaceful studio in seconds. At five millimeters thick, it gives your knees solid support without sinking. Laser-etched lines show you exactly where your hands and feet belong. The textured rubber base stays glued to hardwood without sliding. It is forty-two dollars. Link in bio, ashvara.store. Do you prefer stretching morning or evening, especially when...",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,062 --> 00:00:02,215\nYour living room floor is secretly ruining\n\n2\n00:00:02,215 --> 00:00:04,926\nyour home workout This natural cork mat\n\n3\n00:00:04,926 --> 00:00:07,426\nturns any space into a peaceful studio\n\n4\n00:00:07,426 --> 00:00:10,631\nin seconds At five millimeters thick it\n\n5\n00:00:10,631 --> 00:00:13,403\ngives your knees solid support without sinking\n\n6\n00:00:13,403 --> 00:00:16,064\nLaser-etched lines show you exactly where your\n\n7\n00:00:16,064 --> 00:00:18,849\nhands and feet belong The textured rubber\n\n8\n00:00:18,849 --> 00:00:21,918\nbase stays glued to hardwood without sliding\n\n9\n00:00:21,918 --> 00:00:24,728\nIt is forty-two dollars Link in bio\n\n10\n00:00:24,728 --> 00:00:25,347\nashvara .\n\n11\n00:00:25,347 --> 00:00:27,723\nstore Do you prefer stretching morning or\n\n12\n00:00:27,723 --> 00:00:29,695\nevening especially when\n",
   "tags": [
    "home workout setup",
@@ -952,8 +969,8 @@
   "thumbnail_text": "Instant Studio Upgrade",
   "title": "Home workout setup upgrade in seconds 🧘",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-16T22:07:51.100214+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-17T00:27:17.220051+00:00",
+  "uploaded_at": "2026-10-17T00:27:17.220067+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
  }
