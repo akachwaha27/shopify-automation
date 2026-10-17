@@ -976,7 +976,7 @@
  },
  "2026-10-17-1": {
   "angle": "Ever wonder if you are scooping way too much food into your pet's bowl every night?",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
@@ -1003,12 +1003,29 @@
    "The electronic pet scoop measures dry food in grams, ounces, and milliliters with a detachable spoon for cleaning."
   ],
   "pinned_comment": "Do you measure your pet's kibble with a scale, or do you just eyeball the cup every evening? 🐾",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": null,
+    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AM7KahxVgd4X3c_n6tz5Go9'}}"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "skipped (not configured)"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "pet food scoop",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-18T01:15:00+00:00",
   "script": "Are you scooping way too much kibble into that bowl? Standard plastic cups make portion sizes total guesswork every evening. This digital pet scoop weighs dry kibble right as you lift it. The bright handle display shows exact grams or ounces with a single click. Plus, the durable scoop head pops right off for effortless kitchen washing. Grab yours for nineteen dollars. Link in bio, ashvara dot store. Do you measure your pet's food, or do you just eyeball it?",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,050 --> 00:00:02,053\nAre you scooping way too much kibble\n\n2\n00:00:02,053 --> 00:00:04,902\ninto that bowl Standard plastic cups make\n\n3\n00:00:04,902 --> 00:00:08,020\nportion sizes total guesswork every evening\n\n4\n00:00:08,020 --> 00:00:10,453\nThis digital pet scoop weighs dry kibble\n\n5\n00:00:10,453 --> 00:00:12,335\nright as you lift it The bright\n\n6\n00:00:12,335 --> 00:00:15,252\nhandle display shows exact grams or ounces\n\n7\n00:00:15,252 --> 00:00:17,994\nwith a single click Plus the durable\n\n8\n00:00:17,994 --> 00:00:20,198\nscoop head pops right off for effortless\n\n9\n00:00:20,198 --> 00:00:23,639\nkitchen washing Grab yours for nineteen dollars\n\n10\n00:00:23,639 --> 00:00:26,636\nLink in bio ashvara dot store Do\n\n11\n00:00:26,636 --> 00:00:28,531\nyou measure your pet's food or do\n\n12\n00:00:28,531 --> 00:00:30,047\nyou just eyeball it\n",
   "tags": [
    "pet food scoop",
@@ -1035,14 +1052,14 @@
   "thumbnail_text": "Stop Eyeballing Portions",
   "title": "Pet food scoop trick: stop guessing dinner portions 🐾",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-17T21:27:59.537465+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-17T23:28:15.565145+00:00",
+  "uploaded_at": "2026-10-17T23:28:15.565159+00:00",
   "virality_score": 7,
   "voice": "en-AU-WilliamMultilingualNeural"
  },
  "2026-10-17-2-1": {
   "angle": "Turn your bathroom counter into a luxury retreat without leaving the house.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).",
@@ -1073,12 +1090,29 @@
    "The product is priced at twenty-nine dollars at ashvara.store."
   ],
   "pinned_comment": "Be honest: what is currently taking up the most space on your bathroom sink right now? Let's swap reset tips below!",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": null,
+    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AWSvtBw9HZFFzgCxEi3W7eZ'}}"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "skipped (not configured)"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "bathroom sunday reset",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-18T14:15:00+00:00",
   "script": "Your cluttered bathroom counter is ruining your Sunday reset. Turning that space into a luxury boutique hotel takes under two minutes. This organizer pairs thick amber glass bottles with a water-resistant bamboo tray. The matte black pumps handle thick soaps effortlessly without leaking. It instantly clears the mess and makes washing up feel calm. It is twenty-nine dollars. Link in bio, ashvara dot store. What item cluttering your sink would you toss out first, especially if...",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,073 --> 00:00:02,233\nYour cluttered bathroom counter is ruining\n\n2\n00:00:02,233 --> 00:00:04,964\nyour Sunday reset Turning that space into\n\n3\n00:00:04,964 --> 00:00:07,221\na luxury boutique hotel takes under two\n\n4\n00:00:07,221 --> 00:00:10,316\nminutes This organizer pairs thick amber glass\n\n5\n00:00:10,316 --> 00:00:13,107\nbottles with a water-resistant bamboo tray\n\n6\n00:00:13,107 --> 00:00:15,279\nThe matte black pumps handle thick soaps\n\n7\n00:00:15,279 --> 00:00:18,022\neffortlessly without leaking It instantly clears\n\n8\n00:00:18,022 --> 00:00:20,061\nthe mess and makes washing up feel\n\n9\n00:00:20,061 --> 00:00:23,046\ncalm It is twenty-nine dollars Link in\n\n10\n00:00:23,046 --> 00:00:26,250\nbio ashvara dot store What item cluttering\n\n11\n00:00:26,250 --> 00:00:28,192\nyour sink would you toss out first\n\n12\n00:00:28,192 --> 00:00:29,405\nespecially if\n",
   "tags": [
    "bathroom sunday reset",
@@ -1107,8 +1141,8 @@
   "thumbnail_text": "Easy Spa Vanity",
   "title": "Bathroom Sunday Reset Made Simple ✨",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-17T21:30:02.399532+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-17T23:30:23.701288+00:00",
+  "uploaded_at": "2026-10-17T23:30:23.701303+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
  }
