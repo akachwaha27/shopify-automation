@@ -779,5 +779,78 @@
   ],
   "sent_at": "2026-10-17T17:18:50.121205+00:00",
   "status": "closed"
+ },
+ "2026-10-18": {
+  "date": "2026-10-18",
+  "ideas": [
+   {
+    "angle": "Tired of dull skin after a long day?",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Upgrade Your Daily Skincare Routine",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Feeling guilty leaving your furry friend home alone?",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Keep Your Pet Entertained All Day",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Do your hands hurt every time you lift weights?",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Say Goodbye to Calluses Forever",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Too busy to make it to the fitness center?",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Your Entire Gym in One Bag",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Does your bike seat feel like a brick?",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Ride Longer Without Any Soreness",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Does your pet run away at the sight of clippers?",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Painless Paw Grooming at Home",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-18T15:47:36.562455+00:00",
+  "status": "waiting"
  }
 }

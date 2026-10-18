@@ -1,67 +1,6 @@
 {
   "tg_offset": 272239691,
   "batches": {
-    "2026-10-14-2": {
-      "topics": [
-        {
-          "title": "Stop guessing your pet's portions!",
-          "angle": "Never wonder if you are overfeeding your furry best friend again.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "800g-1g-pet-food-scale-cup-for-dog-cat-feeding-bowl-kitchen-scale-spoon-measuring-scoop-cup-portable-with-led-display-79241"
-        },
-        {
-          "title": "Painless nail trims at home!",
-          "angle": "Say goodbye to the stressful wrestling matches during paw-dicures.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
-        },
-        {
-          "title": "The ultimate satisfying skin cleanout!",
-          "angle": "Watch all that daily pore buildup vanish in seconds.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "electric-small-bubble-blackhead-remover-65778"
-        },
-        {
-          "title": "Upgrade your daily face wash routine!",
-          "angle": "Turn your basic bathroom sink into a mini spa every morning.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "skin-cleaner-5-in-1-new"
-        },
-        {
-          "title": "Say goodbye to gym calluses!",
-          "angle": "Get a rock-solid grip without tearing up your hands on the barbell.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
-        },
-        {
-          "title": "Fix your slouch in seconds!",
-          "angle": "Stop letting that afternoon desk slump ruin your vibe.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "adjustable-brace-support-belt-back-posture-corrector-30592"
-        }
-      ],
-      "sent_at": "2026-10-14T18:43:35.721071+00:00",
-      "selected": [],
-      "status": "closed"
-    },
     "2026-10-15": {
       "topics": [
         {
@@ -437,6 +376,67 @@
         0
       ],
       "status": "closed"
+    },
+    "2026-10-18": {
+      "topics": [
+        {
+          "title": "Upgrade Your Daily Skincare Routine",
+          "angle": "Tired of dull skin after a long day?",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "skin-cleaner-5-in-1-new"
+        },
+        {
+          "title": "Keep Your Pet Entertained All Day",
+          "angle": "Feeling guilty leaving your furry friend home alone?",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "interactive-pet-food-dispenser-toy-99709"
+        },
+        {
+          "title": "Say Goodbye to Calluses Forever",
+          "angle": "Do your hands hurt every time you lift weights?",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
+        },
+        {
+          "title": "Your Entire Gym in One Bag",
+          "angle": "Too busy to make it to the fitness center?",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "home-gym-kit"
+        },
+        {
+          "title": "Ride Longer Without Any Soreness",
+          "angle": "Does your bike seat feel like a brick?",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
+        },
+        {
+          "title": "Painless Paw Grooming at Home",
+          "angle": "Does your pet run away at the sight of clippers?",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
+        }
+      ],
+      "sent_at": "2026-10-18T15:47:36.562455+00:00",
+      "selected": [],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -4441,10 +4441,6 @@
     "Sunday Reset Just Got Way Easier"
   ],
   "trend_tries": {
-    "2026-10-15": {
-      "n": 2,
-      "at": "2026-10-15T18:27:26.138397+00:00"
-    },
     "2026-10-16": {
       "n": 2,
       "at": "2026-10-16T18:09:28.438684+00:00"
@@ -4452,6 +4448,10 @@
     "2026-10-17": {
       "n": 2,
       "at": "2026-10-17T17:17:51.932797+00:00"
+    },
+    "2026-10-18": {
+      "n": 1,
+      "at": "2026-10-18T15:47:19.576931+00:00"
     }
   },
   "cleanup_day": "2026-10-18",
