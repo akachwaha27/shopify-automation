@@ -372,8 +372,10 @@
         }
       ],
       "sent_at": "2026-10-18T15:47:36.562455+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     },
     "2026-10-18-2": {
       "topics": [
@@ -4424,6 +4426,330 @@
       },
       "uploaded_at": "2026-10-17T23:30:23.701303+00:00",
       "slot": "2026-10-18T14:15:00+00:00"
+    },
+    "2026-10-18-1": {
+      "topic": {
+        "title": "Upgrade Your Daily Skincare Routine",
+        "angle": "Tired of dull skin after a long day?",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "skin-cleaner-5-in-1-new"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-18T18:49:51.493483+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "daily skincare routine",
+        "title": "Daily Skincare Routine Upgrade for Tired Skin \u2728",
+        "hook_text": "Dull Skin After Work?",
+        "thumbnail_text": "Dull Skin Fix",
+        "description": "Upgrade your daily skincare routine with an easy sonic cleansing tool that washes away daily grime in seconds.\nDiscover a gentler face wash method designed to refresh dull skin every evening.\nShop it: https://ashvara.store/products/skin-cleaner-5-in-1-new",
+        "hashtags": [
+          "#shorts",
+          "#skincare",
+          "#facialcleanser",
+          "#ashvara"
+        ],
+        "tags": [
+          "daily skincare routine",
+          "silicone brush face wash",
+          "silicone facial cleansing brush",
+          "silicone facial cleansing brush how to use",
+          "sonic face cleanser",
+          "sonic facial cleanser",
+          "skin care tools facial",
+          "silicone face brush use",
+          "skincare tools for face",
+          "silicone cleansing brush",
+          "silicone facial cleanser",
+          "refresh dull skin",
+          "skincare tools",
+          "silicone facial brushes",
+          "skincare tools you need",
+          "skincare tools must haves",
+          "skincare tools that actually work",
+          "face washing tips"
+        ],
+        "pinned_comment": "Do you spend more time on cleansing or moisturizing at night? Let us know your routine! \u2728",
+        "scenes": [
+          {
+            "text": "Your skin always looks completely exhausted after a long workday.",
+            "badge": "",
+            "label": "Tired Evening Skin",
+            "stock_queries": [
+              "woman washing face",
+              "bathroom mirror reflection"
+            ],
+            "image_prompt": "Close up vertical view of gentle water splashes against fresh skin in a modern minimalist bathroom, aesthetic spa atmosphere, soft morning light, 9:16 aspect ratio.",
+            "stock_query": "woman washing face",
+            "product_image": "work/2026-10-18-1/product/product_0.jpg"
+          },
+          {
+            "text": "Standard face washing leaves behind dirt, but this handheld sonic brush changes that.",
+            "badge": "",
+            "label": "Deep Sonic Cleansing",
+            "stock_queries": [
+              "facial cleansing brush",
+              "cleanser foam bubbles"
+            ],
+            "image_prompt": "Macro vertical shot of a modern pastel pink silicone facial cleansing brush vibrating over dense white skincare foam, soft ambient lighting, clean aesthetic, 9:16 aspect ratio.",
+            "stock_query": "facial cleansing brush"
+          },
+          {
+            "text": "It uses hygienic silicone bristles that rinse clean instantly under warm water.",
+            "badge": "",
+            "label": "Hygienic Silicone Bristles",
+            "stock_queries": [
+              "silicone brush texture",
+              "running water tap"
+            ],
+            "image_prompt": "Extreme close up vertical shot of textured fine silicone bristles of a beauty device under running crystal clear water droplets, modern bathroom setting, 9:16 aspect ratio.",
+            "stock_query": "silicone brush texture",
+            "product_image": "work/2026-10-18-1/product/product_1.jpg"
+          },
+          {
+            "text": "Just add your favorite cleanser and let gentle micro-pulses do the work.",
+            "badge": "",
+            "label": "Gentle Micro-Pulses",
+            "stock_queries": [
+              "face wash foam",
+              "skincare cream lather"
+            ],
+            "image_prompt": "Vertical shot of velvety cosmetic cleansing foam spreading across a sleek skincare tool, delicate soap bubbles, minimalist beauty background, 9:16 aspect ratio.",
+            "stock_query": "face wash foam"
+          },
+          {
+            "text": "It is fully waterproof, charges via USB, and fits comfortably in your palm.",
+            "badge": "",
+            "label": "Waterproof and Compact",
+            "stock_queries": [
+              "submerged waterproof device",
+              "usb charging cable"
+            ],
+            "image_prompt": "Vertical composition of a sleek ergonomic silicone facial device resting beside clean water splashes on a marble countertop, soft natural glow, 9:16 aspect ratio.",
+            "stock_query": "submerged waterproof device",
+            "product_image": "work/2026-10-18-1/product/product_2.jpg"
+          },
+          {
+            "text": "Grab yours for twenty-four ninety-nine at ashvara.store, link in bio. What step takes you longest?",
+            "badge": "",
+            "label": "$12.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "skincare bottles shelf",
+              "bathroom vanity cosmetics"
+            ],
+            "image_prompt": "Vertical flatlay of a chic silicone skincare device next to aesthetic glass cosmetic dropper bottles on white marble, warm luxury lighting, 9:16 aspect ratio.",
+            "stock_query": "skincare bottles shelf",
+            "product_image": "work/2026-10-18-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "Device utilizes non-porous silicone bristles that can be rinsed clean with water",
+          "Device features sonic micro-pulse vibrations",
+          "Device is waterproof and rechargeable via USB"
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Your skin always looks completely exhausted after a long workday. Standard face washing leaves behind dirt, but this handheld sonic brush changes that. It uses hygienic silicone bristles that rinse clean instantly under warm water. Just add your favorite cleanser and let gentle micro-pulses do the work. It is fully waterproof, charges via USB, and fits comfortably in your palm. Grab yours for twenty-four ninety-nine at ashvara.store, link in bio. What step takes you longest?",
+        "product": {
+          "handle": "skin-cleaner-5-in-1-new",
+          "title": "5-in-1 Electric Facial Cleansing Brush",
+          "url": "https://ashvara.store/products/skin-cleaner-5-in-1-new",
+          "price": "$12.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "tired face of a person after a long workday",
+            "queries": [
+              {
+                "q": "tired face reflection mirror",
+                "must": [
+                  "reflection",
+                  "mirror"
+                ]
+              },
+              {
+                "q": "exhausted woman tired face",
+                "must": [
+                  "exhausted",
+                  "tired"
+                ]
+              },
+              {
+                "q": "tired person face",
+                "must": [
+                  "face"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "handheld sonic cleansing brush washing face",
+            "queries": [
+              {
+                "q": "sonic facial cleansing brush",
+                "must": [
+                  "brush",
+                  "cleansing"
+                ]
+              },
+              {
+                "q": "electric facial scrubber",
+                "must": [
+                  "scrubber"
+                ]
+              },
+              {
+                "q": "face washing brush",
+                "must": [
+                  "washing"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "silicone bristles of a facial brush rinsing under warm water",
+            "queries": [
+              {
+                "q": "silicone facial brush water",
+                "must": [
+                  "silicone",
+                  "water"
+                ]
+              },
+              {
+                "q": "washing silicone bristles",
+                "must": [
+                  "bristles"
+                ]
+              },
+              {
+                "q": "rinsing brush sink",
+                "must": [
+                  "sink"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "applying cleanser to a face scrub brush",
+            "queries": [
+              {
+                "q": "applying cleanser brush",
+                "must": [
+                  "cleanser",
+                  "brush"
+                ]
+              },
+              {
+                "q": "facial cleanser gel",
+                "must": [
+                  "gel"
+                ]
+              },
+              {
+                "q": "skincare routine dispenser",
+                "must": [
+                  "dispenser"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "waterproof electronic facial device charging via usb cable",
+            "queries": [
+              {
+                "q": "usb charging cable device",
+                "must": [
+                  "charging",
+                  "cable"
+                ]
+              },
+              {
+                "q": "waterproof electronic gadget",
+                "must": [
+                  "waterproof"
+                ]
+              },
+              {
+                "q": "holding device palm",
+                "must": [
+                  "palm"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person smiling holding a skincare device in the bathroom",
+            "queries": [
+              {
+                "q": "person holding skincare device",
+                "must": [
+                  "holding",
+                  "device"
+                ]
+              },
+              {
+                "q": "smiling bathroom mirror",
+                "must": [
+                  "smiling",
+                  "mirror"
+                ]
+              },
+              {
+                "q": "beauty routine product",
+                "must": [
+                  "product"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "skincare routine",
+          "facial cleanser",
+          "bathroom vanity"
+        ],
+        "visual_style": "Close-up beauty and skincare tutorial shots with bright, clean lighting and relatable self-care routines.",
+        "visual_refs": [
+          "Morning Skincare Tips to Elevate your Skin \u2600\ufe0f\ud83e\udd0d",
+          "5 Easy Vaseline Hacks For Your Everyday Beauty Routine #vaselinehacks  #beautytips #shortvideo #yt",
+          "Teenage best facial at home \ud83d\ude31\ud83d\ude31\u203c\ufe0f#youtubeshorts #ytshorts #youtube #skincare #shortsviral",
+          "Correct way to layer AM skincare",
+          "3 Proofs that Korean Skincare Lives in 2050 -how to upgrade your skincare routine! #shorts",
+          "3 Step Skin Care Routine For Men"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-18",
+        "name": "2026-10-18-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-18",
+        "name": "2026-10-18-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,074 --> 00:00:02,439\nYour skin always looks completely exhausted\n\n2\n00:00:02,439 --> 00:00:05,343\nafter a long workday Standard face washing\n\n3\n00:00:05,343 --> 00:00:08,235\nleaves behind dirt but this handheld sonic\n\n4\n00:00:08,235 --> 00:00:11,189\nbrush changes that It uses hygienic silicone\n\n5\n00:00:11,189 --> 00:00:13,713\nbristles that rinse clean instantly under warm\n\n6\n00:00:13,713 --> 00:00:16,532\nwater Just add your favorite cleanser and\n\n7\n00:00:16,532 --> 00:00:19,277\nlet gentle micro-pulses do the work It\n\n8\n00:00:19,277 --> 00:00:23,002\nis fully waterproof charges via USB and\n\n9\n00:00:23,002 --> 00:00:25,453\nfits comfortably in your palm Grab yours\n\n10\n00:00:25,453 --> 00:00:27,512\nfor twenty-four ninety-nine at ashvara .\n\n11\n00:00:27,512 --> 00:00:30,331\nstore link in bio What step takes\n\n12\n00:00:30,331 --> 00:00:31,478\nyou longest\n",
+      "tg_msg": 185,
+      "opts_msg": 187
     }
   },
   "history": [
@@ -4436,7 +4762,8 @@
     "Adjustable Posture Support Strap",
     "Upgrade Your Home Workout Instantly!",
     "Stop Guessing Your Pet's Dinner Portions",
-    "Sunday Reset Just Got Way Easier"
+    "Sunday Reset Just Got Way Easier",
+    "Upgrade Your Daily Skincare Routine"
   ],
   "trend_tries": {
     "2026-10-16": {
@@ -4463,13 +4790,13 @@
   },
   "photo_angle": 5,
   "visual_searches": {
-    "2026-10-17": 2
+    "2026-10-18": 1
   },
   "recent_voices": [
-    "en-US-JennyNeural",
     "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
+    "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural"
   ],
   "presenter_candidates": [

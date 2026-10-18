@@ -1145,5 +1145,75 @@
   "uploaded_at": "2026-10-17T23:30:23.701303+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
+ },
+ "2026-10-18-1": {
+  "angle": "Tired of dull skin after a long day?",
+  "approved_by": "",
+  "category": "26",
+  "credits": [
+   "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+  ],
+  "date": "2026-10-18",
+  "description": "Upgrade your daily skincare routine with an easy sonic cleansing tool that washes away daily grime in seconds.\nDiscover a gentler face wash method designed to refresh dull skin every evening.\nShop it: https://ashvara.store/products/skin-cleaner-5-in-1-new\n\n#shorts #skincare #facialcleanser #ashvara\n\n— Credits & disclosure —\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+  "file": {
+   "name": "2026-10-18-1-v0.mp4",
+   "tag": "videos-2026-10-18",
+   "type": "release"
+  },
+  "format": "product",
+  "hashtags": [
+   "#shorts",
+   "#skincare",
+   "#facialcleanser",
+   "#ashvara"
+  ],
+  "hook_text": "Dull Skin After Work?",
+  "id": "2026-10-18-1",
+  "idea_title": "Upgrade Your Daily Skincare Routine",
+  "key_facts": [
+   "Device utilizes non-porous silicone bristles that can be rinsed clean with water",
+   "Device features sonic micro-pulse vibrations",
+   "Device is waterproof and rechargeable via USB"
+  ],
+  "pinned_comment": "Do you spend more time on cleansing or moisturizing at night? Let us know your routine! ✨",
+  "platforms": {},
+  "primary_keyword": "daily skincare routine",
+  "redos": 0,
+  "scheduled_for": "",
+  "script": "Your skin always looks completely exhausted after a long workday. Standard face washing leaves behind dirt, but this handheld sonic brush changes that. It uses hygienic silicone bristles that rinse clean instantly under warm water. Just add your favorite cleanser and let gentle micro-pulses do the work. It is fully waterproof, charges via USB, and fits comfortably in your palm. Grab yours for twenty-four ninety-nine at ashvara.store, link in bio. What step takes you longest?",
+  "status": "awaiting_approval",
+  "subtitles_srt": "1\n00:00:00,074 --> 00:00:02,439\nYour skin always looks completely exhausted\n\n2\n00:00:02,439 --> 00:00:05,343\nafter a long workday Standard face washing\n\n3\n00:00:05,343 --> 00:00:08,235\nleaves behind dirt but this handheld sonic\n\n4\n00:00:08,235 --> 00:00:11,189\nbrush changes that It uses hygienic silicone\n\n5\n00:00:11,189 --> 00:00:13,713\nbristles that rinse clean instantly under warm\n\n6\n00:00:13,713 --> 00:00:16,532\nwater Just add your favorite cleanser and\n\n7\n00:00:16,532 --> 00:00:19,277\nlet gentle micro-pulses do the work It\n\n8\n00:00:19,277 --> 00:00:23,002\nis fully waterproof charges via USB and\n\n9\n00:00:23,002 --> 00:00:25,453\nfits comfortably in your palm Grab yours\n\n10\n00:00:25,453 --> 00:00:27,512\nfor twenty-four ninety-nine at ashvara .\n\n11\n00:00:27,512 --> 00:00:30,331\nstore link in bio What step takes\n\n12\n00:00:30,331 --> 00:00:31,478\nyou longest\n",
+  "tags": [
+   "daily skincare routine",
+   "silicone brush face wash",
+   "silicone facial cleansing brush",
+   "silicone facial cleansing brush how to use",
+   "sonic face cleanser",
+   "sonic facial cleanser",
+   "skin care tools facial",
+   "silicone face brush use",
+   "skincare tools for face",
+   "silicone cleansing brush",
+   "silicone facial cleanser",
+   "refresh dull skin",
+   "skincare tools",
+   "silicone facial brushes",
+   "skincare tools you need",
+   "skincare tools must haves",
+   "skincare tools that actually work",
+   "face washing tips"
+  ],
+  "thumb": {
+   "name": "2026-10-18-1-v0-thumb.jpg",
+   "tag": "videos-2026-10-18",
+   "type": "release"
+  },
+  "thumbnail_text": "Dull Skin Fix",
+  "title": "Daily Skincare Routine Upgrade for Tired Skin ✨",
+  "trend_source": "Ashvara store catalog",
+  "updated": "2026-10-18T18:49:51.493483+00:00",
+  "uploaded_at": "",
+  "virality_score": 7,
+  "voice": "en-US-AvaMultilingualNeural"
  }
 }

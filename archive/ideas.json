@@ -786,11 +786,11 @@
    {
     "angle": "Tired of dull skin after a long day?",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Upgrade Your Daily Skincare Routine",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-18-1",
     "virality_score": 7,
     "why": ""
    },
@@ -851,7 +851,7 @@
    }
   ],
   "sent_at": "2026-10-18T15:47:36.562455+00:00",
-  "status": "waiting"
+  "status": "closed"
  },
  "2026-10-18-2": {
   "date": "2026-10-18-2",
