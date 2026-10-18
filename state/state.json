@@ -4785,9 +4785,9 @@
         "trend_source": "Ashvara store catalog",
         "product": "interactive-pet-food-dispenser-toy-99709"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "auto",
-      "updated": "2026-10-18T21:06:46.956877+00:00",
+      "updated": "2026-10-18T23:08:08.018874+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "keep dog busy",
@@ -5135,7 +5135,29 @@
       },
       "srt": "1\n00:00:00,050 --> 00:00:01,733\nTrying to finish work while your dog\n\n2\n00:00:01,733 --> 00:00:04,209\ndemands attention is completely impossible\n\n3\n00:00:04,209 --> 00:00:06,408\nThis durable enrichment puzzle from Ashvara\n\n4\n00:00:06,408 --> 00:00:09,521\nfixes that afternoon chaos Made from thick\n\n5\n00:00:09,521 --> 00:00:11,613\nnatural rubber it stands up to tough\n\n6\n00:00:11,613 --> 00:00:13,872\nchewers Just fill the hollow center with\n\n7\n00:00:13,872 --> 00:00:16,360\npeanut butter or crunchy kibble The grooved\n\n8\n00:00:16,360 --> 00:00:18,560\nouter ridges challenge their minds keeping\n\n9\n00:00:18,560 --> 00:00:21,132\nthem busy for hours When they finish\n\n10\n00:00:21,132 --> 00:00:23,500\ntoss it straight into the dishwasher Grab\n\n11\n00:00:23,500 --> 00:00:25,687\nyours for nineteen ninety-nine at ashvara dot\n\n12\n00:00:25,687 --> 00:00:28,668\nstore link in bio Which treat keeps\n\n13\n00:00:28,668 --> 00:00:30,282\nyour pup busy longest\n",
       "tg_msg": 190,
-      "opts_msg": 192
+      "opts_msg": 192,
+      "approved_by": "auto",
+      "description_full": "Discover how to keep dog busy while you work from home with this simple enrichment puzzle toy.\nPerfect for mental stimulation and quiet focus during your busy workday.\nShop it: https://ashvara.store/products/interactive-pet-food-dispenser-toy-99709\n\n#shorts #dogcare #dogenrichment #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          null,
+          "skipped (not configured)"
+        ],
+        "Facebook": [
+          null,
+          "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AbWRp3fHL6XYvH_ZLrIoQWq'}}"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-18T23:08:08.018891+00:00",
+      "slot": "2026-10-19T01:15:00+00:00"
     }
   },
   "history": [

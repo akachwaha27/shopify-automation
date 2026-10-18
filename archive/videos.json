@@ -1235,7 +1235,7 @@
  },
  "2026-10-18-2-1": {
   "angle": "When you need to get work done but your pup demands constant attention.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
@@ -1262,12 +1262,29 @@
    "Dishwasher-safe rubber toys allow for easy sanitation after food use."
   ],
   "pinned_comment": "Do you freeze your dog's treats or serve them fresh? Let us know what keeps your pup occupied longest! 🐶",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": null,
+    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AbWRp3fHL6XYvH_ZLrIoQWq'}}"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "skipped (not configured)"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "keep dog busy",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-19T01:15:00+00:00",
   "script": "Trying to finish work while your dog demands attention is completely impossible. This durable enrichment puzzle from Ashvara fixes that afternoon chaos. Made from thick, natural rubber, it stands up to tough chewers. Just fill the hollow center with peanut butter or crunchy kibble. The grooved outer ridges challenge their minds, keeping them busy for hours. When they finish, toss it straight into the dishwasher. Grab yours for nineteen ninety-nine at ashvara dot store, link in bio. Which treat keeps your pup busy longest?",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,050 --> 00:00:01,733\nTrying to finish work while your dog\n\n2\n00:00:01,733 --> 00:00:04,209\ndemands attention is completely impossible\n\n3\n00:00:04,209 --> 00:00:06,408\nThis durable enrichment puzzle from Ashvara\n\n4\n00:00:06,408 --> 00:00:09,521\nfixes that afternoon chaos Made from thick\n\n5\n00:00:09,521 --> 00:00:11,613\nnatural rubber it stands up to tough\n\n6\n00:00:11,613 --> 00:00:13,872\nchewers Just fill the hollow center with\n\n7\n00:00:13,872 --> 00:00:16,360\npeanut butter or crunchy kibble The grooved\n\n8\n00:00:16,360 --> 00:00:18,560\nouter ridges challenge their minds keeping\n\n9\n00:00:18,560 --> 00:00:21,132\nthem busy for hours When they finish\n\n10\n00:00:21,132 --> 00:00:23,500\ntoss it straight into the dishwasher Grab\n\n11\n00:00:23,500 --> 00:00:25,687\nyours for nineteen ninety-nine at ashvara dot\n\n12\n00:00:25,687 --> 00:00:28,668\nstore link in bio Which treat keeps\n\n13\n00:00:28,668 --> 00:00:30,282\nyour pup busy longest\n",
   "tags": [
    "keep dog busy",
@@ -1296,8 +1313,8 @@
   "thumbnail_text": "Busy Pup Solution",
   "title": "Keep Your Dog Busy While Working From Home 🐾",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-18T21:06:46.956877+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-18T23:08:08.018874+00:00",
+  "uploaded_at": "2026-10-18T23:08:08.018891+00:00",
   "virality_score": 7,
   "voice": "en-AU-WilliamMultilingualNeural"
  }
