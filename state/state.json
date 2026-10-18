@@ -1,69 +1,6 @@
 {
   "tg_offset": 272239691,
   "batches": {
-    "2026-10-15": {
-      "topics": [
-        {
-          "title": "Bring The Spa Home Today",
-          "angle": "Transform your bathroom into a luxury retreat for the ultimate self-care night.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "facial-spa-kit"
-        },
-        {
-          "title": "Flawless Makeup In Any Light",
-          "angle": "Stop struggling with bad lighting in the car or dark rooms while getting ready.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "portable-led-makeup-mirror"
-        },
-        {
-          "title": "Skip The Gym Traffic Daily",
-          "angle": "Get a full-body workout right in your living room without bulky equipment.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "home-gym-kit"
-        },
-        {
-          "title": "Satisfying Pores Cleared Just Like That",
-          "angle": "Reveal fresh, glowing skin with the most satisfying skincare routine ever.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "electric-small-bubble-blackhead-remover-65778"
-        },
-        {
-          "title": "Stand Tall And Feel Confident",
-          "angle": "Fix slouching effortlessly while working at your desk all day long.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "adjustable-brace-support-belt-back-posture-corrector-30592"
-        },
-        {
-          "title": "Say Goodbye To Gym Calluses",
-          "angle": "Lift heavier and more comfortably without letting sweat ruin your grip.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
-        }
-      ],
-      "sent_at": "2026-10-15T15:11:43.674583+00:00",
-      "selected": [
-        1
-      ],
-      "status": "closed"
-    },
     "2026-10-15-2": {
       "topics": [
         {
@@ -435,6 +372,67 @@
         }
       ],
       "sent_at": "2026-10-18T15:47:36.562455+00:00",
+      "selected": [],
+      "status": "waiting"
+    },
+    "2026-10-18-2": {
+      "topics": [
+        {
+          "title": "Keep Your Dog Busy For Hours",
+          "angle": "When you need to get work done but your pup demands constant attention.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "interactive-pet-food-dispenser-toy-99709"
+        },
+        {
+          "title": "Fix That Uncomfortable Bike Seat Fast",
+          "angle": "That instant regret the morning after your spin class or weekend trail ride.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
+        },
+        {
+          "title": "Upgrade Your Morning Skincare Routine Fast",
+          "angle": "The easiest way to feel refreshed and awake before an early morning meeting.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "double-head-jade-facial-roller-57419"
+        },
+        {
+          "title": "Say Goodbye To Workout Hand Calluses",
+          "angle": "When sweaty palms and rough barbells keep ruining your gym session.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
+        },
+        {
+          "title": "Deep Clean Pores Right At Home",
+          "angle": "That satisfying feeling of lifting off everyday dirt and oil after a long week.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "electric-small-bubble-blackhead-remover-65778"
+        },
+        {
+          "title": "Stress Free Dog Nail Trims Finally",
+          "angle": "Trimming your pup's nails without turning it into a full-blown wrestling match.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
+        }
+      ],
+      "sent_at": "2026-10-18T17:26:30.446139+00:00",
       "selected": [],
       "status": "waiting"
     }
@@ -4450,8 +4448,8 @@
       "at": "2026-10-17T17:17:51.932797+00:00"
     },
     "2026-10-18": {
-      "n": 1,
-      "at": "2026-10-18T15:47:19.576931+00:00"
+      "n": 2,
+      "at": "2026-10-18T17:26:20.035590+00:00"
     }
   },
   "cleanup_day": "2026-10-18",

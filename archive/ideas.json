@@ -852,5 +852,78 @@
   ],
   "sent_at": "2026-10-18T15:47:36.562455+00:00",
   "status": "waiting"
+ },
+ "2026-10-18-2": {
+  "date": "2026-10-18-2",
+  "ideas": [
+   {
+    "angle": "When you need to get work done but your pup demands constant attention.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Keep Your Dog Busy For Hours",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "That instant regret the morning after your spin class or weekend trail ride.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Fix That Uncomfortable Bike Seat Fast",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "The easiest way to feel refreshed and awake before an early morning meeting.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Upgrade Your Morning Skincare Routine Fast",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When sweaty palms and rough barbells keep ruining your gym session.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Say Goodbye To Workout Hand Calluses",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "That satisfying feeling of lifting off everyday dirt and oil after a long week.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Deep Clean Pores Right At Home",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Trimming your pup's nails without turning it into a full-blown wrestling match.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Stress Free Dog Nail Trims Finally",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-18T17:26:30.446139+00:00",
+  "status": "waiting"
  }
 }
