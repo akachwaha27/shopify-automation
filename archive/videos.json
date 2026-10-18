@@ -1148,7 +1148,7 @@
  },
  "2026-10-18-1": {
   "angle": "Tired of dull skin after a long day?",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
@@ -1176,12 +1176,29 @@
    "Device is waterproof and rechargeable via USB"
   ],
   "pinned_comment": "Do you spend more time on cleansing or moisturizing at night? Let us know your routine! ✨",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": null,
+    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A0F0LQfCdFs-zg2G6nUrpB1'}}"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "skipped (not configured)"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "daily skincare routine",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-18T23:15:00+00:00",
   "script": "Your skin always looks completely exhausted after a long workday. Standard face washing leaves behind dirt, but this handheld sonic brush changes that. It uses hygienic silicone bristles that rinse clean instantly under warm water. Just add your favorite cleanser and let gentle micro-pulses do the work. It is fully waterproof, charges via USB, and fits comfortably in your palm. Grab yours for twenty-four ninety-nine at ashvara.store, link in bio. What step takes you longest?",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,074 --> 00:00:02,439\nYour skin always looks completely exhausted\n\n2\n00:00:02,439 --> 00:00:05,343\nafter a long workday Standard face washing\n\n3\n00:00:05,343 --> 00:00:08,235\nleaves behind dirt but this handheld sonic\n\n4\n00:00:08,235 --> 00:00:11,189\nbrush changes that It uses hygienic silicone\n\n5\n00:00:11,189 --> 00:00:13,713\nbristles that rinse clean instantly under warm\n\n6\n00:00:13,713 --> 00:00:16,532\nwater Just add your favorite cleanser and\n\n7\n00:00:16,532 --> 00:00:19,277\nlet gentle micro-pulses do the work It\n\n8\n00:00:19,277 --> 00:00:23,002\nis fully waterproof charges via USB and\n\n9\n00:00:23,002 --> 00:00:25,453\nfits comfortably in your palm Grab yours\n\n10\n00:00:25,453 --> 00:00:27,512\nfor twenty-four ninety-nine at ashvara .\n\n11\n00:00:27,512 --> 00:00:30,331\nstore link in bio What step takes\n\n12\n00:00:30,331 --> 00:00:31,478\nyou longest\n",
   "tags": [
    "daily skincare routine",
@@ -1211,9 +1228,77 @@
   "thumbnail_text": "Dull Skin Fix",
   "title": "Daily Skincare Routine Upgrade for Tired Skin ✨",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-18T18:49:51.493483+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-18T21:06:55.271348+00:00",
+  "uploaded_at": "2026-10-18T21:06:55.271364+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
+ },
+ "2026-10-18-2-1": {
+  "angle": "When you need to get work done but your pup demands constant attention.",
+  "approved_by": "",
+  "category": "26",
+  "credits": [
+   "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
+  ],
+  "date": "2026-10-18",
+  "description": "Discover how to keep dog busy while you work from home with this simple enrichment puzzle toy.\nPerfect for mental stimulation and quiet focus during your busy workday.\nShop it: https://ashvara.store/products/interactive-pet-food-dispenser-toy-99709\n\n#shorts #dogcare #dogenrichment #ashvara\n\n— Credits & disclosure —\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+  "file": {
+   "name": "2026-10-18-2-1-v0.mp4",
+   "tag": "videos-2026-10-18",
+   "type": "release"
+  },
+  "format": "product",
+  "hashtags": [
+   "#shorts",
+   "#dogcare",
+   "#dogenrichment",
+   "#ashvara"
+  ],
+  "hook_text": "Work From Home Pup Fix",
+  "id": "2026-10-18-2-1",
+  "idea_title": "Keep Your Dog Busy For Hours",
+  "key_facts": [
+   "Mental enrichment toys can occupy dogs through natural licking and foraging behaviors.",
+   "Dishwasher-safe rubber toys allow for easy sanitation after food use."
+  ],
+  "pinned_comment": "Do you freeze your dog's treats or serve them fresh? Let us know what keeps your pup occupied longest! 🐶",
+  "platforms": {},
+  "primary_keyword": "keep dog busy",
+  "redos": 0,
+  "scheduled_for": "",
+  "script": "Trying to finish work while your dog demands attention is completely impossible. This durable enrichment puzzle from Ashvara fixes that afternoon chaos. Made from thick, natural rubber, it stands up to tough chewers. Just fill the hollow center with peanut butter or crunchy kibble. The grooved outer ridges challenge their minds, keeping them busy for hours. When they finish, toss it straight into the dishwasher. Grab yours for nineteen ninety-nine at ashvara dot store, link in bio. Which treat keeps your pup busy longest?",
+  "status": "awaiting_approval",
+  "subtitles_srt": "1\n00:00:00,050 --> 00:00:01,733\nTrying to finish work while your dog\n\n2\n00:00:01,733 --> 00:00:04,209\ndemands attention is completely impossible\n\n3\n00:00:04,209 --> 00:00:06,408\nThis durable enrichment puzzle from Ashvara\n\n4\n00:00:06,408 --> 00:00:09,521\nfixes that afternoon chaos Made from thick\n\n5\n00:00:09,521 --> 00:00:11,613\nnatural rubber it stands up to tough\n\n6\n00:00:11,613 --> 00:00:13,872\nchewers Just fill the hollow center with\n\n7\n00:00:13,872 --> 00:00:16,360\npeanut butter or crunchy kibble The grooved\n\n8\n00:00:16,360 --> 00:00:18,560\nouter ridges challenge their minds keeping\n\n9\n00:00:18,560 --> 00:00:21,132\nthem busy for hours When they finish\n\n10\n00:00:21,132 --> 00:00:23,500\ntoss it straight into the dishwasher Grab\n\n11\n00:00:23,500 --> 00:00:25,687\nyours for nineteen ninety-nine at ashvara dot\n\n12\n00:00:25,687 --> 00:00:28,668\nstore link in bio Which treat keeps\n\n13\n00:00:28,668 --> 00:00:30,282\nyour pup busy longest\n",
+  "tags": [
+   "keep dog busy",
+   "how to keep your dog busy while working from home",
+   "keep dog busy while at work",
+   "mental stimulation for dogs at home",
+   "dog toys to keep dogs busy",
+   "keep dog occupied while at work",
+   "how to keep dog busy during the day",
+   "dog enrichment toys",
+   "best dog puzzle toys",
+   "dog treat puzzle toys",
+   "work from home with dog",
+   "best dog enrichment toys",
+   "mental stimulation for dogs",
+   "keep dog entertained at home",
+   "dog enrichment ideas",
+   "keep dog entertained",
+   "dog puzzle toy"
+  ],
+  "thumb": {
+   "name": "2026-10-18-2-1-v0-thumb.jpg",
+   "tag": "videos-2026-10-18",
+   "type": "release"
+  },
+  "thumbnail_text": "Busy Pup Solution",
+  "title": "Keep Your Dog Busy While Working From Home 🐾",
+  "trend_source": "Ashvara store catalog",
+  "updated": "2026-10-18T21:06:46.956877+00:00",
+  "uploaded_at": "",
+  "virality_score": 7,
+  "voice": "en-AU-WilliamMultilingualNeural"
  }
 }

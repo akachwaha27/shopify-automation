@@ -435,8 +435,10 @@
         }
       ],
       "sent_at": "2026-10-18T17:26:30.446139+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     }
   },
   "videos": {
@@ -4437,9 +4439,9 @@
         "trend_source": "Ashvara store catalog",
         "product": "skin-cleaner-5-in-1-new"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "auto",
-      "updated": "2026-10-18T18:49:51.493483+00:00",
+      "updated": "2026-10-18T21:06:55.271348+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "daily skincare routine",
@@ -4749,7 +4751,391 @@
       },
       "srt": "1\n00:00:00,074 --> 00:00:02,439\nYour skin always looks completely exhausted\n\n2\n00:00:02,439 --> 00:00:05,343\nafter a long workday Standard face washing\n\n3\n00:00:05,343 --> 00:00:08,235\nleaves behind dirt but this handheld sonic\n\n4\n00:00:08,235 --> 00:00:11,189\nbrush changes that It uses hygienic silicone\n\n5\n00:00:11,189 --> 00:00:13,713\nbristles that rinse clean instantly under warm\n\n6\n00:00:13,713 --> 00:00:16,532\nwater Just add your favorite cleanser and\n\n7\n00:00:16,532 --> 00:00:19,277\nlet gentle micro-pulses do the work It\n\n8\n00:00:19,277 --> 00:00:23,002\nis fully waterproof charges via USB and\n\n9\n00:00:23,002 --> 00:00:25,453\nfits comfortably in your palm Grab yours\n\n10\n00:00:25,453 --> 00:00:27,512\nfor twenty-four ninety-nine at ashvara .\n\n11\n00:00:27,512 --> 00:00:30,331\nstore link in bio What step takes\n\n12\n00:00:30,331 --> 00:00:31,478\nyou longest\n",
       "tg_msg": 185,
-      "opts_msg": 187
+      "opts_msg": 187,
+      "approved_by": "auto",
+      "description_full": "Upgrade your daily skincare routine with an easy sonic cleansing tool that washes away daily grime in seconds.\nDiscover a gentler face wash method designed to refresh dull skin every evening.\nShop it: https://ashvara.store/products/skin-cleaner-5-in-1-new\n\n#shorts #skincare #facialcleanser #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          null,
+          "skipped (not configured)"
+        ],
+        "Facebook": [
+          null,
+          "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A0F0LQfCdFs-zg2G6nUrpB1'}}"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-18T21:06:55.271364+00:00",
+      "slot": "2026-10-18T23:15:00+00:00"
+    },
+    "2026-10-18-2-1": {
+      "topic": {
+        "title": "Keep Your Dog Busy For Hours",
+        "angle": "When you need to get work done but your pup demands constant attention.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "interactive-pet-food-dispenser-toy-99709"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-18T21:06:46.956877+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "keep dog busy",
+        "title": "Keep Your Dog Busy While Working From Home \ud83d\udc3e",
+        "hook_text": "Work From Home Pup Fix",
+        "thumbnail_text": "Busy Pup Solution",
+        "description": "Discover how to keep dog busy while you work from home with this simple enrichment puzzle toy.\nPerfect for mental stimulation and quiet focus during your busy workday.\nShop it: https://ashvara.store/products/interactive-pet-food-dispenser-toy-99709",
+        "hashtags": [
+          "#shorts",
+          "#dogcare",
+          "#dogenrichment",
+          "#ashvara"
+        ],
+        "tags": [
+          "keep dog busy",
+          "how to keep your dog busy while working from home",
+          "keep dog busy while at work",
+          "mental stimulation for dogs at home",
+          "dog toys to keep dogs busy",
+          "keep dog occupied while at work",
+          "how to keep dog busy during the day",
+          "dog enrichment toys",
+          "best dog puzzle toys",
+          "dog treat puzzle toys",
+          "work from home with dog",
+          "best dog enrichment toys",
+          "mental stimulation for dogs",
+          "keep dog entertained at home",
+          "dog enrichment ideas",
+          "keep dog entertained",
+          "dog puzzle toy"
+        ],
+        "pinned_comment": "Do you freeze your dog's treats or serve them fresh? Let us know what keeps your pup occupied longest! \ud83d\udc36",
+        "scenes": [
+          {
+            "text": "Trying to finish work while your dog demands attention is completely impossible.",
+            "badge": "",
+            "label": "End WFH distractions",
+            "stock_queries": [
+              "dog barking laptop",
+              "golden retriever desk"
+            ],
+            "image_prompt": "Vertical 9:16 shot of a golden retriever puppy resting its chin playfully on a home office wooden desk next to a modern laptop and notebook, warm indoor lighting, cinematic depth of field.",
+            "stock_query": "dog barking laptop",
+            "product_image": "work/2026-10-18-2-1/product/product_0.jpg"
+          },
+          {
+            "text": "This durable enrichment puzzle from Ashvara fixes that afternoon chaos.",
+            "badge": "",
+            "label": "Daily mental enrichment",
+            "stock_queries": [
+              "dog puzzle toy",
+              "rubber chew toy"
+            ],
+            "image_prompt": "Vertical 9:16 macro shot of a sleek modern textured rubber dog treat toy resting on a clean wooden floor in a bright living room, minimalist aesthetic.",
+            "stock_query": "dog puzzle toy"
+          },
+          {
+            "text": "Made from thick, natural rubber, it stands up to tough chewers.",
+            "badge": "",
+            "label": "Tough natural rubber",
+            "stock_queries": [
+              "chew toy rubber",
+              "dog chewing toy"
+            ],
+            "image_prompt": "Vertical 9:16 close up showing the flexible yet ultra-durable texture of an orange natural rubber dog toy with deep grooves, soft natural window light.",
+            "stock_query": "chew toy rubber",
+            "product_image": "work/2026-10-18-2-1/product/product_1.jpg"
+          },
+          {
+            "text": "Just fill the hollow center with peanut butter or crunchy kibble.",
+            "badge": "",
+            "label": "Easy to fill",
+            "stock_queries": [
+              "peanut butter spoon",
+              "dog kibble bowl"
+            ],
+            "image_prompt": "Vertical 9:16 shot of hands spooning creamy peanut butter into the hollow opening of an enrichment rubber dog toy on a marble kitchen counter.",
+            "stock_query": "peanut butter spoon"
+          },
+          {
+            "text": "The grooved outer ridges challenge their minds, keeping them busy for hours.",
+            "badge": "",
+            "label": "Mental stimulation ridges",
+            "stock_queries": [
+              "dog licking toy",
+              "dog playing floor"
+            ],
+            "image_prompt": "Vertical 9:16 shot of a happy dog lying comfortably on a cozy living room rug, happily licking treats out of the grooved rubber puzzle toy, focused expression.",
+            "stock_query": "dog licking toy",
+            "product_image": "work/2026-10-18-2-1/product/product_2.jpg"
+          },
+          {
+            "text": "When they finish, toss it straight into the dishwasher.",
+            "badge": "",
+            "label": "Dishwasher safe",
+            "stock_queries": [
+              "dishwasher open rack",
+              "clean kitchen dishes"
+            ],
+            "image_prompt": "Vertical 9:16 shot of the clean rubber dog toy placed neatly on the top rack of an open modern stainless steel dishwasher.",
+            "stock_query": "dishwasher open rack"
+          },
+          {
+            "text": "Grab yours for nineteen ninety-nine at ashvara dot store, link in bio. Which treat keeps your pup busy longest?",
+            "badge": "",
+            "label": "$19.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "dog sleeping rug",
+              "calm dog office"
+            ],
+            "image_prompt": "Vertical 9:16 shot of a calm dog sleeping peacefully on the floor beside a home office desk, serene work from home atmosphere, sunny afternoon light.",
+            "stock_query": "dog sleeping rug",
+            "product_image": "work/2026-10-18-2-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "Mental enrichment toys can occupy dogs through natural licking and foraging behaviors.",
+          "Dishwasher-safe rubber toys allow for easy sanitation after food use."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Trying to finish work while your dog demands attention is completely impossible. This durable enrichment puzzle from Ashvara fixes that afternoon chaos. Made from thick, natural rubber, it stands up to tough chewers. Just fill the hollow center with peanut butter or crunchy kibble. The grooved outer ridges challenge their minds, keeping them busy for hours. When they finish, toss it straight into the dishwasher. Grab yours for nineteen ninety-nine at ashvara dot store, link in bio. Which treat keeps your pup busy longest?",
+        "product": {
+          "handle": "interactive-pet-food-dispenser-toy-99709",
+          "title": "Interactive Pet Treat Ball Food Dispenser",
+          "url": "https://ashvara.store/products/interactive-pet-food-dispenser-toy-99709",
+          "price": "$19.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "dog demanding attention from person working on laptop at home",
+            "queries": [
+              {
+                "q": "dog laptop",
+                "must": [
+                  "dog",
+                  "laptop"
+                ]
+              },
+              {
+                "q": "remote work dog",
+                "must": [
+                  "dog",
+                  "computer"
+                ]
+              },
+              {
+                "q": "dog owner working",
+                "must": [
+                  "dog",
+                  "work"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "durable rubber dog puzzle toy on table",
+            "queries": [
+              {
+                "q": "dog puzzle toy",
+                "must": [
+                  "puzzle",
+                  "toy"
+                ]
+              },
+              {
+                "q": "rubber dog toy",
+                "must": [
+                  "rubber",
+                  "toy"
+                ]
+              },
+              {
+                "q": "enrichment toy",
+                "must": [
+                  "toy"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "dog chewing on thick natural rubber toy",
+            "queries": [
+              {
+                "q": "dog chewing toy",
+                "must": [
+                  "dog",
+                  "chewing"
+                ]
+              },
+              {
+                "q": "dog chew rubber",
+                "must": [
+                  "dog",
+                  "rubber"
+                ]
+              },
+              {
+                "q": "tough chewer dog",
+                "must": [
+                  "dog",
+                  "chew"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "filling hollow rubber toy with peanut butter and kibble",
+            "queries": [
+              {
+                "q": "filling dog toy",
+                "must": [
+                  "peanut",
+                  "butter"
+                ]
+              },
+              {
+                "q": "dog toy peanut butter",
+                "must": [
+                  "toy",
+                  "butter"
+                ]
+              },
+              {
+                "q": "dog treat kibble",
+                "must": [
+                  "kibble"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "dog playing intensely with interactive treat toy",
+            "queries": [
+              {
+                "q": "dog playing toy",
+                "must": [
+                  "dog",
+                  "playing"
+                ]
+              },
+              {
+                "q": "dog licking toy",
+                "must": [
+                  "dog",
+                  "licking"
+                ]
+              },
+              {
+                "q": "dog enrichment",
+                "must": [
+                  "dog"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "dirty dog toy being placed into a dishwasher rack",
+            "queries": [
+              {
+                "q": "dishwasher toy",
+                "must": [
+                  "dishwasher"
+                ]
+              },
+              {
+                "q": "cleaning dog toy",
+                "must": [
+                  "kitchen",
+                  "dishes"
+                ]
+              },
+              {
+                "q": "loading dishwasher",
+                "must": [
+                  "dishwasher"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "happy dog sitting and looking at the camera",
+            "queries": [
+              {
+                "q": "happy dog sitting",
+                "must": [
+                  "dog",
+                  "sitting"
+                ]
+              },
+              {
+                "q": "dog portrait",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "cute puppy",
+                "must": [
+                  "puppy"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "dog toy",
+          "puppy",
+          "dog treat"
+        ],
+        "visual_style": "Bright, engaging close-up shots of cute dogs interacting with interactive enrichment toys and treats inside a home.",
+        "visual_refs": [
+          "How to Keep your dog busy - Mental STIMULATION for dogs #dogenrichment",
+          "keep your dog busy for hours \ud83d\udc36",
+          "Dog Enrichment Ideas #dogtraining #doglovers #dogshorts #dogtoy",
+          "Keep your Puppy or Dog Busy for 20 minutes to an Hour, a cheap fun game (Hide &amp; Find) (Silver Lab)",
+          "How to keep your dog busy for hours \u23f0",
+          "Free ways to keep your dog entertained Part 7"
+        ],
+        "presenter_image": "assets/cast/biscuit.jpg",
+        "presenter_voice": "en-AU-WilliamMultilingualNeural",
+        "presenter_name": "Biscuit",
+        "voice": "en-AU-WilliamMultilingualNeural",
+        "visual_report": {
+          "shots": 7,
+          "checked": 7,
+          "unchecked": 0,
+          "filler": 3
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-18",
+        "name": "2026-10-18-2-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-18",
+        "name": "2026-10-18-2-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,050 --> 00:00:01,733\nTrying to finish work while your dog\n\n2\n00:00:01,733 --> 00:00:04,209\ndemands attention is completely impossible\n\n3\n00:00:04,209 --> 00:00:06,408\nThis durable enrichment puzzle from Ashvara\n\n4\n00:00:06,408 --> 00:00:09,521\nfixes that afternoon chaos Made from thick\n\n5\n00:00:09,521 --> 00:00:11,613\nnatural rubber it stands up to tough\n\n6\n00:00:11,613 --> 00:00:13,872\nchewers Just fill the hollow center with\n\n7\n00:00:13,872 --> 00:00:16,360\npeanut butter or crunchy kibble The grooved\n\n8\n00:00:16,360 --> 00:00:18,560\nouter ridges challenge their minds keeping\n\n9\n00:00:18,560 --> 00:00:21,132\nthem busy for hours When they finish\n\n10\n00:00:21,132 --> 00:00:23,500\ntoss it straight into the dishwasher Grab\n\n11\n00:00:23,500 --> 00:00:25,687\nyours for nineteen ninety-nine at ashvara dot\n\n12\n00:00:25,687 --> 00:00:28,668\nstore link in bio Which treat keeps\n\n13\n00:00:28,668 --> 00:00:30,282\nyour pup busy longest\n",
+      "tg_msg": 190,
+      "opts_msg": 192
     }
   },
   "history": [
@@ -4763,7 +5149,8 @@
     "Upgrade Your Home Workout Instantly!",
     "Stop Guessing Your Pet's Dinner Portions",
     "Sunday Reset Just Got Way Easier",
-    "Upgrade Your Daily Skincare Routine"
+    "Upgrade Your Daily Skincare Routine",
+    "Keep Your Dog Busy For Hours"
   ],
   "trend_tries": {
     "2026-10-16": {
@@ -4790,14 +5177,14 @@
   },
   "photo_angle": 5,
   "visual_searches": {
-    "2026-10-18": 1
+    "2026-10-18": 2
   },
   "recent_voices": [
     "en-US-AvaMultilingualNeural",
-    "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
     "en-US-AvaMultilingualNeural",
-    "en-US-AvaMultilingualNeural"
+    "en-US-AvaMultilingualNeural",
+    "en-AU-WilliamMultilingualNeural"
   ],
   "presenter_candidates": [
     {
