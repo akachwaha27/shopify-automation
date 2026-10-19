@@ -925,5 +925,78 @@
   ],
   "sent_at": "2026-10-18T17:26:30.446139+00:00",
   "status": "closed"
+ },
+ "2026-10-19": {
+  "date": "2026-10-19",
+  "ideas": [
+   {
+    "angle": "When you wake up feeling sluggish and need an easy cooling refresh before your morning coffee.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Your 5-Minute Morning Reset Secret",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "For every pet parent whose dog treats nail trim day like a full-contact sport.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Pet Nail Trims Without The Drama",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When sweaty palms keep ruining your grip on the final set.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Say Goodbye To Callused Gym Hands",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When you want a complete full-body workout without leaving your living room or paying monthly fees.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Skip The Gym Commute For Good",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "The ultimate satisfying fix for unclogging your nose pores after a long week of wearing makeup.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Satisfying Deep Clean At Home",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When your stationary bike or trail ride feels like sitting on a literal rock.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Make Any Bike Seat Actually Comfortable",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-19T20:01:24.121201+00:00",
+  "status": "waiting"
  }
 }
