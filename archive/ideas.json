@@ -932,11 +932,11 @@
    {
     "angle": "When you wake up feeling sluggish and need an easy cooling refresh before your morning coffee.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Your 5-Minute Morning Reset Secret",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-19-1",
     "virality_score": 7,
     "why": ""
    },
@@ -997,6 +997,6 @@
    }
   ],
   "sent_at": "2026-10-19T20:01:24.121201+00:00",
-  "status": "waiting"
+  "status": "closed"
  }
 }

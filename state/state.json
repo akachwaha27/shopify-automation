@@ -437,8 +437,10 @@
         }
       ],
       "sent_at": "2026-10-19T20:01:24.121201+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     }
   },
   "videos": {
@@ -5158,6 +5160,324 @@
       },
       "uploaded_at": "2026-10-18T23:08:08.018891+00:00",
       "slot": "2026-10-19T01:15:00+00:00"
+    },
+    "2026-10-19-1": {
+      "topic": {
+        "title": "Your 5-Minute Morning Reset Secret",
+        "angle": "When you wake up feeling sluggish and need an easy cooling refresh before your morning coffee.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "double-head-jade-facial-roller-57419"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-19T23:52:59.827482+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "morning reset routine",
+        "title": "Morning reset routine secret for sluggish days \u2744\ufe0f",
+        "hook_text": "Sluggish Morning Fix",
+        "thumbnail_text": "5-Minute Reset",
+        "description": "Try this easy morning reset routine to instantly refresh before your morning coffee.\nDiscover how a simple cooling tool provides a crisp wake-up boost every morning.\nShop it: https://ashvara.store/products/double-head-jade-facial-roller-57419",
+        "hashtags": [
+          "#shorts",
+          "#morningroutine",
+          "#coldroller",
+          "#ashvara"
+        ],
+        "tags": [
+          "morning reset routine",
+          "morning reset",
+          "stainless steel ice roller",
+          "best stainless steel ice roller",
+          "cold face roller",
+          "cooling roller for face",
+          "stainless steel ice globes",
+          "cold face roller how to use",
+          "sunday reset morning routines",
+          "how to use cooling face roller",
+          "morning refresh",
+          "cool face roller ball",
+          "cooling facial roller",
+          "wake up routine",
+          "five minute reset",
+          "ice roller benefits",
+          "daily morning habits",
+          "morning skincare routine"
+        ],
+        "pinned_comment": "Are you reaching for cold water or an extra shot of espresso on sluggish mornings? Tell us below! \u2615",
+        "scenes": [
+          {
+            "text": "Waking up sluggish is honestly the absolute worst start to your day.",
+            "badge": "",
+            "label": "Morning Sluggishness",
+            "stock_queries": [
+              "alarm clock bed",
+              "morning coffee table"
+            ],
+            "image_prompt": "Close up vertical shot of an alarm clock on a modern wooden bedside table with soft morning sunlight streaming in through sheer curtains, 9:16 aspect ratio, cinematic lighting.",
+            "stock_query": "alarm clock bed",
+            "product_image": "work/2026-10-19-1/product/product_0.jpg"
+          },
+          {
+            "text": "This stainless steel cold roller offers the easiest five minute morning reset.",
+            "badge": "",
+            "label": "Stainless Steel Roller",
+            "stock_queries": [
+              "face roller beauty",
+              "ice roller skincare"
+            ],
+            "image_prompt": "A sleek metallic stainless steel facial roller resting on a minimalist bathroom vanity next to white towels, soft natural daylight, vertical 9:16 framing, crisp product photography.",
+            "stock_query": "face roller beauty"
+          },
+          {
+            "text": "Keep it inside the freezer overnight so it is ready by sunrise.",
+            "badge": "",
+            "label": "Freezer Ready",
+            "stock_queries": [
+              "freezer frost",
+              "ice cubes tray"
+            ],
+            "image_prompt": "Stainless steel ice roller surrounded by light frost and ice crystals on a clean freezer shelf, cold misty atmosphere, vertical 9:16 composition, studio macro lighting.",
+            "stock_query": "freezer frost",
+            "product_image": "work/2026-10-19-1/product/product_1.jpg"
+          },
+          {
+            "text": "The smooth steel barrel glides over cheeks and jawline with zero friction.",
+            "badge": "",
+            "label": "Smooth Glide",
+            "stock_queries": [
+              "facial massage roller",
+              "skincare routine roller"
+            ],
+            "image_prompt": "A polished silver ice roller rolling across clean smooth skincare surface with delicate water droplets, bright aesthetic spa setting, vertical 9:16, high detail.",
+            "stock_query": "facial massage roller"
+          },
+          {
+            "text": "It delivers an instant crisp chill right before your morning coffee.",
+            "badge": "",
+            "label": "Cooling Refresh",
+            "stock_queries": [
+              "steaming coffee mug",
+              "morning sunlight kitchen"
+            ],
+            "image_prompt": "A ceramic coffee mug emitting gentle steam on a kitchen counter beside a chilled silver facial roller, bright warm morning sun, 9:16 vertical ratio.",
+            "stock_query": "steaming coffee mug",
+            "product_image": "work/2026-10-19-1/product/product_2.jpg"
+          },
+          {
+            "text": "Get yours for eighteen dollars. Link in bio, ashvara dot store. What wakes you up fastest when",
+            "badge": "",
+            "label": "$12.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "minimalist bathroom shelf",
+              "cosmetic product display"
+            ],
+            "image_prompt": "Elegant product display of a stainless steel face roller on a marble stand with a blurred clean background, bright commercial studio lighting, 9:16 vertical orientation.",
+            "stock_query": "minimalist bathroom shelf",
+            "product_image": "work/2026-10-19-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "The roller features a stainless steel barrel",
+          "The roller is designed to be chilled in a standard home freezer"
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Waking up sluggish is honestly the absolute worst start to your day. This stainless steel cold roller offers the easiest five minute morning reset. Keep it inside the freezer overnight so it is ready by sunrise. The smooth steel barrel glides over cheeks and jawline with zero friction. It delivers an instant crisp chill right before your morning coffee. Get yours for eighteen dollars. Link in bio, ashvara dot store. What wakes you up fastest when",
+        "product": {
+          "handle": "double-head-jade-facial-roller-57419",
+          "title": "Double Head Jade Face Roller",
+          "url": "https://ashvara.store/products/double-head-jade-facial-roller-57419",
+          "price": "$12.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "tired person waking up in bed",
+            "queries": [
+              {
+                "q": "tired person waking up",
+                "must": [
+                  "tired",
+                  "waking",
+                  "bed"
+                ]
+              },
+              {
+                "q": "sleepy person stretching",
+                "must": [
+                  "sleepy",
+                  "morning"
+                ]
+              },
+              {
+                "q": "yawning woman bedroom",
+                "must": [
+                  "bedroom"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "stainless steel ice roller",
+            "queries": [
+              {
+                "q": "ice roller for face",
+                "must": [
+                  "roller"
+                ]
+              },
+              {
+                "q": "facial roller tool",
+                "must": [
+                  "facial"
+                ]
+              },
+              {
+                "q": "cold roller skincare",
+                "must": [
+                  "skincare"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "cold roller inside freezer refrigerator",
+            "queries": [
+              {
+                "q": "ice roller in freezer",
+                "must": [
+                  "freezer"
+                ]
+              },
+              {
+                "q": "refrigerator shelf open",
+                "must": [
+                  "refrigerator"
+                ]
+              },
+              {
+                "q": "freezer drawer ice",
+                "must": [
+                  "ice"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "cold roller gliding on face jawline",
+            "queries": [
+              {
+                "q": "face roller massage",
+                "must": [
+                  "face"
+                ]
+              },
+              {
+                "q": "woman rolling face",
+                "must": [
+                  "massage"
+                ]
+              },
+              {
+                "q": "jawline ice roller",
+                "must": [
+                  "jawline"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "steaming morning coffee cup",
+            "queries": [
+              {
+                "q": "morning coffee cup",
+                "must": [
+                  "coffee"
+                ]
+              },
+              {
+                "q": "hot coffee steam",
+                "must": [
+                  "steam"
+                ]
+              },
+              {
+                "q": "coffee mug table",
+                "must": [
+                  "cup"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "smartphone displaying online store website",
+            "queries": [
+              {
+                "q": "smartphone online shopping",
+                "must": [
+                  "smartphone"
+                ]
+              },
+              {
+                "q": "person browsing phone",
+                "must": [
+                  "phone"
+                ]
+              },
+              {
+                "q": "mobile screen website",
+                "must": [
+                  "screen"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "morning routine",
+          "wellness",
+          "selfcare"
+        ],
+        "visual_style": "Cinematic vertical stock footage featuring refreshing morning wellness routines and cold therapy tools in bright, aesthetic environments.",
+        "visual_refs": [
+          "Our 5-Minute Morning Lymphatic Flow | What We Do Before Every Workout #20minuteworkout",
+          "\u26a1\ufe0fPRACTICE THIS EVERY MORNING - Tony Robbins",
+          "Most Powerful Positive Affirmations | Powerful Morning Meditation for Positive Energy | Gratitude",
+          "Day 5  The 5 Minute Morning Reset",
+          "963Hz 528Hz Healing 432Hz Frequency | Calm Your Mind &amp; Reset Your Nervous System",
+          "How to Reboot Your Brain in 60 Seconds!  Dr. Mandell"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-19",
+        "name": "2026-10-19-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-19",
+        "name": "2026-10-19-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,087 --> 00:00:02,785\nWaking up sluggish is honestly the absolute\n\n2\n00:00:02,785 --> 00:00:04,938\nworst start to your day This stainless\n\n3\n00:00:04,938 --> 00:00:07,537\nsteel cold roller offers the easiest five\n\n4\n00:00:07,537 --> 00:00:09,864\nminute morning reset Keep it inside the\n\n5\n00:00:09,864 --> 00:00:12,277\nfreezer overnight so it is ready by\n\n6\n00:00:12,277 --> 00:00:15,347\nsunrise The smooth steel barrel glides over\n\n7\n00:00:15,347 --> 00:00:18,181\ncheeks and jawline with zero friction It\n\n8\n00:00:18,181 --> 00:00:20,446\ndelivers an instant crisp chill right before\n\n9\n00:00:20,446 --> 00:00:23,045\nyour morning coffee Get yours for eighteen\n\n10\n00:00:23,045 --> 00:00:26,634\ndollars Link in bio ashvara dot store\n\n11\n00:00:26,634 --> 00:00:28,766\nWhat wakes you up fastest when\n",
+      "tg_msg": 199,
+      "opts_msg": 201
     }
   },
   "history": [
@@ -5172,7 +5492,8 @@
     "Stop Guessing Your Pet's Dinner Portions",
     "Sunday Reset Just Got Way Easier",
     "Upgrade Your Daily Skincare Routine",
-    "Keep Your Dog Busy For Hours"
+    "Keep Your Dog Busy For Hours",
+    "Your 5-Minute Morning Reset Secret"
   ],
   "trend_tries": {
     "2026-10-17": {
@@ -5188,7 +5509,7 @@
       "at": "2026-10-19T20:00:20.342487+00:00"
     }
   },
-  "cleanup_day": "2026-10-19",
+  "cleanup_day": "2026-10-20",
   "signals_day": "2026-10-19",
   "photo_posts": {
     "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620": "2026-10-13T21:05:44.818972+00:00",
@@ -5199,14 +5520,14 @@
   },
   "photo_angle": 5,
   "visual_searches": {
-    "2026-10-18": 2
+    "2026-10-19": 1
   },
   "recent_voices": [
-    "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
-    "en-AU-WilliamMultilingualNeural"
+    "en-AU-WilliamMultilingualNeural",
+    "en-US-AvaMultilingualNeural"
   ],
   "presenter_candidates": [
     {
