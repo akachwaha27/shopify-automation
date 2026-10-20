@@ -1320,7 +1320,7 @@
  },
  "2026-10-19-1": {
   "angle": "When you wake up feeling sluggish and need an easy cooling refresh before your morning coffee.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
@@ -1347,12 +1347,29 @@
    "The roller is designed to be chilled in a standard home freezer"
   ],
   "pinned_comment": "Are you reaching for cold water or an extra shot of espresso on sluggish mornings? Tell us below! ☕",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": null,
+    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ANlXicfmyAuHFln9UOymfW-'}}"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "skipped (not configured)"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "morning reset routine",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-20T16:15:00+00:00",
   "script": "Waking up sluggish is honestly the absolute worst start to your day. This stainless steel cold roller offers the easiest five minute morning reset. Keep it inside the freezer overnight so it is ready by sunrise. The smooth steel barrel glides over cheeks and jawline with zero friction. It delivers an instant crisp chill right before your morning coffee. Get yours for eighteen dollars. Link in bio, ashvara dot store. What wakes you up fastest when",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,087 --> 00:00:02,785\nWaking up sluggish is honestly the absolute\n\n2\n00:00:02,785 --> 00:00:04,938\nworst start to your day This stainless\n\n3\n00:00:04,938 --> 00:00:07,537\nsteel cold roller offers the easiest five\n\n4\n00:00:07,537 --> 00:00:09,864\nminute morning reset Keep it inside the\n\n5\n00:00:09,864 --> 00:00:12,277\nfreezer overnight so it is ready by\n\n6\n00:00:12,277 --> 00:00:15,347\nsunrise The smooth steel barrel glides over\n\n7\n00:00:15,347 --> 00:00:18,181\ncheeks and jawline with zero friction It\n\n8\n00:00:18,181 --> 00:00:20,446\ndelivers an instant crisp chill right before\n\n9\n00:00:20,446 --> 00:00:23,045\nyour morning coffee Get yours for eighteen\n\n10\n00:00:23,045 --> 00:00:26,634\ndollars Link in bio ashvara dot store\n\n11\n00:00:26,634 --> 00:00:28,766\nWhat wakes you up fastest when\n",
   "tags": [
    "morning reset routine",
@@ -1382,8 +1399,8 @@
   "thumbnail_text": "5-Minute Reset",
   "title": "Morning reset routine secret for sluggish days ❄️",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-19T23:52:59.827482+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-20T04:39:56.423740+00:00",
+  "uploaded_at": "2026-10-20T04:39:56.423755+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
  }

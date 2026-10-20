@@ -5171,9 +5171,9 @@
         "trend_source": "Ashvara store catalog",
         "product": "double-head-jade-facial-roller-57419"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "auto",
-      "updated": "2026-10-19T23:52:59.827482+00:00",
+      "updated": "2026-10-20T04:39:56.423740+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "morning reset routine",
@@ -5477,7 +5477,29 @@
       },
       "srt": "1\n00:00:00,087 --> 00:00:02,785\nWaking up sluggish is honestly the absolute\n\n2\n00:00:02,785 --> 00:00:04,938\nworst start to your day This stainless\n\n3\n00:00:04,938 --> 00:00:07,537\nsteel cold roller offers the easiest five\n\n4\n00:00:07,537 --> 00:00:09,864\nminute morning reset Keep it inside the\n\n5\n00:00:09,864 --> 00:00:12,277\nfreezer overnight so it is ready by\n\n6\n00:00:12,277 --> 00:00:15,347\nsunrise The smooth steel barrel glides over\n\n7\n00:00:15,347 --> 00:00:18,181\ncheeks and jawline with zero friction It\n\n8\n00:00:18,181 --> 00:00:20,446\ndelivers an instant crisp chill right before\n\n9\n00:00:20,446 --> 00:00:23,045\nyour morning coffee Get yours for eighteen\n\n10\n00:00:23,045 --> 00:00:26,634\ndollars Link in bio ashvara dot store\n\n11\n00:00:26,634 --> 00:00:28,766\nWhat wakes you up fastest when\n",
       "tg_msg": 199,
-      "opts_msg": 201
+      "opts_msg": 201,
+      "approved_by": "auto",
+      "description_full": "Try this easy morning reset routine to instantly refresh before your morning coffee.\nDiscover how a simple cooling tool provides a crisp wake-up boost every morning.\nShop it: https://ashvara.store/products/double-head-jade-facial-roller-57419\n\n#shorts #morningroutine #coldroller #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          null,
+          "skipped (not configured)"
+        ],
+        "Facebook": [
+          null,
+          "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ANlXicfmyAuHFln9UOymfW-'}}"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-20T04:39:56.423755+00:00",
+      "slot": "2026-10-20T16:15:00+00:00"
     }
   },
   "history": [
