@@ -1,69 +1,6 @@
 {
   "tg_offset": 272239691,
   "batches": {
-    "2026-10-16": {
-      "topics": [
-        {
-          "title": "Adjustable Posture Support Strap",
-          "angle": "Product demo with a relatable hook",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "adjustable-brace-support-belt-back-posture-corrector-30592"
-        },
-        {
-          "title": "Electric Blackhead Vacuum Remover",
-          "angle": "Product demo with a relatable hook",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "electric-small-bubble-blackhead-remover-65778"
-        },
-        {
-          "title": "Facial Spa Kit",
-          "angle": "Product demo with a relatable hook",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "facial-spa-kit"
-        },
-        {
-          "title": "Rechargeable Pet Nail Clipper",
-          "angle": "Product demo with a relatable hook",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
-        },
-        {
-          "title": "Home Gym Kit",
-          "angle": "Product demo with a relatable hook",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "home-gym-kit"
-        },
-        {
-          "title": "Interactive Pet Treat Ball Food Dispenser",
-          "angle": "Product demo with a relatable hook",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "interactive-pet-food-dispenser-toy-99709"
-        }
-      ],
-      "sent_at": "2026-10-16T15:28:26.888650+00:00",
-      "selected": [
-        0
-      ],
-      "status": "closed"
-    },
     "2026-10-16-2": {
       "topics": [
         {
@@ -441,6 +378,67 @@
         0
       ],
       "status": "closed"
+    },
+    "2026-10-20": {
+      "topics": [
+        {
+          "title": "Say Goodbye to Clogged Pores",
+          "angle": "Tired of everyday cleansers missing all that stubborn nose buildup?",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "electric-small-bubble-blackhead-remover-65778"
+        },
+        {
+          "title": "Skip the Commute, Keep the Gains",
+          "angle": "Get a full workout at home without dealing with crowded gym rush hours.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "home-gym-kit"
+        },
+        {
+          "title": "Trimming Pet Nails Without the Drama",
+          "angle": "End the wrestling match every time your pet sees regular clippers come out.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
+        },
+        {
+          "title": "Make Any Bike Seat Actually Comfortable",
+          "angle": "Don't let a rock-hard saddle ruin your weekend ride or morning commute.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
+        },
+        {
+          "title": "Better Grip, Zero Rough Calluses",
+          "angle": "Stop sweaty hands and rough metal bars from slipping during your last rep.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
+        },
+        {
+          "title": "The Ultimate Cozy Cloud for Pets",
+          "angle": "Give your furry best friend a spot so plush they'll finally abandon your spot on the couch.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "super-soft-pet-bed-82146"
+        }
+      ],
+      "sent_at": "2026-10-20T18:33:14.426528+00:00",
+      "selected": [],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -5518,10 +5516,6 @@
     "Your 5-Minute Morning Reset Secret"
   ],
   "trend_tries": {
-    "2026-10-17": {
-      "n": 2,
-      "at": "2026-10-17T17:17:51.932797+00:00"
-    },
     "2026-10-18": {
       "n": 2,
       "at": "2026-10-18T17:26:20.035590+00:00"
@@ -5529,6 +5523,10 @@
     "2026-10-19": {
       "n": 1,
       "at": "2026-10-19T20:00:20.342487+00:00"
+    },
+    "2026-10-20": {
+      "n": 1,
+      "at": "2026-10-20T18:32:23.060330+00:00"
     }
   },
   "cleanup_day": "2026-10-20",

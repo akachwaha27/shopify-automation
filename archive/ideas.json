@@ -998,5 +998,78 @@
   ],
   "sent_at": "2026-10-19T20:01:24.121201+00:00",
   "status": "closed"
+ },
+ "2026-10-20": {
+  "date": "2026-10-20",
+  "ideas": [
+   {
+    "angle": "Tired of everyday cleansers missing all that stubborn nose buildup?",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Say Goodbye to Clogged Pores",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Get a full workout at home without dealing with crowded gym rush hours.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Skip the Commute, Keep the Gains",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "End the wrestling match every time your pet sees regular clippers come out.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Trimming Pet Nails Without the Drama",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Don't let a rock-hard saddle ruin your weekend ride or morning commute.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Make Any Bike Seat Actually Comfortable",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Stop sweaty hands and rough metal bars from slipping during your last rep.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Better Grip, Zero Rough Calluses",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Give your furry best friend a spot so plush they'll finally abandon your spot on the couch.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "The Ultimate Cozy Cloud for Pets",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-20T18:33:14.426528+00:00",
+  "status": "waiting"
  }
 }
