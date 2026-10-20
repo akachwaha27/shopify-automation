@@ -1403,5 +1403,91 @@
   "uploaded_at": "2026-10-20T04:39:56.423755+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
+ },
+ "2026-10-20-1": {
+  "angle": "Tired of everyday cleansers missing all that stubborn nose buildup?",
+  "approved_by": "you",
+  "category": "26",
+  "credits": [
+   "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+  ],
+  "date": "2026-10-20",
+  "description": "Discover an easy clogged pore cleanser tool to lift stubborn buildup without squeezing.\nExplore gentle ultrasonic skincare tools and daily routine essentials at Ashvara.\nShop it: https://ashvara.store/products/electric-small-bubble-blackhead-remover-65778\n\n#shorts #skincare #porecleanser #ashvara\n\n— Credits & disclosure —\nOriginal script written with AI assistance, checked by an automated safety review and approved by the channel owner.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+  "file": {
+   "name": "2026-10-20-1-v0.mp4",
+   "tag": "videos-2026-10-20",
+   "type": "release"
+  },
+  "format": "product",
+  "hashtags": [
+   "#shorts",
+   "#skincare",
+   "#porecleanser",
+   "#ashvara"
+  ],
+  "hook_text": "Stubborn Nose Buildup?",
+  "id": "2026-10-20-1",
+  "idea_title": "Say Goodbye to Clogged Pores",
+  "key_facts": [
+   "Ultrasonic skin spatulas utilize rapid vibrations to turn standing water on the skin into a fine mist.",
+   "The micro-mist helps loosen surface oils and everyday residue from pores without fingernail pinching."
+  ],
+  "pinned_comment": "Do you prefer gentle vibrating tools or traditional cleansing balms for cleaning around your nose? Tell us below!",
+  "platforms": {
+   "Facebook": {
+    "link": null,
+    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A5G3k4KRiiBKxKwqikTmeE7'}}"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "skipped (not configured)"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
+  "primary_keyword": "clogged pore cleanser",
+  "redos": 0,
+  "scheduled_for": "2026-10-20T23:15:00+00:00",
+  "script": "Everyday face wash always seems to leave stubborn nose buildup behind. This sleek ultrasonic spatula glides effortlessly over warm, damp skin. The curved stainless steel head vibrates gentle mist that lifts out grime. It is cordless, lightweight, and rinses completely clean under the tap. You get a smooth finish without squeezing or irritating your nose. Grab yours for twenty-four dollars. Link in bio at ashvara.store. Which skincare step do you never skip, especially when...",
+  "status": "published",
+  "subtitles_srt": "1\n00:00:00,088 --> 00:00:02,487\nEveryday face wash always seems to leave\n\n2\n00:00:02,487 --> 00:00:05,812\nstubborn nose buildup behind This sleek ultrasonic\n\n3\n00:00:05,812 --> 00:00:09,088\nspatula glides effortlessly over warm damp\n\n4\n00:00:09,088 --> 00:00:12,400\nskin The curved stainless steel head vibrates\n\n5\n00:00:12,400 --> 00:00:14,787\ngentle mist that lifts out grime It\n\n6\n00:00:14,787 --> 00:00:17,863\nis cordless lightweight and rinses completely\n\n7\n00:00:17,863 --> 00:00:19,700\nclean under the tap You get a\n\n8\n00:00:19,700 --> 00:00:22,438\nsmooth finish without squeezing or irritating\n\n9\n00:00:22,438 --> 00:00:25,925\nyour nose Grab yours for twenty-four dollars\n\n10\n00:00:25,925 --> 00:00:27,575\nLink in bio at ashvara .\n\n11\n00:00:27,575 --> 00:00:30,038\nstore Which skincare step do you never\n\n12\n00:00:30,038 --> 00:00:31,875\nskip especially when\n",
+  "tags": [
+   "clogged pore cleanser",
+   "nose pore cleaning tool",
+   "clogged pore extraction tool",
+   "ultrasonic skin scrubber nose",
+   "cleaning clogged pores on nose",
+   "ultrasonic skin spatula blackhead",
+   "nose pore cleaning",
+   "clogged pores on nose",
+   "clogged pore cleaning",
+   "skin scrubber spatula",
+   "ultrasonic skin spatula",
+   "cleaning out clogged pores",
+   "skin scrubber face spatula",
+   "removing clogged pores on nose",
+   "pore scrubber",
+   "blocked pores on nose",
+   "congested pores on nose",
+   "how to clean pores with tool"
+  ],
+  "thumb": {
+   "name": "2026-10-20-1-v0-thumb.jpg",
+   "tag": "videos-2026-10-20",
+   "type": "release"
+  },
+  "thumbnail_text": "Clear Your Pores",
+  "title": "Clogged pore cleanser trick for stubborn nose buildup",
+  "trend_source": "Ashvara store catalog",
+  "updated": "2026-10-20T22:18:38.464226+00:00",
+  "uploaded_at": "2026-10-20T22:18:38.464242+00:00",
+  "virality_score": 7,
+  "voice": "en-US-AvaMultilingualNeural"
  }
 }

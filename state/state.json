@@ -1,5 +1,5 @@
 {
-  "tg_offset": 272239691,
+  "tg_offset": 272239696,
   "batches": {
     "2026-10-16-2": {
       "topics": [
@@ -437,8 +437,10 @@
         }
       ],
       "sent_at": "2026-10-20T18:33:14.426528+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     }
   },
   "videos": {
@@ -5498,6 +5500,344 @@
       },
       "uploaded_at": "2026-10-20T04:39:56.423755+00:00",
       "slot": "2026-10-20T16:15:00+00:00"
+    },
+    "2026-10-20-1": {
+      "topic": {
+        "title": "Say Goodbye to Clogged Pores",
+        "angle": "Tired of everyday cleansers missing all that stubborn nose buildup?",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "electric-small-bubble-blackhead-remover-65778"
+      },
+      "status": "published",
+      "by": "auto",
+      "updated": "2026-10-20T22:18:38.464226+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "clogged pore cleanser",
+        "title": "Clogged pore cleanser trick for stubborn nose buildup",
+        "hook_text": "Stubborn Nose Buildup?",
+        "thumbnail_text": "Clear Your Pores",
+        "description": "Discover an easy clogged pore cleanser tool to lift stubborn buildup without squeezing.\nExplore gentle ultrasonic skincare tools and daily routine essentials at Ashvara.\nShop it: https://ashvara.store/products/electric-small-bubble-blackhead-remover-65778",
+        "hashtags": [
+          "#shorts",
+          "#skincare",
+          "#porecleanser",
+          "#ashvara"
+        ],
+        "tags": [
+          "clogged pore cleanser",
+          "nose pore cleaning tool",
+          "clogged pore extraction tool",
+          "ultrasonic skin scrubber nose",
+          "cleaning clogged pores on nose",
+          "ultrasonic skin spatula blackhead",
+          "nose pore cleaning",
+          "clogged pores on nose",
+          "clogged pore cleaning",
+          "skin scrubber spatula",
+          "ultrasonic skin spatula",
+          "cleaning out clogged pores",
+          "skin scrubber face spatula",
+          "removing clogged pores on nose",
+          "pore scrubber",
+          "blocked pores on nose",
+          "congested pores on nose",
+          "how to clean pores with tool"
+        ],
+        "pinned_comment": "Do you prefer gentle vibrating tools or traditional cleansing balms for cleaning around your nose? Tell us below!",
+        "scenes": [
+          {
+            "text": "Everyday face wash always seems to leave stubborn nose buildup behind.",
+            "badge": "",
+            "label": "Tough Nose Buildup",
+            "stock_queries": [
+              "washing face sink",
+              "facial foam water"
+            ],
+            "image_prompt": "Macro close-up shot of water droplets and gentle foam splashing on clean skin, neutral spa bathroom background, soft natural lighting, vertical 9:16 composition, photorealistic, no text.",
+            "stock_query": "washing face sink",
+            "product_image": "work/2026-10-20-1/product/product_0.jpg"
+          },
+          {
+            "text": "This sleek ultrasonic spatula glides effortlessly over warm, damp skin.",
+            "badge": "",
+            "label": "Ultrasonic Cleansing",
+            "stock_queries": [
+              "facial skin spatula",
+              "skincare device face"
+            ],
+            "image_prompt": "A sleek modern white and chrome ultrasonic skin scrubber held at an angle against glowing damp skin, minimalist luxury bathroom setting, soft morning light, vertical 9:16, high detail.",
+            "stock_query": "facial skin spatula"
+          },
+          {
+            "text": "The curved stainless steel head vibrates gentle mist that lifts out grime.",
+            "badge": "",
+            "label": "Stainless Steel Tip",
+            "stock_queries": [
+              "water mist vibration",
+              "facial mist spray"
+            ],
+            "image_prompt": "Macro shot of a polished curved stainless steel spatula vibrating tiny micro-droplets of water into a delicate mist, clean studio backdrop, vertical 9:16, crisp lighting.",
+            "stock_query": "water mist vibration",
+            "product_image": "work/2026-10-20-1/product/product_1.jpg"
+          },
+          {
+            "text": "It is cordless, lightweight, and rinses completely clean under the tap.",
+            "badge": "",
+            "label": "Water Resistant Wand",
+            "stock_queries": [
+              "running water tap",
+              "cleaning facial device"
+            ],
+            "image_prompt": "A modern cordless skincare device being rinsed under a clear stream of clean running water from a chrome bathroom faucet, vertical 9:16, photorealistic.",
+            "stock_query": "running water tap"
+          },
+          {
+            "text": "You get a smooth finish without squeezing or irritating your nose.",
+            "badge": "",
+            "label": "Gentle On Skin",
+            "stock_queries": [
+              "smooth skin cheek",
+              "face skincare towel"
+            ],
+            "image_prompt": "Close-up of radiant, clean nose and cheek skin with soft dewy texture, neutral aesthetic background, vertical 9:16, hyper-realistic, soft focus.",
+            "stock_query": "smooth skin cheek",
+            "product_image": "work/2026-10-20-1/product/product_2.jpg"
+          },
+          {
+            "text": "Grab yours for twenty-four dollars. Link in bio at ashvara.store. Which skincare step do you never skip, especially when...",
+            "badge": "",
+            "label": "$24.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "skincare bottles counter",
+              "modern bathroom shelf"
+            ],
+            "image_prompt": "A chic ultrasonic pore scrubber resting neatly on a marble bathroom vanity beside a small ceramic tray and rolled white towel, bright elegant aesthetic, vertical 9:16.",
+            "stock_query": "skincare bottles counter",
+            "product_image": "work/2026-10-20-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "Ultrasonic skin spatulas utilize rapid vibrations to turn standing water on the skin into a fine mist.",
+          "The micro-mist helps loosen surface oils and everyday residue from pores without fingernail pinching."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Everyday face wash always seems to leave stubborn nose buildup behind. This sleek ultrasonic spatula glides effortlessly over warm, damp skin. The curved stainless steel head vibrates gentle mist that lifts out grime. It is cordless, lightweight, and rinses completely clean under the tap. You get a smooth finish without squeezing or irritating your nose. Grab yours for twenty-four dollars. Link in bio at ashvara.store. Which skincare step do you never skip, especially when...",
+        "product": {
+          "handle": "electric-small-bubble-blackhead-remover-65778",
+          "title": "Electric Blackhead Vacuum Remover",
+          "url": "https://ashvara.store/products/electric-small-bubble-blackhead-remover-65778",
+          "price": "$24.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "person washing face with cleanser in bathroom mirror",
+            "queries": [
+              {
+                "q": "face wash",
+                "must": [
+                  "wash"
+                ]
+              },
+              {
+                "q": "skin cleanser",
+                "must": [
+                  "cleanser"
+                ]
+              },
+              {
+                "q": "bathroom mirror",
+                "must": [
+                  "mirror"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "ultrasonic skin spatula gliding on cheek",
+            "queries": [
+              {
+                "q": "ultrasonic spatula",
+                "must": [
+                  "spatula"
+                ]
+              },
+              {
+                "q": "skin scrubber",
+                "must": [
+                  "scrubber"
+                ]
+              },
+              {
+                "q": "facial tool",
+                "must": [
+                  "tool"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "stainless steel spatula head releasing water mist",
+            "queries": [
+              {
+                "q": "steel spatula",
+                "must": [
+                  "steel"
+                ]
+              },
+              {
+                "q": "water mist",
+                "must": [
+                  "mist"
+                ]
+              },
+              {
+                "q": "metal tip",
+                "must": [
+                  "tip"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "water rinsing electronic cleansing wand under faucet",
+            "queries": [
+              {
+                "q": "water faucet",
+                "must": [
+                  "faucet"
+                ]
+              },
+              {
+                "q": "rinsing device",
+                "must": [
+                  "rinsing"
+                ]
+              },
+              {
+                "q": "bathroom sink",
+                "must": [
+                  "sink"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "smooth glowing nose after skincare routine",
+            "queries": [
+              {
+                "q": "smooth skin",
+                "must": [
+                  "skin"
+                ]
+              },
+              {
+                "q": "glowing face",
+                "must": [
+                  "face"
+                ]
+              },
+              {
+                "q": "clean nose",
+                "must": [
+                  "nose"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person holding skincare device packaging in vanity setting",
+            "queries": [
+              {
+                "q": "skincare product",
+                "must": [
+                  "product"
+                ]
+              },
+              {
+                "q": "beauty device",
+                "must": [
+                  "device"
+                ]
+              },
+              {
+                "q": "vanity table",
+                "must": [
+                  "table"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "skincare",
+          "face",
+          "cleansing"
+        ],
+        "visual_style": "Close-up aesthetic skincare routines showing ultrasonic pore cleansing on warm damp skin with bright natural lighting.",
+        "visual_refs": [
+          "Say goodbye to enlarged, clogged pores and blackheads \ud83d\ude2e\u200d\ud83d\udca8\ud83d\udd25 #medicubeporemask #medicubemask",
+          "Say Goodbye to Clogged Pores with Turmeric Detox \u2728 #skincaretips #shorts",
+          "Say goodbye to clogged pores and hello to smooth skin! \ud83d\udc85 #dermatologist #skincare #skincareroutine",
+          "Say goodbye to the look of clogged pores \ud83d\udc40 The LABENA blackhead and whitehead pore strips are an",
+          "Say goodbye to clogged pores and blackheads in minutes! \ud83e\udee3",
+          "Say Goodbye to Clogged Pores! \u2728"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-20",
+        "name": "2026-10-20-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-20",
+        "name": "2026-10-20-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,088 --> 00:00:02,487\nEveryday face wash always seems to leave\n\n2\n00:00:02,487 --> 00:00:05,812\nstubborn nose buildup behind This sleek ultrasonic\n\n3\n00:00:05,812 --> 00:00:09,088\nspatula glides effortlessly over warm damp\n\n4\n00:00:09,088 --> 00:00:12,400\nskin The curved stainless steel head vibrates\n\n5\n00:00:12,400 --> 00:00:14,787\ngentle mist that lifts out grime It\n\n6\n00:00:14,787 --> 00:00:17,863\nis cordless lightweight and rinses completely\n\n7\n00:00:17,863 --> 00:00:19,700\nclean under the tap You get a\n\n8\n00:00:19,700 --> 00:00:22,438\nsmooth finish without squeezing or irritating\n\n9\n00:00:22,438 --> 00:00:25,925\nyour nose Grab yours for twenty-four dollars\n\n10\n00:00:25,925 --> 00:00:27,575\nLink in bio at ashvara .\n\n11\n00:00:27,575 --> 00:00:30,038\nstore Which skincare step do you never\n\n12\n00:00:30,038 --> 00:00:31,875\nskip especially when\n",
+      "tg_msg": 207,
+      "opts_msg": 209,
+      "approved_by": "you",
+      "publish_now": false,
+      "description_full": "Discover an easy clogged pore cleanser tool to lift stubborn buildup without squeezing.\nExplore gentle ultrasonic skincare tools and daily routine essentials at Ashvara.\nShop it: https://ashvara.store/products/electric-small-bubble-blackhead-remover-65778\n\n#shorts #skincare #porecleanser #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review and approved by the channel owner.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          null,
+          "skipped (not configured)"
+        ],
+        "Facebook": [
+          null,
+          "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'A5G3k4KRiiBKxKwqikTmeE7'}}"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-20T22:18:38.464242+00:00",
+      "slot": "2026-10-20T23:15:00+00:00"
     }
   },
   "history": [
@@ -5513,7 +5853,8 @@
     "Sunday Reset Just Got Way Easier",
     "Upgrade Your Daily Skincare Routine",
     "Keep Your Dog Busy For Hours",
-    "Your 5-Minute Morning Reset Secret"
+    "Your 5-Minute Morning Reset Secret",
+    "Say Goodbye to Clogged Pores"
   ],
   "trend_tries": {
     "2026-10-18": {
@@ -5540,13 +5881,13 @@
   },
   "photo_angle": 5,
   "visual_searches": {
-    "2026-10-19": 1
+    "2026-10-20": 1
   },
   "recent_voices": [
-    "en-AU-WilliamMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
+    "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural"
   ],
   "presenter_candidates": [

@@ -1005,11 +1005,11 @@
    {
     "angle": "Tired of everyday cleansers missing all that stubborn nose buildup?",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Say Goodbye to Clogged Pores",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-20-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1070,6 +1070,6 @@
    }
   ],
   "sent_at": "2026-10-20T18:33:14.426528+00:00",
-  "status": "waiting"
+  "status": "closed"
  }
 }
