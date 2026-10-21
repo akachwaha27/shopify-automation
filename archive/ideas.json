@@ -1151,11 +1151,11 @@
    {
     "angle": "Stop letting a stiff bike seat ruin your weekend rides.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Upgrade Your Bike Ride Instantly",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-21-2-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1216,6 +1216,6 @@
    }
   ],
   "sent_at": "2026-10-21T18:45:30.973585+00:00",
-  "status": "waiting"
+  "status": "closed"
  }
 }

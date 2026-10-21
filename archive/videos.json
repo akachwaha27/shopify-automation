@@ -1492,7 +1492,7 @@
  },
  "2026-10-21-1": {
   "angle": "Make nail day stress-free for both you and your furry best friend.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
@@ -1520,12 +1520,29 @@
    "The product is priced at twenty-four dollars and is available at ashvara.store."
   ],
   "pinned_comment": "Does your pup freeze up the second you touch their paws, or are they totally chill about it?",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": null,
+    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AytqkBCjdGRKif_aybEO0mt'}}"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "skipped (not configured)"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "stress free dog nails",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-21T23:15:00+00:00",
   "script": "This is the easiest way to trim claws without the usual drama. Okay, so this is the Ashvara nail grinder, and honestly, it changes everything. It uses a diamond drum wheel instead of clippers, which stops accidental pinches. Measuring about fifteen centimeters long, it fits right in your hand comfortably. You just turn it on, pick a speed, and gently guide the nail. Grab yours for twenty four dollars at ashvara dot store.",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,050 --> 00:00:01,857\nThis is the easiest way to trim\n\n2\n00:00:01,857 --> 00:00:05,186\nclaws without the usual drama Okay so\n\n3\n00:00:05,186 --> 00:00:07,468\nthis is the Ashvara nail grinder and\n\n4\n00:00:07,468 --> 00:00:10,566\nhonestly it changes everything It uses a\n\n5\n00:00:10,566 --> 00:00:13,161\ndiamond drum wheel instead of clippers which\n\n6\n00:00:13,161 --> 00:00:16,531\nstops accidental pinches Measuring about fifteen\n\n7\n00:00:16,531 --> 00:00:18,963\ncentimeters long it fits right in your\n\n8\n00:00:18,963 --> 00:00:21,830\nhand comfortably You just turn it on\n\n9\n00:00:21,830 --> 00:00:23,814\npick a speed and gently guide the\n\n10\n00:00:23,814 --> 00:00:26,477\nnail Grab yours for twenty four dollars\n\n11\n00:00:26,477 --> 00:00:28,303\nat ashvara dot store\n",
   "tags": [
    "stress free dog nails",
@@ -1556,9 +1573,83 @@
   "thumbnail_text": "Easy Dog Nails",
   "title": "Stress-Free Dog Nails at Home",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-21T19:42:06.771719+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-21T22:54:55.692465+00:00",
+  "uploaded_at": "2026-10-21T22:54:55.692474+00:00",
   "virality_score": 7,
   "voice": "en-AU-WilliamMultilingualNeural"
+ },
+ "2026-10-21-2-1": {
+  "angle": "Stop letting a stiff bike seat ruin your weekend rides.",
+  "approved_by": "",
+  "category": "26",
+  "credits": [
+   "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).",
+   "Fructibus / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:Small_gray_drawstring_textile_bag_-_9_x_11_cm_-_B.jpg",
+   "Fructibus / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:Small_gray_drawstring_textile_bag_-_9_x_11_cm_-_A.jpg"
+  ],
+  "date": "2026-10-21",
+  "description": "Upgrade any stiff saddle with this comfortable bike seat cushion for smooth weekend rides.\nLearn how an ergonomic saddle cover adds memory foam padding and breathable airflow to your bicycle.\nShop it: https://ashvara.store/products/mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455\n\n#shorts #cycling #bikeseatcushion #ashvara\n\n— Credits & disclosure —\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nFructibus / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:Small_gray_drawstring_textile_bag_-_9_x_11_cm_-_B.jpg\nFructibus / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:Small_gray_drawstring_textile_bag_-_9_x_11_cm_-_A.jpg\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+  "file": {
+   "name": "2026-10-21-2-1-v0.mp4",
+   "tag": "videos-2026-10-21",
+   "type": "release"
+  },
+  "format": "product",
+  "hashtags": [
+   "#shorts",
+   "#cycling",
+   "#bikeseatcushion",
+   "#ashvara"
+  ],
+  "hook_text": "Upgrade Stiff Bike Seats",
+  "id": "2026-10-21-2-1",
+  "idea_title": "Upgrade Your Bike Ride Instantly",
+  "key_facts": [
+   "Memory foam bike seat covers slip over existing bicycle saddles.",
+   "Anti-slip silicone textures on the base prevent saddle covers from shifting.",
+   "A central relief channel on a bike saddle provides airflow."
+  ],
+  "pinned_comment": "What is your typical weekend cycling distance: a quick five-mile cruise or a twenty-mile trek? 🚴",
+  "platforms": {},
+  "primary_keyword": "bike seat cushion",
+  "redos": 0,
+  "scheduled_for": "",
+  "script": "A stiff bike seat can ruin a weekend ride within minutes. This dense memory foam cushion slips directly over your existing saddle. The underside features textured silicone grips so it never slips around. Just cinch the rear drawstring tight for an instant snug fit. Its deep center channel promotes airflow to keep your ride cool. Get yours for twenty-four dollars at ashvara dot store, link in bio. How far do you usually ride before...",
+  "status": "awaiting_approval",
+  "subtitles_srt": "1\n00:00:00,082 --> 00:00:01,848\nA stiff bike seat can ruin a\n\n2\n00:00:01,848 --> 00:00:05,312\nweekend ride within minutes This dense memory\n\n3\n00:00:05,312 --> 00:00:08,043\nfoam cushion slips directly over your existing\n\n4\n00:00:08,043 --> 00:00:11,386\nsaddle The underside features textured silicone\n\n5\n00:00:11,386 --> 00:00:14,592\ngrips so it never slips around Just\n\n6\n00:00:14,592 --> 00:00:16,821\ncinch the rear drawstring tight for an\n\n7\n00:00:16,821 --> 00:00:19,674\ninstant snug fit Its deep center channel\n\n8\n00:00:19,674 --> 00:00:22,459\npromotes airflow to keep your ride cool\n\n9\n00:00:22,459 --> 00:00:24,837\nGet yours for twenty-four dollars at ashvara\n\n10\n00:00:24,837 --> 00:00:27,690\ndot store link in bio How far\n\n11\n00:00:27,690 --> 00:00:29,612\ndo you usually ride before\n",
+  "tags": [
+   "bike seat cushion",
+   "gel bike seat cover",
+   "bike gel seat cushion",
+   "bike cushion seat cover",
+   "comfortable bike seat cover",
+   "bike seat cover for long ride",
+   "bike seat cushion for long rides",
+   "gel bike seat",
+   "bike seat cover",
+   "bike saddle cover",
+   "bike seat gel pad",
+   "bicycle seat cover",
+   "best bike seat cushion",
+   "comfortable bike seats",
+   "bike seat extra cushion",
+   "bike seat comfort cushion",
+   "padded bike seat",
+   "bike gear essentials",
+   "commuter bike upgrade",
+   "cycling accessories"
+  ],
+  "thumb": {
+   "name": "2026-10-21-2-1-v0-thumb.jpg",
+   "tag": "videos-2026-10-21",
+   "type": "release"
+  },
+  "thumbnail_text": "Softer Bike Rides",
+  "title": "Bike Seat Cushion Upgrade for Comfier Rides",
+  "trend_source": "Ashvara store catalog",
+  "updated": "2026-10-21T22:54:48.356421+00:00",
+  "uploaded_at": "",
+  "virality_score": 7,
+  "voice": "en-US-AvaMultilingualNeural"
  }
 }

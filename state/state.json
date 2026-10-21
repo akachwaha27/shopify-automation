@@ -437,8 +437,10 @@
         }
       ],
       "sent_at": "2026-10-21T18:45:30.973585+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     }
   },
   "videos": {
@@ -5847,9 +5849,9 @@
         "trend_source": "Ashvara store catalog",
         "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "auto",
-      "updated": "2026-10-21T19:42:06.771719+00:00",
+      "updated": "2026-10-21T22:54:55.692465+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "stress free dog nails",
@@ -6152,7 +6154,349 @@
       },
       "srt": "1\n00:00:00,050 --> 00:00:01,857\nThis is the easiest way to trim\n\n2\n00:00:01,857 --> 00:00:05,186\nclaws without the usual drama Okay so\n\n3\n00:00:05,186 --> 00:00:07,468\nthis is the Ashvara nail grinder and\n\n4\n00:00:07,468 --> 00:00:10,566\nhonestly it changes everything It uses a\n\n5\n00:00:10,566 --> 00:00:13,161\ndiamond drum wheel instead of clippers which\n\n6\n00:00:13,161 --> 00:00:16,531\nstops accidental pinches Measuring about fifteen\n\n7\n00:00:16,531 --> 00:00:18,963\ncentimeters long it fits right in your\n\n8\n00:00:18,963 --> 00:00:21,830\nhand comfortably You just turn it on\n\n9\n00:00:21,830 --> 00:00:23,814\npick a speed and gently guide the\n\n10\n00:00:23,814 --> 00:00:26,477\nnail Grab yours for twenty four dollars\n\n11\n00:00:26,477 --> 00:00:28,303\nat ashvara dot store\n",
       "tg_msg": 218,
-      "opts_msg": 220
+      "opts_msg": 220,
+      "approved_by": "auto",
+      "description_full": "Trim your dog's claws at home without the stress using a gentle grooming tool from Ashvara. Say goodbye to drama on nail day and hello to calm paws.\nShop it: https://ashvara.store/products/rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216\n\n#shorts #dogcare #doggygrooming #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          null,
+          "skipped (not configured)"
+        ],
+        "Facebook": [
+          null,
+          "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AytqkBCjdGRKif_aybEO0mt'}}"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-21T22:54:55.692474+00:00",
+      "slot": "2026-10-21T23:15:00+00:00"
+    },
+    "2026-10-21-2-1": {
+      "topic": {
+        "title": "Upgrade Your Bike Ride Instantly",
+        "angle": "Stop letting a stiff bike seat ruin your weekend rides.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-21T22:54:48.356421+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "bike seat cushion",
+        "title": "Bike Seat Cushion Upgrade for Comfier Rides",
+        "hook_text": "Upgrade Stiff Bike Seats",
+        "thumbnail_text": "Softer Bike Rides",
+        "description": "Upgrade any stiff saddle with this comfortable bike seat cushion for smooth weekend rides.\nLearn how an ergonomic saddle cover adds memory foam padding and breathable airflow to your bicycle.\nShop it: https://ashvara.store/products/mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455",
+        "hashtags": [
+          "#shorts",
+          "#cycling",
+          "#bikeseatcushion",
+          "#ashvara"
+        ],
+        "tags": [
+          "bike seat cushion",
+          "gel bike seat cover",
+          "bike gel seat cushion",
+          "bike cushion seat cover",
+          "comfortable bike seat cover",
+          "bike seat cover for long ride",
+          "bike seat cushion for long rides",
+          "gel bike seat",
+          "bike seat cover",
+          "bike saddle cover",
+          "bike seat gel pad",
+          "bicycle seat cover",
+          "best bike seat cushion",
+          "comfortable bike seats",
+          "bike seat extra cushion",
+          "bike seat comfort cushion",
+          "padded bike seat",
+          "bike gear essentials",
+          "commuter bike upgrade",
+          "cycling accessories"
+        ],
+        "pinned_comment": "What is your typical weekend cycling distance: a quick five-mile cruise or a twenty-mile trek? \ud83d\udeb4",
+        "scenes": [
+          {
+            "text": "A stiff bike seat can ruin a weekend ride within minutes.",
+            "badge": "",
+            "label": "Stiff bike seat",
+            "stock_queries": [
+              "bicycle saddle closeup",
+              "cyclist riding road"
+            ],
+            "image_prompt": "Vertical 9:16 macro photograph of a hard, narrow black leather road bike saddle outdoors in bright morning sunlight, sleek and minimalist.",
+            "stock_query": "bicycle saddle closeup",
+            "product_image": "work/2026-10-21-2-1/product/product_0.jpg"
+          },
+          {
+            "text": "This dense memory foam cushion slips directly over your existing saddle.",
+            "badge": "",
+            "label": "Dense memory foam",
+            "stock_queries": [
+              "bike seat cushion",
+              "bicycle gel cover"
+            ],
+            "image_prompt": "Vertical 9:16 close-up of a premium ergonomic bicycle seat cushion cover made of padded memory foam, studio lighting, clean background.",
+            "stock_query": "bike seat cushion"
+          },
+          {
+            "text": "The underside features textured silicone grips so it never slips around.",
+            "badge": "",
+            "label": "Anti-slip grip base",
+            "stock_queries": [
+              "silicone texture",
+              "rubber grip pattern"
+            ],
+            "image_prompt": "Vertical 9:16 detailed macro shot showing the underside of a bike cover with hexagonal anti-slip silicone grip dots.",
+            "stock_query": "silicone texture",
+            "product_image": "work/2026-10-21-2-1/product/product_1.jpg"
+          },
+          {
+            "text": "Just cinch the rear drawstring tight for an instant snug fit.",
+            "badge": "",
+            "label": "Snug drawstring lock",
+            "stock_queries": [
+              "tightening drawstring",
+              "bicycle accessories"
+            ],
+            "image_prompt": "Vertical 9:16 shot of hands tightening a durable black drawstring toggle on the back of a cushioned bicycle saddle cover.",
+            "stock_query": "tightening drawstring"
+          },
+          {
+            "text": "Its deep center channel promotes airflow to keep your ride cool.",
+            "badge": "",
+            "label": "Cooling airflow groove",
+            "stock_queries": [
+              "cycling gear trail",
+              "bicycle outdoors park"
+            ],
+            "image_prompt": "Vertical 9:16 angled view of an ergonomic bike seat cover showing the recessed ventilation relief groove running down the middle.",
+            "stock_query": "cycling gear trail",
+            "product_image": "work/2026-10-21-2-1/product/product_2.jpg"
+          },
+          {
+            "text": "Get yours for twenty-four dollars at ashvara dot store, link in bio. How far do you usually ride before...",
+            "badge": "",
+            "label": "$14.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "bicycle parked park",
+              "cycling path green"
+            ],
+            "image_prompt": "Vertical 9:16 shot of a stylish commuter bicycle parked along a sunny paved park path, peaceful atmosphere, no people.",
+            "stock_query": "bicycle parked park",
+            "product_image": "work/2026-10-21-2-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "Memory foam bike seat covers slip over existing bicycle saddles.",
+          "Anti-slip silicone textures on the base prevent saddle covers from shifting.",
+          "A central relief channel on a bike saddle provides airflow."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "A stiff bike seat can ruin a weekend ride within minutes. This dense memory foam cushion slips directly over your existing saddle. The underside features textured silicone grips so it never slips around. Just cinch the rear drawstring tight for an instant snug fit. Its deep center channel promotes airflow to keep your ride cool. Get yours for twenty-four dollars at ashvara dot store, link in bio. How far do you usually ride before...",
+        "product": {
+          "handle": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455",
+          "title": "3D Gel Bike Seat Cushion Cover",
+          "url": "https://ashvara.store/products/mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455",
+          "price": "$14.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "bicycle saddle",
+            "queries": [
+              {
+                "q": "bicycle saddle",
+                "must": [
+                  "saddle"
+                ]
+              },
+              {
+                "q": "bike seat",
+                "must": [
+                  "seat"
+                ]
+              },
+              {
+                "q": "bicycle part",
+                "must": [
+                  "bicycle"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "memory foam cushion",
+            "queries": [
+              {
+                "q": "memory foam cushion",
+                "must": [
+                  "foam"
+                ]
+              },
+              {
+                "q": "foam pad",
+                "must": [
+                  "pad"
+                ]
+              },
+              {
+                "q": "cushion texture",
+                "must": [
+                  "cushion"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "silicone grips",
+            "queries": [
+              {
+                "q": "silicone grip",
+                "must": [
+                  "silicone"
+                ]
+              },
+              {
+                "q": "rubber texture",
+                "must": [
+                  "rubber"
+                ]
+              },
+              {
+                "q": "non slip",
+                "must": [
+                  "grip"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "drawstring",
+            "queries": [
+              {
+                "q": "drawstring bag",
+                "must": [
+                  "drawstring"
+                ]
+              },
+              {
+                "q": "cord lock",
+                "must": [
+                  "cord"
+                ]
+              },
+              {
+                "q": "tightening strap",
+                "must": [
+                  "strap"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "airflow groove",
+            "queries": [
+              {
+                "q": "ventilation channel",
+                "must": [
+                  "ventilation"
+                ]
+              },
+              {
+                "q": "air flow",
+                "must": [
+                  "airflow"
+                ]
+              },
+              {
+                "q": "mesh fabric",
+                "must": [
+                  "mesh"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "bicycle riding",
+            "queries": [
+              {
+                "q": "cyclist riding",
+                "must": [
+                  "cyclist"
+                ]
+              },
+              {
+                "q": "bicycle ride",
+                "must": [
+                  "bicycle"
+                ]
+              },
+              {
+                "q": "cycling road",
+                "must": [
+                  "cycling"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "bicycle wheel",
+          "mountain bike",
+          "cycling"
+        ],
+        "visual_style": "Clean, close-up product demonstrations of bicycle upgrade accessories in a workshop or garage setting.",
+        "visual_refs": [
+          "4 Easy Upgrades That Will Improve Your Bike For Rough, Fast Terrain",
+          "The BEST MTB Upgrades You Can Make! #mtb #mountainbiking #mountainbike #cycling",
+          "3 Ways to Make Your Bike Faster.",
+          "3 Essential Bike Upgrades! #mtb #bikeupgrades",
+          "Super Cheap Bike Upgrade!",
+          "Top 3 upgrades for $30!"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 7,
+          "checked": 7,
+          "unchecked": 0,
+          "filler": 1
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).",
+        "Fructibus / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:Small_gray_drawstring_textile_bag_-_9_x_11_cm_-_B.jpg",
+        "Fructibus / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:Small_gray_drawstring_textile_bag_-_9_x_11_cm_-_A.jpg"
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-21",
+        "name": "2026-10-21-2-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-21",
+        "name": "2026-10-21-2-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,082 --> 00:00:01,848\nA stiff bike seat can ruin a\n\n2\n00:00:01,848 --> 00:00:05,312\nweekend ride within minutes This dense memory\n\n3\n00:00:05,312 --> 00:00:08,043\nfoam cushion slips directly over your existing\n\n4\n00:00:08,043 --> 00:00:11,386\nsaddle The underside features textured silicone\n\n5\n00:00:11,386 --> 00:00:14,592\ngrips so it never slips around Just\n\n6\n00:00:14,592 --> 00:00:16,821\ncinch the rear drawstring tight for an\n\n7\n00:00:16,821 --> 00:00:19,674\ninstant snug fit Its deep center channel\n\n8\n00:00:19,674 --> 00:00:22,459\npromotes airflow to keep your ride cool\n\n9\n00:00:22,459 --> 00:00:24,837\nGet yours for twenty-four dollars at ashvara\n\n10\n00:00:24,837 --> 00:00:27,690\ndot store link in bio How far\n\n11\n00:00:27,690 --> 00:00:29,612\ndo you usually ride before\n",
+      "tg_msg": 223,
+      "opts_msg": 225
     }
   },
   "history": [
@@ -6170,7 +6514,8 @@
     "Keep Your Dog Busy For Hours",
     "Your 5-Minute Morning Reset Secret",
     "Say Goodbye to Clogged Pores",
-    "Painless Paws, Zero Drama"
+    "Painless Paws, Zero Drama",
+    "Upgrade Your Bike Ride Instantly"
   ],
   "trend_tries": {
     "2026-10-19": {
@@ -6197,14 +6542,14 @@
   },
   "photo_angle": 5,
   "visual_searches": {
-    "2026-10-21": 1
+    "2026-10-21": 2
   },
   "recent_voices": [
-    "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
-    "en-AU-WilliamMultilingualNeural"
+    "en-AU-WilliamMultilingualNeural",
+    "en-US-AvaMultilingualNeural"
   ],
   "presenter_candidates": [
     {
