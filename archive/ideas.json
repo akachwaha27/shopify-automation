@@ -1144,5 +1144,78 @@
   ],
   "sent_at": "2026-10-21T15:40:42.098469+00:00",
   "status": "waiting"
+ },
+ "2026-10-21-2": {
+  "date": "2026-10-21-2",
+  "ideas": [
+   {
+    "angle": "Stop letting a stiff bike seat ruin your weekend rides.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Upgrade Your Bike Ride Instantly",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Skip the crowded gym membership and work out in your living room.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Your Entire Gym At Home",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Say goodbye to stressful nail clipping sessions with your anxious pet.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Painless Paw Grooming Made Easy",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Protect your palms from painful calluses during your heavy lifting sessions.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Lift Heavier With Zero Slips",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Watch your furry friend fall instantly in love with their new favorite nap spot.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "The Ultimate Cozy Pet Bed",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Get a full-body tone-up anywhere without needing bulky weights.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Endless Workouts, One Compact Kit",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-21T18:45:30.973585+00:00",
+  "status": "waiting"
  }
 }

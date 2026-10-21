@@ -1,69 +1,6 @@
 {
   "tg_offset": 272239696,
   "batches": {
-    "2026-10-17": {
-      "topics": [
-        {
-          "title": "Stop Guessing Your Pet's Dinner Portions",
-          "angle": "Ever wonder if you are scooping way too much food into your pet's bowl every night?",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "800g-1g-pet-food-scale-cup-for-dog-cat-feeding-bowl-kitchen-scale-spoon-measuring-scoop-cup-portable-with-led-display-79241"
-        },
-        {
-          "title": "The 2-Minute Morning Reset Secret",
-          "angle": "When you wake up feeling sluggish and need a quick, refreshing cool-down before work.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "double-head-jade-facial-roller-57419"
-        },
-        {
-          "title": "Your Entire Gym In One Bag",
-          "angle": "Skip the crowded gym commute and get a complete, quick workout right in your living room.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "home-gym-kit"
-        },
-        {
-          "title": "Upgrade Your Nightly Face Wash Routine",
-          "angle": "Washing your face with just your hands leaves behind makeup you didn't even know was there.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "skin-cleaner-5-in-1-new"
-        },
-        {
-          "title": "Say Goodbye To Slippery Gym Hands",
-          "angle": "Nothing ruins a good workout faster than sweaty palms losing grip on heavy barbells.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
-        },
-        {
-          "title": "Keep Bored Pets Entertained For Hours",
-          "angle": "The easiest way to keep your energetic pet busy and happy while you are trying to work.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "interactive-pet-food-dispenser-toy-99709"
-        }
-      ],
-      "sent_at": "2026-10-17T16:33:26.197208+00:00",
-      "selected": [
-        0
-      ],
-      "status": "closed"
-    },
     "2026-10-17-2": {
       "topics": [
         {
@@ -437,6 +374,67 @@
         }
       ],
       "sent_at": "2026-10-21T15:40:42.098469+00:00",
+      "selected": [],
+      "status": "waiting"
+    },
+    "2026-10-21-2": {
+      "topics": [
+        {
+          "title": "Upgrade Your Bike Ride Instantly",
+          "angle": "Stop letting a stiff bike seat ruin your weekend rides.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
+        },
+        {
+          "title": "Your Entire Gym At Home",
+          "angle": "Skip the crowded gym membership and work out in your living room.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "home-gym-kit"
+        },
+        {
+          "title": "Painless Paw Grooming Made Easy",
+          "angle": "Say goodbye to stressful nail clipping sessions with your anxious pet.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
+        },
+        {
+          "title": "Lift Heavier With Zero Slips",
+          "angle": "Protect your palms from painful calluses during your heavy lifting sessions.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
+        },
+        {
+          "title": "The Ultimate Cozy Pet Bed",
+          "angle": "Watch your furry friend fall instantly in love with their new favorite nap spot.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "super-soft-pet-bed-82146"
+        },
+        {
+          "title": "Endless Workouts, One Compact Kit",
+          "angle": "Get a full-body tone-up anywhere without needing bulky weights.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
+        }
+      ],
+      "sent_at": "2026-10-21T18:45:30.973585+00:00",
       "selected": [],
       "status": "waiting"
     }
@@ -5864,8 +5862,8 @@
       "at": "2026-10-20T18:32:23.060330+00:00"
     },
     "2026-10-21": {
-      "n": 1,
-      "at": "2026-10-21T15:39:46.499244+00:00"
+      "n": 2,
+      "at": "2026-10-21T18:45:12.815393+00:00"
     }
   },
   "cleanup_day": "2026-10-21",
