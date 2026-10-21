@@ -1078,11 +1078,11 @@
    {
     "angle": "Make nail day stress-free for both you and your furry best friend.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Painless Paws, Zero Drama",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-21-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1143,7 +1143,7 @@
    }
   ],
   "sent_at": "2026-10-21T15:40:42.098469+00:00",
-  "status": "waiting"
+  "status": "closed"
  },
  "2026-10-21-2": {
   "date": "2026-10-21-2",

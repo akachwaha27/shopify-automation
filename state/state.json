@@ -374,8 +374,10 @@
         }
       ],
       "sent_at": "2026-10-21T15:40:42.098469+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     },
     "2026-10-21-2": {
       "topics": [
@@ -5834,6 +5836,323 @@
       },
       "uploaded_at": "2026-10-20T22:18:38.464242+00:00",
       "slot": "2026-10-20T23:15:00+00:00"
+    },
+    "2026-10-21-1": {
+      "topic": {
+        "title": "Painless Paws, Zero Drama",
+        "angle": "Make nail day stress-free for both you and your furry best friend.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-21T19:42:06.771719+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "stress free dog nails",
+        "title": "Stress-Free Dog Nails at Home",
+        "hook_text": "Hate trimming dog claws?",
+        "thumbnail_text": "Easy Dog Nails",
+        "description": "Trim your dog's claws at home without the stress using a gentle grooming tool from Ashvara. Say goodbye to drama on nail day and hello to calm paws.\nShop it: https://ashvara.store/products/rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216",
+        "hashtags": [
+          "#shorts",
+          "#dogcare",
+          "#doggygrooming",
+          "#ashvara"
+        ],
+        "tags": [
+          "stress free dog nails",
+          "dog nail trimming at home",
+          "calm dog grooming",
+          "dog nail cutting at home",
+          "how to trim my dog's nails",
+          "how to trim thick dog nails",
+          "how to calm dog for nail cutting",
+          "gentle dog nail file",
+          "best way to file dog's nails",
+          "clipping anxious dog nails",
+          "cutting nervous dogs nails",
+          "how to cut a nervous dogs nails",
+          "dog claw care",
+          "dog nail tips",
+          "at home dog care",
+          "painless paw care",
+          "easy pet grooming",
+          "best way to cut your dog's nails",
+          "ashvara store"
+        ],
+        "pinned_comment": "Does your pup freeze up the second you touch their paws, or are they totally chill about it?",
+        "scenes": [
+          {
+            "text": "This is the easiest way to trim claws without the usual drama.",
+            "badge": "",
+            "label": "Zero drama paws",
+            "stock_queries": [
+              "dog paw close up",
+              "dog sitting calm"
+            ],
+            "image_prompt": "Vertical 9:16, close up of a calm dog paw resting gently on a soft blanket, neutral background, photorealistic, no text.",
+            "stock_query": "dog paw close up",
+            "product_image": "work/2026-10-21-1/product/product_0.jpg"
+          },
+          {
+            "text": "Okay, so this is the Ashvara nail grinder, and honestly, it changes everything.",
+            "badge": "",
+            "label": "Quiet motor",
+            "stock_queries": [
+              "electric pet grinder",
+              "holding nail clipper"
+            ],
+            "image_prompt": "Vertical 9:16, a sleek ergonomic pet nail grinder resting on a clean wooden table, minimalist style, bright lighting, no text.",
+            "stock_query": "electric pet grinder"
+          },
+          {
+            "text": "It uses a diamond drum wheel instead of clippers, which stops accidental pinches.",
+            "badge": "",
+            "label": "Diamond drum wheel",
+            "stock_queries": [
+              "dog nail file",
+              "pet grooming tool"
+            ],
+            "image_prompt": "Vertical 9:16, close up shot of a rotating pet nail grooming head with fine abrasive texture, professional product photography, no text.",
+            "stock_query": "dog nail file",
+            "product_image": "work/2026-10-21-1/product/product_1.jpg"
+          },
+          {
+            "text": "Measuring about fifteen centimeters long, it fits right in your hand comfortably.",
+            "badge": "",
+            "label": "Compact design",
+            "stock_queries": [
+              "holding small device",
+              "measuring tool hand"
+            ],
+            "image_prompt": "Vertical 9:16, a compact grooming device held in an adult hand against a neutral background, clean lighting, no text.",
+            "stock_query": "holding small device"
+          },
+          {
+            "text": "You just turn it on, pick a speed, and gently guide the nail.",
+            "badge": "",
+            "label": "Easy two speeds",
+            "stock_queries": [
+              "grooming dog paw",
+              "pet nail care"
+            ],
+            "image_prompt": "Vertical 9:16, a person gently holding a small fluffy dog paw during a grooming session, warm soft lighting, no text.",
+            "stock_query": "grooming dog paw",
+            "product_image": "work/2026-10-21-1/product/product_2.jpg"
+          },
+          {
+            "text": "Grab yours for twenty four dollars at ashvara dot store.",
+            "badge": "",
+            "label": "$27.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "online store mockup",
+              "minimalist shopping"
+            ],
+            "image_prompt": "Vertical 9:16, a sleek modern shopping display setup with soft pastel tones, clean aesthetic, no text or logos.",
+            "stock_query": "online store mockup",
+            "product_image": "work/2026-10-21-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "The Ashvara nail grinder uses a diamond drum wheel.",
+          "The device measures about fifteen centimeters long.",
+          "The product is priced at twenty-four dollars and is available at ashvara.store."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "This is the easiest way to trim claws without the usual drama. Okay, so this is the Ashvara nail grinder, and honestly, it changes everything. It uses a diamond drum wheel instead of clippers, which stops accidental pinches. Measuring about fifteen centimeters long, it fits right in your hand comfortably. You just turn it on, pick a speed, and gently guide the nail. Grab yours for twenty four dollars at ashvara dot store.",
+        "product": {
+          "handle": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216",
+          "title": "Rechargeable Pet Nail Clipper",
+          "url": "https://ashvara.store/products/rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216",
+          "price": "$27.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "calm dog paw being held gently",
+            "queries": [
+              {
+                "q": "dog paw",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "pet grooming paw",
+                "must": [
+                  "paw"
+                ]
+              },
+              {
+                "q": "calm dog",
+                "must": [
+                  "dog"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "electric nail grinder tool held in hand",
+            "queries": [
+              {
+                "q": "nail grinder",
+                "must": [
+                  "grinder"
+                ]
+              },
+              {
+                "q": "pet nail tool",
+                "must": [
+                  "tool"
+                ]
+              },
+              {
+                "q": "grooming device",
+                "must": [
+                  "device"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "close up of rotating drum wheel grinding a nail",
+            "queries": [
+              {
+                "q": "grinding wheel",
+                "must": [
+                  "wheel"
+                ]
+              },
+              {
+                "q": "nail file",
+                "must": [
+                  "file"
+                ]
+              },
+              {
+                "q": "rotating tool",
+                "must": [
+                  "tool"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person holding compact grooming device in hand",
+            "queries": [
+              {
+                "q": "hand holding device",
+                "must": [
+                  "hand"
+                ]
+              },
+              {
+                "q": "compact tool",
+                "must": [
+                  "tool"
+                ]
+              },
+              {
+                "q": "holding gadget",
+                "must": [
+                  "gadget"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "pet owner gently trimming dog nail with electric tool",
+            "queries": [
+              {
+                "q": "dog nail trimming",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "grooming pet nail",
+                "must": [
+                  "nail"
+                ]
+              },
+              {
+                "q": "using grinder",
+                "must": [
+                  "grinder"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "happy dog sitting next to pet grooming products",
+            "queries": [
+              {
+                "q": "happy dog",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "pet product",
+                "must": [
+                  "product"
+                ]
+              },
+              {
+                "q": "cute puppy",
+                "must": [
+                  "puppy"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "dog paw grooming",
+          "pet care tool",
+          "happy dog"
+        ],
+        "visual_style": "Close-up, brightly lit practical demonstrations of pet grooming tools being used gently on calm dogs at home.",
+        "visual_refs": [
+          "Best Nail Grinder for Dog Grooming - Dremel Paw Control",
+          "Got my blood test TAKEN!!! #shorts #drama #ow #foryou",
+          "How to Clip Your Dog\u2019s Nails (STRESS FREE)!",
+          "Best Pet Nail Trimmer - Pet Care",
+          "Dog Nail Grinder with LED Light \u2013 Quiet 2-Speed Electric Trimmer for Small, Medium &amp; Large Dogs",
+          "Painless Ankle Swelling \ud83d\udd25 #anklepain #anklepainrelief"
+        ],
+        "presenter_image": "assets/cast/biscuit.jpg",
+        "presenter_voice": "en-AU-WilliamMultilingualNeural",
+        "presenter_name": "Biscuit",
+        "voice": "en-AU-WilliamMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-21",
+        "name": "2026-10-21-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-21",
+        "name": "2026-10-21-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,050 --> 00:00:01,857\nThis is the easiest way to trim\n\n2\n00:00:01,857 --> 00:00:05,186\nclaws without the usual drama Okay so\n\n3\n00:00:05,186 --> 00:00:07,468\nthis is the Ashvara nail grinder and\n\n4\n00:00:07,468 --> 00:00:10,566\nhonestly it changes everything It uses a\n\n5\n00:00:10,566 --> 00:00:13,161\ndiamond drum wheel instead of clippers which\n\n6\n00:00:13,161 --> 00:00:16,531\nstops accidental pinches Measuring about fifteen\n\n7\n00:00:16,531 --> 00:00:18,963\ncentimeters long it fits right in your\n\n8\n00:00:18,963 --> 00:00:21,830\nhand comfortably You just turn it on\n\n9\n00:00:21,830 --> 00:00:23,814\npick a speed and gently guide the\n\n10\n00:00:23,814 --> 00:00:26,477\nnail Grab yours for twenty four dollars\n\n11\n00:00:26,477 --> 00:00:28,303\nat ashvara dot store\n",
+      "tg_msg": 218,
+      "opts_msg": 220
     }
   },
   "history": [
@@ -5850,7 +6169,8 @@
     "Upgrade Your Daily Skincare Routine",
     "Keep Your Dog Busy For Hours",
     "Your 5-Minute Morning Reset Secret",
-    "Say Goodbye to Clogged Pores"
+    "Say Goodbye to Clogged Pores",
+    "Painless Paws, Zero Drama"
   ],
   "trend_tries": {
     "2026-10-19": {
@@ -5877,14 +6197,14 @@
   },
   "photo_angle": 5,
   "visual_searches": {
-    "2026-10-20": 1
+    "2026-10-21": 1
   },
   "recent_voices": [
     "en-US-AvaMultilingualNeural",
-    "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
     "en-US-AvaMultilingualNeural",
-    "en-US-AvaMultilingualNeural"
+    "en-US-AvaMultilingualNeural",
+    "en-AU-WilliamMultilingualNeural"
   ],
   "presenter_candidates": [
     {
