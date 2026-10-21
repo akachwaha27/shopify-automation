@@ -1071,5 +1071,78 @@
   ],
   "sent_at": "2026-10-20T18:33:14.426528+00:00",
   "status": "closed"
+ },
+ "2026-10-21": {
+  "date": "2026-10-21",
+  "ideas": [
+   {
+    "angle": "Make nail day stress-free for both you and your furry best friend.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Painless Paws, Zero Drama",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Lift heavier and grip tighter without tearing up your hands.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Say Goodbye To Gym Calluses",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Skip the crowded fitness center and crush your workout right in your living room.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Your Entire Gym In A Bag",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Turn any hard bike seat into a plush cloud for your weekend rides.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Ride Longer Without The Soreness",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Watch your pet fall instantly in love with the coziest bed ever.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "The Ultimate Naptime Upgrade",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Pack your entire gym routine into a single compact door bag.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Full Body Workout Anywhere",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-21T15:40:42.098469+00:00",
+  "status": "waiting"
  }
 }
