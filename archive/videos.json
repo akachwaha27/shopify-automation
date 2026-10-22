@@ -1580,7 +1580,7 @@
  },
  "2026-10-21-2-1": {
   "angle": "Stop letting a stiff bike seat ruin your weekend rides.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).",
@@ -1610,12 +1610,29 @@
    "A central relief channel on a bike saddle provides airflow."
   ],
   "pinned_comment": "What is your typical weekend cycling distance: a quick five-mile cruise or a twenty-mile trek? 🚴",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": null,
+    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AmTDyIWvZdGuJbevAjqvXeT'}}"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "skipped (not configured)"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "bike seat cushion",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-22T16:15:00+00:00",
   "script": "A stiff bike seat can ruin a weekend ride within minutes. This dense memory foam cushion slips directly over your existing saddle. The underside features textured silicone grips so it never slips around. Just cinch the rear drawstring tight for an instant snug fit. Its deep center channel promotes airflow to keep your ride cool. Get yours for twenty-four dollars at ashvara dot store, link in bio. How far do you usually ride before...",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,082 --> 00:00:01,848\nA stiff bike seat can ruin a\n\n2\n00:00:01,848 --> 00:00:05,312\nweekend ride within minutes This dense memory\n\n3\n00:00:05,312 --> 00:00:08,043\nfoam cushion slips directly over your existing\n\n4\n00:00:08,043 --> 00:00:11,386\nsaddle The underside features textured silicone\n\n5\n00:00:11,386 --> 00:00:14,592\ngrips so it never slips around Just\n\n6\n00:00:14,592 --> 00:00:16,821\ncinch the rear drawstring tight for an\n\n7\n00:00:16,821 --> 00:00:19,674\ninstant snug fit Its deep center channel\n\n8\n00:00:19,674 --> 00:00:22,459\npromotes airflow to keep your ride cool\n\n9\n00:00:22,459 --> 00:00:24,837\nGet yours for twenty-four dollars at ashvara\n\n10\n00:00:24,837 --> 00:00:27,690\ndot store link in bio How far\n\n11\n00:00:27,690 --> 00:00:29,612\ndo you usually ride before\n",
   "tags": [
    "bike seat cushion",
@@ -1647,8 +1664,8 @@
   "thumbnail_text": "Softer Bike Rides",
   "title": "Bike Seat Cushion Upgrade for Comfier Rides",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-21T22:54:48.356421+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-22T01:27:06.981188+00:00",
+  "uploaded_at": "2026-10-22T01:27:06.981201+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
  }

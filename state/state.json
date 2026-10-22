@@ -6188,9 +6188,9 @@
         "trend_source": "Ashvara store catalog",
         "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "auto",
-      "updated": "2026-10-21T22:54:48.356421+00:00",
+      "updated": "2026-10-22T01:27:06.981188+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "bike seat cushion",
@@ -6496,7 +6496,29 @@
       },
       "srt": "1\n00:00:00,082 --> 00:00:01,848\nA stiff bike seat can ruin a\n\n2\n00:00:01,848 --> 00:00:05,312\nweekend ride within minutes This dense memory\n\n3\n00:00:05,312 --> 00:00:08,043\nfoam cushion slips directly over your existing\n\n4\n00:00:08,043 --> 00:00:11,386\nsaddle The underside features textured silicone\n\n5\n00:00:11,386 --> 00:00:14,592\ngrips so it never slips around Just\n\n6\n00:00:14,592 --> 00:00:16,821\ncinch the rear drawstring tight for an\n\n7\n00:00:16,821 --> 00:00:19,674\ninstant snug fit Its deep center channel\n\n8\n00:00:19,674 --> 00:00:22,459\npromotes airflow to keep your ride cool\n\n9\n00:00:22,459 --> 00:00:24,837\nGet yours for twenty-four dollars at ashvara\n\n10\n00:00:24,837 --> 00:00:27,690\ndot store link in bio How far\n\n11\n00:00:27,690 --> 00:00:29,612\ndo you usually ride before\n",
       "tg_msg": 223,
-      "opts_msg": 225
+      "opts_msg": 225,
+      "approved_by": "auto",
+      "description_full": "Upgrade any stiff saddle with this comfortable bike seat cushion for smooth weekend rides.\nLearn how an ergonomic saddle cover adds memory foam padding and breathable airflow to your bicycle.\nShop it: https://ashvara.store/products/mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455\n\n#shorts #cycling #bikeseatcushion #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nFructibus / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:Small_gray_drawstring_textile_bag_-_9_x_11_cm_-_B.jpg\nFructibus / Wikimedia Commons (CC0) https://commons.wikimedia.org/wiki/File:Small_gray_drawstring_textile_bag_-_9_x_11_cm_-_A.jpg\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          null,
+          "skipped (not configured)"
+        ],
+        "Facebook": [
+          null,
+          "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AmTDyIWvZdGuJbevAjqvXeT'}}"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-22T01:27:06.981201+00:00",
+      "slot": "2026-10-22T16:15:00+00:00"
     }
   },
   "history": [
@@ -6531,7 +6553,7 @@
       "at": "2026-10-21T18:45:12.815393+00:00"
     }
   },
-  "cleanup_day": "2026-10-21",
+  "cleanup_day": "2026-10-22",
   "signals_day": "2026-10-21",
   "photo_posts": {
     "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620": "2026-10-13T21:05:44.818972+00:00",
