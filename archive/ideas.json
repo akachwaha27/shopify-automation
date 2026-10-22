@@ -1290,5 +1290,78 @@
   ],
   "sent_at": "2026-10-22T17:43:31.551730+00:00",
   "status": "waiting"
+ },
+ "2026-10-22-2": {
+  "date": "2026-10-22-2",
+  "ideas": [
+   {
+    "angle": "Why pay a monthly fee when you can get full workouts right in your living room?",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Cancel Your Gym Membership Today!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Get a firmer grip on your weights without hurting your hands.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Say Goodbye to Painful Gym Calluses",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Give your furry friend the ultimate cozy spot to sleep all day.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "The Bed Your Dog Won't Leave",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Easily target every muscle group without bulky, expensive gym equipment.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Full Body Workout in One Bag",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Enjoy road trips with your pup without worrying about hair, mud, or scratches.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Keep Your Car Seats Dog Proof",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Skip the expensive grooming appointments with this easy at-home set.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Groom Your Pet Like a Pro",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-22T18:38:37.662652+00:00",
+  "status": "waiting"
  }
 }

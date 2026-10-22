@@ -1,69 +1,6 @@
 {
   "tg_offset": 272239696,
   "batches": {
-    "2026-10-18": {
-      "topics": [
-        {
-          "title": "Upgrade Your Daily Skincare Routine",
-          "angle": "Tired of dull skin after a long day?",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "skin-cleaner-5-in-1-new"
-        },
-        {
-          "title": "Keep Your Pet Entertained All Day",
-          "angle": "Feeling guilty leaving your furry friend home alone?",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "interactive-pet-food-dispenser-toy-99709"
-        },
-        {
-          "title": "Say Goodbye to Calluses Forever",
-          "angle": "Do your hands hurt every time you lift weights?",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
-        },
-        {
-          "title": "Your Entire Gym in One Bag",
-          "angle": "Too busy to make it to the fitness center?",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "home-gym-kit"
-        },
-        {
-          "title": "Ride Longer Without Any Soreness",
-          "angle": "Does your bike seat feel like a brick?",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
-        },
-        {
-          "title": "Painless Paw Grooming at Home",
-          "angle": "Does your pet run away at the sight of clippers?",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
-        }
-      ],
-      "sent_at": "2026-10-18T15:47:36.562455+00:00",
-      "selected": [
-        0
-      ],
-      "status": "closed"
-    },
     "2026-10-18-2": {
       "topics": [
         {
@@ -437,6 +374,67 @@
         }
       ],
       "sent_at": "2026-10-22T17:43:31.551730+00:00",
+      "selected": [],
+      "status": "waiting"
+    },
+    "2026-10-22-2": {
+      "topics": [
+        {
+          "title": "Cancel Your Gym Membership Today!",
+          "angle": "Why pay a monthly fee when you can get full workouts right in your living room?",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "home-gym-kit"
+        },
+        {
+          "title": "Say Goodbye to Painful Gym Calluses",
+          "angle": "Get a firmer grip on your weights without hurting your hands.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
+        },
+        {
+          "title": "The Bed Your Dog Won't Leave",
+          "angle": "Give your furry friend the ultimate cozy spot to sleep all day.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "super-soft-pet-bed-82146"
+        },
+        {
+          "title": "Full Body Workout in One Bag",
+          "angle": "Easily target every muscle group without bulky, expensive gym equipment.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
+        },
+        {
+          "title": "Keep Your Car Seats Dog Proof",
+          "angle": "Enjoy road trips with your pup without worrying about hair, mud, or scratches.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "travel-dog-car-seat-cover-58970"
+        },
+        {
+          "title": "Groom Your Pet Like a Pro",
+          "angle": "Skip the expensive grooming appointments with this easy at-home set.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-grooming-kit"
+        }
+      ],
+      "sent_at": "2026-10-22T18:38:37.662652+00:00",
       "selected": [],
       "status": "waiting"
     }
@@ -6547,8 +6545,8 @@
       "at": "2026-10-21T18:45:12.815393+00:00"
     },
     "2026-10-22": {
-      "n": 1,
-      "at": "2026-10-22T17:39:37.282005+00:00"
+      "n": 2,
+      "at": "2026-10-22T18:38:12.412354+00:00"
     }
   },
   "cleanup_day": "2026-10-22",
