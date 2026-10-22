@@ -1217,5 +1217,78 @@
   ],
   "sent_at": "2026-10-21T18:45:30.973585+00:00",
   "status": "closed"
+ },
+ "2026-10-22": {
+  "date": "2026-10-22",
+  "ideas": [
+   {
+    "angle": "Protect your hands and get a better grip on every lift.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Say Goodbye To Gym Calluses!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Skip the expensive membership and work out right from your living room.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Your Entire Gym In A Bag",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Give your furry friend the cozy sleep they dream about all day.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "The Ultimate Nap Zone For Pets",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Easily switch up your resistance levels for a custom workout on the fly.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Full Body Workout Anywhere You Go",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Let your dog ride along comfortably without ruining your backseat seats.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Keep Your Car Clean On Trips",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Keep your pet looking fresh and your floors fur-free with zero hassle.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Salon Quality Grooming At Home",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-22T17:43:31.551730+00:00",
+  "status": "waiting"
  }
 }

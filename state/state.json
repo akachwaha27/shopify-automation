@@ -1,69 +1,6 @@
 {
   "tg_offset": 272239696,
   "batches": {
-    "2026-10-17-2": {
-      "topics": [
-        {
-          "title": "Sunday Reset Just Got Way Easier",
-          "angle": "Turn your bathroom counter into a luxury retreat without leaving the house.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "facial-spa-kit"
-        },
-        {
-          "title": "Skip The Gym Commute For Good",
-          "angle": "Stop wasting time driving to the gym when you can get a full workout right at home.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "home-gym-kit"
-        },
-        {
-          "title": "Wash Your Face The Right Way",
-          "angle": "If you are still washing your face with just your hands, your nighttime routine needs an upgrade.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "skin-cleaner-5-in-1-new"
-        },
-        {
-          "title": "Stop Guessing Your Pet's Meal Portions",
-          "angle": "No more eyeballing the kibble and wondering if you gave your pet too much dinner.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "800g-1g-pet-food-scale-cup-for-dog-cat-feeding-bowl-kitchen-scale-spoon-measuring-scoop-cup-portable-with-led-display-79241"
-        },
-        {
-          "title": "Make Any Bike Seat Actually Comfortable",
-          "angle": "Fix that rock-hard bicycle seat in seconds so you can enjoy riding again without soreness.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
-        },
-        {
-          "title": "Keep Your Bored Pup Busy Indoors",
-          "angle": "The easiest way to keep high-energy pets entertained and mentally stimulated while you work.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "interactive-pet-food-dispenser-toy-99709"
-        }
-      ],
-      "sent_at": "2026-10-17T17:18:50.121205+00:00",
-      "selected": [
-        0
-      ],
-      "status": "closed"
-    },
     "2026-10-18": {
       "topics": [
         {
@@ -441,6 +378,67 @@
         0
       ],
       "status": "closed"
+    },
+    "2026-10-22": {
+      "topics": [
+        {
+          "title": "Say Goodbye To Gym Calluses!",
+          "angle": "Protect your hands and get a better grip on every lift.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
+        },
+        {
+          "title": "Your Entire Gym In A Bag",
+          "angle": "Skip the expensive membership and work out right from your living room.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "home-gym-kit"
+        },
+        {
+          "title": "The Ultimate Nap Zone For Pets",
+          "angle": "Give your furry friend the cozy sleep they dream about all day.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "super-soft-pet-bed-82146"
+        },
+        {
+          "title": "Full Body Workout Anywhere You Go",
+          "angle": "Easily switch up your resistance levels for a custom workout on the fly.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
+        },
+        {
+          "title": "Keep Your Car Clean On Trips",
+          "angle": "Let your dog ride along comfortably without ruining your backseat seats.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "travel-dog-car-seat-cover-58970"
+        },
+        {
+          "title": "Salon Quality Grooming At Home",
+          "angle": "Keep your pet looking fresh and your floors fur-free with zero hassle.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-grooming-kit"
+        }
+      ],
+      "sent_at": "2026-10-22T17:43:31.551730+00:00",
+      "selected": [],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -6540,10 +6538,6 @@
     "Upgrade Your Bike Ride Instantly"
   ],
   "trend_tries": {
-    "2026-10-19": {
-      "n": 1,
-      "at": "2026-10-19T20:00:20.342487+00:00"
-    },
     "2026-10-20": {
       "n": 1,
       "at": "2026-10-20T18:32:23.060330+00:00"
@@ -6551,6 +6545,10 @@
     "2026-10-21": {
       "n": 2,
       "at": "2026-10-21T18:45:12.815393+00:00"
+    },
+    "2026-10-22": {
+      "n": 1,
+      "at": "2026-10-22T17:39:37.282005+00:00"
     }
   },
   "cleanup_day": "2026-10-22",
