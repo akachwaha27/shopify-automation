@@ -374,8 +374,10 @@
         }
       ],
       "sent_at": "2026-10-22T17:43:31.551730+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     },
     "2026-10-22-2": {
       "topics": [
@@ -6515,6 +6517,326 @@
       },
       "uploaded_at": "2026-10-22T01:27:06.981201+00:00",
       "slot": "2026-10-22T16:15:00+00:00"
+    },
+    "2026-10-22-1": {
+      "topic": {
+        "title": "Say Goodbye To Gym Calluses!",
+        "angle": "Protect your hands and get a better grip on every lift.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-22T20:57:13.182467+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "gym calluses",
+        "title": "Gym Calluses? Try This Simple Fix! \ud83d\udcaa",
+        "hook_text": "Stop Tearing Your Hands",
+        "thumbnail_text": "No More Calluses",
+        "description": "Say goodbye to gym calluses with these textured silicone grip pads designed to protect your palms on every lift.\nUpgrade your weightlifting grip and keep your hands sweat-free without bulky gloves.\nShop it: https://ashvara.store/products/anti-slip-weightlifting-half-finger-fitness-glove-12531",
+        "hashtags": [
+          "#shorts",
+          "#fitness",
+          "#gymgear",
+          "#ashvara"
+        ],
+        "tags": [
+          "gym calluses",
+          "gym grip pads",
+          "gym hand calluses",
+          "lifting grips",
+          "palm protector",
+          "avoid calluses gym",
+          "weightlifting grips",
+          "calluses lifting weights",
+          "pull up grips",
+          "gym hand protection",
+          "palm guards",
+          "workout gear",
+          "deadlift grip",
+          "barbell grips",
+          "gym accessories"
+        ],
+        "pinned_comment": "Deadlifts, pull-ups, or heavy rows: which exercise is the absolute hardest on your palms? Drop your nemesis lift below! \ud83d\udc47",
+        "scenes": [
+          {
+            "text": "Your gym sessions shouldn't tear up your palms every single week.",
+            "badge": "",
+            "label": "Protect Your Palms",
+            "stock_queries": [
+              "callused hands weights",
+              "weightlifter chalk hands"
+            ],
+            "image_prompt": "Close-up cinematic shot of athlete hands gripping a knurled steel barbell in a moody gym setting, chalk dust visible in the air, dramatic gym lighting, vertical 9:16 orientation, no text, no logos.",
+            "stock_query": "callused hands weights",
+            "product_image": "work/2026-10-22-1/product/product_0.jpg"
+          },
+          {
+            "text": "These compact lifting grips slide right over your fingers in seconds.",
+            "badge": "",
+            "label": "Quick Slip Design",
+            "stock_queries": [
+              "gym grip pads",
+              "lifting strap hands"
+            ],
+            "image_prompt": "Macro shot of sleek black silicone palm grips with finger loops resting neatly on a textured rubber gym floor beside dumbbells, modern fitness gear aesthetic, vertical 9:16 orientation, no text.",
+            "stock_query": "gym grip pads"
+          },
+          {
+            "text": "They're made from durable four-millimeter textured silicone that locks onto barbells.",
+            "badge": "",
+            "label": "Textured Non-Slip Grip",
+            "stock_queries": [
+              "silicone texture macro",
+              "barbell knurling closeup"
+            ],
+            "image_prompt": "Detailed macro close-up of textured honeycomb silicone material tightly gripping a steel barbell knurl, sharp focus on surface friction patterns, vertical 9:16 orientation, no text.",
+            "stock_query": "silicone texture macro",
+            "product_image": "work/2026-10-22-1/product/product_1.jpg"
+          },
+          {
+            "text": "The open design keeps your hands completely cool and sweat-free during heavy sets.",
+            "badge": "",
+            "label": "Breathable Open Palm",
+            "stock_queries": [
+              "pull up bar",
+              "gym training weights"
+            ],
+            "image_prompt": "Vertical angle showing minimalist finger-loop workout grips holding a metal pull-up bar, highlighting the open back of the hand for airflow, bright modern gym background, vertical 9:16 orientation, no text.",
+            "stock_query": "pull up bar"
+          },
+          {
+            "text": "Plus, they rinse clean under tap water and slip easily into any pocket.",
+            "badge": "",
+            "label": "Washable & Compact",
+            "stock_queries": [
+              "washing silicone clean",
+              "gym bag gear"
+            ],
+            "image_prompt": "A pair of clean black silicone workout palm pads being rinsed under clear running tap water, crisp water droplets splashing off the surface, clean lighting, vertical 9:16 orientation, no text.",
+            "stock_query": "washing silicone clean",
+            "product_image": "work/2026-10-22-1/product/product_2.jpg"
+          },
+          {
+            "text": "Grab yours for fourteen ninety-nine. Link in bio, ashvara.store. Which lift usually wrecks your hands the most?",
+            "badge": "",
+            "label": "$12.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "gym locker gear",
+              "barbell floor weights"
+            ],
+            "image_prompt": "Clean product display of black silicone grip pads placed next to an insulated metal shaker bottle inside an open gym locker, soft studio illumination, vertical 9:16 orientation, no text.",
+            "stock_query": "gym locker gear",
+            "product_image": "work/2026-10-22-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "The grips are made of four-millimeter textured silicone.",
+          "The open-back design allows airflow to help keep hands cool and sweat-free.",
+          "The silicone material is washable with tap water."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Your gym sessions shouldn't tear up your palms every single week. These compact lifting grips slide right over your fingers in seconds. They're made from durable four-millimeter textured silicone that locks onto barbells. The open design keeps your hands completely cool and sweat-free during heavy sets. Plus, they rinse clean under tap water and slip easily into any pocket. Grab yours for fourteen ninety-nine. Link in bio, ashvara.store. Which lift usually wrecks your hands the most?",
+        "product": {
+          "handle": "anti-slip-weightlifting-half-finger-fitness-glove-12531",
+          "title": "Anti-Slip Half Finger Gym Gloves",
+          "url": "https://ashvara.store/products/anti-slip-weightlifting-half-finger-fitness-glove-12531",
+          "price": "$12.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "hands with gym calluses holding weight",
+            "queries": [
+              {
+                "q": "callus palm hand",
+                "must": [
+                  "callus",
+                  "palm"
+                ]
+              },
+              {
+                "q": "weightlifting hands",
+                "must": [
+                  "hands"
+                ]
+              },
+              {
+                "q": "barbell workout",
+                "must": [
+                  "barbell"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "lifting grips sliding onto fingers",
+            "queries": [
+              {
+                "q": "grip pad hand",
+                "must": [
+                  "grip",
+                  "hand"
+                ]
+              },
+              {
+                "q": "gym accessory",
+                "must": [
+                  "accessory"
+                ]
+              },
+              {
+                "q": "fitness gear",
+                "must": [
+                  "gear"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "silicone grip pad on barbell",
+            "queries": [
+              {
+                "q": "silicone grip barbell",
+                "must": [
+                  "silicone",
+                  "barbell"
+                ]
+              },
+              {
+                "q": "lifting grip",
+                "must": [
+                  "grip"
+                ]
+              },
+              {
+                "q": "weight bar",
+                "must": [
+                  "bar"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person performing heavy lift with open palm grips",
+            "queries": [
+              {
+                "q": "heavy deadlift hands",
+                "must": [
+                  "deadlift",
+                  "hands"
+                ]
+              },
+              {
+                "q": "pull up bar workout",
+                "must": [
+                  "workout"
+                ]
+              },
+              {
+                "q": "gym exercise",
+                "must": [
+                  "exercise"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "fitness accessory being rinsed under water tap",
+            "queries": [
+              {
+                "q": "washing accessory tap",
+                "must": [
+                  "water",
+                  "tap"
+                ]
+              },
+              {
+                "q": "cleaning silicone pad",
+                "must": [
+                  "cleaning"
+                ]
+              },
+              {
+                "q": "water faucet",
+                "must": [
+                  "faucet"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person doing barbell squat in gym",
+            "queries": [
+              {
+                "q": "barbell squat gym",
+                "must": [
+                  "squat",
+                  "gym"
+                ]
+              },
+              {
+                "q": "weightlifting",
+                "must": [
+                  "weightlifting"
+                ]
+              },
+              {
+                "q": "fitness training",
+                "must": [
+                  "training"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "barbell",
+          "dumbbells",
+          "gym"
+        ],
+        "visual_style": "Clean gym environment with close-up shots of hands holding barbells and workout equipment, maintaining high-contrast lighting and fitness aesthetics.",
+        "visual_refs": [
+          "Painful Hand Calluses From Lifting?",
+          "Say Goodbye To Calluses!",
+          "Say Goodbye to Gym Callus! Introducing Slide Grips Hand Protection Pads!",
+          "Say Goodbye To Calluses!",
+          "Say goodbye to painful calluses and smelly, sweaty gloves!  #Shorts #GymEquipment #Weightlifting",
+          "Ultimate Training Gloves for Men and Women: Say Goodbye to Calluses"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 1
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).",
+        "U.S. Space Force photo by Airman 1st Class Spencer Contreras / Wikimedia Commons (Public domain) https://commons.wikimedia.org/wiki/File:Explosive_Ordnance_Disposal_Memorial_Workout_2023_held_at_Patrick_SFB_(8131949).jpg"
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-22",
+        "name": "2026-10-22-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-22",
+        "name": "2026-10-22-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,073 --> 00:00:01,711\nYour gym sessions shouldn't tear up your\n\n2\n00:00:01,711 --> 00:00:05,158\npalms every single week These compact lifting\n\n3\n00:00:05,158 --> 00:00:07,391\ngrips slide right over your fingers in\n\n4\n00:00:07,391 --> 00:00:10,267\nseconds They're made from durable four-millimeter\n\n5\n00:00:10,267 --> 00:00:13,240\ntextured silicone that locks onto barbells\n\n6\n00:00:13,240 --> 00:00:15,461\nThe open design keeps your hands completely\n\n7\n00:00:15,461 --> 00:00:18,823\ncool and sweat-free during heavy sets Plus\n\n8\n00:00:18,823 --> 00:00:20,777\nthey rinse clean under tap water and\n\n9\n00:00:20,777 --> 00:00:23,701\nslip easily into any pocket Grab yours\n\n10\n00:00:23,701 --> 00:00:27,136\nfor fourteen ninety-nine Link in bio ashvara\n\n11\n00:00:27,136 --> 00:00:27,233\n.\n\n12\n00:00:27,233 --> 00:00:29,830\nstore Which lift usually wrecks your hands\n\n13\n00:00:29,830 --> 00:00:30,813\nthe most\n",
+      "tg_msg": 233,
+      "opts_msg": 235
     }
   },
   "history": [
@@ -6533,7 +6855,8 @@
     "Your 5-Minute Morning Reset Secret",
     "Say Goodbye to Clogged Pores",
     "Painless Paws, Zero Drama",
-    "Upgrade Your Bike Ride Instantly"
+    "Upgrade Your Bike Ride Instantly",
+    "Say Goodbye To Gym Calluses!"
   ],
   "trend_tries": {
     "2026-10-20": {
@@ -6560,13 +6883,13 @@
   },
   "photo_angle": 5,
   "visual_searches": {
-    "2026-10-21": 2
+    "2026-10-22": 1
   },
   "recent_voices": [
-    "en-AU-WilliamMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
+    "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural"
   ],
   "presenter_candidates": [

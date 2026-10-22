@@ -1224,11 +1224,11 @@
    {
     "angle": "Protect your hands and get a better grip on every lift.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Say Goodbye To Gym Calluses!",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-22-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1289,7 +1289,7 @@
    }
   ],
   "sent_at": "2026-10-22T17:43:31.551730+00:00",
-  "status": "waiting"
+  "status": "closed"
  },
  "2026-10-22-2": {
   "date": "2026-10-22-2",
