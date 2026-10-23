@@ -1,69 +1,6 @@
 {
   "tg_offset": 272239696,
   "batches": {
-    "2026-10-18-2": {
-      "topics": [
-        {
-          "title": "Keep Your Dog Busy For Hours",
-          "angle": "When you need to get work done but your pup demands constant attention.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "interactive-pet-food-dispenser-toy-99709"
-        },
-        {
-          "title": "Fix That Uncomfortable Bike Seat Fast",
-          "angle": "That instant regret the morning after your spin class or weekend trail ride.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
-        },
-        {
-          "title": "Upgrade Your Morning Skincare Routine Fast",
-          "angle": "The easiest way to feel refreshed and awake before an early morning meeting.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "double-head-jade-facial-roller-57419"
-        },
-        {
-          "title": "Say Goodbye To Workout Hand Calluses",
-          "angle": "When sweaty palms and rough barbells keep ruining your gym session.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
-        },
-        {
-          "title": "Deep Clean Pores Right At Home",
-          "angle": "That satisfying feeling of lifting off everyday dirt and oil after a long week.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "electric-small-bubble-blackhead-remover-65778"
-        },
-        {
-          "title": "Stress Free Dog Nail Trims Finally",
-          "angle": "Trimming your pup's nails without turning it into a full-blown wrestling match.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
-        }
-      ],
-      "sent_at": "2026-10-18T17:26:30.446139+00:00",
-      "selected": [
-        0
-      ],
-      "status": "closed"
-    },
     "2026-10-19": {
       "topics": [
         {
@@ -441,6 +378,67 @@
         0
       ],
       "status": "closed"
+    },
+    "2026-10-23": {
+      "topics": [
+        {
+          "title": "Turn Your Pet Into A Snuggle Bug",
+          "angle": "When your fur baby refuses to get out of bed in the morning.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "super-soft-pet-bed-82146"
+        },
+        {
+          "title": "Your Entire Gym Fits In This Bag",
+          "angle": "Skip the crowded gym and get a full workout right in your living room.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
+        },
+        {
+          "title": "Keep Your Car Clean On Every Trip",
+          "angle": "Say goodbye to muddy paws and furry car seats forever.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "travel-dog-car-seat-cover-58970"
+        },
+        {
+          "title": "Salon Quality Grooming At Home",
+          "angle": "Tame the fur explosion before it takes over your entire house.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-grooming-kit"
+        },
+        {
+          "title": "Perfect Brows In Ten Seconds Flat",
+          "angle": "Stop wasting time drawing eyebrows when you're already running late.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "natural-4d-eyebrow-tattoo-sticker"
+        },
+        {
+          "title": "Wash Muddy Paws In Seconds",
+          "angle": "Stop muddy paw prints from ruining your freshly cleaned floors.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-paw-cleaner-63144"
+        }
+      ],
+      "sent_at": "2026-10-23T18:48:45.723391+00:00",
+      "selected": [],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -7221,10 +7219,6 @@
     "Cancel Your Gym Membership Today!"
   ],
   "trend_tries": {
-    "2026-10-20": {
-      "n": 1,
-      "at": "2026-10-20T18:32:23.060330+00:00"
-    },
     "2026-10-21": {
       "n": 2,
       "at": "2026-10-21T18:45:12.815393+00:00"
@@ -7232,10 +7226,14 @@
     "2026-10-22": {
       "n": 2,
       "at": "2026-10-22T18:38:12.412354+00:00"
+    },
+    "2026-10-23": {
+      "n": 1,
+      "at": "2026-10-23T18:45:24.420068+00:00"
     }
   },
   "cleanup_day": "2026-10-23",
-  "signals_day": "2026-10-22",
+  "signals_day": "2026-10-23",
   "photo_posts": {
     "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620": "2026-10-13T21:05:44.818972+00:00",
     "adjustable-brace-support-belt-back-posture-corrector-30592": "2026-10-14T01:12:13.335684+00:00",

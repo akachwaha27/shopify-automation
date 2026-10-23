@@ -1363,5 +1363,78 @@
   ],
   "sent_at": "2026-10-22T18:38:37.662652+00:00",
   "status": "closed"
+ },
+ "2026-10-23": {
+  "date": "2026-10-23",
+  "ideas": [
+   {
+    "angle": "When your fur baby refuses to get out of bed in the morning.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Turn Your Pet Into A Snuggle Bug",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Skip the crowded gym and get a full workout right in your living room.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Your Entire Gym Fits In This Bag",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Say goodbye to muddy paws and furry car seats forever.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Keep Your Car Clean On Every Trip",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Tame the fur explosion before it takes over your entire house.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Salon Quality Grooming At Home",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Stop wasting time drawing eyebrows when you're already running late.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Perfect Brows In Ten Seconds Flat",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Stop muddy paw prints from ruining your freshly cleaned floors.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Wash Muddy Paws In Seconds",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-23T18:48:45.723391+00:00",
+  "status": "waiting"
  }
 }
