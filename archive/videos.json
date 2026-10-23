@@ -1756,7 +1756,7 @@
  },
  "2026-10-22-2-1": {
   "angle": "Why pay a monthly fee when you can get full workouts right in your living room?",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
@@ -1782,12 +1782,29 @@
    "Modular resistance bar systems utilize stackable latex resistance bands and door anchors for strength training exercises at home."
   ],
   "pinned_comment": "Squats, chest presses, or rows: which movement would you do first in your living room?",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": null,
+    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'ADV_Mtw1Mn2F9A9oBIPOGG8'}}"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "skipped (not configured)"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "home gym setup",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-23T16:15:00+00:00",
   "script": "Stop paying fifty dollars a month for a gym you rarely visit. This compact resistance bar setup replaces an entire rack of bulky weights. It uses stackable latex bands that snap directly onto steel carabiners. Anchor it behind any standard door to target your back and chest. When you finish, the two-piece steel bar breaks down to fit inside a drawer. Grab yours for thirty-four dollars. Link in bio at ashvara dot store. What exercise would you try first at home?",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,088 --> 00:00:02,150\nStop paying fifty dollars a month for\n\n2\n00:00:02,150 --> 00:00:04,650\na gym you rarely visit This compact\n\n3\n00:00:04,650 --> 00:00:07,650\nresistance bar setup replaces an entire rack\n\n4\n00:00:07,650 --> 00:00:10,425\nof bulky weights It uses stackable latex\n\n5\n00:00:10,425 --> 00:00:13,825\nbands that snap directly onto steel carabiners\n\n6\n00:00:13,825 --> 00:00:16,050\nAnchor it behind any standard door to\n\n7\n00:00:16,050 --> 00:00:18,300\ntarget your back and chest When you\n\n8\n00:00:18,300 --> 00:00:20,750\nfinish the two-piece steel bar breaks down\n\n9\n00:00:20,750 --> 00:00:23,150\nto fit inside a drawer Grab yours\n\n10\n00:00:23,150 --> 00:00:25,750\nfor thirty-four dollars Link in bio at\n\n11\n00:00:25,750 --> 00:00:28,163\nashvara dot store What exercise would you\n\n12\n00:00:28,163 --> 00:00:29,737\ntry first at home\n",
   "tags": [
    "home gym setup",
@@ -1818,8 +1835,8 @@
   "thumbnail_text": "Ditch The Gym",
   "title": "Home Gym Setup That Replaces Your Membership",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-23T00:00:51.097501+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-23T04:37:26.175567+00:00",
+  "uploaded_at": "2026-10-23T04:37:26.175582+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
  }
