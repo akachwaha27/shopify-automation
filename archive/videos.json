@@ -1839,5 +1839,73 @@
   "uploaded_at": "2026-10-23T04:37:26.175582+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
+ },
+ "2026-10-23-1": {
+  "angle": "When your fur baby refuses to get out of bed in the morning.",
+  "approved_by": "",
+  "category": "26",
+  "credits": [
+   "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
+  ],
+  "date": "2026-10-23",
+  "description": "Discover the ultimate cozy pet bed designed for serious morning snoozers.\nUpgrade your pet's sleep space with plush faux fur and easy-wash comfort at Ashvara.\nShop it: https://ashvara.store/products/super-soft-pet-bed-82146\n\n#shorts #petcare #cozypetbed #ashvara\n\n— Credits & disclosure —\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+  "file": {
+   "name": "2026-10-23-1-v0.mp4",
+   "tag": "videos-2026-10-23",
+   "type": "release"
+  },
+  "format": "product",
+  "hashtags": [
+   "#shorts",
+   "#petcare",
+   "#cozypetbed",
+   "#ashvara"
+  ],
+  "hook_text": "Morning Bed Battles?",
+  "id": "2026-10-23-1",
+  "idea_title": "Turn Your Pet Into A Snuggle Bug",
+  "key_facts": [
+   "The pet bed features faux fur fabric and a raised perimeter rim.",
+   "The bed includes a machine-washable removable cover and non-slip bottom."
+  ],
+  "pinned_comment": "Does your fur baby wake you up at sunrise, or do they refuse to get out of bed until noon? Tell us below! 🐶💤",
+  "platforms": {},
+  "primary_keyword": "cozy pet bed",
+  "redos": 0,
+  "scheduled_for": "",
+  "script": "Getting your pet out of bed shouldn't feel like a wrestling match. If they refuse to budge, upgrade them to this deep faux-fur donut lounger. The raised outer rim supports their chin, giving them that secure nest feel. It comes with a non-slip bottom and a fully removable, machine-washable cover. Grab one for thirty-four dollars at the link in bio, ashvara.store. Is your pet a morning sleeper or an early riser?",
+  "status": "awaiting_approval",
+  "subtitles_srt": "1\n00:00:00,050 --> 00:00:01,816\nGetting your pet out of bed shouldn't\n\n2\n00:00:01,816 --> 00:00:04,031\nfeel like a wrestling match If they\n\n3\n00:00:04,031 --> 00:00:06,409\nrefuse to budge upgrade them to this\n\n4\n00:00:06,409 --> 00:00:09,411\ndeep faux-fur donut lounger The raised outer\n\n5\n00:00:09,411 --> 00:00:11,857\nrim supports their chin giving them that\n\n6\n00:00:11,857 --> 00:00:14,194\nsecure nest feel It comes with a\n\n7\n00:00:14,194 --> 00:00:17,604\nnon-slip bottom and a fully removable machine-washable\n\n8\n00:00:17,604 --> 00:00:20,349\ncover Grab one for thirty-four dollars at\n\n9\n00:00:20,349 --> 00:00:22,346\nthe link in bio ashvara .\n\n10\n00:00:22,346 --> 00:00:24,860\nstore Is your pet a morning sleeper\n\n11\n00:00:24,860 --> 00:00:26,483\nor an early riser\n",
+  "tags": [
+   "cozy pet bed",
+   "cozy cat bed",
+   "cozy dog bed",
+   "donut pet bed",
+   "donut cat bed",
+   "donut dog bed",
+   "fluffy cat bed",
+   "cozy cave dog bed",
+   "cozy cocoon pet bed",
+   "plush dog bed",
+   "pet bed review",
+   "pet snuggle bed",
+   "washable pet bed",
+   "calming pet cushion",
+   "puppy bed",
+   "kitten bed",
+   "ashvara pet"
+  ],
+  "thumb": {
+   "name": "2026-10-23-1-v0-thumb.jpg",
+   "tag": "videos-2026-10-23",
+   "type": "release"
+  },
+  "thumbnail_text": "Too Cozy To Wake",
+  "title": "Cozy Pet Bed Mornings Just Got Harder 🐾",
+  "trend_source": "Ashvara store catalog",
+  "updated": "2026-10-23T22:08:23.524656+00:00",
+  "uploaded_at": "",
+  "virality_score": 7,
+  "voice": "en-AU-WilliamMultilingualNeural"
  }
 }

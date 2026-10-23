@@ -1370,11 +1370,11 @@
    {
     "angle": "When your fur baby refuses to get out of bed in the morning.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Turn Your Pet Into A Snuggle Bug",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-23-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1435,6 +1435,6 @@
    }
   ],
   "sent_at": "2026-10-23T18:48:45.723391+00:00",
-  "status": "waiting"
+  "status": "closed"
  }
 }

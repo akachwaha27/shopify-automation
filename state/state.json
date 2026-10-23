@@ -437,8 +437,10 @@
         }
       ],
       "sent_at": "2026-10-23T18:48:45.723391+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     }
   },
   "videos": {
@@ -7196,6 +7198,288 @@
       },
       "uploaded_at": "2026-10-23T04:37:26.175582+00:00",
       "slot": "2026-10-23T16:15:00+00:00"
+    },
+    "2026-10-23-1": {
+      "topic": {
+        "title": "Turn Your Pet Into A Snuggle Bug",
+        "angle": "When your fur baby refuses to get out of bed in the morning.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "super-soft-pet-bed-82146"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-23T22:08:23.524656+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "cozy pet bed",
+        "title": "Cozy Pet Bed Mornings Just Got Harder \ud83d\udc3e",
+        "hook_text": "Morning Bed Battles?",
+        "thumbnail_text": "Too Cozy To Wake",
+        "description": "Discover the ultimate cozy pet bed designed for serious morning snoozers.\nUpgrade your pet's sleep space with plush faux fur and easy-wash comfort at Ashvara.\nShop it: https://ashvara.store/products/super-soft-pet-bed-82146",
+        "hashtags": [
+          "#shorts",
+          "#petcare",
+          "#cozypetbed",
+          "#ashvara"
+        ],
+        "tags": [
+          "cozy pet bed",
+          "cozy cat bed",
+          "cozy dog bed",
+          "donut pet bed",
+          "donut cat bed",
+          "donut dog bed",
+          "fluffy cat bed",
+          "cozy cave dog bed",
+          "cozy cocoon pet bed",
+          "plush dog bed",
+          "pet bed review",
+          "pet snuggle bed",
+          "washable pet bed",
+          "calming pet cushion",
+          "puppy bed",
+          "kitten bed",
+          "ashvara pet"
+        ],
+        "pinned_comment": "Does your fur baby wake you up at sunrise, or do they refuse to get out of bed until noon? Tell us below! \ud83d\udc36\ud83d\udca4",
+        "scenes": [
+          {
+            "text": "Getting your pet out of bed shouldn't feel like a wrestling match.",
+            "badge": "",
+            "label": "Morning Sleepers",
+            "stock_queries": [
+              "sleepy dog bed",
+              "sleeping puppy blanket"
+            ],
+            "image_prompt": "Vertical 9:16 macro shot of a cute golden retriever puppy curled up under a cozy knit blanket refusing to wake up, warm morning sunlight streaming across soft bedroom floor, cinematic soft lighting, hyper-realistic.",
+            "stock_query": "sleepy dog bed",
+            "product_image": "work/2026-10-23-1/product/product_0.jpg"
+          },
+          {
+            "text": "If they refuse to budge, upgrade them to this deep faux-fur donut lounger.",
+            "badge": "",
+            "label": "Ultra Soft Plush",
+            "stock_queries": [
+              "round pet bed",
+              "fluffy dog bed"
+            ],
+            "image_prompt": "Vertical 9:16 close-up of a circular plush faux-fur round pet bed in warm cream tones resting on a hardwood floor, exquisite fluffy texture details, cozy ambient interior.",
+            "stock_query": "round pet bed"
+          },
+          {
+            "text": "The raised outer rim supports their chin, giving them that secure nest feel.",
+            "badge": "",
+            "label": "Raised Bolster Rim",
+            "stock_queries": [
+              "cat resting head",
+              "dog chin cushion"
+            ],
+            "image_prompt": "Vertical 9:16 side angle of a fluffy cat comfortably resting its chin on the raised edge of a deep circular plush pet lounger, soft diffused daylight, peaceful expression.",
+            "stock_query": "cat resting head",
+            "product_image": "work/2026-10-23-1/product/product_1.jpg"
+          },
+          {
+            "text": "It comes with a non-slip bottom and a fully removable, machine-washable cover.",
+            "badge": "",
+            "label": "Machine Washable Cover",
+            "stock_queries": [
+              "zippered cushion cover",
+              "washing laundry dog bed"
+            ],
+            "image_prompt": "Vertical 9:16 detailed shot showing a zippered plush pet bed cover being unzipped to reveal durable non-slip dotted fabric on the underside, clean modern laundry room setting.",
+            "stock_query": "zippered cushion cover"
+          },
+          {
+            "text": "Grab one for thirty-four dollars at the link in bio, ashvara.store. Is your pet a morning sleeper or an early riser?",
+            "badge": "",
+            "label": "From $27.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "happy dog bed",
+              "cozy pet living room"
+            ],
+            "image_prompt": "Vertical 9:16 shot of a contented small terrier curled happily inside a plush round cream donut bed in a bright stylish living room, natural warm daylight.",
+            "stock_query": "happy dog bed",
+            "product_image": "work/2026-10-23-1/product/product_2.jpg"
+          }
+        ],
+        "key_facts": [
+          "The pet bed features faux fur fabric and a raised perimeter rim.",
+          "The bed includes a machine-washable removable cover and non-slip bottom."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Getting your pet out of bed shouldn't feel like a wrestling match. If they refuse to budge, upgrade them to this deep faux-fur donut lounger. The raised outer rim supports their chin, giving them that secure nest feel. It comes with a non-slip bottom and a fully removable, machine-washable cover. Grab one for thirty-four dollars at the link in bio, ashvara.store. Is your pet a morning sleeper or an early riser?",
+        "product": {
+          "handle": "super-soft-pet-bed-82146",
+          "title": "Calming Donut Bed for Dogs & Cats",
+          "url": "https://ashvara.store/products/super-soft-pet-bed-82146",
+          "price": "From $27.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "sleepy cat refusing to get up in bed",
+            "queries": [
+              {
+                "q": "sleepy cat bed",
+                "must": [
+                  "cat",
+                  "bed"
+                ]
+              },
+              {
+                "q": "lazy pet morning",
+                "must": [
+                  "pet"
+                ]
+              },
+              {
+                "q": "cat sleeping",
+                "must": [
+                  "cat"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "fluffy donut pet bed",
+            "queries": [
+              {
+                "q": "fuzzy pet bed",
+                "must": [
+                  "bed"
+                ]
+              },
+              {
+                "q": "plush dog bed",
+                "must": [
+                  "dog",
+                  "bed"
+                ]
+              },
+              {
+                "q": "soft lounger",
+                "must": [
+                  "lounger"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "dog resting chin on raised bolster bed rim",
+            "queries": [
+              {
+                "q": "dog chin rest",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "pet bed bolster",
+                "must": [
+                  "bed"
+                ]
+              },
+              {
+                "q": "dog resting",
+                "must": [
+                  "dog"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "detachable plush pet bed cover being washed",
+            "queries": [
+              {
+                "q": "washing pet bed",
+                "must": [
+                  "bed"
+                ]
+              },
+              {
+                "q": "removable cover",
+                "must": [
+                  "cover"
+                ]
+              },
+              {
+                "q": "clean fabric",
+                "must": [
+                  "fabric"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "cute dog resting comfortably in cozy bed",
+            "queries": [
+              {
+                "q": "cozy dog bed",
+                "must": [
+                  "dog",
+                  "bed"
+                ]
+              },
+              {
+                "q": "sleeping puppy",
+                "must": [
+                  "puppy"
+                ]
+              },
+              {
+                "q": "cute pet",
+                "must": [
+                  "pet"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "dog sleeping",
+          "cat bed",
+          "cute pet"
+        ],
+        "visual_style": "Cozy, warm-toned vertical close-ups of cute cats and dogs sleeping or lounging in soft plush beds.",
+        "visual_refs": [
+          "How to Transform a Sassy Kitten into a Snuggle Bug",
+          "5 Ways To Make Your Cat More Affectionate",
+          "Reversible Dog Snuggle Bug- Camo",
+          "Reversible 3-in-1 Snuggle Bug Bed Carrier Car Seat",
+          "Always make time to Cuddle with your Dog!",
+          "Nothing Feels Better Than This \u2764\ufe0f | Dog Cuddling is the Best"
+        ],
+        "presenter_image": "assets/cast/biscuit.jpg",
+        "presenter_voice": "en-AU-WilliamMultilingualNeural",
+        "presenter_name": "Biscuit",
+        "voice": "en-AU-WilliamMultilingualNeural",
+        "visual_report": {
+          "shots": 5,
+          "checked": 5,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-23",
+        "name": "2026-10-23-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-23",
+        "name": "2026-10-23-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,050 --> 00:00:01,816\nGetting your pet out of bed shouldn't\n\n2\n00:00:01,816 --> 00:00:04,031\nfeel like a wrestling match If they\n\n3\n00:00:04,031 --> 00:00:06,409\nrefuse to budge upgrade them to this\n\n4\n00:00:06,409 --> 00:00:09,411\ndeep faux-fur donut lounger The raised outer\n\n5\n00:00:09,411 --> 00:00:11,857\nrim supports their chin giving them that\n\n6\n00:00:11,857 --> 00:00:14,194\nsecure nest feel It comes with a\n\n7\n00:00:14,194 --> 00:00:17,604\nnon-slip bottom and a fully removable machine-washable\n\n8\n00:00:17,604 --> 00:00:20,349\ncover Grab one for thirty-four dollars at\n\n9\n00:00:20,349 --> 00:00:22,346\nthe link in bio ashvara .\n\n10\n00:00:22,346 --> 00:00:24,860\nstore Is your pet a morning sleeper\n\n11\n00:00:24,860 --> 00:00:26,483\nor an early riser\n",
+      "tg_msg": 247,
+      "opts_msg": 249
     }
   },
   "history": [
@@ -7216,7 +7500,8 @@
     "Painless Paws, Zero Drama",
     "Upgrade Your Bike Ride Instantly",
     "Say Goodbye To Gym Calluses!",
-    "Cancel Your Gym Membership Today!"
+    "Cancel Your Gym Membership Today!",
+    "Turn Your Pet Into A Snuggle Bug"
   ],
   "trend_tries": {
     "2026-10-21": {
@@ -7243,14 +7528,14 @@
   },
   "photo_angle": 5,
   "visual_searches": {
-    "2026-10-22": 2
+    "2026-10-23": 1
   },
   "recent_voices": [
-    "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
-    "en-US-AvaMultilingualNeural"
+    "en-US-AvaMultilingualNeural",
+    "en-AU-WilliamMultilingualNeural"
   ],
   "presenter_candidates": [
     {
