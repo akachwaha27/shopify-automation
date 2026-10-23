@@ -437,8 +437,10 @@
         }
       ],
       "sent_at": "2026-10-22T18:38:37.662652+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     }
   },
   "videos": {
@@ -6528,9 +6530,9 @@
         "trend_source": "Ashvara store catalog",
         "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "auto",
-      "updated": "2026-10-22T20:57:13.182467+00:00",
+      "updated": "2026-10-23T00:00:58.048904+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "gym calluses",
@@ -6836,7 +6838,344 @@
       },
       "srt": "1\n00:00:00,073 --> 00:00:01,711\nYour gym sessions shouldn't tear up your\n\n2\n00:00:01,711 --> 00:00:05,158\npalms every single week These compact lifting\n\n3\n00:00:05,158 --> 00:00:07,391\ngrips slide right over your fingers in\n\n4\n00:00:07,391 --> 00:00:10,267\nseconds They're made from durable four-millimeter\n\n5\n00:00:10,267 --> 00:00:13,240\ntextured silicone that locks onto barbells\n\n6\n00:00:13,240 --> 00:00:15,461\nThe open design keeps your hands completely\n\n7\n00:00:15,461 --> 00:00:18,823\ncool and sweat-free during heavy sets Plus\n\n8\n00:00:18,823 --> 00:00:20,777\nthey rinse clean under tap water and\n\n9\n00:00:20,777 --> 00:00:23,701\nslip easily into any pocket Grab yours\n\n10\n00:00:23,701 --> 00:00:27,136\nfor fourteen ninety-nine Link in bio ashvara\n\n11\n00:00:27,136 --> 00:00:27,233\n.\n\n12\n00:00:27,233 --> 00:00:29,830\nstore Which lift usually wrecks your hands\n\n13\n00:00:29,830 --> 00:00:30,813\nthe most\n",
       "tg_msg": 233,
-      "opts_msg": 235
+      "opts_msg": 235,
+      "approved_by": "auto",
+      "description_full": "Say goodbye to gym calluses with these textured silicone grip pads designed to protect your palms on every lift.\nUpgrade your weightlifting grip and keep your hands sweat-free without bulky gloves.\nShop it: https://ashvara.store/products/anti-slip-weightlifting-half-finger-fitness-glove-12531\n\n#shorts #fitness #gymgear #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).\nU.S. Space Force photo by Airman 1st Class Spencer Contreras / Wikimedia Commons (Public domain) https://commons.wikimedia.org/wiki/File:Explosive_Ordnance_Disposal_Memorial_Workout_2023_held_at_Patrick_SFB_(8131949).jpg\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          null,
+          "skipped (not configured)"
+        ],
+        "Facebook": [
+          null,
+          "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AgJ35IHJPEBvUr8KLVQEHC4'}}"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-23T00:00:58.048923+00:00",
+      "slot": "2026-10-23T01:15:00+00:00"
+    },
+    "2026-10-22-2-1": {
+      "topic": {
+        "title": "Cancel Your Gym Membership Today!",
+        "angle": "Why pay a monthly fee when you can get full workouts right in your living room?",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "home-gym-kit"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-23T00:00:51.097501+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "home gym setup",
+        "title": "Home Gym Setup That Replaces Your Membership",
+        "hook_text": "Cancel Your Gym Fee",
+        "thumbnail_text": "Ditch The Gym",
+        "description": "Build an affordable home gym setup right in your living room without paying expensive monthly gym fees.\nDiscover compact resistance bar gear designed for full-body strength sessions at home.\nShop it: https://ashvara.store/products/home-gym-kit",
+        "hashtags": [
+          "#shorts",
+          "#homeworkout",
+          "#homegym",
+          "#ashvara"
+        ],
+        "tags": [
+          "home gym setup",
+          "home gym setup budget",
+          "home gym setup equipment",
+          "how to build home gym setup",
+          "home gym setup low budget",
+          "home workout gear",
+          "portable home gym",
+          "living room workout",
+          "home workout equipment",
+          "home gym setup apartment",
+          "home gym setup essentials",
+          "home gym setup small space",
+          "budget home gym",
+          "door anchor bands",
+          "full body workout",
+          "resistance bar set",
+          "resistance band bar",
+          "compact gym equipment",
+          "workout at home"
+        ],
+        "pinned_comment": "Squats, chest presses, or rows: which movement would you do first in your living room?",
+        "scenes": [
+          {
+            "text": "Stop paying fifty dollars a month for a gym you rarely visit.",
+            "badge": "",
+            "label": "Skip monthly fees",
+            "stock_queries": [
+              "gym membership card",
+              "empty gym weights"
+            ],
+            "image_prompt": "Cinematic vertical shot of an empty commercial gym interior with unused dumbbells and barbells under dramatic overhead lighting, no people, photorealistic 9:16",
+            "stock_query": "gym membership card",
+            "product_image": "work/2026-10-22-2-1/product/product_0.jpg"
+          },
+          {
+            "text": "This compact resistance bar setup replaces an entire rack of bulky weights.",
+            "badge": "",
+            "label": "Replaces bulky weights",
+            "stock_queries": [
+              "resistance bar exercise",
+              "fitness bands living room"
+            ],
+            "image_prompt": "A modern black steel resistance bar with heavy-duty clip connectors resting on a clean wooden floor in a sunny living room, product photography, vertical 9:16",
+            "stock_query": "resistance bar exercise"
+          },
+          {
+            "text": "It uses stackable latex bands that snap directly onto steel carabiners.",
+            "badge": "",
+            "label": "Stackable latex bands",
+            "stock_queries": [
+              "resistance bands close up",
+              "carabiner clip metal"
+            ],
+            "image_prompt": "Close-up macro shot of durable multi-colored elastic latex resistance bands connected to heavy-duty metal carabiner clips, crisp studio lighting, vertical 9:16",
+            "stock_query": "resistance bands close up",
+            "product_image": "work/2026-10-22-2-1/product/product_1.jpg"
+          },
+          {
+            "text": "Anchor it behind any standard door to target your back and chest.",
+            "badge": "",
+            "label": "Easy door anchor",
+            "stock_queries": [
+              "door anchor strap",
+              "living room doorway"
+            ],
+            "image_prompt": "A reinforced nylon door anchor strap securely fastened between a closed white apartment door and door frame, clean modern apartment interior, vertical 9:16",
+            "stock_query": "door anchor strap"
+          },
+          {
+            "text": "When you finish, the two-piece steel bar breaks down to fit inside a drawer.",
+            "badge": "",
+            "label": "Fits in drawers",
+            "stock_queries": [
+              "open dresser drawer",
+              "storage bag fitness"
+            ],
+            "image_prompt": "Detachable two-piece steel fitness bar neatly disassembled and stored inside a modern wooden storage drawer alongside compact bands, high detail, vertical 9:16",
+            "stock_query": "open dresser drawer",
+            "product_image": "work/2026-10-22-2-1/product/product_2.jpg"
+          },
+          {
+            "text": "Grab yours for thirty-four dollars. Link in bio at ashvara dot store. What exercise would you try first at home?",
+            "badge": "",
+            "label": "$44.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "home fitness mat",
+              "bright living room interior"
+            ],
+            "image_prompt": "Neatly arranged portable home gym kit with resistance bar, handles, and latex tubes displayed on a yoga mat in an airy living room, vertical 9:16",
+            "stock_query": "home fitness mat",
+            "product_image": "work/2026-10-22-2-1/product/product_0.jpg"
+          }
+        ],
+        "key_facts": [
+          "Modular resistance bar systems utilize stackable latex resistance bands and door anchors for strength training exercises at home."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Stop paying fifty dollars a month for a gym you rarely visit. This compact resistance bar setup replaces an entire rack of bulky weights. It uses stackable latex bands that snap directly onto steel carabiners. Anchor it behind any standard door to target your back and chest. When you finish, the two-piece steel bar breaks down to fit inside a drawer. Grab yours for thirty-four dollars. Link in bio at ashvara dot store. What exercise would you try first at home?",
+        "product": {
+          "handle": "home-gym-kit",
+          "title": "Home Gym Kit",
+          "url": "https://ashvara.store/products/home-gym-kit",
+          "price": "$44.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "gym interior with membership desk",
+            "queries": [
+              {
+                "q": "gym reception desk",
+                "must": [
+                  "reception"
+                ]
+              },
+              {
+                "q": "gym membership",
+                "must": [
+                  "gym"
+                ]
+              },
+              {
+                "q": "fitness club",
+                "must": [
+                  "club"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "compact resistance bar setup",
+            "queries": [
+              {
+                "q": "resistance bar workout",
+                "must": [
+                  "bar"
+                ]
+              },
+              {
+                "q": "fitness bar equipment",
+                "must": [
+                  "equipment"
+                ]
+              },
+              {
+                "q": "workout gear",
+                "must": [
+                  "gear"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "stackable latex bands with carabiners",
+            "queries": [
+              {
+                "q": "latex resistance bands",
+                "must": [
+                  "bands"
+                ]
+              },
+              {
+                "q": "carabiner fitness band",
+                "must": [
+                  "carabiner"
+                ]
+              },
+              {
+                "q": "exercise bands",
+                "must": [
+                  "exercise"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "door anchor resistance band setup",
+            "queries": [
+              {
+                "q": "door anchor exercise",
+                "must": [
+                  "anchor"
+                ]
+              },
+              {
+                "q": "band door attachment",
+                "must": [
+                  "door"
+                ]
+              },
+              {
+                "q": "resistance band workout",
+                "must": [
+                  "workout"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "disassembled steel bar in drawer",
+            "queries": [
+              {
+                "q": "steel bar in drawer",
+                "must": [
+                  "drawer"
+                ]
+              },
+              {
+                "q": "metal rod storage",
+                "must": [
+                  "storage"
+                ]
+              },
+              {
+                "q": "bar disassembly",
+                "must": [
+                  "bar"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person exercising at home living room",
+            "queries": [
+              {
+                "q": "home workout living room",
+                "must": [
+                  "living"
+                ]
+              },
+              {
+                "q": "indoor exercise",
+                "must": [
+                  "exercise"
+                ]
+              },
+              {
+                "q": "home fitness",
+                "must": [
+                  "fitness"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "fitness equipment",
+          "home workout",
+          "resistance bands"
+        ],
+        "visual_style": "Dynamic vertical fitness shorts showcasing compact home workout gear with realistic demonstrations and clear benefit callouts.",
+        "visual_refs": [
+          "When you cancel a gym membership",
+          "When You Try to Cancel Your Gym Membership",
+          "Trying to cancel a gym membership",
+          "When you try to cancel your gym membership",
+          "How To Cancel Planet Fitness Membership",
+          "FTC sues LA Fitness over gym membership cancellation procedures"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-22",
+        "name": "2026-10-22-2-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-22",
+        "name": "2026-10-22-2-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,088 --> 00:00:02,150\nStop paying fifty dollars a month for\n\n2\n00:00:02,150 --> 00:00:04,650\na gym you rarely visit This compact\n\n3\n00:00:04,650 --> 00:00:07,650\nresistance bar setup replaces an entire rack\n\n4\n00:00:07,650 --> 00:00:10,425\nof bulky weights It uses stackable latex\n\n5\n00:00:10,425 --> 00:00:13,825\nbands that snap directly onto steel carabiners\n\n6\n00:00:13,825 --> 00:00:16,050\nAnchor it behind any standard door to\n\n7\n00:00:16,050 --> 00:00:18,300\ntarget your back and chest When you\n\n8\n00:00:18,300 --> 00:00:20,750\nfinish the two-piece steel bar breaks down\n\n9\n00:00:20,750 --> 00:00:23,150\nto fit inside a drawer Grab yours\n\n10\n00:00:23,150 --> 00:00:25,750\nfor thirty-four dollars Link in bio at\n\n11\n00:00:25,750 --> 00:00:28,163\nashvara dot store What exercise would you\n\n12\n00:00:28,163 --> 00:00:29,737\ntry first at home\n",
+      "tg_msg": 238,
+      "opts_msg": 240
     }
   },
   "history": [
@@ -6856,7 +7195,8 @@
     "Say Goodbye to Clogged Pores",
     "Painless Paws, Zero Drama",
     "Upgrade Your Bike Ride Instantly",
-    "Say Goodbye To Gym Calluses!"
+    "Say Goodbye To Gym Calluses!",
+    "Cancel Your Gym Membership Today!"
   ],
   "trend_tries": {
     "2026-10-20": {
@@ -6872,7 +7212,7 @@
       "at": "2026-10-22T18:38:12.412354+00:00"
     }
   },
-  "cleanup_day": "2026-10-22",
+  "cleanup_day": "2026-10-23",
   "signals_day": "2026-10-22",
   "photo_posts": {
     "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620": "2026-10-13T21:05:44.818972+00:00",
@@ -6883,12 +7223,12 @@
   },
   "photo_angle": 5,
   "visual_searches": {
-    "2026-10-22": 1
+    "2026-10-22": 2
   },
   "recent_voices": [
     "en-US-AvaMultilingualNeural",
-    "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
+    "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural"
   ],

@@ -1297,11 +1297,11 @@
    {
     "angle": "Why pay a monthly fee when you can get full workouts right in your living room?",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Cancel Your Gym Membership Today!",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-22-2-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1362,6 +1362,6 @@
    }
   ],
   "sent_at": "2026-10-22T18:38:37.662652+00:00",
-  "status": "waiting"
+  "status": "closed"
  }
 }
