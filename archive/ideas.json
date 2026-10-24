@@ -1436,5 +1436,78 @@
   ],
   "sent_at": "2026-10-23T18:48:45.723391+00:00",
   "status": "closed"
+ },
+ "2026-10-24": {
+  "date": "2026-10-24",
+  "ideas": [
+   {
+    "angle": "Skip the crowded gym and get a full-body workout right in your living room.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Your entire gym in a bag!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Stop stressing over muddy paws and dog hair all over your back seat.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Keep your car fur-free forever!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Save money on grooming bills while keeping your furry best friend looking fresh.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Salon-quality grooming at home!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Tired of spending precious morning minutes trying to draw matching eyebrows?",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Flawless brows in ten seconds!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Keep your floors spotless even after the rainiest walks with your dog.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "No more muddy paw prints!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Level up your skincare routine and get that fresh spa feeling at home.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Unlock your ultimate glow up!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-24T17:01:02.323113+00:00",
+  "status": "waiting"
  }
 }
