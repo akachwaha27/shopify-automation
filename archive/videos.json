@@ -1842,7 +1842,7 @@
  },
  "2026-10-23-1": {
   "angle": "When your fur baby refuses to get out of bed in the morning.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
@@ -1869,12 +1869,29 @@
    "The bed includes a machine-washable removable cover and non-slip bottom."
   ],
   "pinned_comment": "Does your fur baby wake you up at sunrise, or do they refuse to get out of bed until noon? Tell us below! 🐶💤",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": null,
+    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'AcFYHsXX_TBkaArrYBXIUsu'}}"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "skipped (not configured)"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "cozy pet bed",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-24T01:15:00+00:00",
   "script": "Getting your pet out of bed shouldn't feel like a wrestling match. If they refuse to budge, upgrade them to this deep faux-fur donut lounger. The raised outer rim supports their chin, giving them that secure nest feel. It comes with a non-slip bottom and a fully removable, machine-washable cover. Grab one for thirty-four dollars at the link in bio, ashvara.store. Is your pet a morning sleeper or an early riser?",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,050 --> 00:00:01,816\nGetting your pet out of bed shouldn't\n\n2\n00:00:01,816 --> 00:00:04,031\nfeel like a wrestling match If they\n\n3\n00:00:04,031 --> 00:00:06,409\nrefuse to budge upgrade them to this\n\n4\n00:00:06,409 --> 00:00:09,411\ndeep faux-fur donut lounger The raised outer\n\n5\n00:00:09,411 --> 00:00:11,857\nrim supports their chin giving them that\n\n6\n00:00:11,857 --> 00:00:14,194\nsecure nest feel It comes with a\n\n7\n00:00:14,194 --> 00:00:17,604\nnon-slip bottom and a fully removable machine-washable\n\n8\n00:00:17,604 --> 00:00:20,349\ncover Grab one for thirty-four dollars at\n\n9\n00:00:20,349 --> 00:00:22,346\nthe link in bio ashvara .\n\n10\n00:00:22,346 --> 00:00:24,860\nstore Is your pet a morning sleeper\n\n11\n00:00:24,860 --> 00:00:26,483\nor an early riser\n",
   "tags": [
    "cozy pet bed",
@@ -1903,8 +1920,8 @@
   "thumbnail_text": "Too Cozy To Wake",
   "title": "Cozy Pet Bed Mornings Just Got Harder 🐾",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-23T22:08:23.524656+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-24T00:35:29.732060+00:00",
+  "uploaded_at": "2026-10-24T00:35:29.732079+00:00",
   "virality_score": 7,
   "voice": "en-AU-WilliamMultilingualNeural"
  }
