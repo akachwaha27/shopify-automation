@@ -1509,5 +1509,78 @@
   ],
   "sent_at": "2026-10-24T17:01:02.323113+00:00",
   "status": "waiting"
+ },
+ "2026-10-24-2": {
+  "date": "2026-10-24-2",
+  "ideas": [
+   {
+    "angle": "When you want a killer home workout without buying bulky, expensive equipment.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Your Entire Gym In One Bag",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Stop stressing over dog hair and dirt ruining your back seats after park trips.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Keep Muddy Paws Off Your Seats",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Tired of spending over a hundred dollars every month just to keep your dog tidy?",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Skip The Expensive Pet Groomer Bill",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "For anyone who hates spending twenty tedious minutes penciling in uneven eyebrows every morning.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Flawless Brows In Under Five Seconds",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "The quickest way to prevent your pup from tracking dirt across your freshly cleaned floors.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Stop Muddy Paws At The Door",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "That satisfying feeling of gently lifting away everyday dirt and buildup at home.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Glow Up Your Daily Skincare Routine",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-24T17:31:36.221563+00:00",
+  "status": "waiting"
  }
 }
