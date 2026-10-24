@@ -1443,11 +1443,11 @@
    {
     "angle": "Skip the crowded gym and get a full-body workout right in your living room.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Your entire gym in a bag!",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-24-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1508,7 +1508,7 @@
    }
   ],
   "sent_at": "2026-10-24T17:01:02.323113+00:00",
-  "status": "waiting"
+  "status": "closed"
  },
  "2026-10-24-2": {
   "date": "2026-10-24-2",
@@ -1516,11 +1516,11 @@
    {
     "angle": "When you want a killer home workout without buying bulky, expensive equipment.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Your Entire Gym In One Bag",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-24-2-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1581,6 +1581,6 @@
    }
   ],
   "sent_at": "2026-10-24T17:31:36.221563+00:00",
-  "status": "waiting"
+  "status": "closed"
  }
 }

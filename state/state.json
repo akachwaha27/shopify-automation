@@ -374,8 +374,10 @@
         }
       ],
       "sent_at": "2026-10-24T17:01:02.323113+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     },
     "2026-10-24-2": {
       "topics": [
@@ -435,8 +437,10 @@
         }
       ],
       "sent_at": "2026-10-24T17:31:36.221563+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     }
   },
   "videos": {
@@ -7498,6 +7502,640 @@
       },
       "uploaded_at": "2026-10-24T00:35:29.732079+00:00",
       "slot": "2026-10-24T01:15:00+00:00"
+    },
+    "2026-10-24-1": {
+      "topic": {
+        "title": "Your entire gym in a bag!",
+        "angle": "Skip the crowded gym and get a full-body workout right in your living room.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-24T22:02:44.418646+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "home workout kit",
+        "title": "Home Workout Kit: Your Entire Gym in a Bag \ud83c\udf92",
+        "hook_text": "Skip The Crowded Gym",
+        "thumbnail_text": "Full Gym Anywhere",
+        "description": "Discover a portable home workout kit that fits in any living room. Train with versatile resistance bands and skip the crowded fitness centers.\nShop it: https://ashvara.store/products/fitswift\u2122-11-piece-adjustable-resistance-band-set",
+        "hashtags": [
+          "#shorts",
+          "#fitness",
+          "#homeworkoutkit",
+          "#ashvara"
+        ],
+        "tags": [
+          "home workout kit",
+          "home gym fitness kit",
+          "home gym kit workout",
+          "resistance bands workout at home",
+          "compact gym bag",
+          "portable gym set",
+          "home fitness kit",
+          "home exercise kit",
+          "living room workout",
+          "resistance bands workout",
+          "compact gym equipment for home",
+          "resistance bands workout for beginners",
+          "full body home workout",
+          "portable gym setup",
+          "compact gym equipment",
+          "home gym simple equipment",
+          "home workout with equipment",
+          "home workout equipment essentials",
+          "compact gym gear"
+        ],
+        "pinned_comment": "If you could only do one exercise at home for the rest of your life, would you pick squats or chest presses? Let us know below! \ud83d\udc47",
+        "scenes": [
+          {
+            "text": "Waiting twenty minutes for a sweaty bench press ruins your workout.",
+            "badge": "",
+            "label": "Skip gym crowds",
+            "stock_queries": [
+              "crowded gym weights",
+              "bench press gym"
+            ],
+            "image_prompt": "A crowded commercial gym with packed barbell stations and weights racks, cinematic lighting, vertical 9:16 aspect ratio, high detail.",
+            "stock_query": "crowded gym weights",
+            "product_image": "work/2026-10-24-1/product/product_0.jpg"
+          },
+          {
+            "text": "This portable resistance kit packs a full setup into one tiny pouch.",
+            "badge": "",
+            "label": "Pocket-sized gym",
+            "stock_queries": [
+              "resistance bands bag",
+              "drawstring gym bag"
+            ],
+            "image_prompt": "A neat black drawstring fitness bag sitting beside colorful rolled resistance bands on a clean wooden floor, vertical 9:16 aspect ratio.",
+            "stock_query": "resistance bands bag"
+          },
+          {
+            "text": "Five snap-link latex bands connect to cushioned handles or a door anchor.",
+            "badge": "",
+            "label": "Five latex bands",
+            "stock_queries": [
+              "latex resistance bands",
+              "door anchor strap"
+            ],
+            "image_prompt": "Close up of five colored latex resistance tubing bands with metal carabiner clips and foam handles on a light background, vertical 9:16.",
+            "stock_query": "latex resistance bands",
+            "product_image": "work/2026-10-24-1/product/product_1.jpg"
+          },
+          {
+            "text": "You get smooth tension for squats, rows, and presses right on your carpet.",
+            "badge": "",
+            "label": "Full body moves",
+            "stock_queries": [
+              "resistance band squat",
+              "band chest press"
+            ],
+            "image_prompt": "Resistance tubing securely anchored around a sturdy modern door frame in a bright living room, vertical 9:16 aspect ratio.",
+            "stock_query": "resistance band squat"
+          },
+          {
+            "text": "When you finish, the entire set slides right under your couch.",
+            "badge": "",
+            "label": "Easy storage",
+            "stock_queries": [
+              "living room sofa",
+              "under couch storage"
+            ],
+            "image_prompt": "A compact black gear pouch neatly tucked away next to a modern gray sofa on hardwood flooring, vertical 9:16 aspect ratio.",
+            "stock_query": "living room sofa",
+            "product_image": "work/2026-10-24-1/product/product_2.jpg"
+          },
+          {
+            "text": "It is thirty-four dollars at the link in bio on ashvara.store. Which exercise would you try first at home, before...",
+            "badge": "",
+            "label": "$26.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "home fitness equipment",
+              "resistance band handles"
+            ],
+            "image_prompt": "The complete resistance band set neatly arranged on a clean coffee table in a sunny living room, vertical 9:16 aspect ratio.",
+            "stock_query": "home fitness equipment",
+            "product_image": "work/2026-10-24-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "The kit includes five color-coded latex resistance bands, cushioned handles, and a door anchor.",
+          "The complete resistance set packs into a compact drawstring pouch that can fit under furniture."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Waiting twenty minutes for a sweaty bench press ruins your workout. This portable resistance kit packs a full setup into one tiny pouch. Five snap-link latex bands connect to cushioned handles or a door anchor. You get smooth tension for squats, rows, and presses right on your carpet. When you finish, the entire set slides right under your couch. It is thirty-four dollars at the link in bio on ashvara.store. Which exercise would you try first at home, before...",
+        "product": {
+          "handle": "fitswift\u2122-11-piece-adjustable-resistance-band-set",
+          "title": "11-Piece Resistance Band Set",
+          "url": "https://ashvara.store/products/fitswift\u2122-11-piece-adjustable-resistance-band-set",
+          "price": "$26.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "crowded gym weight bench",
+            "queries": [
+              {
+                "q": "gym bench press",
+                "must": [
+                  "bench"
+                ]
+              },
+              {
+                "q": "crowded gym",
+                "must": [
+                  "gym"
+                ]
+              },
+              {
+                "q": "weight bench",
+                "must": [
+                  "weights"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "small gym pouch and kit",
+            "queries": [
+              {
+                "q": "small gym bag",
+                "must": [
+                  "bag"
+                ]
+              },
+              {
+                "q": "pouch equipment",
+                "must": [
+                  "pouch"
+                ]
+              },
+              {
+                "q": "fitness kit",
+                "must": [
+                  "kit"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "latex resistance bands with handles",
+            "queries": [
+              {
+                "q": "resistance bands",
+                "must": [
+                  "bands"
+                ]
+              },
+              {
+                "q": "latex bands",
+                "must": [
+                  "latex"
+                ]
+              },
+              {
+                "q": "workout handles",
+                "must": [
+                  "handles"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person doing squats on carpet",
+            "queries": [
+              {
+                "q": "home squats",
+                "must": [
+                  "squats"
+                ]
+              },
+              {
+                "q": "carpet workout",
+                "must": [
+                  "carpet"
+                ]
+              },
+              {
+                "q": "resistance band press",
+                "must": [
+                  "press"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "bag sliding under couch",
+            "queries": [
+              {
+                "q": "under couch",
+                "must": [
+                  "couch"
+                ]
+              },
+              {
+                "q": "storage under sofa",
+                "must": [
+                  "storage"
+                ]
+              },
+              {
+                "q": "small bag floor",
+                "must": [
+                  "floor"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person holding fitness kit at home",
+            "queries": [
+              {
+                "q": "holding product",
+                "must": [
+                  "product"
+                ]
+              },
+              {
+                "q": "home fitness gear",
+                "must": [
+                  "gear"
+                ]
+              },
+              {
+                "q": "workout equipment",
+                "must": [
+                  "equipment"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "fitness equipment",
+          "resistance bands",
+          "home workout"
+        ],
+        "visual_style": "clean fitness product demonstration showcasing compact gym gear in a home setting with crisp lighting and minimalist aesthetic",
+        "visual_refs": [
+          "What\u2019s In My Gym Bag? (Not Sponsored)",
+          "all my gym bag essentials \ud83d\udcaa\ud83c\udffc #aesthetic #packing #gym #workout #shorts #youtube",
+          "What\u2019s in my gym bag? #gymgirl #gymessentials #fitness",
+          "What to Put in Your Gym Bag",
+          "This Is My Gym Bag",
+          "What\u2019s in my gym bag?\ud83d\udc40"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 1
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural).",
+        "Shixart1985 / Wikimedia Commons (CC BY 2.0) https://commons.wikimedia.org/wiki/File:Woman_lifts_dumbbells_while_working_out_in_living_room.jpg"
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-24",
+        "name": "2026-10-24-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-24",
+        "name": "2026-10-24-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,095 --> 00:00:02,000\nWaiting twenty minutes for a sweaty bench\n\n2\n00:00:02,000 --> 00:00:04,858\npress ruins your workout This portable resistance\n\n3\n00:00:04,858 --> 00:00:07,036\nkit packs a full setup into one\n\n4\n00:00:07,036 --> 00:00:10,417\ntiny pouch Five snap-link latex bands connect\n\n5\n00:00:10,417 --> 00:00:12,821\nto cushioned handles or a door anchor\n\n6\n00:00:12,821 --> 00:00:15,345\nYou get smooth tension for squats rows\n\n7\n00:00:15,345 --> 00:00:17,440\nand presses right on your carpet When\n\n8\n00:00:17,440 --> 00:00:19,857\nyou finish the entire set slides right\n\n9\n00:00:19,857 --> 00:00:22,095\nunder your couch It is thirty-four dollars\n\n10\n00:00:22,095 --> 00:00:23,702\nat the link in bio on ashvara\n\n11\n00:00:23,702 --> 00:00:23,786\n.\n\n12\n00:00:23,786 --> 00:00:26,298\nstore Which exercise would you try first\n\n13\n00:00:26,298 --> 00:00:27,757\nat home before\n",
+      "tg_msg": 258,
+      "opts_msg": 260
+    },
+    "2026-10-24-2-1": {
+      "topic": {
+        "title": "Your Entire Gym In One Bag",
+        "angle": "When you want a killer home workout without buying bulky, expensive equipment.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-24T22:06:00.884404+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "portable home gym",
+        "title": "Portable Home Gym in One Tiny Bag",
+        "hook_text": "Ditch Bulky Weights",
+        "thumbnail_text": "Full Gym Bag",
+        "description": "Discover how a portable home gym fits full resistance training into a compact carry bag without clutter.\nExplore versatile resistance band workouts you can do anywhere, from small apartments to hotel rooms.\nShop it: https://ashvara.store/products/fitswift\u2122-11-piece-adjustable-resistance-band-set",
+        "hashtags": [
+          "#shorts",
+          "#fitness",
+          "#portablehomegym",
+          "#ashvara"
+        ],
+        "tags": [
+          "portable home gym",
+          "resistance bands workout full body",
+          "home gym equipment for small spaces",
+          "portable home gym workout",
+          "home gym equipment workout",
+          "portable home gym equipment",
+          "resistance bands workout at home",
+          "home gym equipment",
+          "best portable home gym",
+          "resistance bands workout",
+          "portable home gym system",
+          "travel workout equipment",
+          "best travel workout equipment",
+          "home gym equipment for beginners",
+          "full body resistance bands",
+          "travel workout",
+          "door anchor bands"
+        ],
+        "pinned_comment": "Would you keep this by your living room door or pack it in a suitcase for trips? Let us know below! \ud83d\udc47",
+        "scenes": [
+          {
+            "text": "Bulky home gym gear takes over your entire living room.",
+            "badge": "",
+            "label": "Space-Saving Setup",
+            "stock_queries": [
+              "living room clutter",
+              "exercise equipment floor"
+            ],
+            "image_prompt": "Vertical shot of a modern living room crowded with huge iron weight plates and bulky workout gear, natural morning sunlight, clean aesthetic.",
+            "stock_query": "living room clutter",
+            "product_image": "work/2026-10-24-2-1/product/product_0.jpg"
+          },
+          {
+            "text": "This all-in-one setup packs five stackable resistance bands into a tiny pouch.",
+            "badge": "",
+            "label": "Compact Travel Pouch",
+            "stock_queries": [
+              "resistance band pouch",
+              "workout gear bag"
+            ],
+            "image_prompt": "Vertical shot of a sleek black drawstring gym pouch sitting on a wooden coffee table, colorful premium latex tubes neatly coiled inside.",
+            "stock_query": "resistance band pouch"
+          },
+          {
+            "text": "They are made from layered natural latex, spanning ten to fifty pounds.",
+            "badge": "",
+            "label": "Multi-Weight Resistance",
+            "stock_queries": [
+              "resistance bands set",
+              "colored fitness bands"
+            ],
+            "image_prompt": "Vertical close-up of high quality colored tubular resistance bands laid parallel on a textured surface, showcasing durable natural latex sheen.",
+            "stock_query": "resistance bands set",
+            "product_image": "work/2026-10-24-2-1/product/product_1.jpg"
+          },
+          {
+            "text": "You get heavy-duty metal carabiners, foam handles, and cushioned ankle straps.",
+            "badge": "",
+            "label": "Padded Foam Grips",
+            "stock_queries": [
+              "carabiner clip metal",
+              "padded gym strap"
+            ],
+            "image_prompt": "Vertical flat-lay shot of black padded foam handles, steel carabiners, and stitched ankle straps resting on a clean concrete floor.",
+            "stock_query": "carabiner clip metal"
+          },
+          {
+            "text": "Just lock the anchor into any standard door for rows, presses, and squats.",
+            "badge": "",
+            "label": "Universal Door Anchor",
+            "stock_queries": [
+              "door resistance band",
+              "home workout anchor"
+            ],
+            "image_prompt": "Vertical close up of a heavy-duty foam door anchor wedged firmly against a closed white doorframe with taut colored bands extending out.",
+            "stock_query": "door resistance band",
+            "product_image": "work/2026-10-24-2-1/product/product_2.jpg"
+          },
+          {
+            "text": "It is thirty-nine dollars, link in bio at ashvara dot store. Would you use this at home or while traveling, whenever...",
+            "badge": "",
+            "label": "$26.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "fitness bag travel",
+              "compact workout set"
+            ],
+            "image_prompt": "Vertical minimalist studio shot of a complete portable resistance band set arranged neatly with its compact carry bag against a soft gray backdrop.",
+            "stock_query": "fitness bag travel",
+            "product_image": "work/2026-10-24-2-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "The set includes five stackable resistance bands.",
+          "The bands range from ten to fifty pounds in resistance.",
+          "The package includes metal carabiners, foam handles, cushioned ankle straps, and a door anchor.",
+          "The full set fits into a compact travel pouch.",
+          "Price is thirty-nine dollars at ashvara.store."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Bulky home gym gear takes over your entire living room. This all-in-one setup packs five stackable resistance bands into a tiny pouch. They are made from layered natural latex, spanning ten to fifty pounds. You get heavy-duty metal carabiners, foam handles, and cushioned ankle straps. Just lock the anchor into any standard door for rows, presses, and squats. It is thirty-nine dollars, link in bio at ashvara dot store. Would you use this at home or while traveling, whenever...",
+        "product": {
+          "handle": "fitswift\u2122-11-piece-adjustable-resistance-band-set",
+          "title": "11-Piece Resistance Band Set",
+          "url": "https://ashvara.store/products/fitswift\u2122-11-piece-adjustable-resistance-band-set",
+          "price": "$26.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "large home gym equipment cluttering a living room",
+            "queries": [
+              {
+                "q": "cluttered living room",
+                "must": [
+                  "room"
+                ]
+              },
+              {
+                "q": "home gym machine",
+                "must": [
+                  "gym"
+                ]
+              },
+              {
+                "q": "fitness equipment messy",
+                "must": [
+                  "equipment"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "resistance bands pack into a small pouch",
+            "queries": [
+              {
+                "q": "resistance bands pouch",
+                "must": [
+                  "pouch"
+                ]
+              },
+              {
+                "q": "fitness bag packing",
+                "must": [
+                  "bag"
+                ]
+              },
+              {
+                "q": "exercise bands set",
+                "must": [
+                  "bands"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "colorful natural latex resistance bands",
+            "queries": [
+              {
+                "q": "latex resistance bands",
+                "must": [
+                  "latex"
+                ]
+              },
+              {
+                "q": "exercise bands color",
+                "must": [
+                  "bands"
+                ]
+              },
+              {
+                "q": "workout rubber band",
+                "must": [
+                  "rubber"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "metal carabiners and foam handles for resistance bands",
+            "queries": [
+              {
+                "q": "foam handles grips",
+                "must": [
+                  "handles"
+                ]
+              },
+              {
+                "q": "metal carabiner clip",
+                "must": [
+                  "carabiner"
+                ]
+              },
+              {
+                "q": "gym equipment accessories",
+                "must": [
+                  "accessories"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "door anchor attached to a door for exercise",
+            "queries": [
+              {
+                "q": "door anchor workout",
+                "must": [
+                  "anchor"
+                ]
+              },
+              {
+                "q": "resistance band door",
+                "must": [
+                  "door"
+                ]
+              },
+              {
+                "q": "fitness strap mount",
+                "must": [
+                  "strap"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person working out at home with resistance bands",
+            "queries": [
+              {
+                "q": "home workout training",
+                "must": [
+                  "workout"
+                ]
+              },
+              {
+                "q": "travel fitness routine",
+                "must": [
+                  "fitness"
+                ]
+              },
+              {
+                "q": "exercise at home",
+                "must": [
+                  "home"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "fitness equipment",
+          "home workout",
+          "resistance bands"
+        ],
+        "visual_style": "High-energy fitness demonstration showing compact home gym equipment and travel workouts in a clean modern setting.",
+        "visual_refs": [
+          "Backpack curls \ud83c\udf92 #motivation #viralshorts #gym #homeworkout",
+          "What\u2019s in my gym bag? #gymgirl #gymessentials #fitness",
+          "This Is My Gym Bag",
+          "This #gym bag has the same features you know and love with one difference\u2026",
+          "What\u2019s in my gym bag?\ud83d\udc40",
+          "What&#39;s in My Gym Bag?"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-24",
+        "name": "2026-10-24-2-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-24",
+        "name": "2026-10-24-2-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,071 --> 00:00:01,929\nBulky home gym gear takes over your\n\n2\n00:00:01,929 --> 00:00:05,083\nentire living room This all-in-one setup packs\n\n3\n00:00:05,083 --> 00:00:07,643\nfive stackable resistance bands into a tiny\n\n4\n00:00:07,643 --> 00:00:09,976\npouch They are made from layered natural\n\n5\n00:00:09,976 --> 00:00:13,202\nlatex spanning ten to fifty pounds You\n\n6\n00:00:13,202 --> 00:00:16,095\nget heavy-duty metal carabiners foam handles\n\n7\n00:00:16,095 --> 00:00:18,560\nand cushioned ankle straps Just lock the\n\n8\n00:00:18,560 --> 00:00:20,988\nanchor into any standard door for rows\n\n9\n00:00:20,988 --> 00:00:24,357\npresses and squats It is thirty-nine dollars\n\n10\n00:00:24,357 --> 00:00:26,643\nlink in bio at ashvara dot store\n\n11\n00:00:26,643 --> 00:00:28,060\nWould you use this at home or\n\n12\n00:00:28,060 --> 00:00:29,710\nwhile traveling whenever\n",
+      "tg_msg": 261,
+      "opts_msg": 263
     }
   },
   "history": [
@@ -7519,7 +8157,9 @@
     "Upgrade Your Bike Ride Instantly",
     "Say Goodbye To Gym Calluses!",
     "Cancel Your Gym Membership Today!",
-    "Turn Your Pet Into A Snuggle Bug"
+    "Turn Your Pet Into A Snuggle Bug",
+    "Your entire gym in a bag!",
+    "Your Entire Gym In One Bag"
   ],
   "trend_tries": {
     "2026-10-22": {
@@ -7546,14 +8186,14 @@
   },
   "photo_angle": 5,
   "visual_searches": {
-    "2026-10-23": 1
+    "2026-10-24": 2
   },
   "recent_voices": [
+    "en-US-AvaMultilingualNeural",
+    "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
     "en-US-AvaMultilingualNeural",
-    "en-US-AvaMultilingualNeural",
-    "en-US-AvaMultilingualNeural",
-    "en-AU-WilliamMultilingualNeural"
+    "en-US-AvaMultilingualNeural"
   ],
   "presenter_candidates": [
     {
