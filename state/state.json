@@ -7854,7 +7854,7 @@
       },
       "status": "published",
       "by": "auto",
-      "updated": "2026-10-25T02:36:16.342216+00:00",
+      "updated": "2026-10-25T03:00:32.882776+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "portable home gym",
@@ -8166,8 +8166,8 @@
           "skipped (off: add to PUBLISH_TO variable)"
         ],
         "Instagram": [
-          null,
-          "FAILED: IG upload failed: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+          "https://www.instagram.com/reel/De5sRMOgBp8/",
+          "published"
         ],
         "Facebook": [
           "https://www.facebook.com/reel/1855282145655079",

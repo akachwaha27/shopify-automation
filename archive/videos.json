@@ -2051,8 +2051,8 @@
     "status": "published"
    },
    "Instagram": {
-    "link": null,
-    "status": "FAILED: IG upload failed: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+    "link": "https://www.instagram.com/reel/De5sRMOgBp8/",
+    "status": "published"
    },
    "TikTok": {
     "link": null,
@@ -2096,7 +2096,7 @@
   "thumbnail_text": "Full Gym Bag",
   "title": "Portable Home Gym in One Tiny Bag",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-25T02:36:16.342216+00:00",
+  "updated": "2026-10-25T03:00:32.882776+00:00",
   "uploaded_at": "2026-10-25T00:15:54.824411+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
