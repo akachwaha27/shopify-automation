@@ -22,7 +22,8 @@ COLUMNS = ["id", "added", "format", "title", "thumbnail_text", "hook", "hook_sco
            # Ashvara: Shopify product handle the promo is about (format "product")
            "product"]
 VIDEO_STATUS = {"queued": "Making", "generating": "Making", "revoice": "Making", "awaiting_approval": "Preview",
-                "approved": "Approved", "published": "Published", "rejected": "Skipped", "failed": "Failed"}
+                "approved": "Approved", "published": "Published", "rejected": "Skipped", "failed": "Failed",
+                "not_posted": "Made, not posted"}
 
 
 def rows():

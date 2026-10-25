@@ -41,7 +41,7 @@ def save(st):
     st["history"] = st.get("history", [])[-60:]
     for k in sorted(st.get("batches", {}))[:-7]:
         st["batches"].pop(k, None)
-    done = [k for k, v in st.get("videos", {}).items() if v["status"] in ("published", "rejected", "failed")]
+    done = [k for k, v in st.get("videos", {}).items() if v["status"] in ("published", "rejected", "failed", "not_posted")]
     for k in sorted(done)[:-30]:
         st["videos"].pop(k, None)
     with open(config.STATE_FILE, "w") as f:

@@ -578,26 +578,50 @@ def cmd_sample(st, args):
     generate(st, vid)
 
 
-def cmd_igrepost(st, vids):
-    """Publish existing videos to Instagram only (e.g. after Instagram was down or the account changed)."""
-    lines = ["📸 <b>Instagram catch-up</b>"]
+def _posted(results):
+    """True if at least one platform actually took the video (not skipped / failed)."""
+    return any(r and r[0] and not str(r[1]).startswith(("FAILED", "skipped")) for r in (results or {}).values())
+
+
+def cmd_repost(st, vids, platforms=("instagram", "facebook")):
+    """Post stored videos again to the given platforms, skipping ones already live there.
+    Used after an outage (e.g. Meta blocked the app) or an account change."""
+    names = {"instagram": "Instagram", "facebook": "Facebook"}
+    lines = [f"🔁 <b>Catch-up posting</b> ({', '.join(names[p] for p in platforms)})"]
     for vid in vids:
         v = st["videos"].get(vid)
         if not v or not v.get("file"):
             lines.append(f"⚠️ {esc(vid)}: no stored video")
             continue
         pkg = v["package"]
+        res = v.setdefault("results", {})
+        todo = [p for p in platforms if not _posted({p: res.get(names[p])})]
+        if not todo:
+            lines.append(f"• {esc(pkg['title'])}: already posted")
+            continue
         try:
             path = storage.fetch(v["file"], os.path.join(config.WORK_DIR, "dl"))
             desc = v.get("description_full") or writer.build_description(pkg, v.get("credits", []))
-            cap = publish.social_caption(pkg["title"], desc, pkg["hashtags"], "instagram")
-            link, status = publish.instagram(path, cap)
-            v.setdefault("results", {})["Instagram"] = [link, status]
-            lines.append(f"✅ {esc(pkg['title'])}: {esc(link or status)}")
+            for p in todo:
+                cap = publish.social_caption(pkg["title"], desc, pkg["hashtags"], p)
+                try:
+                    link, status = publish.instagram(path, cap) if p == "instagram" else publish.facebook(path, cap, pkg["title"])
+                    res[names[p]] = [link, status]
+                    lines.append(f"✅ {names[p]} · {esc(pkg['title'])}: {esc(link or status)}")
+                except Exception as e:  # noqa: BLE001
+                    res[names[p]] = [None, f"FAILED: {str(e)[:300]}"]
+                    lines.append(f"⚠️ {names[p]} · {esc(pkg['title'])}: {esc(str(e)[:300])}")
+            v["status"] = "published" if _posted(res) else "not_posted"
+            v["updated"] = state.iso()
         except Exception as e:  # noqa: BLE001
             lines.append(f"⚠️ {esc(pkg['title'])}: {esc(str(e)[:300])}")
         print(lines[-1])
     telegram.send("\n".join(lines))
+
+
+def cmd_igrepost(st, vids):
+    """Publish existing videos to Instagram only (e.g. after Instagram was down or the account changed)."""
+    cmd_repost(st, vids, ("instagram",))
 
 
 def do_publish(st, vid):
@@ -626,7 +650,8 @@ def do_publish(st, vid):
     results = publish.publish_all(path, pkg["title"], desc, pkg["hashtags"], pkg.get("tags", []),
                                   pkg.get("category", "24"), thumb, srt_path, pkg.get("pinned_comment"),
                                   slot.isoformat().replace("+00:00", "Z") if slot else None)
-    v["status"], v["results"], v["updated"] = "published", {k: list(r) for k, r in results.items()}, state.iso()
+    v["results"], v["updated"] = {k: list(r) for k, r in results.items()}, state.iso()
+    v["status"] = "published" if _posted(v["results"]) else "not_posted"  # made, but every platform failed (fix with: repost <id>)
     v["uploaded_at"] = state.iso()
     if slot:
         v["slot"] = slot.isoformat()
@@ -902,6 +927,8 @@ def main():
             if cmd == "presenters":  # make the AI presenter cast ("presenters new" = only members not made yet)
                 from . import presenter
                 return presenter.candidates(st, missing_only="new" in args)
+            if cmd in ("repost", "fbrepost"):  # repost <video ids>: Facebook + Instagram; fbrepost: Facebook only
+                return cmd_repost(st, args, ("facebook",) if cmd == "fbrepost" else ("instagram", "facebook"))
             if cmd == "igrepost":  # post already-published videos to Instagram only: igrepost <video ids>
                 return cmd_igrepost(st, args)
             if cmd in ("photo", "photopreview"):  # daily product photo post on Facebook + Instagram
