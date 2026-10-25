@@ -1582,5 +1582,78 @@
   ],
   "sent_at": "2026-10-24T17:31:36.221563+00:00",
   "status": "closed"
+ },
+ "2026-10-25": {
+  "date": "2026-10-25",
+  "ideas": [
+   {
+    "angle": "For pet parents tired of vacuuming hair and wiping muddy paws after every ride.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "No More Fur On Car Seats",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "How to keep your shedding pet neat at home without the high salon bills.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Skip The Expensive Pet Groomer",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When you want full, symmetrical brows without spending 20 minutes drawing them on.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Perfect Brows In Ten Seconds Flat",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Stop muddy footprints from ruining your clean floors after rainy walks.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Clean Muddy Paws Before Coming Inside",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Clear away stubborn buildup and daily grime for that fresh, post-spa feel.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "The Most Satisfying At-Home Facial",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Get flawless, daylight-accurate application even in dim bedrooms or hotel bathrooms.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Never Do Makeup In Bad Lighting",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-25T17:43:37.436081+00:00",
+  "status": "waiting"
  }
 }

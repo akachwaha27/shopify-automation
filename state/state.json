@@ -1,69 +1,6 @@
 {
   "tg_offset": 272239696,
   "batches": {
-    "2026-10-21": {
-      "topics": [
-        {
-          "title": "Painless Paws, Zero Drama",
-          "angle": "Make nail day stress-free for both you and your furry best friend.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "rechargeable-pet-nail-grinder-dog-nail-clippers-painless-usb-electric-06216"
-        },
-        {
-          "title": "Say Goodbye To Gym Calluses",
-          "angle": "Lift heavier and grip tighter without tearing up your hands.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "anti-slip-weightlifting-half-finger-fitness-glove-12531"
-        },
-        {
-          "title": "Your Entire Gym In A Bag",
-          "angle": "Skip the crowded fitness center and crush your workout right in your living room.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "home-gym-kit"
-        },
-        {
-          "title": "Ride Longer Without The Soreness",
-          "angle": "Turn any hard bike seat into a plush cloud for your weekend rides.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "mtb-mountain-bike-cycling-thickened-extra-comfort-ultra-soft-silicone-3d-gel-pad-cushion-cover-bicycle-saddle-seat-4-colors-00455"
-        },
-        {
-          "title": "The Ultimate Naptime Upgrade",
-          "angle": "Watch your pet fall instantly in love with the coziest bed ever.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "super-soft-pet-bed-82146"
-        },
-        {
-          "title": "Full Body Workout Anywhere",
-          "angle": "Pack your entire gym routine into a single compact door bag.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
-        }
-      ],
-      "sent_at": "2026-10-21T15:40:42.098469+00:00",
-      "selected": [
-        0
-      ],
-      "status": "closed"
-    },
     "2026-10-21-2": {
       "topics": [
         {
@@ -441,6 +378,67 @@
         0
       ],
       "status": "closed"
+    },
+    "2026-10-25": {
+      "topics": [
+        {
+          "title": "No More Fur On Car Seats",
+          "angle": "For pet parents tired of vacuuming hair and wiping muddy paws after every ride.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "travel-dog-car-seat-cover-58970"
+        },
+        {
+          "title": "Skip The Expensive Pet Groomer",
+          "angle": "How to keep your shedding pet neat at home without the high salon bills.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-grooming-kit"
+        },
+        {
+          "title": "Perfect Brows In Ten Seconds Flat",
+          "angle": "When you want full, symmetrical brows without spending 20 minutes drawing them on.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "natural-4d-eyebrow-tattoo-sticker"
+        },
+        {
+          "title": "Clean Muddy Paws Before Coming Inside",
+          "angle": "Stop muddy footprints from ruining your clean floors after rainy walks.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-paw-cleaner-63144"
+        },
+        {
+          "title": "The Most Satisfying At-Home Facial",
+          "angle": "Clear away stubborn buildup and daily grime for that fresh, post-spa feel.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "externa-skin-cleansing-tool"
+        },
+        {
+          "title": "Never Do Makeup In Bad Lighting",
+          "angle": "Get flawless, daylight-accurate application even in dim bedrooms or hotel bathrooms.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "portable-led-makeup-mirror"
+        }
+      ],
+      "sent_at": "2026-10-25T17:43:37.436081+00:00",
+      "selected": [],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -8206,10 +8204,6 @@
     "Your Entire Gym In One Bag"
   ],
   "trend_tries": {
-    "2026-10-22": {
-      "n": 2,
-      "at": "2026-10-22T18:38:12.412354+00:00"
-    },
     "2026-10-23": {
       "n": 1,
       "at": "2026-10-23T18:45:24.420068+00:00"
@@ -8217,6 +8211,10 @@
     "2026-10-24": {
       "n": 2,
       "at": "2026-10-24T17:30:05.603546+00:00"
+    },
+    "2026-10-25": {
+      "n": 1,
+      "at": "2026-10-25T17:41:51.797480+00:00"
     }
   },
   "cleanup_day": "2026-10-25",
