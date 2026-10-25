@@ -437,8 +437,10 @@
         }
       ],
       "sent_at": "2026-10-25T17:43:37.436081+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     }
   },
   "videos": {
@@ -8178,6 +8180,323 @@
       },
       "uploaded_at": "2026-10-25T00:15:54.824411+00:00",
       "slot": "2026-10-25T14:15:00+00:00"
+    },
+    "2026-10-25-1": {
+      "topic": {
+        "title": "No More Fur On Car Seats",
+        "angle": "For pet parents tired of vacuuming hair and wiping muddy paws after every ride.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "travel-dog-car-seat-cover-58970"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-25T22:35:10.051287+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "dog car seat cover",
+        "title": "Dog car seat cover saves your upholstery \ud83d\ude97",
+        "hook_text": "End Car Seat Fur",
+        "thumbnail_text": "Save Your Seats",
+        "description": "Keep your back seats clean with a dog car seat cover designed to block fur, mud, and water.\nProtect your vehicle upholstery effortlessly and say goodbye to endless vacuuming after park trips.\nShop it: https://ashvara.store/products/travel-dog-car-seat-cover-58970",
+        "hashtags": [
+          "#shorts",
+          "#dogcare",
+          "#caraccessories",
+          "#ashvara"
+        ],
+        "tags": [
+          "dog car seat cover",
+          "dog car seat cover for back seat",
+          "pet car seat cover",
+          "car seat protector for dogs",
+          "best dog car seat cover",
+          "dog hammock car seat cover",
+          "clean car interior dog hair",
+          "pet seat cover",
+          "cleaning car dog hair",
+          "clean car dog hair",
+          "back seat pet cover",
+          "washable car seat cover",
+          "waterproof dog car cover",
+          "car cleaning pet hair removal",
+          "dog hair in car",
+          "pet seat protector",
+          "pet car accessories",
+          "dog travel accessories"
+        ],
+        "pinned_comment": "How often do you take your pup on car rides? Tell us your favorite road trip spot below! \ud83d\udc3e",
+        "scenes": [
+          {
+            "text": "Cleaning dog hair from car seats feels completely impossible.",
+            "badge": "",
+            "label": "Fur everywhere",
+            "stock_queries": [
+              "dog hair car",
+              "vacuuming car seat"
+            ],
+            "image_prompt": "Vertical 9:16 closeup shot of black car fabric seats coated in stubborn golden pet fur and dirt, detailed texture, cinematic lighting.",
+            "stock_query": "dog hair car",
+            "product_image": "work/2026-10-25-1/product/product_0.jpg"
+          },
+          {
+            "text": "Here is the easiest way to keep your upholstery spotless.",
+            "badge": "",
+            "label": "Zero seat mess",
+            "stock_queries": [
+              "clean car interior",
+              "car seat protector"
+            ],
+            "image_prompt": "Vertical 9:16 shot of an immaculate, clean modern car back seat with no fur or dirt, bright natural sunlight pouring through windows.",
+            "stock_query": "clean car interior"
+          },
+          {
+            "text": "This heavy-duty bench cover snaps securely around your headrests in seconds.",
+            "badge": "",
+            "label": "Quick snap buckles",
+            "stock_queries": [
+              "buckle strap headrest",
+              "installing car cover"
+            ],
+            "image_prompt": "Vertical 9:16 shot showing durable black nylon straps clipping around a car headrest, close up on heavy duty quick-release buckle.",
+            "stock_query": "buckle strap headrest",
+            "product_image": "work/2026-10-25-1/product/product_1.jpg"
+          },
+          {
+            "text": "It uses thick, waterproof oxford fabric that catches loose fur and mud.",
+            "badge": "",
+            "label": "Waterproof oxford fabric",
+            "stock_queries": [
+              "waterproof fabric water",
+              "golden retriever car"
+            ],
+            "image_prompt": "Vertical 9:16 macro shot of water droplets beading on a textured black quilted oxford fabric car seat cover.",
+            "stock_query": "waterproof fabric water"
+          },
+          {
+            "text": "Whenever it gets dirty, simply shake it out or machine wash it.",
+            "badge": "",
+            "label": "Machine washable",
+            "stock_queries": [
+              "washing machine laundry",
+              "cleaning pet mat"
+            ],
+            "image_prompt": "Vertical 9:16 shot of a folded quilted seat cover being placed into a modern front-loading washing machine, clean laundry room.",
+            "stock_query": "washing machine laundry",
+            "product_image": "work/2026-10-25-1/product/product_2.jpg"
+          },
+          {
+            "text": "Grab yours for thirty-four dollars at the link in bio on ashvara dot store. How often do you drive with your dog?",
+            "badge": "",
+            "label": "$34.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "happy dog car",
+              "dog window car"
+            ],
+            "image_prompt": "Vertical 9:16 shot of a happy golden retriever sitting peacefully on a durable black seat cover in the back seat of a car.",
+            "stock_query": "happy dog car",
+            "product_image": "work/2026-10-25-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "Waterproof oxford fabric protects car upholstery from pet hair and liquid spills.",
+          "Headrest straps and snap buckles allow fast installation.",
+          "Machine-washable pet bench covers simplify post-trip cleanup."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Cleaning dog hair from car seats feels completely impossible. Here is the easiest way to keep your upholstery spotless. This heavy-duty bench cover snaps securely around your headrests in seconds. It uses thick, waterproof oxford fabric that catches loose fur and mud. Whenever it gets dirty, simply shake it out or machine wash it. Grab yours for thirty-four dollars at the link in bio on ashvara dot store. How often do you drive with your dog?",
+        "product": {
+          "handle": "travel-dog-car-seat-cover-58970",
+          "title": "Dog Travel Car Seat Carrier",
+          "url": "https://ashvara.store/products/travel-dog-car-seat-cover-58970",
+          "price": "$34.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "dirty car seat covered in dog hair",
+            "queries": [
+              {
+                "q": "dog hair car seat",
+                "must": [
+                  "hair"
+                ]
+              },
+              {
+                "q": "messy car interior",
+                "must": [
+                  "interior"
+                ]
+              },
+              {
+                "q": "vacuuming car",
+                "must": [
+                  "vacuum"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "clean car back seat with upholstery",
+            "queries": [
+              {
+                "q": "clean car seat",
+                "must": [
+                  "seat"
+                ]
+              },
+              {
+                "q": "car interior upholstery",
+                "must": [
+                  "interior"
+                ]
+              },
+              {
+                "q": "back seat car",
+                "must": [
+                  "seat"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "dog car seat cover buckles attached to headrests",
+            "queries": [
+              {
+                "q": "car seat cover buckles",
+                "must": [
+                  "buckle"
+                ]
+              },
+              {
+                "q": "pet seat headrest",
+                "must": [
+                  "headrest"
+                ]
+              },
+              {
+                "q": "installing car seat cover",
+                "must": [
+                  "cover"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "waterproof fabric car seat protector",
+            "queries": [
+              {
+                "q": "waterproof fabric texture",
+                "must": [
+                  "fabric"
+                ]
+              },
+              {
+                "q": "oxford cloth material",
+                "must": [
+                  "cloth"
+                ]
+              },
+              {
+                "q": "water drops fabric",
+                "must": [
+                  "water"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "shaking out and washing car seat cover",
+            "queries": [
+              {
+                "q": "cleaning car seat cover",
+                "must": [
+                  "cover"
+                ]
+              },
+              {
+                "q": "washing machine laundry",
+                "must": [
+                  "washing"
+                ]
+              },
+              {
+                "q": "shaking blanket",
+                "must": [
+                  "shake"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "golden retriever dog sitting happily in car back seat",
+            "queries": [
+              {
+                "q": "dog in car seat",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "golden retriever car",
+                "must": [
+                  "retriever"
+                ]
+              },
+              {
+                "q": "dog looking out car window",
+                "must": [
+                  "window"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "dog car seat cover",
+          "car interior",
+          "pet travel"
+        ],
+        "visual_style": "Vertical UGC and stock demonstration showcasing dog car seat covers protecting vehicle interiors from fur and mud with clean close-ups.",
+        "visual_refs": [
+          "Genius Pet Car Seat Cover!Removable&amp;Quick-Dry No More Fur or Smell!",
+          "Waterproof Dog Car Seat Cover \ud83d\ude97\ud83d\udc36 No More Mess, Fur, or Scratches!",
+          "Waterproof Dog Car Seat Cover \ud83d\ude97\ud83d\udc36 No Mud, No Fur, No Stress!",
+          "My Car Was Covered in Mud, Fur &amp; Scratches\u2026 Then This Dog Seat Cover Saved It Forever!",
+          "100% Waterproof Dog Car Seat Cover \ud83d\udc36 No Mud, No Fur, No Stress!",
+          "Best Pet Hair Remover Tool 2026 \ud83d\udc36\ud83d\udc31 No More Fur Everywhere!#shorts #pethealth #petgadgets #petuk"
+        ],
+        "presenter_image": "assets/cast/biscuit.jpg",
+        "presenter_voice": "en-AU-WilliamMultilingualNeural",
+        "presenter_name": "Biscuit",
+        "voice": "en-AU-WilliamMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 1
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural).",
+        "Natalka Ukraine / Wikimedia Commons (CC BY 4.0) https://commons.wikimedia.org/wiki/File:ZAZ-1103_Slavuta_car_interior_through_open_side_doors.jpg"
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-25",
+        "name": "2026-10-25-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-25",
+        "name": "2026-10-25-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,050 --> 00:00:02,319\nCleaning dog hair from car seats feels\n\n2\n00:00:02,319 --> 00:00:05,689\ncompletely impossible Here is the easiest way\n\n3\n00:00:05,689 --> 00:00:08,895\nto keep your upholstery spotless This heavy-duty\n\n4\n00:00:08,895 --> 00:00:11,585\nbench cover snaps securely around your headrests\n\n5\n00:00:11,585 --> 00:00:15,036\nin seconds It uses thick waterproof oxford\n\n6\n00:00:15,036 --> 00:00:17,686\nfabric that catches loose fur and mud\n\n7\n00:00:17,686 --> 00:00:20,159\nWhenever it gets dirty simply shake it\n\n8\n00:00:20,159 --> 00:00:22,604\nout or machine wash it Grab yours\n\n9\n00:00:22,604 --> 00:00:24,248\nfor thirty-four dollars at the link in\n\n10\n00:00:24,248 --> 00:00:27,278\nbio on ashvara dot store How often\n\n11\n00:00:27,278 --> 00:00:29,200\ndo you drive with your dog\n",
+      "tg_msg": 274,
+      "opts_msg": 276
     }
   },
   "history": [
@@ -8201,7 +8520,8 @@
     "Cancel Your Gym Membership Today!",
     "Turn Your Pet Into A Snuggle Bug",
     "Your entire gym in a bag!",
-    "Your Entire Gym In One Bag"
+    "Your Entire Gym In One Bag",
+    "No More Fur On Car Seats"
   ],
   "trend_tries": {
     "2026-10-23": {
@@ -8228,14 +8548,14 @@
   },
   "photo_angle": 5,
   "visual_searches": {
-    "2026-10-24": 2
+    "2026-10-25": 1
   },
   "recent_voices": [
     "en-US-AvaMultilingualNeural",
-    "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
     "en-US-AvaMultilingualNeural",
-    "en-US-AvaMultilingualNeural"
+    "en-US-AvaMultilingualNeural",
+    "en-AU-WilliamMultilingualNeural"
   ],
   "presenter_candidates": [
     {
