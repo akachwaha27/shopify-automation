@@ -1957,12 +1957,12 @@
   "pinned_comment": "If you could only do one exercise at home for the rest of your life, would you pick squats or chest presses? Let us know below! 👇",
   "platforms": {
    "Facebook": {
-    "link": null,
-    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Ah6IDowpIiTvJ5bjXTRDSWv'}}"
+    "link": "https://www.facebook.com/reel/2192504181331763",
+    "status": "published"
    },
    "Instagram": {
-    "link": null,
-    "status": "skipped (not configured)"
+    "link": "https://www.instagram.com/reel/De5pjbkDm9Z/",
+    "status": "published"
    },
    "TikTok": {
     "link": null,
@@ -2008,7 +2008,7 @@
   "thumbnail_text": "Full Gym Anywhere",
   "title": "Home Workout Kit: Your Entire Gym in a Bag 🎒",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-25T00:15:52.284468+00:00",
+  "updated": "2026-10-25T02:37:18.131686+00:00",
   "uploaded_at": "2026-10-25T00:15:52.284505+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
@@ -2047,12 +2047,12 @@
   "pinned_comment": "Would you keep this by your living room door or pack it in a suitcase for trips? Let us know below! 👇",
   "platforms": {
    "Facebook": {
-    "link": null,
-    "status": "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Aha0OH-z3BQEbZ8inGGhKVJ'}}"
+    "link": "https://www.facebook.com/reel/1855282145655079",
+    "status": "published"
    },
    "Instagram": {
     "link": null,
-    "status": "skipped (not configured)"
+    "status": "FAILED: IG upload failed: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
    },
    "TikTok": {
     "link": null,
@@ -2096,7 +2096,7 @@
   "thumbnail_text": "Full Gym Bag",
   "title": "Portable Home Gym in One Tiny Bag",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-25T00:15:54.824395+00:00",
+  "updated": "2026-10-25T02:36:16.342216+00:00",
   "uploaded_at": "2026-10-25T00:15:54.824411+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"

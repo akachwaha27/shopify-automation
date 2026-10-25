@@ -7515,7 +7515,7 @@
       },
       "status": "published",
       "by": "auto",
-      "updated": "2026-10-25T00:15:52.284468+00:00",
+      "updated": "2026-10-25T02:37:18.131686+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "home workout kit",
@@ -7827,12 +7827,12 @@
           "skipped (off: add to PUBLISH_TO variable)"
         ],
         "Instagram": [
-          null,
-          "skipped (not configured)"
+          "https://www.instagram.com/reel/De5pjbkDm9Z/",
+          "published"
         ],
         "Facebook": [
-          null,
-          "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Ah6IDowpIiTvJ5bjXTRDSWv'}}"
+          "https://www.facebook.com/reel/2192504181331763",
+          "published"
         ],
         "TikTok": [
           null,
@@ -7854,7 +7854,7 @@
       },
       "status": "published",
       "by": "auto",
-      "updated": "2026-10-25T00:15:54.824395+00:00",
+      "updated": "2026-10-25T02:36:16.342216+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "portable home gym",
@@ -8167,11 +8167,11 @@
         ],
         "Instagram": [
           null,
-          "skipped (not configured)"
+          "FAILED: IG upload failed: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
         ],
         "Facebook": [
-          null,
-          "FAILED: FB start failed: {'error': {'message': 'API access blocked.', 'type': 'OAuthException', 'code': 200, 'fbtrace_id': 'Aha0OH-z3BQEbZ8inGGhKVJ'}}"
+          "https://www.facebook.com/reel/1855282145655079",
+          "published"
         ],
         "TikTok": [
           null,
