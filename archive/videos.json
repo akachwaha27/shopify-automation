@@ -2103,7 +2103,7 @@
  },
  "2026-10-25-1": {
   "angle": "For pet parents tired of vacuuming hair and wiping muddy paws after every ride.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural).",
@@ -2132,12 +2132,29 @@
    "Machine-washable pet bench covers simplify post-trip cleanup."
   ],
   "pinned_comment": "How often do you take your pup on car rides? Tell us your favorite road trip spot below! 🐾",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": "https://www.facebook.com/reel/1465547805787806",
+    "status": "published"
+   },
+   "Instagram": {
+    "link": "https://www.instagram.com/reel/De8BlIGD9_N/",
+    "status": "published"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "dog car seat cover",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-26T01:15:00+00:00",
   "script": "Cleaning dog hair from car seats feels completely impossible. Here is the easiest way to keep your upholstery spotless. This heavy-duty bench cover snaps securely around your headrests in seconds. It uses thick, waterproof oxford fabric that catches loose fur and mud. Whenever it gets dirty, simply shake it out or machine wash it. Grab yours for thirty-four dollars at the link in bio on ashvara dot store. How often do you drive with your dog?",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,050 --> 00:00:02,319\nCleaning dog hair from car seats feels\n\n2\n00:00:02,319 --> 00:00:05,689\ncompletely impossible Here is the easiest way\n\n3\n00:00:05,689 --> 00:00:08,895\nto keep your upholstery spotless This heavy-duty\n\n4\n00:00:08,895 --> 00:00:11,585\nbench cover snaps securely around your headrests\n\n5\n00:00:11,585 --> 00:00:15,036\nin seconds It uses thick waterproof oxford\n\n6\n00:00:15,036 --> 00:00:17,686\nfabric that catches loose fur and mud\n\n7\n00:00:17,686 --> 00:00:20,159\nWhenever it gets dirty simply shake it\n\n8\n00:00:20,159 --> 00:00:22,604\nout or machine wash it Grab yours\n\n9\n00:00:22,604 --> 00:00:24,248\nfor thirty-four dollars at the link in\n\n10\n00:00:24,248 --> 00:00:27,278\nbio on ashvara dot store How often\n\n11\n00:00:27,278 --> 00:00:29,200\ndo you drive with your dog\n",
   "tags": [
    "dog car seat cover",
@@ -2167,8 +2184,8 @@
   "thumbnail_text": "Save Your Seats",
   "title": "Dog car seat cover saves your upholstery 🚗",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-25T22:35:10.051287+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-26T00:45:45.573831+00:00",
+  "uploaded_at": "2026-10-26T00:45:45.573860+00:00",
   "virality_score": 7,
   "voice": "en-AU-WilliamMultilingualNeural"
  }

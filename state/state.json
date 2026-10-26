@@ -8191,9 +8191,9 @@
         "trend_source": "Ashvara store catalog",
         "product": "travel-dog-car-seat-cover-58970"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "auto",
-      "updated": "2026-10-25T22:35:10.051287+00:00",
+      "updated": "2026-10-26T00:45:45.573831+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "dog car seat cover",
@@ -8496,7 +8496,29 @@
       },
       "srt": "1\n00:00:00,050 --> 00:00:02,319\nCleaning dog hair from car seats feels\n\n2\n00:00:02,319 --> 00:00:05,689\ncompletely impossible Here is the easiest way\n\n3\n00:00:05,689 --> 00:00:08,895\nto keep your upholstery spotless This heavy-duty\n\n4\n00:00:08,895 --> 00:00:11,585\nbench cover snaps securely around your headrests\n\n5\n00:00:11,585 --> 00:00:15,036\nin seconds It uses thick waterproof oxford\n\n6\n00:00:15,036 --> 00:00:17,686\nfabric that catches loose fur and mud\n\n7\n00:00:17,686 --> 00:00:20,159\nWhenever it gets dirty simply shake it\n\n8\n00:00:20,159 --> 00:00:22,604\nout or machine wash it Grab yours\n\n9\n00:00:22,604 --> 00:00:24,248\nfor thirty-four dollars at the link in\n\n10\n00:00:24,248 --> 00:00:27,278\nbio on ashvara dot store How often\n\n11\n00:00:27,278 --> 00:00:29,200\ndo you drive with your dog\n",
       "tg_msg": 274,
-      "opts_msg": 276
+      "opts_msg": 276,
+      "approved_by": "auto",
+      "description_full": "Keep your back seats clean with a dog car seat cover designed to block fur, mud, and water.\nProtect your vehicle upholstery effortlessly and say goodbye to endless vacuuming after park trips.\nShop it: https://ashvara.store/products/travel-dog-car-seat-cover-58970\n\n#shorts #dogcare #caraccessories #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural).\nNatalka Ukraine / Wikimedia Commons (CC BY 4.0) https://commons.wikimedia.org/wiki/File:ZAZ-1103_Slavuta_car_interior_through_open_side_doors.jpg\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          "https://www.instagram.com/reel/De8BlIGD9_N/",
+          "published"
+        ],
+        "Facebook": [
+          "https://www.facebook.com/reel/1465547805787806",
+          "published"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-26T00:45:45.573860+00:00",
+      "slot": "2026-10-26T01:15:00+00:00"
     }
   },
   "history": [
@@ -8537,7 +8559,7 @@
       "at": "2026-10-25T17:41:51.797480+00:00"
     }
   },
-  "cleanup_day": "2026-10-25",
+  "cleanup_day": "2026-10-26",
   "signals_day": "2026-10-25",
   "photo_posts": {
     "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620": "2026-10-13T21:05:44.818972+00:00",
