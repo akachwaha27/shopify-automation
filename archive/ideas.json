@@ -1655,5 +1655,78 @@
   ],
   "sent_at": "2026-10-25T17:43:37.436081+00:00",
   "status": "closed"
+ },
+ "2026-10-26": {
+  "date": "2026-10-26",
+  "ideas": [
+   {
+    "angle": "Tired of finding pet hair on literally everything you own?",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Shedding Season Is No Match For This!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "When filling in your brows takes longer than your entire makeup routine.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Get Perfect Brows In Seconds!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Stop tracking muddy park paws all over your freshly cleaned floors.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "No More Muddy Paw Prints Today!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Get that fresh post-spa glow without spending hundreds at the salon.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Upgrade Your At-Home Facial Routine Now!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Doing your makeup in dim bathroom lighting is finally a thing of the past.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Flawless Lighting Anywhere You Go!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Say goodbye to stressful grooming sessions when your dog gets stubborn mats.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Painless Knot Removal For Happy Pets!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-26T17:51:51.484128+00:00",
+  "status": "waiting"
  }
 }
