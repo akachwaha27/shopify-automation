@@ -1662,11 +1662,11 @@
    {
     "angle": "Tired of finding pet hair on literally everything you own?",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Shedding Season Is No Match For This!",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-26-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1727,6 +1727,6 @@
    }
   ],
   "sent_at": "2026-10-26T17:51:51.484128+00:00",
-  "status": "waiting"
+  "status": "closed"
  }
 }

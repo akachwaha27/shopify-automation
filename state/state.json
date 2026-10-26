@@ -437,8 +437,10 @@
         }
       ],
       "sent_at": "2026-10-26T17:51:51.484128+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     }
   },
   "videos": {
@@ -8517,6 +8519,288 @@
       },
       "uploaded_at": "2026-10-26T00:45:45.573860+00:00",
       "slot": "2026-10-26T01:15:00+00:00"
+    },
+    "2026-10-26-1": {
+      "topic": {
+        "title": "Shedding Season Is No Match For This!",
+        "angle": "Tired of finding pet hair on literally everything you own?",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "pet-grooming-kit"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-26T22:00:01.922777+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "pet hair remover",
+        "title": "Tired of Pet Hair Everywhere? Try This! \ud83d\udc3e",
+        "hook_text": "Stop Pet Hair Everywhere",
+        "thumbnail_text": "Pet Hair Solved",
+        "description": "Discover how a reusable pet hair remover clears fur off couches and car seats in seconds.\nKeep your home clean during shedding season with this easy fabric cleaning tool.\nShop it: https://ashvara.store/products/pet-grooming-kit",
+        "hashtags": [
+          "#shorts",
+          "#pethair",
+          "#dogmom",
+          "#ashvara"
+        ],
+        "tags": [
+          "pet hair remover",
+          "pet hair remover car",
+          "pet hair remover couch",
+          "cat fur cleaner",
+          "shedding season",
+          "dog hair remover",
+          "reusable lint roller",
+          "reusable lint remover",
+          "pet hair removal tools",
+          "pet hair remover brush",
+          "pet hair remover carpet",
+          "pet hair remover clothes",
+          "pet hair remover from furniture",
+          "car seat pet hair",
+          "reusable lint brush",
+          "pet shedding hacks",
+          "couch cleaning tool",
+          "shedding season tips",
+          "ashvara store",
+          "ashvara"
+        ],
+        "pinned_comment": "My velvet armchair seems to attract every single cat hair in the house! \ud83d\udc31 Which spot in your home gets the worst pet hair build-up?",
+        "scenes": [
+          {
+            "text": "Pet hair is on your couch, clothes, and practically everywhere else.",
+            "badge": "",
+            "label": "End pet hair chaos",
+            "stock_queries": [
+              "dog hair couch",
+              "cat fur sofa"
+            ],
+            "image_prompt": "A cozy modern living room sofa covered in visible white pet hair shedding, macro shot, warm sunlight, 9:16 vertical orientation.",
+            "stock_query": "dog hair couch",
+            "product_image": "work/2026-10-26-1/product/product_0.jpg"
+          },
+          {
+            "text": "Here is the easiest trick to clear it without sticky tape. This electrostatic roller lifts stubborn fur from fabric using self-cleaning micro-bristles.",
+            "badge": "",
+            "label": "Self cleaning bristles",
+            "stock_queries": [
+              "pet hair roller",
+              "cleaning couch fur"
+            ],
+            "image_prompt": "Close up shot of a hand rolling an ergonomic white pet hair remover roller across a dark fabric sofa, showing a clean stripe behind it, 9:16 vertical orientation.",
+            "stock_query": "pet hair roller"
+          },
+          {
+            "text": "It measures seven inches wide, making quick work of large sofas and car seats.",
+            "badge": "",
+            "label": "Seven inch coverage",
+            "stock_queries": [
+              "cleaning car interior",
+              "vacuuming sofa cushion"
+            ],
+            "image_prompt": "A clean car seat fabric being swept with a sleek pet hair removal tool, bright indirect daylight, 9:16 vertical orientation.",
+            "stock_query": "cleaning car interior",
+            "product_image": "work/2026-10-26-1/product/product_1.jpg"
+          },
+          {
+            "text": "Just roll it back and forth, pop the dust compartment open, and empty it out.",
+            "badge": "",
+            "label": "Easy pop compartment",
+            "stock_queries": [
+              "opening trash can",
+              "cleaning lint trap"
+            ],
+            "image_prompt": "A person clicking open the back chamber of a white cleaning roller tool over a clean trash bin to release gathered pet fur, close up, 9:16 vertical orientation.",
+            "stock_query": "opening trash can"
+          },
+          {
+            "text": "Grab yours for nineteen ninety-nine at link in bio, ashvara store. Which furniture piece in your home traps the most pet hair?",
+            "badge": "",
+            "label": "$49.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "pristine living room",
+              "fluffy golden retriever"
+            ],
+            "image_prompt": "A spotless modern living room with a happy golden retriever sitting next to a clean navy blue armchair, beautiful sunlight, 9:16 vertical orientation.",
+            "stock_query": "pristine living room",
+            "product_image": "work/2026-10-26-1/product/product_2.jpg"
+          }
+        ],
+        "key_facts": [
+          "The featured pet hair remover measures seven inches wide.",
+          "It uses electrostatic micro-bristles and features a pop-open collection compartment."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Pet hair is on your couch, clothes, and practically everywhere else. Here is the easiest trick to clear it without sticky tape. This electrostatic roller lifts stubborn fur from fabric using self-cleaning micro-bristles. It measures seven inches wide, making quick work of large sofas and car seats. Just roll it back and forth, pop the dust compartment open, and empty it out. Grab yours for nineteen ninety-nine at link in bio, ashvara store. Which furniture piece in your home traps the most pet hair?",
+        "product": {
+          "handle": "pet-grooming-kit",
+          "title": "Pet Grooming Kit",
+          "url": "https://ashvara.store/products/pet-grooming-kit",
+          "price": "$49.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "cat hair on a fabric couch",
+            "queries": [
+              {
+                "q": "cat hair on couch",
+                "must": [
+                  "couch"
+                ]
+              },
+              {
+                "q": "pet hair on clothes",
+                "must": [
+                  "clothes"
+                ]
+              },
+              {
+                "q": "furry cat furniture",
+                "must": [
+                  "furniture"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "electrostatic pet hair roller in action on fabric",
+            "queries": [
+              {
+                "q": "pet hair roller",
+                "must": [
+                  "roller"
+                ]
+              },
+              {
+                "q": "lint brush cleaning fur",
+                "must": [
+                  "brush"
+                ]
+              },
+              {
+                "q": "removing pet hair",
+                "must": [
+                  "fabric"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "wide lint roller cleaning a large sofa",
+            "queries": [
+              {
+                "q": "cleaning large sofa",
+                "must": [
+                  "sofa"
+                ]
+              },
+              {
+                "q": "cleaning car seat",
+                "must": [
+                  "seat"
+                ]
+              },
+              {
+                "q": "brushing upholstery",
+                "must": [
+                  "upholstery"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "emptying a pet hair roller dust compartment",
+            "queries": [
+              {
+                "q": "emptying dust compartment",
+                "must": [
+                  "compartment"
+                ]
+              },
+              {
+                "q": "cleaning lint roller",
+                "must": [
+                  "roller"
+                ]
+              },
+              {
+                "q": "opening dust bin",
+                "must": [
+                  "bin"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "dog sitting on a living room sofa",
+            "queries": [
+              {
+                "q": "dog on sofa",
+                "must": [
+                  "dog"
+                ]
+              },
+              {
+                "q": "cat on couch",
+                "must": [
+                  "cat"
+                ]
+              },
+              {
+                "q": "pet in living room",
+                "must": [
+                  "pet"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "cat hair remover tool",
+          "pet brush cleaning fur",
+          "dog shedding hair couch"
+        ],
+        "visual_style": "Clean close-up stock footage showcasing practical pet hair removal tools and furry pets in home settings.",
+        "visual_refs": [
+          "Shedding season is no match for this vacuum brush \ud83d\udd25",
+          "Silicone done badly is no match for this monster of a tool! #caulking #construction #silicone",
+          "Seasonal shedding is no match for this pet hair remover! #amazonfinds #dog #doglover #cat",
+          "Satisfying Golden Retriever Deshedding! \ud83d\udc36 Easy Clean Dog Brush",
+          "Most Homeowners Insulate Shed Roofs WRONG (Watch This!)",
+          "Shedding my skin in front of my husband"
+        ],
+        "presenter_image": "assets/cast/biscuit.jpg",
+        "presenter_voice": "en-AU-WilliamMultilingualNeural",
+        "presenter_name": "Biscuit",
+        "voice": "en-AU-WilliamMultilingualNeural",
+        "visual_report": {
+          "shots": 5,
+          "checked": 5,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-26",
+        "name": "2026-10-26-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-26",
+        "name": "2026-10-26-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,050 --> 00:00:02,414\nPet hair is on your couch clothes\n\n2\n00:00:02,414 --> 00:00:05,112\nand practically everywhere else Here is the\n\n3\n00:00:05,112 --> 00:00:06,968\neasiest trick to clear it without sticky\n\n4\n00:00:06,968 --> 00:00:09,877\ntape This electrostatic roller lifts stubborn\n\n5\n00:00:09,877 --> 00:00:13,045\nfur from fabric using self-cleaning micro-bristles\n\n6\n00:00:13,045 --> 00:00:15,446\nIt measures seven inches wide making quick\n\n7\n00:00:15,446 --> 00:00:17,810\nwork of large sofas and car seats\n\n8\n00:00:17,810 --> 00:00:19,728\nJust roll it back and forth pop\n\n9\n00:00:19,728 --> 00:00:21,807\nthe dust compartment open and empty it\n\n10\n00:00:21,807 --> 00:00:24,419\nout Grab yours for nineteen ninety-nine at\n\n11\n00:00:24,419 --> 00:00:27,538\nlink in bio ashvara store Which furniture\n\n12\n00:00:27,538 --> 00:00:29,109\npiece in your home traps the most\n\n13\n00:00:29,109 --> 00:00:30,017\npet hair\n",
+      "tg_msg": 282,
+      "opts_msg": 284
     }
   },
   "history": [
@@ -8541,7 +8825,8 @@
     "Turn Your Pet Into A Snuggle Bug",
     "Your entire gym in a bag!",
     "Your Entire Gym In One Bag",
-    "No More Fur On Car Seats"
+    "No More Fur On Car Seats",
+    "Shedding Season Is No Match For This!"
   ],
   "trend_tries": {
     "2026-10-24": {
@@ -8569,13 +8854,13 @@
   },
   "photo_angle": 6,
   "visual_searches": {
-    "2026-10-25": 1
+    "2026-10-26": 1
   },
   "recent_voices": [
-    "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
+    "en-AU-WilliamMultilingualNeural",
     "en-AU-WilliamMultilingualNeural"
   ],
   "presenter_candidates": [
