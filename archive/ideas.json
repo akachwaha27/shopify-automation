@@ -1735,11 +1735,11 @@
    {
     "angle": "Stop wasting fifteen minutes every morning trying to draw matching brows.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Instant Flawless Brows in 10 Seconds",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-27-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1800,7 +1800,7 @@
    }
   ],
   "sent_at": "2026-10-27T18:54:13.890662+00:00",
-  "status": "waiting"
+  "status": "closed"
  },
  "2026-10-27-2": {
   "date": "2026-10-27-2",
@@ -1808,11 +1808,11 @@
    {
     "angle": "Tired of spending way too much time drawing on your eyebrows every single morning?",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Perfect Brows in Just Seconds!",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-27-2-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1873,6 +1873,6 @@
    }
   ],
   "sent_at": "2026-10-27T19:35:27.667463+00:00",
-  "status": "waiting"
+  "status": "closed"
  }
 }

@@ -374,8 +374,10 @@
         }
       ],
       "sent_at": "2026-10-27T18:54:13.890662+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     },
     "2026-10-27-2": {
       "topics": [
@@ -435,8 +437,10 @@
         }
       ],
       "sent_at": "2026-10-27T19:35:27.667463+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     }
   },
   "videos": {
@@ -8819,6 +8823,639 @@
       },
       "uploaded_at": "2026-10-27T01:26:34.227348+00:00",
       "slot": "2026-10-27T16:15:00+00:00"
+    },
+    "2026-10-27-1": {
+      "topic": {
+        "title": "Instant Flawless Brows in 10 Seconds",
+        "angle": "Stop wasting fifteen minutes every morning trying to draw matching brows.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "natural-4d-eyebrow-tattoo-sticker"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-27T23:03:17.620133+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "instant flawless brows",
+        "title": "Instant Flawless Brows in Seconds",
+        "hook_text": "Stop Drawing Your Brows",
+        "thumbnail_text": "Brows In Seconds",
+        "description": "Get instant flawless brows without spending fifteen minutes every morning.\nDiscover this simple brow stamp and stencil kit for symmetrical arches fast.\nShop it: https://ashvara.store/products/natural-4d-eyebrow-tattoo-sticker",
+        "hashtags": [
+          "#shorts",
+          "#eyebrows",
+          "#browstamp",
+          "#ashvara"
+        ],
+        "tags": [
+          "instant flawless brows",
+          "eyebrow shaping tool kit",
+          "brow stamp",
+          "brow stamp kit",
+          "eyebrow stamp kit",
+          "eyebrow stencil kit",
+          "eyebrow shaping tool",
+          "quick eyebrow makeup",
+          "brow stamp kit review",
+          "eyebrow stencil stamp",
+          "quick eyebrow tutorial",
+          "eyebrow stamp kit review",
+          "eyebrow stencil tutorial",
+          "best eyebrow shaping tools",
+          "eyebrow stencil tutorial for beginners",
+          "quick eyebrow",
+          "eyebrow stencil",
+          "eyebrow shaper tool",
+          "best eyebrow shaper tool",
+          "eyebrow stencils how to use"
+        ],
+        "pinned_comment": "How many minutes do you usually spend trying to make your brows look identical every morning? \u23f1\ufe0f",
+        "scenes": [
+          {
+            "text": "Drawing matching eyebrows every morning does not need to take fifteen minutes.",
+            "badge": "",
+            "label": "Save Morning Time",
+            "stock_queries": [
+              "eyebrow pencil",
+              "makeup mirror"
+            ],
+            "image_prompt": "Vertical 9:16 macro shot of an eyebrow makeup pencil resting beside an elegant compact mirror on a vanity table, soft morning window light, high aesthetic beauty product photography, no people, no text",
+            "stock_query": "eyebrow pencil",
+            "product_image": "work/2026-10-27-1/product/product_0.jpg"
+          },
+          {
+            "text": "This stencil kit gives you symmetrical arches in literally ten seconds.",
+            "badge": "",
+            "label": "Instant Symmetrical Arches",
+            "stock_queries": [
+              "eyebrow stencil",
+              "cosmetic kit"
+            ],
+            "image_prompt": "Vertical 9:16 close-up of clear brow shaping stencils laid out on a sleek marble tray next to a compact cosmetic kit, clean studio lighting, beauty still life, no people, no text",
+            "stock_query": "eyebrow stencil"
+          },
+          {
+            "text": "You just tap the soft cushion applicator into the matte powder.",
+            "badge": "",
+            "label": "Soft Sponge Applicator",
+            "stock_queries": [
+              "cushion sponge",
+              "powder compact"
+            ],
+            "image_prompt": "Vertical 9:16 macro photograph of a round sponge applicator dipping into a rich pigmented brow pomade powder compact, fine powder dust particles, luxury cosmetics aesthetic, no people, no text",
+            "stock_query": "cushion sponge",
+            "product_image": "work/2026-10-27-1/product/product_1.jpg"
+          },
+          {
+            "text": "Then align the flexible silicone template and stamp it firmly on.",
+            "badge": "",
+            "label": "Flexible Silicone Guide",
+            "stock_queries": [
+              "silicone stencil",
+              "cosmetics application"
+            ],
+            "image_prompt": "Vertical 9:16 close-up of a translucent flexible silicone eyebrow guide being held over a cosmetic demonstration surface, clean studio setup, pastel background, no people, no text",
+            "stock_query": "silicone stencil"
+          },
+          {
+            "text": "Flip the stencil for the other side, and you are done.",
+            "badge": "",
+            "label": "Smudge-Proof Finish",
+            "stock_queries": [
+              "eyebrow makeup",
+              "makeup powder"
+            ],
+            "image_prompt": "Vertical 9:16 still life of perfectly contoured brow swatches drawn onto a smooth ceramic testing tile, soft neutral tones, minimalist modern makeup display, no people, no text",
+            "stock_query": "eyebrow makeup",
+            "product_image": "work/2026-10-27-1/product/product_2.jpg"
+          },
+          {
+            "text": "Grab yours for eighteen dollars. Link in bio, ashvara.store. How long does your makeup usually take? Because...",
+            "badge": "",
+            "label": "$14.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "cosmetics packaging",
+              "makeup box"
+            ],
+            "image_prompt": "Vertical 9:16 flat lay of a complete eyebrow stamp and stencil kit arranged neatly on a pastel pink podium with silk fabric drape, commercial product photography, no text, no logos, no people",
+            "stock_query": "cosmetics packaging",
+            "product_image": "work/2026-10-27-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "Eyebrow stencils and stamp kits provide pre-shaped templates to apply powder evenly across both brows."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Drawing matching eyebrows every morning does not need to take fifteen minutes. This stencil kit gives you symmetrical arches in literally ten seconds. You just tap the soft cushion applicator into the matte powder. Then align the flexible silicone template and stamp it firmly on. Flip the stencil for the other side, and you are done. Grab yours for eighteen dollars. Link in bio, ashvara.store. How long does your makeup usually take? Because...",
+        "product": {
+          "handle": "natural-4d-eyebrow-tattoo-sticker",
+          "title": "4D Waterproof Eyebrow Tattoo Stickers",
+          "url": "https://ashvara.store/products/natural-4d-eyebrow-tattoo-sticker",
+          "price": "$14.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "woman applying eyebrow makeup in mirror",
+            "queries": [
+              {
+                "q": "eyebrow makeup application",
+                "must": [
+                  "eyebrow"
+                ]
+              },
+              {
+                "q": "woman applying makeup",
+                "must": [
+                  "makeup"
+                ]
+              },
+              {
+                "q": "mirror reflection face",
+                "must": [
+                  "mirror"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "eyebrow stencil kit on table",
+            "queries": [
+              {
+                "q": "eyebrow stencil kit",
+                "must": [
+                  "stencil"
+                ]
+              },
+              {
+                "q": "makeup kit display",
+                "must": [
+                  "kit"
+                ]
+              },
+              {
+                "q": "beauty products flatlay",
+                "must": [
+                  "beauty"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "sponge applicator dipping in powder",
+            "queries": [
+              {
+                "q": "makeup sponge applicator",
+                "must": [
+                  "sponge"
+                ]
+              },
+              {
+                "q": "powder compact makeup",
+                "must": [
+                  "powder"
+                ]
+              },
+              {
+                "q": "cosmetic puff tool",
+                "must": [
+                  "cosmetic"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "silicone stencil placed on eyebrow",
+            "queries": [
+              {
+                "q": "silicone eyebrow stencil",
+                "must": [
+                  "silicone"
+                ]
+              },
+              {
+                "q": "stencil on eyebrow",
+                "must": [
+                  "eyebrow"
+                ]
+              },
+              {
+                "q": "brow shaping tool",
+                "must": [
+                  "tool"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "woman removing stencil from eyebrow",
+            "queries": [
+              {
+                "q": "peeling off stencil",
+                "must": [
+                  "stencil"
+                ]
+              },
+              {
+                "q": "revealing eyebrow shape",
+                "must": [
+                  "eyebrow"
+                ]
+              },
+              {
+                "q": "makeup reveal face",
+                "must": [
+                  "face"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "finished makeup look in mirror",
+            "queries": [
+              {
+                "q": "finished makeup look",
+                "must": [
+                  "makeup"
+                ]
+              },
+              {
+                "q": "woman smiling mirror",
+                "must": [
+                  "mirror"
+                ]
+              },
+              {
+                "q": "beauty portrait face",
+                "must": [
+                  "portrait"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "makeup brush",
+          "eyebrow pencil",
+          "vanity mirror"
+        ],
+        "visual_style": "Close-up beauty tutorials demonstrating quick eyebrow stamping techniques with stencils and powder in bright, clean indoor lighting.",
+        "visual_refs": [
+          "Want a quick brow, in under 10 seconds? \ud83e\udd29",
+          "Eyebrows in Seconds! Does iMethod EYEBROW STAMP POMADE Really Work?!\ud83d\ude0d\ud83e\udd70\u2728#MAKEUP #EYEBROW",
+          "Eyebrows in Seconds! Does iMethod EYEBROW STAMP Really Work?!\ud83d\ude0d\ud83e\udd70\u2728#MAKEUP #EYEBROW",
+          "Get your eyebrows on point using this handy eyebrow stamp #shorts",
+          "PERFECT iMethod EYEBROW STAMP TUTORIAL |  Everything You Need To Know\ud83d\ude0d\u2728\ud83d\ude18#shorts #MAKEUP #EYEBROW",
+          "PERFECT iMethod EYEBROW STAMP TUTORIAL |  Everything You Need To Know\ud83d\ude0d\u2728\ud83d\ude18#shorts #MAKEUP #EYEBROW"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-27",
+        "name": "2026-10-27-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-27",
+        "name": "2026-10-27-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,106 --> 00:00:02,686\nDrawing matching eyebrows every morning does\n\n2\n00:00:02,686 --> 00:00:05,239\nnot need to take fifteen minutes This\n\n3\n00:00:05,239 --> 00:00:07,952\nstencil kit gives you symmetrical arches in\n\n4\n00:00:07,952 --> 00:00:10,705\nliterally ten seconds You just tap the\n\n5\n00:00:10,705 --> 00:00:13,670\nsoft cushion applicator into the matte powder\n\n6\n00:00:13,670 --> 00:00:16,596\nThen align the flexible silicone template and\n\n7\n00:00:16,596 --> 00:00:19,149\nstamp it firmly on Flip the stencil\n\n8\n00:00:19,149 --> 00:00:20,957\nfor the other side and you are\n\n9\n00:00:20,957 --> 00:00:24,375\ndone Grab yours for eighteen dollars Link\n\n10\n00:00:24,375 --> 00:00:25,957\nin bio ashvara .\n\n11\n00:00:25,957 --> 00:00:28,457\nstore How long does your makeup usually\n\n12\n00:00:28,457 --> 00:00:30,227\ntake Because\n",
+      "tg_msg": 293,
+      "opts_msg": 295
+    },
+    "2026-10-27-2-1": {
+      "topic": {
+        "title": "Perfect Brows in Just Seconds!",
+        "angle": "Tired of spending way too much time drawing on your eyebrows every single morning?",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "natural-4d-eyebrow-tattoo-sticker"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-27T23:11:40.430013+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "eyebrow stamp kit",
+        "title": "Eyebrow Stamp Kit Saves Your Mornings \u2728",
+        "hook_text": "Perfect Brows In Seconds",
+        "thumbnail_text": "Instant Brow Hack",
+        "description": "Discover how an eyebrow stamp kit creates even arches without wasting time in the morning.\nExplore easy eyebrow stencils and smudge-proof powder designed for quick daily routines.\nShop it: https://ashvara.store/products/natural-4d-eyebrow-tattoo-sticker",
+        "hashtags": [
+          "#shorts",
+          "#beautytips",
+          "#eyebrowstampkit",
+          "#ashvara"
+        ],
+        "tags": [
+          "eyebrow stamp kit",
+          "eyebrow stamp",
+          "eyebrow stamp shaping kit",
+          "eyebrow stamp stencil kit",
+          "eyebrow stencil",
+          "easy eyebrow makeup",
+          "eyebrow stencil kit",
+          "quick eyebrow makeup",
+          "eyebrow stencil stamp",
+          "best eyebrow stamp kit",
+          "eyebrow stamp kit review",
+          "how to use eyebrow stamp kit",
+          "brow stamp and stencil kit",
+          "eyebrow stamp review",
+          "easy eyebrow tutorial",
+          "eyebrow stamp tutorial",
+          "quick eyebrow tutorial",
+          "eyebrow stencils how to use",
+          "eyebrow shaping tool",
+          "quick eyebrow routine"
+        ],
+        "pinned_comment": "How many minutes does your morning eyebrow routine take right now? Tell us below! \u2728",
+        "scenes": [
+          {
+            "text": "Still spending twenty minutes every morning trying to balance your eyebrows?",
+            "badge": "",
+            "label": "Morning brow routine",
+            "stock_queries": [
+              "eyebrow pencil mirror",
+              "woman applying makeup"
+            ],
+            "image_prompt": "Close up vertical shot of eyebrow makeup application in a vanity mirror, soft morning bathroom lighting, professional beauty product aesthetic, 9:16 vertical orientation",
+            "stock_query": "eyebrow pencil mirror",
+            "product_image": "work/2026-10-27-2-1/product/product_0.jpg"
+          },
+          {
+            "text": "This eyebrow stamp kit makes symmetry surprisingly easy.",
+            "badge": "",
+            "label": "Effortless symmetry",
+            "stock_queries": [
+              "eyebrow stencil kit",
+              "cosmetic stamp applicator"
+            ],
+            "image_prompt": "Clean modern eyebrow stamp kit displayed on a minimalist marble vanity counter, pastel cosmetic packaging, high-end studio lighting, 9:16 vertical orientation",
+            "stock_query": "eyebrow stencil kit"
+          },
+          {
+            "text": "Just align one of the flexible stencils against your brow bone.",
+            "badge": "",
+            "label": "Reusable arched stencils",
+            "stock_queries": [
+              "eyebrow stencil clear",
+              "holding cosmetic template"
+            ],
+            "image_prompt": "Detailed vertical macro shot of a clear flexible eyebrow stencil held against a smooth brow arch, clean aesthetic, soft neutral lighting, 9:16 vertical aspect ratio",
+            "stock_query": "eyebrow stencil clear",
+            "product_image": "work/2026-10-27-2-1/product/product_1.jpg"
+          },
+          {
+            "text": "Then tap the soft sponge stamp with smudge-resistant powder right across.",
+            "badge": "",
+            "label": "Smudge resistant formula",
+            "stock_queries": [
+              "eyebrow powder stamp",
+              "sponge applicator makeup"
+            ],
+            "image_prompt": "Close up vertical view of a circular sponge makeup applicator gently pressing soft brown brow powder through a template, clean studio photography, 9:16",
+            "stock_query": "eyebrow powder stamp"
+          },
+          {
+            "text": "Blend it out with the included spoolie, and you have clean, balanced arches.",
+            "badge": "",
+            "label": "Includes blending spoolie",
+            "stock_queries": [
+              "eyebrow spoolie brush",
+              "grooming eyebrow hair"
+            ],
+            "image_prompt": "Macro close-up vertical shot of a spoolie brush lightly blending soft eyebrow pigment on neatly groomed brow hairs, crisp natural lighting, 9:16 vertical orientation",
+            "stock_query": "eyebrow spoolie brush",
+            "product_image": "work/2026-10-27-2-1/product/product_2.jpg"
+          },
+          {
+            "text": "Get it for sixteen ninety-nine at ashvara dot store, link in bio. How many minutes do you spend on makeup, or are you",
+            "badge": "",
+            "label": "$14.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "eyebrow kit packaging",
+              "cosmetic box set"
+            ],
+            "image_prompt": "Chic product display of an eyebrow stamping kit with stencils, stamp applicator, and spoolie brush arranged neatly on a stone pedestal, elegant studio lighting, 9:16 vertical orientation",
+            "stock_query": "eyebrow kit packaging",
+            "product_image": "work/2026-10-27-2-1/product/product_3.jpg"
+          }
+        ],
+        "key_facts": [
+          "Eyebrow stencils guide placement along the natural brow bone.",
+          "Eyebrow stamps use powder and sponge applicators to transfer shape quickly."
+        ],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "Still spending twenty minutes every morning trying to balance your eyebrows? This eyebrow stamp kit makes symmetry surprisingly easy. Just align one of the flexible stencils against your brow bone. Then tap the soft sponge stamp with smudge-resistant powder right across. Blend it out with the included spoolie, and you have clean, balanced arches. Get it for sixteen ninety-nine at ashvara dot store, link in bio. How many minutes do you spend on makeup, or are you",
+        "product": {
+          "handle": "natural-4d-eyebrow-tattoo-sticker",
+          "title": "4D Waterproof Eyebrow Tattoo Stickers",
+          "url": "https://ashvara.store/products/natural-4d-eyebrow-tattoo-sticker",
+          "price": "$14.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "woman drawing eyebrows with a pencil in front of a mirror",
+            "queries": [
+              {
+                "q": "woman drawing eyebrows",
+                "must": [
+                  "eyebrow"
+                ]
+              },
+              {
+                "q": "applying makeup mirror",
+                "must": [
+                  "mirror"
+                ]
+              },
+              {
+                "q": "morning makeup routine",
+                "must": [
+                  "makeup"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "eyebrow stamp kit compact with powder",
+            "queries": [
+              {
+                "q": "eyebrow stamp kit",
+                "must": [
+                  "eyebrow"
+                ]
+              },
+              {
+                "q": "makeup compact powder",
+                "must": [
+                  "powder"
+                ]
+              },
+              {
+                "q": "cosmetic product",
+                "must": [
+                  "cosmetic"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "hand holding eyebrow stencil against forehead",
+            "queries": [
+              {
+                "q": "eyebrow stencil",
+                "must": [
+                  "eyebrow"
+                ]
+              },
+              {
+                "q": "stencil on face",
+                "must": [
+                  "face"
+                ]
+              },
+              {
+                "q": "beauty tool",
+                "must": [
+                  "tool"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "sponge stamp applying powder on eyebrow",
+            "queries": [
+              {
+                "q": "sponge stamp makeup",
+                "must": [
+                  "stamp"
+                ]
+              },
+              {
+                "q": "applying eyebrow powder",
+                "must": [
+                  "powder"
+                ]
+              },
+              {
+                "q": "makeup application",
+                "must": [
+                  "makeup"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "eyebrow spoolie brush blending makeup",
+            "queries": [
+              {
+                "q": "eyebrow spoolie brush",
+                "must": [
+                  "brush"
+                ]
+              },
+              {
+                "q": "blending makeup",
+                "must": [
+                  "makeup"
+                ]
+              },
+              {
+                "q": "eyebrow grooming",
+                "must": [
+                  "eyebrow"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "woman smiling with perfectly shaped eyebrows",
+            "queries": [
+              {
+                "q": "woman smiling face",
+                "must": [
+                  "woman"
+                ]
+              },
+              {
+                "q": "beautiful makeup face",
+                "must": [
+                  "face"
+                ]
+              },
+              {
+                "q": "portrait smiling",
+                "must": [
+                  "portrait"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "makeup brush",
+          "eyebrow pencil",
+          "mirror"
+        ],
+        "visual_style": "Clean, brightly lit beauty tutorial style showing close-ups of applying eyebrow makeup products on a model's face.",
+        "visual_refs": [
+          "Perfect brows. Zero skill. \u2728 Get waterproof, smudge-proof brows in just 5 seconds. #browstamp",
+          "The easiest eyebrow stamp kit for perfect brows in seconds",
+          "Perfect brows. Zero skill. \u2728 Get waterproof, smudge-proof brows in just 5 seconds. #browstamp",
+          "Perfect brows. Zero skill. \u2728 Get waterproof, smudge-proof brows in just 5 seconds.  #browstamp",
+          "Perfect brows. Zero skill. \u2728 Get waterproof, smudge-proof brows in just 5 seconds. #browstamp",
+          "Perfect brows. Zero skill. \u2728 Get waterproof, smudge-proof brows in just 5 seconds.  #browstamp"
+        ],
+        "presenter_image": "assets/cast/maya.jpg",
+        "presenter_voice": "en-US-AvaMultilingualNeural",
+        "presenter_name": "Maya Brooks",
+        "voice": "en-US-AvaMultilingualNeural",
+        "visual_report": {
+          "shots": 6,
+          "checked": 6,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-27",
+        "name": "2026-10-27-2-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-27",
+        "name": "2026-10-27-2-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,088 --> 00:00:02,225\nStill spending twenty minutes every morning\n\n2\n00:00:02,225 --> 00:00:04,938\ntrying to balance your eyebrows This eyebrow\n\n3\n00:00:04,938 --> 00:00:08,375\nstamp kit makes symmetry surprisingly easy\n\n4\n00:00:08,375 --> 00:00:10,637\nJust align one of the flexible stencils\n\n5\n00:00:10,637 --> 00:00:12,850\nagainst your brow bone Then tap the\n\n6\n00:00:12,850 --> 00:00:16,150\nsoft sponge stamp with smudge-resistant powder\n\n7\n00:00:16,150 --> 00:00:18,038\nright across Blend it out with the\n\n8\n00:00:18,038 --> 00:00:21,075\nincluded spoolie and you have clean balanced\n\n9\n00:00:21,075 --> 00:00:23,775\narches Get it for sixteen ninety-nine at\n\n10\n00:00:23,775 --> 00:00:26,938\nashvara dot store link in bio How\n\n11\n00:00:26,938 --> 00:00:28,650\nmany minutes do you spend on makeup\n\n12\n00:00:28,650 --> 00:00:29,887\nor are you\n",
+      "tg_msg": 296,
+      "opts_msg": 298
     }
   },
   "history": [
@@ -8844,7 +9481,9 @@
     "Your entire gym in a bag!",
     "Your Entire Gym In One Bag",
     "No More Fur On Car Seats",
-    "Shedding Season Is No Match For This!"
+    "Shedding Season Is No Match For This!",
+    "Instant Flawless Brows in 10 Seconds",
+    "Perfect Brows in Just Seconds!"
   ],
   "trend_tries": {
     "2026-10-25": {
@@ -8873,14 +9512,14 @@
   },
   "photo_angle": 7,
   "visual_searches": {
-    "2026-10-26": 1
+    "2026-10-27": 2
   },
   "recent_voices": [
-    "en-AU-WilliamMultilingualNeural",
-    "en-US-AvaMultilingualNeural",
     "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
-    "en-AU-WilliamMultilingualNeural"
+    "en-AU-WilliamMultilingualNeural",
+    "en-US-AvaMultilingualNeural",
+    "en-US-AvaMultilingualNeural"
   ],
   "presenter_candidates": [
     {
