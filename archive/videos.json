@@ -2191,7 +2191,7 @@
  },
  "2026-10-26-1": {
   "angle": "Tired of finding pet hair on literally everything you own?",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
@@ -2218,12 +2218,29 @@
    "It uses electrostatic micro-bristles and features a pop-open collection compartment."
   ],
   "pinned_comment": "My velvet armchair seems to attract every single cat hair in the house! 🐱 Which spot in your home gets the worst pet hair build-up?",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": "https://www.facebook.com/reel/1442851874652611",
+    "status": "published"
+   },
+   "Instagram": {
+    "link": "https://www.instagram.com/reel/De-rDO7j9-q/",
+    "status": "published"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "pet hair remover",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-27T16:15:00+00:00",
   "script": "Pet hair is on your couch, clothes, and practically everywhere else. Here is the easiest trick to clear it without sticky tape. This electrostatic roller lifts stubborn fur from fabric using self-cleaning micro-bristles. It measures seven inches wide, making quick work of large sofas and car seats. Just roll it back and forth, pop the dust compartment open, and empty it out. Grab yours for nineteen ninety-nine at link in bio, ashvara store. Which furniture piece in your home traps the most pet hair?",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,050 --> 00:00:02,414\nPet hair is on your couch clothes\n\n2\n00:00:02,414 --> 00:00:05,112\nand practically everywhere else Here is the\n\n3\n00:00:05,112 --> 00:00:06,968\neasiest trick to clear it without sticky\n\n4\n00:00:06,968 --> 00:00:09,877\ntape This electrostatic roller lifts stubborn\n\n5\n00:00:09,877 --> 00:00:13,045\nfur from fabric using self-cleaning micro-bristles\n\n6\n00:00:13,045 --> 00:00:15,446\nIt measures seven inches wide making quick\n\n7\n00:00:15,446 --> 00:00:17,810\nwork of large sofas and car seats\n\n8\n00:00:17,810 --> 00:00:19,728\nJust roll it back and forth pop\n\n9\n00:00:19,728 --> 00:00:21,807\nthe dust compartment open and empty it\n\n10\n00:00:21,807 --> 00:00:24,419\nout Grab yours for nineteen ninety-nine at\n\n11\n00:00:24,419 --> 00:00:27,538\nlink in bio ashvara store Which furniture\n\n12\n00:00:27,538 --> 00:00:29,109\npiece in your home traps the most\n\n13\n00:00:29,109 --> 00:00:30,017\npet hair\n",
   "tags": [
    "pet hair remover",
@@ -2255,8 +2272,8 @@
   "thumbnail_text": "Pet Hair Solved",
   "title": "Tired of Pet Hair Everywhere? Try This! 🐾",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-26T22:00:01.922777+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-27T01:26:34.227324+00:00",
+  "uploaded_at": "2026-10-27T01:26:34.227348+00:00",
   "virality_score": 7,
   "voice": "en-AU-WilliamMultilingualNeural"
  }

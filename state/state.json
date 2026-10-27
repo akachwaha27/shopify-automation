@@ -8530,9 +8530,9 @@
         "trend_source": "Ashvara store catalog",
         "product": "pet-grooming-kit"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "auto",
-      "updated": "2026-10-26T22:00:01.922777+00:00",
+      "updated": "2026-10-27T01:26:34.227324+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "pet hair remover",
@@ -8800,7 +8800,29 @@
       },
       "srt": "1\n00:00:00,050 --> 00:00:02,414\nPet hair is on your couch clothes\n\n2\n00:00:02,414 --> 00:00:05,112\nand practically everywhere else Here is the\n\n3\n00:00:05,112 --> 00:00:06,968\neasiest trick to clear it without sticky\n\n4\n00:00:06,968 --> 00:00:09,877\ntape This electrostatic roller lifts stubborn\n\n5\n00:00:09,877 --> 00:00:13,045\nfur from fabric using self-cleaning micro-bristles\n\n6\n00:00:13,045 --> 00:00:15,446\nIt measures seven inches wide making quick\n\n7\n00:00:15,446 --> 00:00:17,810\nwork of large sofas and car seats\n\n8\n00:00:17,810 --> 00:00:19,728\nJust roll it back and forth pop\n\n9\n00:00:19,728 --> 00:00:21,807\nthe dust compartment open and empty it\n\n10\n00:00:21,807 --> 00:00:24,419\nout Grab yours for nineteen ninety-nine at\n\n11\n00:00:24,419 --> 00:00:27,538\nlink in bio ashvara store Which furniture\n\n12\n00:00:27,538 --> 00:00:29,109\npiece in your home traps the most\n\n13\n00:00:29,109 --> 00:00:30,017\npet hair\n",
       "tg_msg": 282,
-      "opts_msg": 284
+      "opts_msg": 284,
+      "approved_by": "auto",
+      "description_full": "Discover how a reusable pet hair remover clears fur off couches and car seats in seconds.\nKeep your home clean during shedding season with this easy fabric cleaning tool.\nShop it: https://ashvara.store/products/pet-grooming-kit\n\n#shorts #pethair #dogmom #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          "https://www.instagram.com/reel/De-rDO7j9-q/",
+          "published"
+        ],
+        "Facebook": [
+          "https://www.facebook.com/reel/1442851874652611",
+          "published"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-27T01:26:34.227348+00:00",
+      "slot": "2026-10-27T16:15:00+00:00"
     }
   },
   "history": [
@@ -8842,7 +8864,7 @@
       "at": "2026-10-26T17:51:34.497029+00:00"
     }
   },
-  "cleanup_day": "2026-10-26",
+  "cleanup_day": "2026-10-27",
   "signals_day": "2026-10-26",
   "photo_posts": {
     "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620": "2026-10-13T21:05:44.818972+00:00",
