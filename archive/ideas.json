@@ -1801,5 +1801,78 @@
   ],
   "sent_at": "2026-10-27T18:54:13.890662+00:00",
   "status": "waiting"
+ },
+ "2026-10-27-2": {
+  "date": "2026-10-27-2",
+  "ideas": [
+   {
+    "angle": "Tired of spending way too much time drawing on your eyebrows every single morning?",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Perfect Brows in Just Seconds!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Love your dog, but hate finding muddy paw prints all over your clean floors?",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Stop Muddy Paws Inside Now!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Want that satisfying deep-clean feeling without paying for an expensive facial?",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Get That Spa Glow Home",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Struggling to apply makeup in bad lighting when you're on the go?",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Never Miss a Flaw Again",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Frustrated by stubborn knots in your furry friend's coat during brush time?",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Bye-Bye Messy Pet Tangles!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Catching yourself slouching over your phone or desk all day long?",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Stand Tall and Feel Confident",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-27T19:35:27.667463+00:00",
+  "status": "waiting"
  }
 }
