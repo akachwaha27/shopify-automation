@@ -1947,5 +1947,78 @@
   ],
   "sent_at": "2026-10-28T15:57:47.634929+00:00",
   "status": "waiting"
+ },
+ "2026-10-28-2": {
+  "date": "2026-10-28-2",
+  "ideas": [
+   {
+    "angle": "Tired of wiping down your floors after every single dog walk?",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "No More Muddy Paws Inside!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Get that fresh spa-level clean feeling right in your own bathroom.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Glow Up Your Daily Skincare Routine",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Stop doing your makeup in terrible car light or dim hotel rooms.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Perfect Makeup Lighting Anywhere You Go",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Untangle stubborn fur knots without a stressful drama session for your pup.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Painless Matted Fur Solution For Pets",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Gently remind yourself to sit up tall during those long hours at your computer.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Stop Slouching At Your Desk Today",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Everything you need for a quick living room stretch session in one set.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Ultimate At Home Workout Starter Kit",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-28T19:42:27.080719+00:00",
+  "status": "waiting"
  }
 }

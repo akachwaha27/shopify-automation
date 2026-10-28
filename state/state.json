@@ -1,69 +1,6 @@
 {
   "tg_offset": 272239696,
   "batches": {
-    "2026-10-24": {
-      "topics": [
-        {
-          "title": "Your entire gym in a bag!",
-          "angle": "Skip the crowded gym and get a full-body workout right in your living room.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
-        },
-        {
-          "title": "Keep your car fur-free forever!",
-          "angle": "Stop stressing over muddy paws and dog hair all over your back seat.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "travel-dog-car-seat-cover-58970"
-        },
-        {
-          "title": "Salon-quality grooming at home!",
-          "angle": "Save money on grooming bills while keeping your furry best friend looking fresh.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "pet-grooming-kit"
-        },
-        {
-          "title": "Flawless brows in ten seconds!",
-          "angle": "Tired of spending precious morning minutes trying to draw matching eyebrows?",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "natural-4d-eyebrow-tattoo-sticker"
-        },
-        {
-          "title": "No more muddy paw prints!",
-          "angle": "Keep your floors spotless even after the rainiest walks with your dog.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "pet-paw-cleaner-63144"
-        },
-        {
-          "title": "Unlock your ultimate glow up!",
-          "angle": "Level up your skincare routine and get that fresh spa feeling at home.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "externa-skin-cleansing-tool"
-        }
-      ],
-      "sent_at": "2026-10-24T17:01:02.323113+00:00",
-      "selected": [
-        0
-      ],
-      "status": "closed"
-    },
     "2026-10-24-2": {
       "topics": [
         {
@@ -437,6 +374,67 @@
         }
       ],
       "sent_at": "2026-10-28T15:57:47.634929+00:00",
+      "selected": [],
+      "status": "waiting"
+    },
+    "2026-10-28-2": {
+      "topics": [
+        {
+          "title": "No More Muddy Paws Inside!",
+          "angle": "Tired of wiping down your floors after every single dog walk?",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-paw-cleaner-63144"
+        },
+        {
+          "title": "Glow Up Your Daily Skincare Routine",
+          "angle": "Get that fresh spa-level clean feeling right in your own bathroom.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "externa-skin-cleansing-tool"
+        },
+        {
+          "title": "Perfect Makeup Lighting Anywhere You Go",
+          "angle": "Stop doing your makeup in terrible car light or dim hotel rooms.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "portable-led-makeup-mirror"
+        },
+        {
+          "title": "Painless Matted Fur Solution For Pets",
+          "angle": "Untangle stubborn fur knots without a stressful drama session for your pup.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-fur-knot-cutter-89653"
+        },
+        {
+          "title": "Stop Slouching At Your Desk Today",
+          "angle": "Gently remind yourself to sit up tall during those long hours at your computer.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "adjustable-brace-support-belt-back-posture-corrector-30592"
+        },
+        {
+          "title": "Ultimate At Home Workout Starter Kit",
+          "angle": "Everything you need for a quick living room stretch session in one set.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620"
+        }
+      ],
+      "sent_at": "2026-10-28T19:42:27.080719+00:00",
       "selected": [],
       "status": "waiting"
     }
@@ -9537,8 +9535,8 @@
       "at": "2026-10-27T19:29:07.906609+00:00"
     },
     "2026-10-28": {
-      "n": 1,
-      "at": "2026-10-28T15:57:20.179614+00:00"
+      "n": 2,
+      "at": "2026-10-28T19:39:06.079355+00:00"
     }
   },
   "cleanup_day": "2026-10-28",
