@@ -1,69 +1,6 @@
 {
   "tg_offset": 272239696,
   "batches": {
-    "2026-10-23": {
-      "topics": [
-        {
-          "title": "Turn Your Pet Into A Snuggle Bug",
-          "angle": "When your fur baby refuses to get out of bed in the morning.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "super-soft-pet-bed-82146"
-        },
-        {
-          "title": "Your Entire Gym Fits In This Bag",
-          "angle": "Skip the crowded gym and get a full workout right in your living room.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "fitswift\u2122-11-piece-adjustable-resistance-band-set"
-        },
-        {
-          "title": "Keep Your Car Clean On Every Trip",
-          "angle": "Say goodbye to muddy paws and furry car seats forever.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "travel-dog-car-seat-cover-58970"
-        },
-        {
-          "title": "Salon Quality Grooming At Home",
-          "angle": "Tame the fur explosion before it takes over your entire house.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "pet-grooming-kit"
-        },
-        {
-          "title": "Perfect Brows In Ten Seconds Flat",
-          "angle": "Stop wasting time drawing eyebrows when you're already running late.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "natural-4d-eyebrow-tattoo-sticker"
-        },
-        {
-          "title": "Wash Muddy Paws In Seconds",
-          "angle": "Stop muddy paw prints from ruining your freshly cleaned floors.",
-          "format": "product",
-          "tone": "normal",
-          "virality_score": 7,
-          "trend_source": "Ashvara store catalog",
-          "product": "pet-paw-cleaner-63144"
-        }
-      ],
-      "sent_at": "2026-10-23T18:48:45.723391+00:00",
-      "selected": [
-        0
-      ],
-      "status": "closed"
-    },
     "2026-10-24": {
       "topics": [
         {
@@ -441,6 +378,67 @@
         0
       ],
       "status": "closed"
+    },
+    "2026-10-28": {
+      "topics": [
+        {
+          "title": "Dirty Paws? Clean Them in Seconds!",
+          "angle": "Say goodbye to muddy paw prints on your couch after everyday walks.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-paw-cleaner-63144"
+        },
+        {
+          "title": "Get That Spa Glow at Home!",
+          "angle": "Clear away daily buildup and refresh your skin tone in minutes.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "externa-skin-cleansing-tool"
+        },
+        {
+          "title": "Perfect Makeup Lighting Anywhere You Go",
+          "angle": "Never do your makeup in dim car light or bad hotel lighting again.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "portable-led-makeup-mirror"
+        },
+        {
+          "title": "Easy Dog Grooming for Stubborn Mats",
+          "angle": "Gently glide through tough fur knots without expensive salon trips.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "pet-fur-knot-cutter-89653"
+        },
+        {
+          "title": "Sit Up Straight Without Even Trying",
+          "angle": "Easily maintain an upright, confident stance while sitting at your desk.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "adjustable-brace-support-belt-back-posture-corrector-30592"
+        },
+        {
+          "title": "Ultimate Starter Kit for Home Workouts",
+          "angle": "Upgrade your daily stretch routine without needing a gym membership.",
+          "format": "product",
+          "tone": "normal",
+          "virality_score": 7,
+          "trend_source": "Ashvara store catalog",
+          "product": "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620"
+        }
+      ],
+      "sent_at": "2026-10-28T15:57:47.634929+00:00",
+      "selected": [],
+      "status": "waiting"
     }
   },
   "videos": {
@@ -9530,10 +9528,6 @@
     "Perfect Brows in Just Seconds!"
   ],
   "trend_tries": {
-    "2026-10-25": {
-      "n": 1,
-      "at": "2026-10-25T17:41:51.797480+00:00"
-    },
     "2026-10-26": {
       "n": 1,
       "at": "2026-10-26T17:51:34.497029+00:00"
@@ -9541,10 +9535,14 @@
     "2026-10-27": {
       "n": 2,
       "at": "2026-10-27T19:29:07.906609+00:00"
+    },
+    "2026-10-28": {
+      "n": 1,
+      "at": "2026-10-28T15:57:20.179614+00:00"
     }
   },
   "cleanup_day": "2026-10-28",
-  "signals_day": "2026-10-27",
+  "signals_day": "2026-10-28",
   "photo_posts": {
     "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620": "2026-10-13T21:05:44.818972+00:00",
     "adjustable-brace-support-belt-back-posture-corrector-30592": "2026-10-14T01:12:13.335684+00:00",

@@ -1874,5 +1874,78 @@
   ],
   "sent_at": "2026-10-27T19:35:27.667463+00:00",
   "status": "closed"
+ },
+ "2026-10-28": {
+  "date": "2026-10-28",
+  "ideas": [
+   {
+    "angle": "Say goodbye to muddy paw prints on your couch after everyday walks.",
+    "format": "product",
+    "picked": false,
+    "rank": 1,
+    "title": "Dirty Paws? Clean Them in Seconds!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Clear away daily buildup and refresh your skin tone in minutes.",
+    "format": "product",
+    "picked": false,
+    "rank": 2,
+    "title": "Get That Spa Glow at Home!",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Never do your makeup in dim car light or bad hotel lighting again.",
+    "format": "product",
+    "picked": false,
+    "rank": 3,
+    "title": "Perfect Makeup Lighting Anywhere You Go",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Gently glide through tough fur knots without expensive salon trips.",
+    "format": "product",
+    "picked": false,
+    "rank": 4,
+    "title": "Easy Dog Grooming for Stubborn Mats",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Easily maintain an upright, confident stance while sitting at your desk.",
+    "format": "product",
+    "picked": false,
+    "rank": 5,
+    "title": "Sit Up Straight Without Even Trying",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   },
+   {
+    "angle": "Upgrade your daily stretch routine without needing a gym membership.",
+    "format": "product",
+    "picked": false,
+    "rank": 6,
+    "title": "Ultimate Starter Kit for Home Workouts",
+    "trend_source": "Ashvara store catalog",
+    "video_id": null,
+    "virality_score": 7,
+    "why": ""
+   }
+  ],
+  "sent_at": "2026-10-28T15:57:47.634929+00:00",
+  "status": "waiting"
  }
 }
