@@ -374,8 +374,10 @@
         }
       ],
       "sent_at": "2026-10-28T15:57:47.634929+00:00",
-      "selected": [],
-      "status": "waiting"
+      "selected": [
+        0
+      ],
+      "status": "closed"
     },
     "2026-10-28-2": {
       "topics": [
@@ -9496,6 +9498,286 @@
       },
       "uploaded_at": "2026-10-28T02:10:14.805597+00:00",
       "slot": "2026-10-28T19:15:00+00:00"
+    },
+    "2026-10-28-1": {
+      "topic": {
+        "title": "Dirty Paws? Clean Them in Seconds!",
+        "angle": "Say goodbye to muddy paw prints on your couch after everyday walks.",
+        "format": "product",
+        "tone": "normal",
+        "virality_score": 7,
+        "trend_source": "Ashvara store catalog",
+        "product": "pet-paw-cleaner-63144"
+      },
+      "status": "awaiting_approval",
+      "by": "auto",
+      "updated": "2026-10-28T21:06:31.207821+00:00",
+      "redos": 0,
+      "package": {
+        "primary_keyword": "dirty paws cleaning",
+        "title": "Stop Muddy Paws From Ruining Your Couch \ud83d\udc3e",
+        "hook_text": "Muddy paws on the couch?",
+        "thumbnail_text": "Clean Paws Instantly",
+        "description": "Stop muddy paws from ruining your couch after walks with this quick dog paw cleaner from Ashvara. Clean your pet's paws in seconds without any hassle.\nShop it: https://ashvara.store/products/pet-paw-cleaner-63144",
+        "hashtags": [
+          "#shorts",
+          "#doglovers",
+          "#petcare",
+          "#ashvara"
+        ],
+        "tags": [
+          "dirty paws cleaning",
+          "muddy paws",
+          "how to clean dog paws after walk",
+          "dog paw cleaner",
+          "dog paw cleaner cup",
+          "muddy dog paws solution",
+          "how to clean dog feet after walk",
+          "pet cleaning hacks",
+          "dog cleaning hacks",
+          "how to clean dog paws",
+          "dog paw cleaner brush",
+          "how to clean dog paws at home",
+          "quick dog paw wash",
+          "clean pet paws fast",
+          "pet cleaning",
+          "pet grooming hacks",
+          "dog wash cup",
+          "muddy paws dog",
+          "ashvara pet products"
+        ],
+        "pinned_comment": "How many times a day do you have to wipe your dog's paws after walks? Let us know below! \ud83d\udc3e",
+        "scenes": [
+          {
+            "text": "This is the easiest way to stop muddy paw prints all over your clean furniture.",
+            "badge": "",
+            "label": "Muddy Paws?",
+            "stock_queries": [
+              "dog muddy paws",
+              "dog on sofa"
+            ],
+            "image_prompt": "Vertical 9:16 cinematic shot of a muddy dog paw on a clean fabric sofa, moody lighting, highly detailed texture, no people, no text",
+            "stock_query": "dog muddy paws",
+            "product_image": "work/2026-10-28-1/product/product_0.jpg"
+          },
+          {
+            "text": "Meet the Ashvara paw washer. It stands about six inches tall and fits easily by your front door.",
+            "badge": "",
+            "label": "Compact Size",
+            "stock_queries": [
+              "dog paw washer",
+              "pet grooming tool"
+            ],
+            "image_prompt": "Vertical 9:16 studio shot of a cylindrical silicone pet paw cleaner cup on a clean wooden entryway floor, soft lighting, no text, no people",
+            "stock_query": "dog paw washer"
+          },
+          {
+            "text": "Inside, you will find gentle silicone bristles that grab dirt without scratching sensitive paw pads.",
+            "badge": "",
+            "label": "Soft Bristles",
+            "stock_queries": [
+              "silicone bristles close up",
+              "soft cleaning brush"
+            ],
+            "image_prompt": "Vertical 9:16 macro close up of flexible silicone bristles inside a cleaning cup, clean pastel colors, highly detailed, no text, no people",
+            "stock_query": "silicone bristles close up",
+            "product_image": "work/2026-10-28-1/product/product_1.jpg"
+          },
+          {
+            "text": "Just add a little water, pop the muddy paw inside, and give it a few gentle twists.",
+            "badge": "",
+            "label": "Simple Usage",
+            "stock_queries": [
+              "pouring water in cup",
+              "washing dog paw"
+            ],
+            "image_prompt": "Vertical 9:16 shot of water being poured into a silicone pet washer cup, splashing droplets, clean background, no text, no people",
+            "stock_query": "pouring water in cup"
+          },
+          {
+            "text": "For just nineteen dollars, you can grab yours right now at link in bio, ashvara.store.",
+            "badge": "",
+            "label": "$17.99 \u00b7 ashvara.store",
+            "stock_queries": [
+              "dog standing clean",
+              "pet store product"
+            ],
+            "image_prompt": "Vertical 9:16 clean lifestyle product presentation of a dog paw washer on a minimalist shelf, soft natural light, no text, no people",
+            "stock_query": "dog standing clean",
+            "product_image": "work/2026-10-28-1/product/product_2.jpg"
+          }
+        ],
+        "key_facts": [],
+        "format": "product",
+        "tone": "normal",
+        "category": "26",
+        "script": "This is the easiest way to stop muddy paw prints all over your clean furniture. Meet the Ashvara paw washer. It stands about six inches tall and fits easily by your front door. Inside, you will find gentle silicone bristles that grab dirt without scratching sensitive paw pads. Just add a little water, pop the muddy paw inside, and give it a few gentle twists. For just nineteen dollars, you can grab yours right now at link in bio, ashvara.store.",
+        "product": {
+          "handle": "pet-paw-cleaner-63144",
+          "title": "Portable Dog Paw Cleaner",
+          "url": "https://ashvara.store/products/pet-paw-cleaner-63144",
+          "price": "$17.99"
+        },
+        "shot_plan": [
+          {
+            "subject": "dirty paw prints on a living room couch",
+            "queries": [
+              {
+                "q": "dirty couch paw prints",
+                "must": [
+                  "couch",
+                  "paw"
+                ]
+              },
+              {
+                "q": "muddy sofa living room",
+                "must": [
+                  "sofa"
+                ]
+              },
+              {
+                "q": "dirty furniture",
+                "must": [
+                  "furniture"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "pet paw washer cup standing near an entryway door",
+            "queries": [
+              {
+                "q": "pet paw washer cup",
+                "must": [
+                  "washer"
+                ]
+              },
+              {
+                "q": "dog paw cleaner tool",
+                "must": [
+                  "cleaner"
+                ]
+              },
+              {
+                "q": "dog accessory",
+                "must": [
+                  "accessory"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "close up of soft silicone bristles inside a pet cup",
+            "queries": [
+              {
+                "q": "silicone bristles closeup",
+                "must": [
+                  "bristles"
+                ]
+              },
+              {
+                "q": "rubber brush texture",
+                "must": [
+                  "brush"
+                ]
+              },
+              {
+                "q": "cleaning tool interior",
+                "must": [
+                  "tool"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "person washing a dog muddy paw inside a cleaning cup",
+            "queries": [
+              {
+                "q": "washing dog paw cup",
+                "must": [
+                  "dog",
+                  "paw"
+                ]
+              },
+              {
+                "q": "cleaning pet paw",
+                "must": [
+                  "pet"
+                ]
+              },
+              {
+                "q": "dog paw rinse",
+                "must": [
+                  "rinse"
+                ]
+              }
+            ]
+          },
+          {
+            "subject": "dog paw cleaner product displayed neatly on a table",
+            "queries": [
+              {
+                "q": "pet product display",
+                "must": [
+                  "product"
+                ]
+              },
+              {
+                "q": "dog grooming tool",
+                "must": [
+                  "grooming"
+                ]
+              },
+              {
+                "q": "pet accessory item",
+                "must": [
+                  "item"
+                ]
+              }
+            ]
+          }
+        ],
+        "broll": [
+          "dog",
+          "paw",
+          "cleaning"
+        ],
+        "visual_style": "Clean close-up pet care product demonstrations featuring dogs and paw washing cups in bright indoor and outdoor settings.",
+        "visual_refs": [
+          "Muddy Paws? Clean Them in Seconds! \ud83d\udc3e\ud83d\udca6",
+          "Muddy paws? Rinse them clean in seconds \ud83d\udc36",
+          "\ud83d\udc36 Dirty Paws? Clean Them in Seconds! | Automatic Dog Paw Cleaner | HA Pet Supplies   #dogpawcleaner",
+          "\ud83d\udc3e Muddy Dog Paws? Clean Them in Seconds!",
+          "\ud83d\udc3e Dirty Paws? Clean Them in Seconds! \ud83e\uddfc\u2728 | Automatic Pet Paw Cleaning Cup",
+          "&quot;Dirty Paws? Clean Them in Seconds! \ud83d\udc3e\ud83e\uddfc #shorts"
+        ],
+        "presenter_image": "assets/cast/biscuit.jpg",
+        "presenter_voice": "en-AU-WilliamMultilingualNeural",
+        "presenter_name": "Biscuit",
+        "voice": "en-AU-WilliamMultilingualNeural",
+        "visual_report": {
+          "shots": 5,
+          "checked": 5,
+          "unchecked": 0,
+          "filler": 2
+        }
+      },
+      "credits": [
+        "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
+      ],
+      "file": {
+        "type": "release",
+        "tag": "videos-2026-10-28",
+        "name": "2026-10-28-1-v0.mp4"
+      },
+      "thumb": {
+        "type": "release",
+        "tag": "videos-2026-10-28",
+        "name": "2026-10-28-1-v0-thumb.jpg"
+      },
+      "srt": "1\n00:00:00,050 --> 00:00:01,952\nThis is the easiest way to stop\n\n2\n00:00:01,952 --> 00:00:03,909\nmuddy paw prints all over your clean\n\n3\n00:00:03,909 --> 00:00:07,468\nfurniture Meet the Ashvara paw washer It\n\n4\n00:00:07,468 --> 00:00:09,683\nstands about six inches tall and fits\n\n5\n00:00:09,683 --> 00:00:12,645\neasily by your front door Inside you\n\n6\n00:00:12,645 --> 00:00:15,050\nwill find gentle silicone bristles that grab\n\n7\n00:00:15,050 --> 00:00:17,903\ndirt without scratching sensitive paw pads\n\n8\n00:00:17,903 --> 00:00:19,860\nJust add a little water pop the\n\n9\n00:00:19,860 --> 00:00:21,911\nmuddy paw inside and give it a\n\n10\n00:00:21,911 --> 00:00:25,308\nfew gentle twists For just nineteen dollars\n\n11\n00:00:25,308 --> 00:00:26,776\nyou can grab yours right now at\n\n12\n00:00:26,776 --> 00:00:28,569\nlink in bio ashvara .\n\n13\n00:00:28,569 --> 00:00:29,485\nstore\n",
+      "tg_msg": 306,
+      "opts_msg": 308
     }
   },
   "history": [
@@ -9523,7 +9805,8 @@
     "No More Fur On Car Seats",
     "Shedding Season Is No Match For This!",
     "Instant Flawless Brows in 10 Seconds",
-    "Perfect Brows in Just Seconds!"
+    "Perfect Brows in Just Seconds!",
+    "Dirty Paws? Clean Them in Seconds!"
   ],
   "trend_tries": {
     "2026-10-26": {
@@ -9553,14 +9836,14 @@
   },
   "photo_angle": 8,
   "visual_searches": {
-    "2026-10-27": 2
+    "2026-10-28": 1
   },
   "recent_voices": [
-    "en-US-AvaMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
     "en-AU-WilliamMultilingualNeural",
     "en-US-AvaMultilingualNeural",
-    "en-US-AvaMultilingualNeural"
+    "en-US-AvaMultilingualNeural",
+    "en-AU-WilliamMultilingualNeural"
   ],
   "presenter_candidates": [
     {

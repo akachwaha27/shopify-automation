@@ -1881,11 +1881,11 @@
    {
     "angle": "Say goodbye to muddy paw prints on your couch after everyday walks.",
     "format": "product",
-    "picked": false,
+    "picked": true,
     "rank": 1,
     "title": "Dirty Paws? Clean Them in Seconds!",
     "trend_source": "Ashvara store catalog",
-    "video_id": null,
+    "video_id": "2026-10-28-1",
     "virality_score": 7,
     "why": ""
    },
@@ -1946,7 +1946,7 @@
    }
   ],
   "sent_at": "2026-10-28T15:57:47.634929+00:00",
-  "status": "waiting"
+  "status": "closed"
  },
  "2026-10-28-2": {
   "date": "2026-10-28-2",
