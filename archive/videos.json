@@ -2279,7 +2279,7 @@
  },
  "2026-10-27-1": {
   "angle": "Stop wasting fifteen minutes every morning trying to draw matching brows.",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
@@ -2305,12 +2305,29 @@
    "Eyebrow stencils and stamp kits provide pre-shaped templates to apply powder evenly across both brows."
   ],
   "pinned_comment": "How many minutes do you usually spend trying to make your brows look identical every morning? ⏱️",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": "https://www.facebook.com/reel/1387785566469756",
+    "status": "published"
+   },
+   "Instagram": {
+    "link": "https://www.instagram.com/reel/DfBUtS5Aj-3/",
+    "status": "published"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "instant flawless brows",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-28T16:15:00+00:00",
   "script": "Drawing matching eyebrows every morning does not need to take fifteen minutes. This stencil kit gives you symmetrical arches in literally ten seconds. You just tap the soft cushion applicator into the matte powder. Then align the flexible silicone template and stamp it firmly on. Flip the stencil for the other side, and you are done. Grab yours for eighteen dollars. Link in bio, ashvara.store. How long does your makeup usually take? Because...",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,106 --> 00:00:02,686\nDrawing matching eyebrows every morning does\n\n2\n00:00:02,686 --> 00:00:05,239\nnot need to take fifteen minutes This\n\n3\n00:00:05,239 --> 00:00:07,952\nstencil kit gives you symmetrical arches in\n\n4\n00:00:07,952 --> 00:00:10,705\nliterally ten seconds You just tap the\n\n5\n00:00:10,705 --> 00:00:13,670\nsoft cushion applicator into the matte powder\n\n6\n00:00:13,670 --> 00:00:16,596\nThen align the flexible silicone template and\n\n7\n00:00:16,596 --> 00:00:19,149\nstamp it firmly on Flip the stencil\n\n8\n00:00:19,149 --> 00:00:20,957\nfor the other side and you are\n\n9\n00:00:20,957 --> 00:00:24,375\ndone Grab yours for eighteen dollars Link\n\n10\n00:00:24,375 --> 00:00:25,957\nin bio ashvara .\n\n11\n00:00:25,957 --> 00:00:28,457\nstore How long does your makeup usually\n\n12\n00:00:28,457 --> 00:00:30,227\ntake Because\n",
   "tags": [
    "instant flawless brows",
@@ -2342,14 +2359,14 @@
   "thumbnail_text": "Brows In Seconds",
   "title": "Instant Flawless Brows in Seconds",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-27T23:03:17.620133+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-28T02:09:09.297618+00:00",
+  "uploaded_at": "2026-10-28T02:09:09.297644+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
  },
  "2026-10-27-2-1": {
   "angle": "Tired of spending way too much time drawing on your eyebrows every single morning?",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-US-AvaMultilingualNeural)."
@@ -2376,12 +2393,29 @@
    "Eyebrow stamps use powder and sponge applicators to transfer shape quickly."
   ],
   "pinned_comment": "How many minutes does your morning eyebrow routine take right now? Tell us below! ✨",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": "https://www.facebook.com/reel/1198208312781429",
+    "status": "published"
+   },
+   "Instagram": {
+    "link": null,
+    "status": "FAILED: IG upload failed: {\"debug_info\":{\"retriable\":false,\"type\":\"ProcessingFailedError\",\"message\":\"Request processing failed\"}}"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "eyebrow stamp kit",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-28T19:15:00+00:00",
   "script": "Still spending twenty minutes every morning trying to balance your eyebrows? This eyebrow stamp kit makes symmetry surprisingly easy. Just align one of the flexible stencils against your brow bone. Then tap the soft sponge stamp with smudge-resistant powder right across. Blend it out with the included spoolie, and you have clean, balanced arches. Get it for sixteen ninety-nine at ashvara dot store, link in bio. How many minutes do you spend on makeup, or are you",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,088 --> 00:00:02,225\nStill spending twenty minutes every morning\n\n2\n00:00:02,225 --> 00:00:04,938\ntrying to balance your eyebrows This eyebrow\n\n3\n00:00:04,938 --> 00:00:08,375\nstamp kit makes symmetry surprisingly easy\n\n4\n00:00:08,375 --> 00:00:10,637\nJust align one of the flexible stencils\n\n5\n00:00:10,637 --> 00:00:12,850\nagainst your brow bone Then tap the\n\n6\n00:00:12,850 --> 00:00:16,150\nsoft sponge stamp with smudge-resistant powder\n\n7\n00:00:16,150 --> 00:00:18,038\nright across Blend it out with the\n\n8\n00:00:18,038 --> 00:00:21,075\nincluded spoolie and you have clean balanced\n\n9\n00:00:21,075 --> 00:00:23,775\narches Get it for sixteen ninety-nine at\n\n10\n00:00:23,775 --> 00:00:26,938\nashvara dot store link in bio How\n\n11\n00:00:26,938 --> 00:00:28,650\nmany minutes do you spend on makeup\n\n12\n00:00:28,650 --> 00:00:29,887\nor are you\n",
   "tags": [
    "eyebrow stamp kit",
@@ -2413,8 +2447,8 @@
   "thumbnail_text": "Instant Brow Hack",
   "title": "Eyebrow Stamp Kit Saves Your Mornings ✨",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-27T23:11:40.430013+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-28T02:10:14.805571+00:00",
+  "uploaded_at": "2026-10-28T02:10:14.805597+00:00",
   "virality_score": 7,
   "voice": "en-US-AvaMultilingualNeural"
  }
