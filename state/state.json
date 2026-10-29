@@ -444,22 +444,6 @@
     }
   },
   "videos": {
-    "2026-10-11-1": {
-      "topic": {
-        "title": "Calming Donut Bed for Dogs & Cats",
-        "angle": "Product demo with a relatable hook (Ashvara playbook)",
-        "format": "product",
-        "tone": "normal",
-        "virality_score": 8,
-        "trend_source": "Ashvara Black Friday Playbook",
-        "plan_id": "P2026-10-10-01",
-        "product": "super-soft-pet-bed-82146"
-      },
-      "status": "failed",
-      "by": "you",
-      "updated": "2026-10-11T20:13:00.822486+00:00",
-      "redos": 0
-    },
     "2026-10-11-2": {
       "topic": {
         "title": "Dematting Comb: One Brushing Session",
@@ -9813,9 +9797,9 @@
         "trend_source": "Ashvara store catalog",
         "product": "pet-paw-cleaner-63144"
       },
-      "status": "awaiting_approval",
+      "status": "published",
       "by": "auto",
-      "updated": "2026-10-29T00:53:00.790406+00:00",
+      "updated": "2026-10-29T06:59:44.301252+00:00",
       "redos": 0,
       "package": {
         "primary_keyword": "dog paw cleaner",
@@ -10085,7 +10069,29 @@
       },
       "srt": "1\n00:00:00,050 --> 00:00:02,890\nStop scrubbing your entryway floors after every\n\n2\n00:00:02,890 --> 00:00:05,757\nsingle dog walk This portable paw cleaner\n\n3\n00:00:05,757 --> 00:00:07,930\nwashes away dirt before it touches your\n\n4\n00:00:07,930 --> 00:00:11,259\ncarpet Just add water slide each muddy\n\n5\n00:00:11,259 --> 00:00:12,971\npaw in and give it a quick\n\n6\n00:00:12,971 --> 00:00:16,246\ngentle twist Soft food-grade silicone bristles\n\n7\n00:00:16,246 --> 00:00:18,583\nloosen grit without irritating their sensitive\n\n8\n00:00:18,583 --> 00:00:20,797\npads and the cup pops apart to\n\n9\n00:00:20,797 --> 00:00:23,610\nrinse clean Grab yours for nineteen dollars\n\n10\n00:00:23,610 --> 00:00:25,580\nat ashvara dot store via the link\n\n11\n00:00:25,580 --> 00:00:27,890\nin bio How many walks do you\n\n12\n00:00:27,890 --> 00:00:29,118\ntake daily\n",
       "tg_msg": 311,
-      "opts_msg": 313
+      "opts_msg": 313,
+      "approved_by": "auto",
+      "description_full": "Keep floors spotless with this simple dog paw cleaner after rainy outdoor walks.\nDiscover an easy way to clean muddy puppy feet in seconds without messy towels.\nShop it: https://ashvara.store/products/pet-paw-cleaner-63144\n\n#shorts #dogcare #dogpawcleaner #ashvara\n\n\u2014 Credits & disclosure \u2014\nOriginal script written with AI assistance, checked by an automated safety review.\nThis video contains AI-generated or AI-assisted content.\nVoiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural).\nNo other creators' videos were reused; stock footage and images are used under the licenses credited above.",
+      "results": {
+        "YouTube": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ],
+        "Instagram": [
+          "https://www.instagram.com/reel/DfEavJoAbnr/",
+          "published"
+        ],
+        "Facebook": [
+          "https://www.facebook.com/reel/1853567952626581",
+          "published"
+        ],
+        "TikTok": [
+          null,
+          "skipped (off: add to PUBLISH_TO variable)"
+        ]
+      },
+      "uploaded_at": "2026-10-29T06:59:44.301275+00:00",
+      "slot": "2026-10-29T16:15:00+00:00"
     }
   },
   "history": [

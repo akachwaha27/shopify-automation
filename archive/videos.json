@@ -2538,7 +2538,7 @@
  },
  "2026-10-28-2-1": {
   "angle": "Tired of wiping down your floors after every single dog walk?",
-  "approved_by": "",
+  "approved_by": "auto",
   "category": "26",
   "credits": [
    "Voiceover: AI-generated voice (Microsoft Edge neural TTS, en-AU-WilliamMultilingualNeural)."
@@ -2565,12 +2565,29 @@
    "The cup disassembles for rinsing and drying."
   ],
   "pinned_comment": "Does your pup let you wipe their paws easily, or is it a wrestling match? Tell us below! 👇",
-  "platforms": {},
+  "platforms": {
+   "Facebook": {
+    "link": "https://www.facebook.com/reel/1853567952626581",
+    "status": "published"
+   },
+   "Instagram": {
+    "link": "https://www.instagram.com/reel/DfEavJoAbnr/",
+    "status": "published"
+   },
+   "TikTok": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   },
+   "YouTube": {
+    "link": null,
+    "status": "skipped (off: add to PUBLISH_TO variable)"
+   }
+  },
   "primary_keyword": "dog paw cleaner",
   "redos": 0,
-  "scheduled_for": "",
+  "scheduled_for": "2026-10-29T16:15:00+00:00",
   "script": "Stop scrubbing your entryway floors after every single dog walk. This portable paw cleaner washes away dirt before it touches your carpet. Just add water, slide each muddy paw in, and give it a quick gentle twist. Soft food-grade silicone bristles loosen grit without irritating their sensitive pads, and the cup pops apart to rinse clean. Grab yours for nineteen dollars at ashvara dot store via the link in bio. How many walks do you take daily?",
-  "status": "awaiting_approval",
+  "status": "published",
   "subtitles_srt": "1\n00:00:00,050 --> 00:00:02,890\nStop scrubbing your entryway floors after every\n\n2\n00:00:02,890 --> 00:00:05,757\nsingle dog walk This portable paw cleaner\n\n3\n00:00:05,757 --> 00:00:07,930\nwashes away dirt before it touches your\n\n4\n00:00:07,930 --> 00:00:11,259\ncarpet Just add water slide each muddy\n\n5\n00:00:11,259 --> 00:00:12,971\npaw in and give it a quick\n\n6\n00:00:12,971 --> 00:00:16,246\ngentle twist Soft food-grade silicone bristles\n\n7\n00:00:16,246 --> 00:00:18,583\nloosen grit without irritating their sensitive\n\n8\n00:00:18,583 --> 00:00:20,797\npads and the cup pops apart to\n\n9\n00:00:20,797 --> 00:00:23,610\nrinse clean Grab yours for nineteen dollars\n\n10\n00:00:23,610 --> 00:00:25,580\nat ashvara dot store via the link\n\n11\n00:00:25,580 --> 00:00:27,890\nin bio How many walks do you\n\n12\n00:00:27,890 --> 00:00:29,118\ntake daily\n",
   "tags": [
    "dog paw cleaner",
@@ -2604,8 +2621,8 @@
   "thumbnail_text": "Stop Muddy Paws",
   "title": "Dog Paw Cleaner Trick for Muddy Days 🐾",
   "trend_source": "Ashvara store catalog",
-  "updated": "2026-10-29T00:53:00.790406+00:00",
-  "uploaded_at": "",
+  "updated": "2026-10-29T06:59:44.301252+00:00",
+  "uploaded_at": "2026-10-29T06:59:44.301275+00:00",
   "virality_score": 7,
   "voice": "en-AU-WilliamMultilingualNeural"
  }
