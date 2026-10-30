@@ -10124,10 +10124,6 @@
     "No More Muddy Paws Inside!"
   ],
   "trend_tries": {
-    "2026-10-27": {
-      "n": 2,
-      "at": "2026-10-27T19:29:07.906609+00:00"
-    },
     "2026-10-28": {
       "n": 2,
       "at": "2026-10-28T19:39:06.079355+00:00"
@@ -10135,10 +10131,14 @@
     "2026-10-29": {
       "n": 2,
       "at": "2026-10-29T23:39:15.970873+00:00"
+    },
+    "2026-10-30": {
+      "n": 1,
+      "at": "2026-10-30T16:40:52.509966+00:00"
     }
   },
   "cleanup_day": "2026-10-30",
-  "signals_day": "2026-10-29",
+  "signals_day": "2026-10-30",
   "photo_posts": {
     "5pcs-yoga-accessories-set-yoga-ball-yoga-blocks-stretching-strap-resistance-loop-band-exercise-band-home-gym-fitness-equipment-51620": "2026-10-13T21:05:44.818972+00:00",
     "adjustable-brace-support-belt-back-posture-corrector-30592": "2026-10-14T01:12:13.335684+00:00",
